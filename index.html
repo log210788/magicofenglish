@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speaking the Magic | Alessia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            magic: {
+              gold: '#f6d365',
+              amber: '#fda085',
+              glow: '#ffeaa7',
+              deep: '#0a0d14',
+              surface: '#121824',
+              border: '#1f293d'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom Particle Canvas Background */
+    #particles-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .glass-card {
+      background: rgba(18, 24, 36, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(246, 211, 101, 0.15);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      border-color: rgba(246, 211, 101, 0.35);
+      box-shadow: 0 10px 30px -10px rgba(246, 211, 101, 0.1);
+    }
+    .text-glow {
+      text-shadow: 0 0 20px rgba(246, 211, 101, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-magic-deep text-slate-200 font-sans antialiased min-h-screen relative selection:bg-amber-400 selection:text-slate-950">
+
+  <!-- Interactive Magic Dust Particle Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Ambient Glow Blobs -->
+  <div class="fixed top-[-10%] left-[20%] w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
+  <div class="fixed bottom-[-10%] right-[15%] w-[450px] h-[450px] bg-purple-500/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
+
+  <!-- Main Container -->
+  <div class="relative z-10 max-w-3xl mx-auto px-5 py-12 md:py-20 space-y-16">
+
+    <!-- Header / Welcome -->
+    <header class="text-center space-y-4">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium tracking-widest uppercase bg-amber-400/10 text-amber-300 border border-amber-400/20">
+        <span class="w-1.5 h-1.5 rounded-full bg-amber-300 animate-pulse"></span>
+        <span>Welcome Alessia • Presentation &amp; Voice</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-slate-50 tracking-wide text-glow">
+        Speaking the <span class="italic text-amber-200">Magic</span>
+      </h1>
+      <p class="text-slate-400 text-sm md:text-base max-w-lg mx-auto font-light leading-relaxed">
+        Moving past technical blueprints into the realm of emotion, wonder, and unforgettable vision.
+      </p>
+    </header>
+
+    <!-- The 8-Week Roadmap (Minimal & High-Level) -->
+    <section class="space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <h2 class="text-xs uppercase tracking-widest text-slate-400 font-semibold">The 8-Week Journey</h2>
+        <span class="text-xs text-amber-300/80 font-mono">4 Vocal Milestones</span>
+      </div>
+
+      <div class="grid grid-cols-1 gap-3.5">
+        <!-- Milestone 1 -->
+        <div class="glass-card rounded-2xl p-5 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-amber-400/10 border border-amber-400/20 text-amber-300 flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5">
+            01
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h3 class="text-sm font-semibold text-slate-100">Feeling Vocabulary</h3>
+              <span class="text-[10px] text-amber-300/70 font-mono uppercase bg-amber-400/10 px-2 py-0.5 rounded-full">Weeks 1–2</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+              The words that sell our magic vision. Focusing on mood, sensation, and wonder—learning to describe what guests feel in their chest rather than what is built on paper.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="glass-card rounded-2xl p-5 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-amber-400/10 border border-amber-400/20 text-amber-300 flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5">
+            02
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h3 class="text-sm font-semibold text-slate-100">Cadence &amp; Flow</h3>
+              <span class="text-[10px] text-amber-300/70 font-mono uppercase bg-amber-400/10 px-2 py-0.5 rounded-full">Weeks 3–4</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+              How to say the words efficiently. Finding a calm, steady rhythm and using deliberate pauses so your audience has time to see the picture in their minds.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="glass-card rounded-2xl p-5 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-amber-400/10 border border-amber-400/20 text-amber-300 flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5">
+            03
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h3 class="text-sm font-semibold text-slate-100">Stress &amp; Intonation</h3>
+              <span class="text-[10px] text-amber-300/70 font-mono uppercase bg-amber-400/10 px-2 py-0.5 rounded-full">Weeks 5–6</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+              Giving the right feel to those words. Exploring vocal warmth, pitch variations, and emotional weight so your voice carries the mystery, scale, and excitement.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 4 -->
+        <div class="glass-card rounded-2xl p-5 flex items-start gap-4 border-amber-400/40 bg-gradient-to-r from-magic-surface to-amber-950/20">
+          <div class="w-10 h-10 rounded-xl bg-amber-400 text-slate-950 flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5 shadow-lg shadow-amber-400/20">
+            04
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h3 class="text-sm font-semibold text-amber-200">The Vision Pitch</h3>
+              <span class="text-[10px] text-amber-300 font-mono uppercase bg-amber-400/20 px-2 py-0.5 rounded-full">Weeks 7–8</span>
+            </div>
+            <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+              Putting it all together. Sharing your vision in a full walkthrough presentation with natural confidence, heart, and undeniable creative conviction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Warm-Up Assignment -->
+    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6 relative overflow-hidden border-amber-400/30">
+      <div class="space-y-2">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-amber-300">
+          <span>✨ Pre-Lesson Warm-Up</span>
+        </div>
+        <h2 class="text-2xl font-serif text-slate-100 font-light">
+          "What makes an experience feel truly magical?"
+        </h2>
+        <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
+          Before our first lesson, record a relaxed <strong>2-minute voice note</strong> answering this question. Forget blueprints, dimensions, or technical details—focus only on the <em>feeling</em> and the <em>emotions</em>.
+        </p>
+      </div>
+
+      <!-- Feeling Words Grid -->
+      <div class="space-y-3 pt-2">
+        <p class="text-xs uppercase tracking-wider font-semibold text-slate-400">
+          Try weaving 2 or 3 of these feeling words into your note:
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+          <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+            <span class="font-semibold text-amber-300 text-sm">Awe</span>
+            <p class="text-slate-400 mt-1">That breathless, jaw-dropping feeling when you look up at something magnificent.</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+            <span class="font-semibold text-amber-300 text-sm">Anticipation</span>
+            <p class="text-slate-400 mt-1">The excited butterflies in your stomach right before discovering what's around the corner.</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+            <span class="font-semibold text-amber-300 text-sm">Intimacy</span>
+            <p class="text-slate-400 mt-1">A warm, quiet, tucked-away space that feels personal, cozy, and safe.</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+            <span class="font-semibold text-amber-300 text-sm">Electric</span>
+            <p class="text-slate-400 mt-1">A buzzing, vibrant energy in the air that makes your skin tingle with excitement.</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800 sm:col-span-2">
+            <span class="font-semibold text-amber-300 text-sm">Mysterious</span>
+            <p class="text-slate-400 mt-1">A shadowy, curious atmosphere that invites you to step in and explore the unknown.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Built-In Web Audio Recorder (Convenience Tool) -->
+      <div class="p-4 rounded-2xl bg-slate-900/80 border border-amber-400/20 space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-semibold text-slate-200">Optional: Record Directly in Your Browser</span>
+          <span id="recording-timer" class="text-xs font-mono text-amber-300 hidden">00:00</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-3">
+          <button id="btn-record" onclick="toggleRecording()" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-semibold tracking-wide transition-all flex items-center gap-2 shadow-md">
+            <span id="record-dot" class="w-2.5 h-2.5 rounded-full bg-red-600"></span>
+            <span id="record-text">Start Recording</span>
+          </button>
+          <div id="audio-playback-container" class="hidden flex items-center gap-3 w-full sm:w-auto">
+            <audio id="audio-player" controls class="h-8 max-w-[200px]"></audio>
+            <a id="btn-download" download="magic-voice-warmup.webm" class="px-3.5 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-400/20 text-xs font-medium transition-all">
+              Download Audio
+            </a>
+          </div>
+        </div>
+        <p class="text-[11px] text-slate-400">
+          Or simply use the <strong>Voice Memos</strong> app on your iPhone or <strong>Voice Recorder</strong> on Android.
+        </p>
+      </div>
+    </section>
+
+    <!-- How to Send on Preply -->
+    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
+      <div class="border-b border-slate-800 pb-3">
+        <h2 class="text-xs uppercase tracking-widest text-slate-400 font-semibold">Preply Instructions</h2>
+        <p class="text-lg font-serif text-slate-100 font-light mt-1">How to Send Your Audio on Preply</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+        <!-- Step 1 -->
+        <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 space-y-2">
+          <div class="w-7 h-7 rounded-lg bg-amber-400/10 text-amber-300 flex items-center justify-center font-mono font-bold">1</div>
+          <h4 class="font-semibold text-slate-200">Record Your Note</h4>
+          <p class="text-slate-400 leading-relaxed">
+            Record a 2-minute clip using your phone's voice recorder or the on-page recorder above. Keep it relaxed and spontaneous!
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 space-y-2">
+          <div class="w-7 h-7 rounded-lg bg-amber-400/10 text-amber-300 flex items-center justify-center font-mono font-bold">2</div>
+          <h4 class="font-semibold text-slate-200">Save the File</h4>
+          <p class="text-slate-400 leading-relaxed">
+            On iPhone, tap the three dots (<strong>...</strong>) on the voice memo and choose <em>"Save to Files"</em>. On Android, tap <em>Share</em> or <em>Save</em>.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 space-y-2">
+          <div class="w-7 h-7 rounded-lg bg-amber-400/10 text-amber-300 flex items-center justify-center font-mono font-bold">3</div>
+          <h4 class="font-semibold text-slate-200">Attach &amp; Send</h4>
+          <p class="text-slate-400 leading-relaxed">
+            Open our chat in Preply. Click the <strong>📎 Paperclip / Attachment</strong> icon at the bottom of the message box, select your audio, and hit send!
+          </p>
+        </div>
+      </div>
+
+      <div class="p-3.5 rounded-xl bg-amber-400/10 border border-amber-400/20 text-xs text-amber-200/90 flex items-center gap-2.5">
+        <span class="text-sm">💡</span>
+        <span>Please send your voice note at least a few hours before our lesson so I can prepare our feedback!</span>
+      </div>
+    </section>
+
+    <!-- Minimal Footer -->
+    <footer class="text-center text-xs text-slate-400 pt-6 border-t border-slate-900 font-light">
+      Speaking the Magic • A Personalized Journey in Themed Entertainment Vision
+    </footer>
+
+  </div>
+
+  <!-- Interactive Magical Particle System Script -->
+  <script>
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+
+    let particles = [];
+    let mouse = { x: null, y: null, radius: 100 };
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    window.addEventListener('mousemove', (e) => {
+      mouse.x = e.x;
+      mouse.y = e.y;
+    });
+
+    window.addEventListener('mouseleave', () => {
+      mouse.x = null;
+      mouse.y = null;
+    });
+
+    class Particle {
+      constructor() {
+        this.reset();
+      }
+
+      reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2.2 + 0.6;
+        this.speedX = (Math.random() - 0.5) * 0.4;
+        this.speedY = -Math.random() * 0.5 - 0.2; // Gentle upward drift
+        this.opacity = Math.random() * 0.6 + 0.2;
+        this.pulse = Math.random() * 0.02 + 0.005;
+        this.pulseDir = 1;
+        // Warm gold & starlight tones
+        const colors = ['#f6d365', '#ffeaa7', '#fda085', '#ffffff'];
+        this.color = colors[Math.floor(Math.random() * colors.length)];
+      }
+
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+
+        // Twinkle
+        this.opacity += this.pulse * this.pulseDir;
+        if (this.opacity > 0.85) this.pulseDir = -1;
+        if (this.opacity < 0.15) this.pulseDir = 1;
+
+        // Interactive mouse soft repel / swirl
+        if (mouse.x != null && mouse.y != null) {
+          const dx = mouse.x - this.x;
+          const dy = mouse.y - this.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          if (distance < mouse.radius) {
+            const force = (mouse.radius - distance) / mouse.radius;
+            this.x -= (dx / distance) * force * 1.5;
+            this.y -= (dy / distance) * force * 1.5;
+          }
+        }
+
+        // Loop boundaries
+        if (this.y < 0) this.y = canvas.height;
+        if (this.x < 0) this.x = canvas.width;
+        if (this.x > canvas.width) this.x = 0;
+      }
+
+      draw() {
+        ctx.save();
+        ctx.globalAlpha = this.opacity;
+        ctx.shadowBlur = this.size * 5;
+        ctx.shadowColor = this.color;
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    const particleCount = Math.min(window.innerWidth / 15, 65);
+    for (let i = 0; i < particleCount; i++) {
+      particles.push(new Particle());
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < particles.length; i++) {
+        particles[i].update();
+        particles[i].draw();
+      }
+      requestAnimationFrame(animate);
+    }
+    animate();
+
+    // In-Browser Audio Recorder Functionality
+    let mediaRecorder;
+    let audioChunks = [];
+    let isRecording = false;
+    let timerInterval;
+    let secondsRecorded = 0;
+
+    async function toggleRecording() {
+      const btn = document.getElementById('btn-record');
+      const dot = document.getElementById('record-dot');
+      const text = document.getElementById('record-text');
+      const timer = document.getElementById('recording-timer');
+      const playbackContainer = document.getElementById('audio-playback-container');
+
+      if (!isRecording) {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          mediaRecorder = new MediaRecorder(stream);
+          audioChunks = [];
+
+          mediaRecorder.ondataavailable = (e) => {
+            if (e.data.size > 0) audioChunks.push(e.data);
+          };
+
+          mediaRecorder.onstop = () => {
+            const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+            const audioUrl = URL.createObjectURL(audioBlob);
+            const player = document.getElementById('audio-player');
+            const downloadBtn = document.getElementById('btn-download');
+
+            player.src = audioUrl;
+            downloadBtn.href = audioUrl;
+            playbackContainer.classList.remove('hidden');
+          };
+
+          mediaRecorder.start();
+          isRecording = true;
+          text.innerText = "Stop Recording";
+          dot.classList.add('animate-ping');
+          timer.classList.remove('hidden');
+          secondsRecorded = 0;
+          timer.innerText = "00:00";
+
+          timerInterval = setInterval(() => {
+            secondsRecorded++;
+            const mins = String(Math.floor(secondsRecorded / 60)).padStart(2, '0');
+            const secs = String(secondsRecorded % 60).padStart(2, '0');
+            timer.innerText = `${mins}:${secs}`;
+          }, 1000);
+
+        } catch (err) {
+          alert("Microphone access is required to record directly on the page, or you can simply record on your phone!");
+        }
+      } else {
+        mediaRecorder.stop();
+        mediaRecorder.stream.getTracks().forEach(track => track.stop());
+        isRecording = false;
+        clearInterval(timerInterval);
+        text.innerText = "Record Again";
+        dot.classList.remove('animate-ping');
+      }
+    }
+  </script>
+</body>
+</html>
