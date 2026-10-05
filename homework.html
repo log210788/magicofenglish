@@ -193,10 +193,22 @@
                 </div>
                 <p class="text-[11px] text-fairy-muted">Significado: Atrae de forma natural la mirada y los pasos.</p>
               </div>
+
+              <!-- Feeling Word for Scene 1 -->
+              <div class="p-3 rounded-xl bg-amber-50/70 border border-amber-200/80 space-y-1">
+                <div class="flex items-center justify-between">
+                  <span class="flex items-center gap-1.5 font-medium text-fairy-gold text-sm">
+                    <i class="fa-solid fa-heart text-[11px] text-fairy-coral"></i>
+                    <strong>feeling: awe</strong>
+                  </span>
+                  <span class="pill-badge bg-amber-100/80 text-fairy-gold text-[10px] font-semibold">asombro, fascinación</span>
+                </div>
+                <p class="text-[11px] text-amber-900/80">Emoción: Sentir gran admiración y sorpresa ante la inmensa montaña.</p>
+              </div>
             </div>
           </div>
           <div class="p-2.5 rounded-xl bg-amber-50/60 border border-amber-200/50 text-[11px] text-amber-900 text-center font-medium">
-            ✨ Willys Butte guía a cada visitante.
+            ✨ Willys Butte evoca asombro (awe) y guía al visitante.
           </div>
         </div>
 
@@ -239,10 +251,22 @@
                 </div>
                 <p class="text-[11px] text-fairy-muted">Significado: Bloquea carreteras, autos y ruidos exteriores.</p>
               </div>
+
+              <!-- Feeling Word for Scene 2 -->
+              <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200/80 space-y-1">
+                <div class="flex items-center justify-between">
+                  <span class="flex items-center gap-1.5 font-medium text-fairy-sage text-sm">
+                    <i class="fa-solid fa-heart text-[11px] text-fairy-coral"></i>
+                    <strong>feeling: peaceful</strong>
+                  </span>
+                  <span class="pill-badge bg-emerald-100/80 text-fairy-sage text-[10px] font-semibold">en paz y a salvo</span>
+                </div>
+                <p class="text-[11px] text-emerald-900/80">Emoción: Sentirse en calma, protegido del ruido y estrés exterior.</p>
+              </div>
             </div>
           </div>
           <div class="p-2.5 rounded-xl bg-emerald-50/60 border border-emerald-200/50 text-[11px] text-emerald-900 text-center font-medium">
-            🛡️ El terraplén protege la ilusión mágica.
+            🛡️ El terraplén da tranquilidad (peaceful) al visitante.
           </div>
         </div>
 
@@ -285,11 +309,24 @@
                 </div>
                 <p class="text-[11px] text-fairy-muted">Significado: El espacio se ensancha de repente con asombro.</p>
               </div>
+
+              <!-- Feeling Word for Scene 3 -->
+              <div class="p-3 rounded-xl bg-orange-50/70 border border-orange-200/80 space-y-1">
+                <div class="flex items-center justify-between">
+                  <span class="flex items-center gap-1.5 font-medium text-fairy-coral text-sm">
+                    <i class="fa-solid fa-heart text-[11px] text-fairy-coral"></i>
+                    <strong>feeling: curious</strong>
+                  </span>
+                  <span class="pill-badge bg-orange-100/80 text-fairy-coral text-[10px] font-semibold">curioso por explorar</span>
+                </div>
+                <p class="text-[11px] text-orange-900/80">Emoción: Deseo emocionante de cruzar y descubrir lo que hay al otro lado.</p>
+              </div>
             </div>
           </div>
           <div class="p-2.5 rounded-xl bg-orange-50/60 border border-orange-200/50 text-[11px] text-orange-900 text-center font-medium">
-            🚪 El arco de madera enmarca el nuevo mundo.
+            🚪 El arco despierta la curiosidad (curious) por descubrir.
           </div>
+        </div>
         </div>
 
       </div>
@@ -311,7 +348,7 @@
 
       <div class="space-y-5">
         <p class="text-xs sm:text-sm text-fairy-muted leading-relaxed">
-          <strong>¿Cómo jugar?</strong> Mira las 9 fichas en la bandeja. Haz clic en el botón de la foto a la que pertenece (<strong class="text-fairy-gold">1. Butte</strong>, <strong class="text-fairy-sage">2. Berm</strong> o <strong class="text-fairy-coral">3. Portal</strong>). Si quieres corregir una palabra, solo haz clic sobre ella para devolverla a la bandeja.
+          <strong>¿Cómo jugar?</strong> Mira las 12 fichas en la bandeja (arquitectura + emoción). Haz clic en el botón de la foto a la que pertenece (<strong class="text-fairy-gold">1. Butte</strong>, <strong class="text-fairy-sage">2. Berm</strong> o <strong class="text-fairy-coral">3. Portal</strong>). Si quieres corregir una palabra, haz clic sobre ella para devolverla a la bandeja.
         </p>
 
         <!-- Unassigned Word Bank Tray -->
@@ -321,7 +358,7 @@
               <i class="fa-solid fa-box-archive text-fairy-gold"></i>
               Bandeja de Palabras:
             </span>
-            <span id="pool-counter" class="pill-badge bg-amber-100/70 text-fairy-gold text-xs font-semibold">9 palabras por asignar</span>
+            <span id="pool-counter" class="pill-badge bg-amber-100/70 text-fairy-gold text-xs font-semibold">12 palabras por asignar</span>
           </div>
           <div id="word-pool" class="flex flex-wrap gap-2.5 pt-1">
             <!-- Dynamically populated via JS -->
@@ -340,8 +377,8 @@
                 <strong class="text-xs text-fairy-charcoal">The Landmark</strong>
               </div>
             </div>
-            <div id="bucket-pic1" class="min-h-[130px] p-2.5 rounded-xl bg-amber-50/40 border border-dashed border-amber-300/70 flex flex-col gap-2">
-              <span class="text-xs text-amber-600/70 italic text-center my-auto empty-hint">Coloca aquí 3 palabras de la Foto 1</span>
+            <div id="bucket-pic1" class="min-h-[140px] p-2.5 rounded-xl bg-amber-50/40 border border-dashed border-amber-300/70 flex flex-col gap-2">
+              <span class="text-xs text-amber-600/70 italic text-center my-auto empty-hint">Coloca aquí 4 palabras de la Foto 1</span>
             </div>
           </div>
 
@@ -354,8 +391,8 @@
                 <strong class="text-xs text-fairy-charcoal">The Rock Barrier</strong>
               </div>
             </div>
-            <div id="bucket-pic2" class="min-h-[130px] p-2.5 rounded-xl bg-emerald-50/40 border border-dashed border-emerald-300/70 flex flex-col gap-2">
-              <span class="text-xs text-emerald-600/70 italic text-center my-auto empty-hint">Coloca aquí 3 palabras de la Foto 2</span>
+            <div id="bucket-pic2" class="min-h-[140px] p-2.5 rounded-xl bg-emerald-50/40 border border-dashed border-emerald-300/70 flex flex-col gap-2">
+              <span class="text-xs text-emerald-600/70 italic text-center my-auto empty-hint">Coloca aquí 4 palabras de la Foto 2</span>
             </div>
           </div>
 
@@ -368,8 +405,8 @@
                 <strong class="text-xs text-fairy-charcoal">The Timber Arch</strong>
               </div>
             </div>
-            <div id="bucket-pic3" class="min-h-[130px] p-2.5 rounded-xl bg-orange-50/40 border border-dashed border-orange-300/70 flex flex-col gap-2">
-              <span class="text-xs text-orange-600/70 italic text-center my-auto empty-hint">Coloca aquí 3 palabras de la Foto 3</span>
+            <div id="bucket-pic3" class="min-h-[140px] p-2.5 rounded-xl bg-orange-50/40 border border-dashed border-orange-300/70 flex flex-col gap-2">
+              <span class="text-xs text-orange-600/70 italic text-center my-auto empty-hint">Coloca aquí 4 palabras de la Foto 3</span>
             </div>
           </div>
 
@@ -386,7 +423,7 @@
               <i class="fa-solid fa-rotate-left mr-1"></i> Reiniciar
             </button>
           </div>
-          <span id="game-status" class="text-xs text-fairy-muted font-medium">Asigna las 9 palabras antes de comprobar.</span>
+          <span id="game-status" class="text-xs text-fairy-muted font-medium">Asigna las 12 palabras antes de comprobar.</span>
         </div>
 
         <!-- Result Box -->
@@ -401,7 +438,7 @@
       <div class="flex flex-wrap items-center justify-between gap-3 border-b border-fairy-border/70 pb-3">
         <div>
           <span class="text-xs uppercase tracking-wider text-fairy-gold font-semibold block">Paso 3 • Preguntas con Desplegables</span>
-          <h2 class="text-2xl md:text-3xl font-serif text-fairy-charcoal font-medium mt-0.5">Completa las Frases con los Menús Desplegables</h2>
+          <h2 class="text-2xl md:text-3xl font-serif text-fairy-charcoal font-medium mt-0.5">Completa las Frases con Arquitectura y Emoción</h2>
         </div>
         <span class="pill-badge bg-amber-50 text-fairy-gold text-xs border border-amber-200/60">
           <i class="fa-solid fa-pen-nib"></i> Práctica de Frases
@@ -410,7 +447,7 @@
 
       <div class="space-y-6">
         <p class="text-xs sm:text-sm text-fairy-muted leading-relaxed">
-          Mira cada foto y elige la palabra arquitectónica correcta en las cajas desplegables. ¡Verás cómo cobran vida tus frases!
+          Mira cada foto y completa las frases con las palabras arquitectónicas y la emoción que siente el visitante.
         </p>
 
         <!-- Question 1: Willys Butte -->
@@ -426,34 +463,40 @@
           <!-- Sentence with Styled Dropdowns -->
           <div class="p-4 rounded-2xl bg-white border border-fairy-borderLight text-fairy-charcoal text-sm md:text-base leading-loose font-serif">
             "At the end of the road, you see 
-            <select id="q1_landmark" onchange="updateLiveSummary()" class="p-1.5 px-3 mx-1 rounded-xl bg-amber-50 border border-amber-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-gold">
-              <option value="">[elige...]</option>
+            <select id="q1_landmark" onchange="handleSelectChange(this)" class="p-1.5 px-3 mx-1 rounded-xl bg-amber-50 border border-amber-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-gold">
+              <option value="" selected>[choose / elige...]</option>
               <option value="Willys Butte">Willys Butte</option>
               <option value="a busy highway">a busy highway</option>
             </select>. 
             It is 
-            <select id="q1_scale" onchange="updateLiveSummary()" class="p-1.5 px-3 mx-1 rounded-xl bg-amber-50 border border-amber-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-gold">
-              <option value="">[elige...]</option>
+            <select id="q1_scale" onchange="handleSelectChange(this)" class="p-1.5 px-3 mx-1 rounded-xl bg-amber-50 border border-amber-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-gold">
+              <option value="" selected>[choose / elige...]</option>
               <option value="monumental">monumental</option>
               <option value="tiny">tiny</option>
             </select> 
             and 
-            <select id="q1_sun" onchange="updateLiveSummary()" class="p-1.5 px-3 mx-1 rounded-xl bg-amber-50 border border-amber-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-gold">
-              <option value="">[elige...]</option>
+            <select id="q1_sun" onchange="handleSelectChange(this)" class="p-1.5 px-3 mx-1 rounded-xl bg-amber-50 border border-amber-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-gold">
+              <option value="" selected>[choose / elige...]</option>
               <option value="flat">flat</option>
               <option value="sun-bleached">sun-bleached</option>
             </select>. 
-            It 
-            <select id="q1_action" onchange="updateLiveSummary()" class="p-1.5 px-3 mx-1 rounded-xl bg-amber-50 border border-amber-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-gold">
-              <option value="">[elige...]</option>
+            Guests feel 
+            <select id="q1_feeling" onchange="handleSelectChange(this)" class="p-1.5 px-3 mx-1 rounded-xl bg-amber-50 border border-amber-300 text-fairy-gold font-sans text-xs font-semibold cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-gold">
+              <option value="" selected>[choose feeling / emoción...]</option>
+              <option value="awe">awe (asombro)</option>
+              <option value="boredom">boredom (aburrimiento)</option>
+            </select> 
+            as it 
+            <select id="q1_action" onchange="handleSelectChange(this)" class="p-1.5 px-3 mx-1 rounded-xl bg-amber-50 border border-amber-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-gold">
+              <option value="" selected>[choose / elige...]</option>
               <option value="draws">draws</option>
               <option value="stops">stops</option>
             </select> 
-            guests forward!"
+            them forward!"
           </div>
 
           <div class="p-3 rounded-xl bg-amber-50/70 border border-amber-200/50 text-xs text-amber-900 leading-relaxed font-sans">
-            <strong>Traducción:</strong> "Al final del camino, ves [Willys Butte]. Es [monumental] y [blanqueado por el sol]. ¡[Atrae] a los visitantes hacia adelante!"
+            <strong>Traducción:</strong> "Al final del camino, ves [Willys Butte]. Es [monumental] y [blanqueado por el sol]. ¡Los visitantes sienten [asombro] mientras los [atrae] hacia adelante!"
           </div>
         </div>
 
@@ -470,22 +513,28 @@
           <!-- Sentence with Styled Dropdowns -->
           <div class="p-4 rounded-2xl bg-white border border-fairy-borderLight text-fairy-charcoal text-sm md:text-base leading-loose font-serif">
             "Around the park, we build a 
-            <select id="q2_barrier" onchange="updateLiveSummary()" class="p-1.5 px-3 mx-1 rounded-xl bg-emerald-50 border border-emerald-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-sage">
-              <option value="">[elige...]</option>
+            <select id="q2_barrier" onchange="handleSelectChange(this)" class="p-1.5 px-3 mx-1 rounded-xl bg-emerald-50 border border-emerald-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-sage">
+              <option value="" selected>[choose / elige...]</option>
               <option value="glass window">glass window</option>
               <option value="sculpted rock berm">sculpted rock berm</option>
             </select>. 
             It 
-            <select id="q2_protect" onchange="updateLiveSummary()" class="p-1.5 px-3 mx-1 rounded-xl bg-emerald-50 border border-emerald-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-sage">
-              <option value="">[elige...]</option>
+            <select id="q2_protect" onchange="handleSelectChange(this)" class="p-1.5 px-3 mx-1 rounded-xl bg-emerald-50 border border-emerald-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-sage">
+              <option value="" selected>[choose / elige...]</option>
               <option value="hides">hides</option>
               <option value="shows">shows</option>
             </select> 
-            the ugly highway outside and protects our story."
+            the ugly highway outside, so guests feel 
+            <select id="q2_feeling" onchange="handleSelectChange(this)" class="p-1.5 px-3 mx-1 rounded-xl bg-emerald-50 border border-emerald-300 text-fairy-sage font-sans text-xs font-semibold cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-sage">
+              <option value="" selected>[choose feeling / emoción...]</option>
+              <option value="peaceful">peaceful (en paz)</option>
+              <option value="stressed">stressed (estresados)</option>
+            </select> 
+            and safe inside our story."
           </div>
 
           <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200/50 text-xs text-emerald-900 leading-relaxed font-sans">
-            <strong>Traducción:</strong> "Alrededor del parque, construimos un [terraplén de roca esculpida]. [Oculta] la fea autopista exterior y protege nuestra historia."
+            <strong>Traducción:</strong> "Alrededor del parque, construimos un [terraplén de roca esculpida]. [Oculta] la fea autopista exterior, para que los visitantes se sientan [en paz] y protegidos dentro de nuestra historia."
           </div>
         </div>
 
@@ -502,22 +551,28 @@
           <!-- Sentence with Styled Dropdowns -->
           <div class="p-4 rounded-2xl bg-white border border-fairy-borderLight text-fairy-charcoal text-sm md:text-base leading-loose font-serif">
             "Guests walk through a rustic 
-            <select id="q3_material" onchange="updateLiveSummary()" class="p-1.5 px-3 mx-1 rounded-xl bg-orange-50 border border-orange-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-coral">
-              <option value="">[elige...]</option>
+            <select id="q3_material" onchange="handleSelectChange(this)" class="p-1.5 px-3 mx-1 rounded-xl bg-orange-50 border border-orange-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-coral">
+              <option value="" selected>[choose / elige...]</option>
               <option value="weathered timber">weathered timber</option>
               <option value="plastic curtain">plastic curtain</option>
             </select> 
             arch. Suddenly, the canyon 
-            <select id="q3_reveal" onchange="updateLiveSummary()" class="p-1.5 px-3 mx-1 rounded-xl bg-orange-50 border border-orange-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-coral">
-              <option value="">[elige...]</option>
+            <select id="q3_reveal" onchange="handleSelectChange(this)" class="p-1.5 px-3 mx-1 rounded-xl bg-orange-50 border border-orange-300 text-fairy-charcoal font-sans text-xs font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-coral">
+              <option value="" selected>[choose / elige...]</option>
               <option value="closes down">closes down</option>
               <option value="opens up">opens up</option>
             </select> 
-            dramatically!"
+            dramatically, and they feel 
+            <select id="q3_feeling" onchange="handleSelectChange(this)" class="p-1.5 px-3 mx-1 rounded-xl bg-orange-50 border border-orange-300 text-fairy-coral font-sans text-xs font-semibold cursor-pointer focus:outline-none focus:ring-2 focus:ring-fairy-coral">
+              <option value="" selected>[choose feeling / emoción...]</option>
+              <option value="curious">curious (curiosos)</option>
+              <option value="scared">scared (asustados)</option>
+            </select> 
+            to explore!"
           </div>
 
           <div class="p-3 rounded-xl bg-orange-50/70 border border-orange-200/50 text-xs text-orange-900 leading-relaxed font-sans">
-            <strong>Traducción:</strong> "Los visitantes cruzan un arco rústico de [madera envejecida]. De repente, ¡el cañón [se abre] dramáticamente!"
+            <strong>Traducción:</strong> "Los visitantes cruzan un arco rústico de [madera envejecida]. De repente, ¡el cañón [se abre] dramáticamente y se sienten [curiosos] por explorar!"
           </div>
         </div>
 
@@ -566,13 +621,13 @@
           </div>
 
           <p id="live-final-script" class="font-serif text-lg sm:text-xl text-fairy-charcoal italic leading-relaxed">
-            "At the end of the road, you see Willys Butte. It is monumental and sun-bleached. It draws guests forward. Around the park, we build a sculpted rock berm. It hides the ugly highway outside and protects our story. Guests walk through a rustic weathered timber arch. Suddenly, the canyon opens up dramatically!"
+            "At the end of the road, you see Willys Butte. It is monumental and sun-bleached. Guests feel awe as it draws them forward! Around the park, we build a sculpted rock berm. It hides the ugly highway outside, so guests feel peaceful and safe. Guests walk through a rustic weathered timber arch. Suddenly, the canyon opens up dramatically, and they feel curious to explore!"
           </p>
 
           <div class="p-4 rounded-xl bg-amber-50/70 border border-amber-200/60 text-xs text-amber-950 leading-relaxed space-y-1">
             <span class="font-semibold block text-fairy-gold">Guía en español para leer con total tranquilidad:</span>
             <p>
-              "Al final del camino, ves Willys Butte. Es monumental y soleado. Atrae a los visitantes hacia adelante. Alrededor del parque, construimos un terraplén de roca esculpida. Oculta la fea autopista exterior y protege nuestra historia. Los visitantes cruzan un arco rústico de madera envejecida. De repente, ¡el cañón se abre dramáticamente!"
+              "Al final del camino, ves Willys Butte. Es monumental y soleado. ¡Los visitantes sienten asombro mientras los atrae hacia adelante! Alrededor del parque, construimos un terraplén de roca esculpida. Oculta la fea autopista para que los visitantes se sientan en paz y protegidos. Los visitantes cruzan un arco rústico de madera envejecida. De repente, ¡el cañón se abre dramáticamente y se sienten curiosos por explorar!"
             </p>
           </div>
         </div>
@@ -637,12 +692,15 @@
       { id: 'w1', text: 'monumental', es: 'monumental, colosal', target: 'pic1' },
       { id: 'w2', text: 'sun-bleached', es: 'bañado por sol', target: 'pic1' },
       { id: 'w3', text: 'draws guests', es: 'atrae visitantes', target: 'pic1' },
-      { id: 'w4', text: 'perimeter berm', es: 'terraplén perimetral', target: 'pic2' },
-      { id: 'w5', text: 'sculpted rockwork', es: 'roca esculpida', target: 'pic2' },
-      { id: 'w6', text: 'hides the highway', es: 'oculta la autopista', target: 'pic2' },
-      { id: 'w7', text: 'weathered timber', es: 'madera envejecida', target: 'pic3' },
-      { id: 'w8', text: 'canyon portal', es: 'portal de entrada', target: 'pic3' },
-      { id: 'w9', text: 'opens up', es: 'se abre de golpe', target: 'pic3' }
+      { id: 'w4', text: 'feeling: awe', es: 'emoción: asombro', target: 'pic1' },
+      { id: 'w5', text: 'perimeter berm', es: 'terraplén perimetral', target: 'pic2' },
+      { id: 'w6', text: 'sculpted rockwork', es: 'roca esculpida', target: 'pic2' },
+      { id: 'w7', text: 'hides the highway', es: 'oculta la autopista', target: 'pic2' },
+      { id: 'w8', text: 'feeling: peaceful', es: 'emoción: en paz', target: 'pic2' },
+      { id: 'w9', text: 'weathered timber', es: 'madera envejecida', target: 'pic3' },
+      { id: 'w10', text: 'canyon portal', es: 'portal de entrada', target: 'pic3' },
+      { id: 'w11', text: 'opens up', es: 'se abre de golpe', target: 'pic3' },
+      { id: 'w12', text: 'feeling: curious', es: 'emoción: curiosidad', target: 'pic3' }
     ];
 
     let wordLocations = {};
@@ -722,13 +780,13 @@
 
       // Update empty hints
       if (pic1Count === 0) {
-        pic1El.innerHTML = '<span class="text-xs text-amber-600/70 italic text-center my-auto empty-hint">Coloca aquí 3 palabras de la Foto 1</span>';
+        pic1El.innerHTML = '<span class="text-xs text-amber-600/70 italic text-center my-auto empty-hint">Coloca aquí 4 palabras de la Foto 1</span>';
       }
       if (pic2Count === 0) {
-        pic2El.innerHTML = '<span class="text-xs text-emerald-600/70 italic text-center my-auto empty-hint">Coloca aquí 3 palabras de la Foto 2</span>';
+        pic2El.innerHTML = '<span class="text-xs text-emerald-600/70 italic text-center my-auto empty-hint">Coloca aquí 4 palabras de la Foto 2</span>';
       }
       if (pic3Count === 0) {
-        pic3El.innerHTML = '<span class="text-xs text-orange-600/70 italic text-center my-auto empty-hint">Coloca aquí 3 palabras de la Foto 3</span>';
+        pic3El.innerHTML = '<span class="text-xs text-orange-600/70 italic text-center my-auto empty-hint">Coloca aquí 4 palabras de la Foto 3</span>';
       }
 
       // Update pool counter
@@ -757,7 +815,7 @@
     function resetGame() {
       initGame();
       document.getElementById('game-result-box').classList.add('hidden');
-      document.getElementById('game-status').innerText = 'Asigna las 9 palabras antes de comprobar.';
+      document.getElementById('game-status').innerText = 'Asigna las 12 palabras antes de comprobar.';
       document.getElementById('game-status').className = 'text-xs text-fairy-muted font-medium';
     }
 
@@ -778,11 +836,11 @@
       const resBox = document.getElementById('game-result-box');
       resBox.classList.remove('hidden');
 
-      if (correctCount === 9) {
+      if (correctCount === 12) {
         resBox.className = 'p-4 rounded-2xl border border-emerald-300 bg-emerald-50 text-emerald-950 text-xs space-y-1';
         resBox.innerHTML = `
-          <strong class="text-fairy-sage text-sm block font-serif">🎉 ¡Maravilloso, Alessia! 9 de 9 Asociaciones Correctas</strong>
-          <p class="text-xs text-emerald-800">Has identificado con precisión qué palabras describen a Willys Butte, cuáles al Perimeter Berm y cuáles al Canyon Portal.</p>
+          <strong class="text-fairy-sage text-sm block font-serif">🎉 ¡Maravilloso, Alessia! 12 de 12 Asociaciones Correctas</strong>
+          <p class="text-xs text-emerald-800">Has identificado con precisión qué palabras y emociones corresponden a Willys Butte (asombro), al Perimeter Berm (paz) y al Canyon Portal (curiosidad).</p>
         `;
         document.getElementById('game-status').innerText = '✓ ¡Juego completado con éxito!';
         document.getElementById('game-status').className = 'text-xs text-fairy-sage font-semibold';
@@ -790,10 +848,10 @@
       } else {
         resBox.className = 'p-4 rounded-2xl border border-orange-300 bg-orange-50 text-orange-950 text-xs space-y-1';
         resBox.innerHTML = `
-          <strong class="text-fairy-coral text-sm block font-serif">⚠ ${correctCount} de 9 Correctas</strong>
+          <strong class="text-fairy-coral text-sm block font-serif">⚠ ${correctCount} de 12 Correctas</strong>
           <p class="text-xs text-orange-800">Casi lo logras. Revisa el Paso 1 arriba: recuerda que "timber" es madera para el arco del portal, "berm" es el terraplén de roca exterior, y "monumental" es la montaña.</p>
         `;
-        document.getElementById('game-status').innerText = `${correctCount}/9 correctas. ¡Revisa y prueba otra vez!`;
+        document.getElementById('game-status').innerText = `${correctCount}/12 correctas. ¡Revisa y prueba otra vez!`;
         document.getElementById('game-status').className = 'text-xs text-fairy-coral font-semibold';
       }
     }
@@ -805,31 +863,37 @@
       q1_landmark: 'Willys Butte',
       q1_scale: 'monumental',
       q1_sun: 'sun-bleached',
+      q1_feeling: 'awe',
       q1_action: 'draws',
       q2_barrier: 'sculpted rock berm',
       q2_protect: 'hides',
+      q2_feeling: 'peaceful',
       q3_material: 'weathered timber',
-      q3_reveal: 'opens up'
+      q3_reveal: 'opens up',
+      q3_feeling: 'curious'
     };
 
     function updateLiveSummary() {
       const q1L = document.getElementById('q1_landmark').value || 'Willys Butte';
       const q1S = document.getElementById('q1_scale').value || 'monumental';
       const q1Sun = document.getElementById('q1_sun').value || 'sun-bleached';
+      const q1F = document.getElementById('q1_feeling').value || 'awe';
       const q1A = document.getElementById('q1_action').value || 'draws';
 
       const q2B = document.getElementById('q2_barrier').value || 'sculpted rock berm';
       const q2P = document.getElementById('q2_protect').value || 'hides';
+      const q2F = document.getElementById('q2_feeling').value || 'peaceful';
 
       const q3M = document.getElementById('q3_material').value || 'weathered timber';
       const q3R = document.getElementById('q3_reveal').value || 'opens up';
+      const q3F = document.getElementById('q3_feeling').value || 'curious';
 
-      const fullScript = `"At the end of the road, you see ${q1L}. It is ${q1S} and ${q1Sun}. It ${q1A} guests forward. Around the park, we build a ${q2B}. It ${q2P} the ugly highway outside and protects our story. Guests walk through a rustic ${q3M} arch. Suddenly, the canyon ${q3R} dramatically!"`;
+      const fullScript = `"At the end of the road, you see ${q1L}. It is ${q1S} and ${q1Sun}. Guests feel ${q1F} as it ${q1A} them forward! Around the park, we build a ${q2B}. It ${q2P} the ugly highway outside, so guests feel ${q2F} and safe inside our story. Guests walk through a rustic ${q3M} arch. Suddenly, the canyon ${q3R} dramatically, and they feel ${q3F} to explore!"`;
       document.getElementById('live-final-script').innerText = fullScript;
     }
 
     function checkSentenceQuestions() {
-      let total = 8;
+      let total = 11;
       let score = 0;
       let allFilled = true;
 
@@ -858,10 +922,10 @@
       if (score === total) {
         resBox.className = 'p-4 rounded-2xl border border-emerald-300 bg-emerald-50 text-emerald-950 text-xs space-y-1';
         resBox.innerHTML = `
-          <strong class="text-fairy-sage text-sm block font-serif">🎉 ¡Impecable! 8 de 8 Desplegables Correctos</strong>
-          <p class="text-xs text-emerald-800">Tus 3 frases están completas con un inglés arquitectónico elegante y profesional. Ahora ve al Paso 4 abajo para leerlas y grabar tu nota de voz.</p>
+          <strong class="text-fairy-sage text-sm block font-serif">🎉 ¡Impecable! 11 de 11 Desplegables Correctos</strong>
+          <p class="text-xs text-emerald-800">Tus 3 frases están completas con un inglés arquitectónico elegante y emocional. Ahora ve al Paso 4 abajo para leerlas y grabar tu nota de voz.</p>
         `;
-        document.getElementById('questions-status').innerText = '✓ ¡8/8 Correcto!';
+        document.getElementById('questions-status').innerText = '✓ ¡11/11 Correcto!';
         document.getElementById('questions-status').className = 'text-xs text-fairy-sage font-semibold';
         launchConfetti();
       } else {
@@ -870,7 +934,7 @@
           <strong class="text-fairy-coral text-sm block font-serif">⚠ ${score} de ${total} Correctos</strong>
           <p class="text-xs text-orange-800">Los desplegables resaltados en rojo necesitan un pequeño ajuste. Revisa las palabras del Paso 1 y cámbialos.</p>
         `;
-        document.getElementById('questions-status').innerText = `${score}/8 correctos. ¡Corrige los rojos!`;
+        document.getElementById('questions-status').innerText = `${score}/${total} correctos. ¡Corrige los rojos!`;
         document.getElementById('questions-status').className = 'text-xs text-fairy-coral font-semibold';
       }
 
@@ -957,11 +1021,14 @@
       document.getElementById('q1_landmark').value = 'Willys Butte';
       document.getElementById('q1_scale').value = 'monumental';
       document.getElementById('q1_sun').value = 'sun-bleached';
+      document.getElementById('q1_feeling').value = 'awe';
       document.getElementById('q1_action').value = 'draws';
       document.getElementById('q2_barrier').value = 'sculpted rock berm';
       document.getElementById('q2_protect').value = 'hides';
+      document.getElementById('q2_feeling').value = 'peaceful';
       document.getElementById('q3_material').value = 'weathered timber';
       document.getElementById('q3_reveal').value = 'opens up';
+      document.getElementById('q3_feeling').value = 'curious';
       updateLiveSummary();
     };
   </script>
