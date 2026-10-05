@@ -56,19 +56,70 @@ In **Kevin P. Rafferty’s *Magic Journey: My Fantastical Walt Disney Imagineeri
 4. **Sightline Intrusion** (`/ˈsaɪt.laɪn ɪnˈtruː.ʒən/`) — Any unwanted visual break (parking lots, power lines, highway traffic) visible inside the themed land.
    * *Example:* *"We raised the rockwork by ten meters to eliminate sightline intrusion from the freeway."*
 
-#### 2. Plug-and-Play Imagineering Sentence Frames
-* **Frame 1 (The Vision):** *"Our goal here is total **placemaking**—transporting the guest out of reality into a living story."*
-* **Frame 2 (The Spatial Anchor):** *"At the end of this main corridor, we position an iconic **Weenie** to naturally guide guest circulation."*
-* **Frame 3 (Immersion Protection):** *"To prevent any **sightline intrusion**, we wrap the perimeter with a landscaped **berm**."*
+#### 2. The Describing Words Bank for Architects
+To express spatial scale, materials, and mood, Alessia must move beyond generic adjectives (*"big"*, *"old"*, *"rocky"*) into authentic Imagineering descriptive language:
 
-#### 3. Step-by-Step 50-Minute Lesson Plan
+* **Scale & Presence Words:**
+  * `monumental` (`/ˌmɑː.njəˈmen.t̬əl/`) — Colossal in scale and historic significance.
+  * `towering` (`/ˈtaʊ.ɚ.ɪŋ/`) — Reaching high into the vertical sky.
+  * `soaring` (`/ˈsɔːr.ɪŋ/`) — Rising gracefully above the horizon.
+  * `imposing` (`/ɪmˈpoʊ.zɪŋ/`) — Commanding respect and attention by size and stance.
+  * `sprawling` (`/ˈsprɑː.lɪŋ/`) — Extending across a vast horizontal landscape.
+  * `cavernous` (`/ˈkæv.ɚ.nəs/`) — Vast, deep, and hollow like an immense cave.
+
+* **Texture, Rockwork & Material Words:**
+  * `striated` (`/ˈstraɪ.eɪ.t̬ɪd/`) — Marked with distinct geological horizontal stripes and layers.
+  * `weathered` (`/ˈweð.ɚd/`) — Aged and seasoned by exposure to wind, rain, and sun.
+  * `sun-bleached` (`/ˈsʌn.bliːtʃt/`) — Lightened and dried out by intense desert sunlight.
+  * `rusticated` (`/ˈrʌs.tɪ.keɪ.t̬ɪd/`) — Fashioned with rough, unfinished, heavy stone masonry.
+  * `jagged / craggy` (`/ˈdʒæɡ.ɪd/`, `/ˈkræɡ.i/`) — Sharp, rugged, and irregularly contoured rock faces.
+  * `sculpted` (`/ˈskʌlp.tɪd/`) — Artfully shaped and contoured by craftsman hands.
+
+* **Atmosphere, Light & Mood Words:**
+  * `sun-drenched` (`/ˈsʌn.drentʃt/`) — Flooded with warm, intense golden light.
+  * `amber-hued` (`/ˈæm.bɚ.hjuːd/`) — Glowing with rich golden-orange desert tones.
+  * `shadow-drenched` (`/ˈʃæd.oʊ.drentʃt/`) — Cast in deep, atmospheric contrast.
+  * `luminous` (`/ˈluː.mə.nəs/`) — Emitting a soft, radiant glow.
+  * `dusk-kissed` (`/dʌsk kɪst/`) — Touched by the twilight transition between day and night.
+  * `neon-bathed` (`/ˈniː.ɑːn beɪðd/`) — Illuminated by glowing mid-century route signs.
+
+* **Spatial Movement Verbs (What Architecture Does):**
+  * `commands` — Dominates the space with authority (*"The peak commands the valley"*).
+  * `anchors` — Serves as the stable focal foundation (*"Willys Butte anchors the sightline"*).
+  * `draws` — Naturally attracts and pulls human sightlines forward.
+  * `frames` — Creates an architectural border around a distant vista.
+  * `isolates` — Protects the internal world from outside distractions.
+  * `unfolds` — Gradually reveals itself as the guest walks forward.
+
+#### 3. The 4 Modular Architectural Sentence Formulas
+These four structural scaffolds give Alessia immediate fluency to construct executive descriptions:
+
+* **Formula A (The Sightline Magnet / Weenie):**
+  > `[Spatial Starter] + [Architectural Element] + [Action Verb] + as a [Scale Adjective + Texture Adjective] beacon, naturally [Circulation Verb] + [Guest Effect].`
+  > *Model:* *"Rising at the end of the central vista, Willys Butte stands as a monumental, sun-bleached beacon, naturally drawing guest sightlines forward into the land."*
+
+* **Formula B (Immersion Defense / The Berm):**
+  > `In order to eliminate [Sightline Intrusion], we construct a [Dimension] [Texture/Scale Adjectives] berm, which completely isolates [The Themed Land] from [The Real World].`
+  > *Model:* *"In order to eliminate sightline intrusion from the freeway, we construct a 12-meter sculpted, striated rockwork berm, which completely isolates Radiator Springs from the outside city."*
+
+* **Formula C (Sensory Threshold / Portal Transition):**
+  > `As guests pass beneath [Architectural Gateway], the space [dramatically expands / compresses], transitioning from [Atmosphere A] into [Atmosphere B].`
+  > *Model:* *"As guests pass beneath the rustic timber entry portal, the space dramatically expands, transitioning from the busy arrival plaza into an amber-hued, sun-drenched canyon."*
+
+* **Formula D (The 3-Act Attraction Architecture):**
+  > `In Act 1, we decompress guests with [Scenic Outdoor Activity], before transitioning into Act 2's [Theatrical Indoor Dark Ride], which culminates in Act 3 with [Climactic Kinetic Payoff].`
+  > *Model:* *"In Act 1, we decompress guests with a gentle canyon cruise, before transitioning into Act 2's show-controlled dark ride with Audio-Animatronics, which culminates in Act 3 with a thrilling 45mph desert race!"*
+
+#### 4. Step-by-Step 50-Minute Lesson Plan & In-Class Drills
 * **00:00–07:00 (Warm-Up):** Discuss: *"Alessia, Kevin Rafferty says theme parks must take guests 'to another place in another time.' When you enter a theme park, what is the very first detail that tells your brain: 'I am no longer in the real world'?"*
-* **07:00–18:00 (Concept Deep Dive):** Read Kevin Rafferty's quote on building traditional berms in Chapter 18. Contrast a "berm-less" cheap mall with an authentic Imagineering realm. Introduce *Placemaking*, *The Weenie*, and *Perimeter Berm*.
-* **18:00–30:00 (Controlled Practice):** "I Do, We Do, You Do" drill with the sentence frames. Have Alessia substitute different visual anchors (castle, mountain, lighthouse, ancient temple).
+* **07:00–18:00 (Concept & Word Bank Intro):** Introduce the 4 Core Imagineering Terms and drill the Describing Words Bank (Scale, Texture, Atmosphere).
+* **18:00–30:00 (Sentence Structure Drills):**
+  * *Drill 1 (Adjective Upgrade):* Teacher says flat sentence: *"There is a big mountain at the end of the road."* Alessia upgrades using Formula A and 2 descriptive words: *"Rising at the end of the corridor, Willys Butte commands the horizon as a towering, striated landmark..."*
+  * *Drill 2 (Berm Defense):* Teacher prompts: *"Why do we need this dirt mound?"* Alessia replies using Formula B: *"In order to eliminate sightline intrusion..."*
 * **30:00–45:00 (Simulated Design Crit):** You play Marty Sklar (Executive Creative Director):
-  * *Prompt:* *"Alessia, we have an 8-acre plot next to an ugly highway. Walk me through your master plan. How do you protect our guests' suspension of disbelief and where are you pulling their eyes?"*
-  * *Goal:* Alessia presents for 90 seconds using *placemaking*, *berm*, and *Weenie*.
-* **45:00–50:00 (Recast Feedback & Assignment):** Recast 2 phrases. Assign Milestone 1 Homework in `homework.html`.
+  * *Prompt:* *"Alessia, we have an 8-acre site right next to an ugly highway in Anaheim. Walk me through your master plan. How do you protect guest immersion and where do you guide their eyes? Use your describing words! You have 90 seconds."*
+  * *Goal:* Alessia presents for 90 seconds using Formulas A, B, and D without apologizing for her English.
+* **45:00–50:00 (Recast Feedback & Assignment):** Recast 2 phrases in the Preply chat. Assign Milestone 1 in `homework.html`.
 
 ---
 

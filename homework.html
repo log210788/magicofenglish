@@ -43,7 +43,7 @@
       z-index: 0;
     }
     .glass-card {
-      background: rgba(18, 24, 36, 0.86);
+      background: rgba(18, 24, 36, 0.88);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       border: 1px solid rgba(246, 211, 101, 0.18);
@@ -55,6 +55,17 @@
     }
     .text-glow {
       text-shadow: 0 0 24px rgba(246, 211, 101, 0.38);
+    }
+    .word-chip {
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s ease-in-out;
+    }
+    .word-chip:hover {
+      transform: translateY(-1px);
+    }
+    .word-chip:active {
+      transform: scale(0.96);
     }
   </style>
 </head>
@@ -77,7 +88,7 @@
       </a>
       <div class="flex items-center gap-2">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span class="text-xs font-mono text-slate-400 uppercase tracking-wider">Milestone 1 Active: Cars Land Placemaking</span>
+        <span class="text-xs font-mono text-slate-400 uppercase tracking-wider">Milestone 1 Active: Placemaking &amp; Storytelling</span>
       </div>
     </nav>
 
@@ -90,292 +101,366 @@
         Cars Land Placemaking &amp; <span class="italic text-amber-200">The 3-Act Walkthrough</span>
       </h1>
       <p class="text-slate-400 text-sm md:text-base max-w-2xl mx-auto font-light leading-relaxed">
-        Learn how Imagineers pitch architectural spaces. Discover why Kevin Rafferty insisted on building traditional berms, how Willys Butte functions as an iconic Weenie, and how to pace an attraction across Acts 1, 2, and 3.
+        Equip yourself with the descriptive vocabulary and architectural sentence patterns of a Walt Disney Imagineer. Move past flat words into vivid spatial storytelling.
       </p>
       
-      <!-- Key Metric Pill Banner -->
+      <!-- Key Metric Banner -->
       <div class="flex flex-wrap items-center justify-center gap-3 pt-2 text-xs font-mono">
         <div class="px-3.5 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300">
-          Source Material: <strong class="text-amber-300">Magic Journey (Ch. 3 &amp; 18)</strong>
+          Source: <strong class="text-amber-300">Magic Journey (Ch. 3 &amp; 18)</strong>
         </div>
         <div class="px-3.5 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300">
-          Target Time: <strong class="text-amber-300">90–120 Seconds Voice Note</strong>
+          Skills: <strong class="text-amber-300">Describing Words &amp; Sentence Formulas</strong>
         </div>
         <div class="px-3.5 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300">
-          Submission: <strong class="text-emerald-400">Preply Audio Clip</strong>
+          Deliverable: <strong class="text-emerald-400">90-Sec Audio Note to Preply</strong>
         </div>
       </div>
     </header>
 
-    <!-- Section 1: Imagineering Master Concepts Clinic -->
-    <section class="space-y-6">
-      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
-        <div>
-          <span class="text-xs uppercase tracking-widest text-amber-300 font-mono">Part 1 • The Imagineer's Lexicon</span>
-          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">5 Core Concepts From Kevin Rafferty</h2>
-        </div>
-        <span class="text-xs font-mono text-slate-400">Chapters 3 &amp; 18</span>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-        <!-- Concept 1: Placemaking -->
-        <div class="glass-card rounded-2xl p-5 space-y-3">
-          <div class="flex items-center justify-between">
-            <h3 class="text-lg font-serif text-amber-300 flex items-center gap-2">
-              <span>01. Placemaking</span>
-              <span class="text-xs font-mono font-normal text-slate-400">/ˈpleɪsˌmeɪ.kɪŋ/</span>
-            </h3>
-            <span class="text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-amber-400/10 text-amber-300 border border-amber-400/25">Immersion</span>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed font-light">
-            Designing a physical environment with such deep architectural and historical texture that guests immediately surrender to the illusion of being in another time and place.
-          </p>
-          <div class="p-3 rounded-xl bg-slate-950/70 border border-slate-800 text-[11px] space-y-1">
-            <div class="text-amber-200/90 font-medium">✨ Imagineering Collocations:</div>
-            <div class="text-slate-400 italic">"authentic placemaking" • "rich environmental storytelling" • "transporting the guest"</div>
-            <div class="text-slate-300 pt-1">
-              <strong>Walkthrough Chunk:</strong> "Through meticulous <span class="text-amber-300 font-semibold">placemaking</span>, we transport guests directly into the desert heart of Radiator Springs."
-            </div>
-          </div>
-        </div>
-
-        <!-- Concept 2: The Perimeter Berm -->
-        <div class="glass-card rounded-2xl p-5 space-y-3">
-          <div class="flex items-center justify-between">
-            <h3 class="text-lg font-serif text-amber-300 flex items-center gap-2">
-              <span>02. The Perimeter Berm</span>
-              <span class="text-xs font-mono font-normal text-slate-400">/pəˈrɪm.ɪ.tər bɜːrm/</span>
-            </h3>
-            <span class="text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-emerald-400/10 text-emerald-300 border border-emerald-400/25">Sightline Defense</span>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed font-light">
-            An elevated earth mound or monumental rockwork ridge wrapped around the park perimeter to completely block highway traffic, outside buildings, and noise.
-          </p>
-          <div class="p-3 rounded-xl bg-slate-950/70 border border-slate-800 text-[11px] space-y-1">
-            <div class="text-amber-200/90 font-medium">✨ Kevin Rafferty’s Rule:</div>
-            <div class="text-slate-400 italic">"Build a berm and fill the inside with highly detailed immersive stories."</div>
-            <div class="text-slate-300 pt-1">
-              <strong>Walkthrough Chunk:</strong> "We construct a 12-meter sculpted <span class="text-amber-300 font-semibold">perimeter berm</span> to eliminate all sightline intrusions from the highway."
-            </div>
-          </div>
-        </div>
-
-        <!-- Concept 3: The Weenie -->
-        <div class="glass-card rounded-2xl p-5 space-y-3">
-          <div class="flex items-center justify-between">
-            <h3 class="text-lg font-serif text-amber-300 flex items-center gap-2">
-              <span>03. The Weenie</span>
-              <span class="text-xs font-mono font-normal text-slate-400">/ˈwiː.ni/ (Walt Disney's Term)</span>
-            </h3>
-            <span class="text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-sky-400/10 text-sky-300 border border-sky-400/25">Wayfinding</span>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed font-light">
-            An iconic visual beacon positioned at the end of a sightline that naturally draws guests forward through the space, preventing disorientation and bottlenecks.
-          </p>
-          <div class="p-3 rounded-xl bg-slate-950/70 border border-slate-800 text-[11px] space-y-1">
-            <div class="text-amber-200/90 font-medium">✨ Imagineering Collocations:</div>
-            <div class="text-slate-400 italic">"iconic visual beacon" • "anchor sightline" • "guide guest circulation"</div>
-            <div class="text-slate-300 pt-1">
-              <strong>Walkthrough Chunk:</strong> "Willys Butte stands as our dominant <span class="text-amber-300 font-semibold">Weenie</span>, naturally guiding foot traffic into Ornament Valley."
-            </div>
-          </div>
-        </div>
-
-        <!-- Concept 4: The 3-Act Attraction Architecture -->
-        <div class="glass-card rounded-2xl p-5 space-y-3">
-          <div class="flex items-center justify-between">
-            <h3 class="text-lg font-serif text-amber-300 flex items-center gap-2">
-              <span>04. 3-Act Architecture</span>
-              <span class="text-xs font-mono font-normal text-slate-400">(Act 1, 2 &amp; 3)</span>
-            </h3>
-            <span class="text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-purple-400/10 text-purple-300 border border-purple-400/25">Dramatic Pacing</span>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed font-light">
-            Kevin Rafferty’s attraction pacing model: Act 1 (Scenic Decompression) ➔ Act 2 (Show-Controlled Theatrical Darkness) ➔ Act 3 (Climactic High-Speed Adrenaline Payoff).
-          </p>
-          <div class="p-3 rounded-xl bg-slate-950/70 border border-slate-800 text-[11px] space-y-1">
-            <div class="text-amber-200/90 font-medium">✨ Dramatic Flow:</div>
-            <div class="text-slate-400 italic">"decompress the guest" • "theatrical show scenes" • "climactic kinetic release"</div>
-            <div class="text-slate-300 pt-1">
-              <strong>Walkthrough Chunk:</strong> "Act 1 relaxes the guest with a scenic canyon drive before Act 2 plunges into the indoor dark ride."
-            </div>
-          </div>
-        </div>
-
-        <!-- Concept 5: Marty Sklar's Law (Spans 2 cols) -->
-        <div class="glass-card rounded-2xl p-5 space-y-3 md:col-span-2">
-          <div class="flex items-center justify-between">
-            <h3 class="text-lg font-serif text-amber-300 flex items-center gap-2">
-              <span>05. "Don't Tell Me You Can't... Tell Me You Can If!"</span>
-              <span class="text-xs font-mono font-normal text-slate-400">(The Sklar Mindset)</span>
-            </h3>
-            <span class="text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-amber-400/10 text-amber-300 border border-amber-400/25">Creative Authority</span>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed font-light">
-            Whenever a client or budget manager imposes constraints, an Imagineer never retreats or gives up. We transform obstacles into breakthroughs using forced perspective, spatial compression, and ingenious staging.
-          </p>
-          <div class="p-3 rounded-xl bg-slate-950/70 border border-slate-800 text-[11px] space-y-1">
-            <div class="text-amber-200/90 font-medium">✨ Replace Apologies With Creative Conviction:</div>
-            <div class="text-slate-400 italic">Strike: "Sorry, we don't have enough space for a full mountain." ➔ Upgrade: "We can deliver monumental scale if we use forced perspective!"</div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Section 2: Interactive Imagineering Quiz -->
+    <!-- TOOLKIT SECTION 1: THE IMAGINEER'S DESCRIBING WORDS BANK (CLICKABLE CHIPS) -->
     <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
-      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-4">
         <div>
-          <span class="text-xs uppercase tracking-widest text-amber-300 font-mono">Part 2 • Knowledge Verification</span>
-          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Imagineering Quick Quiz</h2>
+          <span class="text-xs uppercase tracking-widest text-amber-300 font-mono">Part 1 • The Descriptive Word Bank</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Describing Words for Theme Park Architects</h2>
         </div>
-        <span id="quiz-score" class="text-xs font-mono text-amber-300 bg-amber-400/10 px-3 py-1 rounded-xl border border-amber-400/20">
-          Score: 0 / 3
+        <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1 rounded-xl border border-slate-800 self-start sm:self-auto">
+          💡 Click any word to copy
         </span>
       </div>
 
-      <!-- Question 1 -->
-      <div class="space-y-3 text-xs">
-        <p class="font-medium text-slate-200">
-          <strong>Q1:</strong> Why did Kevin Rafferty insist on building a traditional <strong>perimeter berm</strong> for Cars Land instead of the original "berm-less" design of Disney California Adventure?
-        </p>
-        <div class="grid grid-cols-1 gap-2 text-slate-300">
-          <button onclick="answerQuiz(1, 'A', this)" class="q1-btn text-left p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-400/50 transition-colors">
-            (A) To make construction easier for heavy bulldozers.
-          </button>
-          <button onclick="answerQuiz(1, 'B', this)" class="q1-btn text-left p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-400/50 transition-colors">
-            (B) To block out freeway traffic and sightlines from Anaheim, creating an unbroken fantasy sanctuary.
-          </button>
-          <button onclick="answerQuiz(1, 'C', this)" class="q1-btn text-left p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-400/50 transition-colors">
-            (C) Because local fire codes required an artificial dirt barrier.
-          </button>
+      <p class="text-xs text-slate-300 leading-relaxed font-light">
+        In themed entertainment, generic words like <em>"big"</em>, <em>"nice"</em>, or <em>"old"</em> are forbidden. Use these categorized sensory and architectural describing words to express scale, texture, atmosphere, and spatial flow:
+      </p>
+
+      <!-- Word Categories Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+
+        <!-- Category A: Scale & Presence -->
+        <div class="p-4 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2.5">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-amber-300 font-semibold uppercase text-[11px]">1. Scale &amp; Presence (Instead of "Big")</span>
+            <span class="text-[10px] text-slate-500 font-mono">Dimensions</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5" id="chips-scale">
+            <button onclick="copyChip('monumental')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">monumental</button>
+            <button onclick="copyChip('towering')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">towering</button>
+            <button onclick="copyChip('soaring')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">soaring</button>
+            <button onclick="copyChip('imposing')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">imposing</button>
+            <button onclick="copyChip('sprawling')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">sprawling</button>
+            <button onclick="copyChip('colossal')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">colossal</button>
+            <button onclick="copyChip('intimate')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">intimate</button>
+            <button onclick="copyChip('cavernous')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">cavernous</button>
+          </div>
+          <p class="text-[10px] text-slate-400 italic">Example: "Willys Butte stands as a <strong>towering</strong> landmark that commands the valley."</p>
         </div>
-        <div id="q1-feedback" class="hidden text-[11px] font-mono mt-1"></div>
+
+        <!-- Category B: Texture, Rockwork & Material -->
+        <div class="p-4 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2.5">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-sky-300 font-semibold uppercase text-[11px]">2. Texture &amp; Rockwork (Instead of "Old/Rocky")</span>
+            <span class="text-[10px] text-slate-500 font-mono">Surfaces</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5" id="chips-texture">
+            <button onclick="copyChip('striated')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">striated</button>
+            <button onclick="copyChip('weathered')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">weathered</button>
+            <button onclick="copyChip('sun-bleached')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">sun-bleached</button>
+            <button onclick="copyChip('sculpted')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">sculpted</button>
+            <button onclick="copyChip('rusticated')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">rusticated</button>
+            <button onclick="copyChip('jagged')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">jagged</button>
+            <button onclick="copyChip('craggy')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">craggy</button>
+            <button onclick="copyChip('eroded')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">eroded</button>
+          </div>
+          <p class="text-[10px] text-slate-400 italic">Example: "Notice the <strong>striated, sun-bleached</strong> rock layers carved by desert winds."</p>
+        </div>
+
+        <!-- Category C: Atmosphere & Light -->
+        <div class="p-4 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2.5">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-amber-300 font-semibold uppercase text-[11px]">3. Atmosphere &amp; Light (Instead of "Bright/Dark")</span>
+            <span class="text-[10px] text-slate-500 font-mono">Illumination</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5" id="chips-atmosphere">
+            <button onclick="copyChip('sun-drenched')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">sun-drenched</button>
+            <button onclick="copyChip('amber-hued')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">amber-hued</button>
+            <button onclick="copyChip('shadow-drenched')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">shadow-drenched</button>
+            <button onclick="copyChip('luminous')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">luminous</button>
+            <button onclick="copyChip('dusk-kissed')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">dusk-kissed</button>
+            <button onclick="copyChip('neon-bathed')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">neon-bathed</button>
+            <button onclick="copyChip('moody')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">moody</button>
+            <button onclick="copyChip('radiant')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">radiant</button>
+          </div>
+          <p class="text-[10px] text-slate-400 italic">Example: "As night falls, the boulevard becomes a <strong>neon-bathed, luminous</strong> spectacle."</p>
+        </div>
+
+        <!-- Category D: Spatial Movement & Action Verbs -->
+        <div class="p-4 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2.5">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-emerald-300 font-semibold uppercase text-[11px]">4. Spatial Action Verbs (What Architecture Does)</span>
+            <span class="text-[10px] text-slate-500 font-mono">Kinetic Flow</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5" id="chips-verbs">
+            <button onclick="copyChip('commands')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">commands</button>
+            <button onclick="copyChip('anchors')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">anchors</button>
+            <button onclick="copyChip('draws')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">draws</button>
+            <button onclick="copyChip('isolates')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">isolates</button>
+            <button onclick="copyChip('frames')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">frames</button>
+            <button onclick="copyChip('unfolds')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">unfolds</button>
+            <button onclick="copyChip('compresses')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">compresses</button>
+            <button onclick="copyChip('expands')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">expands</button>
+          </div>
+          <p class="text-[10px] text-slate-400 italic">Example: "The rockwork arch <strong>frames</strong> the vista and <strong>draws</strong> crowds onward."</p>
+        </div>
+
       </div>
 
-      <!-- Question 2 -->
-      <div class="space-y-3 text-xs pt-4 border-t border-slate-800/80">
-        <p class="font-medium text-slate-200">
-          <strong>Q2:</strong> In <em>Radiator Springs Racers</em>, why does <strong>Act 1</strong> begin with a calm scenic drive instead of launching straight into the race?
-        </p>
-        <div class="grid grid-cols-1 gap-2 text-slate-300">
-          <button onclick="answerQuiz(2, 'A', this)" class="q2-btn text-left p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-400/50 transition-colors">
-            (A) It decompresses guests from park distractions and gets them immersed in the story before the conflict.
-          </button>
-          <button onclick="answerQuiz(2, 'B', this)" class="q2-btn text-left p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-400/50 transition-colors">
-            (B) Because electric ride vehicles cannot accelerate quickly from a standstill.
-          </button>
-          <button onclick="answerQuiz(2, 'C', this)" class="q2-btn text-left p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-400/50 transition-colors">
-            (C) To save electrical power during the first 60 seconds of the cycle.
-          </button>
-        </div>
-        <div id="q2-feedback" class="hidden text-[11px] font-mono mt-1"></div>
+      <div id="chip-copied-notice" class="hidden text-center text-xs font-mono text-emerald-400 pt-1">
+        ✓ Word copied to clipboard! (You can also type it directly below)
       </div>
-
-      <!-- Question 3 -->
-      <div class="space-y-3 text-xs pt-4 border-t border-slate-800/80">
-        <p class="font-medium text-slate-200">
-          <strong>Q3:</strong> An executive says: <em>"Alessia, this mountain backdrop is too expensive and exceeds our height limit."</em> How does an Imagineer respond?
-        </p>
-        <div class="grid grid-cols-1 gap-2 text-slate-300">
-          <button onclick="answerQuiz(3, 'A', this)" class="q3-btn text-left p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-400/50 transition-colors">
-            (A) "Sorry, my English is not good, but I hope you can approve the budget."
-          </button>
-          <button onclick="answerQuiz(3, 'B', this)" class="q3-btn text-left p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-400/50 transition-colors">
-            (B) "We can deliver monumental perceived grandeur if we utilize forced perspective with graduated rockwork!"
-          </button>
-          <button onclick="answerQuiz(3, 'C', this)" class="q3-btn text-left p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-400/50 transition-colors">
-            (C) "Then we should cancel the attraction and build a flat parking structure."
-          </button>
-        </div>
-        <div id="q3-feedback" class="hidden text-[11px] font-mono mt-1"></div>
-      </div>
-
     </section>
 
-    <!-- Section 3: Interactive Walkthrough Builder -->
+    <!-- TOOLKIT SECTION 2: THE 4 CORE ARCHITECTURAL SENTENCE STRUCTURES -->
     <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
       <div class="border-b border-slate-800 pb-3">
-        <span class="text-xs uppercase tracking-widest text-amber-300 font-mono">Part 3 • Scaffolded Pitch Construction</span>
-        <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">The 3-Beat Walkthrough Builder</h2>
+        <span class="text-xs uppercase tracking-widest text-amber-300 font-mono">Part 2 • The Sentence Structure Architect</span>
+        <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">4 Reusable Sentence Formulas for Alessia</h2>
         <p class="text-xs text-slate-400 mt-1 font-light">
-          Assemble your pitch sentences step-by-step. Notice how each beat leads naturally into the next without hesitation.
+          Never freeze wondering how to start a sentence. Memorize these four plug-and-play architectural sentence structures:
         </p>
       </div>
 
       <div class="space-y-4 text-xs">
-        <!-- Beat 1 Choice -->
-        <div class="space-y-1.5">
-          <label class="font-mono text-amber-300 font-semibold block">Beat 1: Arrival &amp; The Weenie</label>
-          <select id="builder-beat1" class="w-full p-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 font-sans focus:outline-none focus:border-amber-400">
-            <option value="Picture this: As guests approach the perimeter portal, Willys Butte stands as our iconic Weenie, drawing every eye forward.">
-              "Picture this: As guests approach the perimeter portal, Willys Butte stands as our iconic Weenie, drawing every eye forward."
-            </option>
-            <option value="Welcome to Radiator Springs. Notice how the sculpted mountain berm shields our guests from all real-world distractions.">
-              "Welcome to Radiator Springs. Notice how the sculpted mountain berm shields our guests from all real-world distractions."
-            </option>
-          </select>
+
+        <!-- Formula 1: The Visual Magnet (Weenie) -->
+        <div class="p-4 rounded-2xl bg-slate-900/80 border border-amber-400/30 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-amber-300 font-bold uppercase text-[11px]">Formula A: The Sightline Magnet (The Weenie)</span>
+            <span class="px-2 py-0.5 rounded bg-amber-400/10 text-amber-300 font-mono text-[10px]">Wayfinding</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-950 font-mono text-[11px] text-slate-300 border border-slate-800 leading-relaxed">
+            <span class="text-emerald-400">[Spatial Location]</span>, <span class="text-sky-300">[Architectural Anchor]</span> <span class="text-purple-300">[Action Verb]</span> as a <span class="text-amber-300">[Descriptive Adjective]</span> beacon, naturally <span class="text-emerald-400">[Circulation Verb]</span> guest sightlines forward.
+          </div>
+          <p class="text-slate-300 italic pt-1">
+            <strong>Model:</strong> "Rising at the end of the central vista, Willys Butte stands as a monumental, sun-bleached beacon, naturally drawing guest sightlines forward into the land."
+          </p>
         </div>
 
-        <!-- Beat 2 Choice -->
-        <div class="space-y-1.5">
-          <label class="font-mono text-amber-300 font-semibold block">Beat 2: Act 1 Decompression &amp; Act 2 Theatrical Dark Ride</label>
-          <select id="builder-beat2" class="w-full p-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 font-sans focus:outline-none focus:border-amber-400">
-            <option value="In Act 1, our guests decompress with a scenic outdoor cruise, before gliding into Act 2's theatrical show-controlled dark ride.">
-              "In Act 1, our guests decompress with a scenic outdoor cruise, before gliding into Act 2's theatrical show-controlled dark ride."
-            </option>
-            <option value="We pace the experience deliberately: a serene Act 1 mountain drive transitions seamlessly into lifelike Audio-Animatronics in Act 2.">
-              "We pace the experience deliberately: a serene Act 1 mountain drive transitions seamlessly into lifelike Audio-Animatronics in Act 2."
-            </option>
-          </select>
+        <!-- Formula 2: The Perimeter Berm (Sightline Defense) -->
+        <div class="p-4 rounded-2xl bg-slate-900/80 border border-emerald-500/30 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-emerald-300 font-bold uppercase text-[11px]">Formula B: The Immersion Barrier (The Berm)</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-400/10 text-emerald-300 font-mono text-[10px]">Immersion Protection</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-950 font-mono text-[11px] text-slate-300 border border-slate-800 leading-relaxed">
+            In order to eliminate <span class="text-red-400">[Sightline Intrusion / Outside Threat]</span>, we construct a <span class="text-amber-300">[Height/Scale + Texture Adjectives]</span> berm, which completely isolates <span class="text-sky-300">[The Themed Land]</span> from <span class="text-red-400">[The Real World]</span>.
+          </div>
+          <p class="text-slate-300 italic pt-1">
+            <strong>Model:</strong> "In order to eliminate sightline intrusion from the freeway, we construct a 12-meter sculpted, striated rockwork berm, which completely isolates Radiator Springs from the outside city."
+          </p>
         </div>
 
-        <!-- Beat 3 Choice -->
-        <div class="space-y-1.5">
-          <label class="font-mono text-amber-300 font-semibold block">Beat 3: Act 3 Kinetic Payoff &amp; Emotional Climax</label>
-          <select id="builder-beat3" class="w-full p-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 font-sans focus:outline-none focus:border-amber-400">
-            <option value="Finally, Act 3 bursts outdoors into a heart-pounding 45mph race through Ornament Valley, delivering pure kinetic joy!">
-              "Finally, Act 3 bursts outdoors into a heart-pounding 45mph race through Ornament Valley, delivering pure kinetic joy!"
-            </option>
-            <option value="This culminates in our signature kinetic reveal: side-by-side racing that turns every guest into an active champion!">
-              "This culminates in our signature kinetic reveal: side-by-side racing that turns every guest into an active champion!"
-            </option>
-          </select>
+        <!-- Formula 3: Threshold & Atmospheric Compression -->
+        <div class="p-4 rounded-2xl bg-slate-900/80 border border-sky-500/30 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-sky-300 font-bold uppercase text-[11px]">Formula C: Portal Transition (Compression &amp; Expansion)</span>
+            <span class="px-2 py-0.5 rounded bg-sky-400/10 text-sky-300 font-mono text-[10px]">Sensory Threshold</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-950 font-mono text-[11px] text-slate-300 border border-slate-800 leading-relaxed">
+            As guests pass beneath <span class="text-sky-300">[Architectural Gateway]</span>, the space <span class="text-purple-300">[dramatically expands / compresses]</span>, transitioning from <span class="text-slate-400">[Atmosphere A]</span> into <span class="text-amber-300">[Atmosphere B]</span>.
+          </div>
+          <p class="text-slate-300 italic pt-1">
+            <strong>Model:</strong> "As guests pass beneath the rustic timber entry portal, the space dramatically expands, transitioning from the crowded entrance into an amber-hued, sun-drenched canyon."
+          </p>
         </div>
 
-        <button onclick="assemblePitch()" class="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-semibold font-mono text-xs transition-all shadow-md">
-          ✨ Assemble My Pitch Script
-        </button>
-
-        <!-- Assembled Output -->
-        <div id="assembled-container" class="hidden p-4 rounded-2xl bg-amber-950/20 border border-amber-400/30 space-y-2">
-          <span class="text-amber-300 font-mono font-semibold text-xs block">Your Complete Pitch Script (Ready to Read Aloud):</span>
-          <p id="assembled-text" class="text-slate-200 font-serif text-base italic leading-relaxed"></p>
+        <!-- Formula 4: The 3-Act Attraction Architecture -->
+        <div class="p-4 rounded-2xl bg-slate-900/80 border border-purple-500/30 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-purple-300 font-bold uppercase text-[11px]">Formula D: The 3-Act Attraction Pacing</span>
+            <span class="px-2 py-0.5 rounded bg-purple-400/10 text-purple-300 font-mono text-[10px]">Ride Cadence</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-950 font-mono text-[11px] text-slate-300 border border-slate-800 leading-relaxed">
+            In Act 1, we <span class="text-emerald-400">decompress</span> guests with <span class="text-amber-300">[Scenic Outdoor Float]</span>, before gliding into Act 2's <span class="text-sky-300">[Theatrical Indoor Show Scenes]</span>, which culminates in Act 3 with <span class="text-purple-300">[Climactic Kinetic Payoff]</span>.
+          </div>
+          <p class="text-slate-300 italic pt-1">
+            <strong>Model:</strong> "In Act 1, we decompress guests with a serene canyon drive, before gliding into Act 2's show-controlled indoor dark ride, which culminates in Act 3 with a thrilling 45mph race through the hills."
+          </p>
         </div>
+
       </div>
     </section>
 
-    <!-- Section 4: Live Audio Recorder & Pitch Studio -->
+    <!-- TOOLKIT SECTION 3: INTERACTIVE GUIDED SENTENCE STUDIO -->
+    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-amber-300 font-mono">Part 3 • Interactive Sentence Studio</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Build Your Custom Sentences Step-by-Step</h2>
+        </div>
+        <span class="text-xs font-mono text-amber-300 bg-amber-400/10 px-3 py-1 rounded-xl border border-amber-400/20 self-start sm:self-auto">
+          Scaffolded Practice
+        </span>
+      </div>
+
+      <p class="text-xs text-slate-300 leading-relaxed font-light">
+        Choose your describing words below to assemble your custom Imagineering pitch lines. Notice how the sentence builds in real time:
+      </p>
+
+      <!-- Sentence 1 Customizer (The Weenie) -->
+      <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3 text-xs">
+        <span class="font-mono text-amber-300 font-bold uppercase text-[11px] block">Sentence 1: Crafting The Sightline Magnet</span>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 font-mono text-[11px]">
+          <div>
+            <label class="text-slate-400 block mb-1">Spatial Starter:</label>
+            <select id="s1-starter" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
+              <option value="Rising at the end of the central vista">Rising at the end of the vista</option>
+              <option value="Framed perfectly by the entrance portal">Framed by the entrance portal</option>
+              <option value="Anchoring the entire eastern sightline">Anchoring the eastern sightline</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-slate-400 block mb-1">Describing Words (Scale + Texture):</label>
+            <select id="s1-adjectives" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
+              <option value="monumental, sun-bleached">monumental, sun-bleached</option>
+              <option value="towering, striated">towering, striated</option>
+              <option value="soaring, weathered">soaring, weathered</option>
+              <option value="imposing, rusticated">imposing, rusticated</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-slate-400 block mb-1">Guest Effect:</label>
+            <select id="s1-effect" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
+              <option value="naturally drawing guest circulation forward.">naturally drawing guest circulation forward.</option>
+              <option value="commanding the horizon and eliminating bottlenecks.">commanding the horizon & eliminating bottlenecks.</option>
+              <option value="inspiring an immediate sense of wonder.">inspiring an immediate sense of wonder.</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-slate-950 border border-amber-400/20 text-slate-200 font-serif text-sm italic">
+          <span class="text-amber-300 font-mono not-italic text-xs block mb-0.5">Live Output:</span>
+          <span id="s1-preview">"Rising at the end of the central vista, Willys Butte stands as a monumental, sun-bleached beacon, naturally drawing guest circulation forward."</span>
+        </div>
+      </div>
+
+      <!-- Sentence 2 Customizer (The Berm) -->
+      <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3 text-xs">
+        <span class="font-mono text-emerald-300 font-bold uppercase text-[11px] block">Sentence 2: Defending The Berm Against Intrusion</span>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 font-mono text-[11px]">
+          <div>
+            <label class="text-slate-400 block mb-1">The Threat / Purpose:</label>
+            <select id="s2-threat" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
+              <option value="In order to eliminate sightline intrusion from the highway">To eliminate sightline intrusion from the highway</option>
+              <option value="To protect 100% of the guest's suspension of disbelief">To protect suspension of disbelief</option>
+              <option value="To isolate our fantasy world from outside noise">To isolate fantasy from outside noise</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-slate-400 block mb-1">Scale &amp; Texture Description:</label>
+            <select id="s2-adjectives" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
+              <option value="a 12-meter sculpted, striated rockwork berm">a 12-meter sculpted, striated berm</option>
+              <option value="a densely landscaped, undulating earthen berm">a landscaped, undulating earthen berm</option>
+              <option value="an imposing, weathered stone embankment">an imposing, weathered stone embankment</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-slate-400 block mb-1">Spatial Result:</label>
+            <select id="s2-result" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
+              <option value="which completely isolates our desert land from the modern city.">which completely isolates the land from the city.</option>
+              <option value="preserving total thematic integrity throughout the park.">preserving total thematic integrity.</option>
+              <option value="creating an unbroken sanctuary of immersive storytelling.">creating an unbroken sanctuary of storytelling.</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-slate-950 border border-emerald-500/20 text-slate-200 font-serif text-sm italic">
+          <span class="text-emerald-300 font-mono not-italic text-xs block mb-0.5">Live Output:</span>
+          <span id="s2-preview">"In order to eliminate sightline intrusion from the highway, we construct a 12-meter sculpted, striated rockwork berm, which completely isolates our desert land from the modern city."</span>
+        </div>
+      </div>
+
+      <!-- Sentence 3 Customizer (The 3-Act Pacing) -->
+      <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3 text-xs">
+        <span class="font-mono text-purple-300 font-bold uppercase text-[11px] block">Sentence 3: The 3-Act Attraction Architecture</span>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 font-mono text-[11px]">
+          <div>
+            <label class="text-slate-400 block mb-1">Act 1 (Decompression):</label>
+            <select id="s3-act1" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
+              <option value="In Act 1, we decompress the guest with a gentle canyon cruise">Act 1: Decompress with a canyon cruise</option>
+              <option value="In Act 1, guests unwind through a serene outdoor mountain drive">Act 1: Unwind through an outdoor drive</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-slate-400 block mb-1">Act 2 (Show Scenes):</label>
+            <select id="s3-act2" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
+              <option value="before transitioning into Act 2's theatrical dark ride with Audio-Animatronics">before Act 2's dark ride with Animatronics</option>
+              <option value="before gliding into the neon-bathed, show-controlled garage">before the neon-bathed indoor garage</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-slate-400 block mb-1">Act 3 (Kinetic Climax):</label>
+            <select id="s3-act3" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
+              <option value="which culminates in Act 3 with a thrilling 45mph desert race!">culminating in Act 3's 45mph desert race!</option>
+              <option value="culminating in our signature kinetic reveal: side-by-side outdoor racing!">culminating in our signature kinetic race!</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-slate-950 border border-purple-500/20 text-slate-200 font-serif text-sm italic">
+          <span class="text-purple-300 font-mono not-italic text-xs block mb-0.5">Live Output:</span>
+          <span id="s3-preview">"In Act 1, we decompress the guest with a gentle canyon cruise, before transitioning into Act 2's theatrical dark ride with Audio-Animatronics, which culminates in Act 3 with a thrilling 45mph desert race!"</span>
+        </div>
+      </div>
+
+      <!-- Compile Assembled Script Button -->
+      <div class="pt-2 flex justify-end">
+        <button onclick="compileFullPitch()" class="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-semibold font-mono text-xs transition-all shadow-lg shadow-amber-400/10">
+          ✨ Combine All 3 Into Full Pitch Script
+        </button>
+      </div>
+
+      <!-- Assembled Pitch Box -->
+      <div id="full-script-card" class="p-5 rounded-2xl bg-amber-950/20 border border-amber-400/30 space-y-2">
+        <div class="flex items-center justify-between">
+          <span class="text-amber-300 font-mono font-semibold text-xs uppercase">Your Assembled Executive Pitch Script:</span>
+          <button onclick="copyFullScript()" class="px-2.5 py-1 rounded bg-slate-900 border border-amber-400/30 text-amber-300 font-mono text-[10px] hover:bg-amber-400/10">
+            Copy Script
+          </button>
+        </div>
+        <p id="full-script-text" class="text-slate-100 font-serif text-base leading-relaxed italic">
+          "Rising at the end of the central vista, Willys Butte stands as a monumental, sun-bleached beacon, naturally drawing guest circulation forward. In order to eliminate sightline intrusion from the highway, we construct a 12-meter sculpted, striated rockwork berm, which completely isolates our desert land from the modern city. In Act 1, we decompress the guest with a gentle canyon cruise, before transitioning into Act 2's theatrical dark ride with Audio-Animatronics, which culminates in Act 3 with a thrilling 45mph desert race!"
+        </p>
+      </div>
+
+    </section>
+
+    <!-- TOOLKIT SECTION 4: LIVE AUDIO RECORDER & VOCAL TELEPROMPTER -->
     <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
       <div class="flex items-center justify-between border-b border-slate-800 pb-3">
         <div>
-          <span class="text-xs uppercase tracking-widest text-amber-300 font-mono">Part 4 • Audio Deliverable</span>
+          <span class="text-xs uppercase tracking-widest text-amber-300 font-mono">Part 4 • Vocal Studio &amp; Teleprompter</span>
           <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Record Your 90-Second Walkthrough</h2>
         </div>
         <span class="text-xs font-mono text-slate-400">Target: 90–120s</span>
       </div>
 
       <div class="space-y-4">
-        <p class="text-xs text-slate-300 leading-relaxed font-light">
-          Now deliver your pitch! Read your assembled script or describe your own dream attraction. Speak with warmth, clarity, and authority.
-        </p>
+        <!-- Teleprompter Script Card -->
+        <div class="p-4 rounded-xl bg-slate-900/90 border border-amber-400/20 space-y-2 text-xs">
+          <span class="font-mono text-amber-300 font-semibold uppercase text-[11px] block">Your Teleprompter (Read with Authority &amp; Warmth):</span>
+          <p id="teleprompter-text" class="font-serif text-sm text-slate-200 italic leading-relaxed">
+            "Rising at the end of the central vista, Willys Butte stands as a monumental, sun-bleached beacon, naturally drawing guest circulation forward. In order to eliminate sightline intrusion from the highway, we construct a 12-meter sculpted, striated rockwork berm, which completely isolates our desert land from the modern city. In Act 1, we decompress the guest with a gentle canyon cruise, before transitioning into Act 2's theatrical dark ride with Audio-Animatronics, which culminates in Act 3 with a thrilling 45mph desert race!"
+          </p>
+        </div>
 
         <!-- Recorder Widget -->
         <div class="p-6 rounded-2xl bg-slate-900/90 border border-amber-400/20 space-y-4">
           <div class="flex items-center justify-between">
-            <span class="text-xs font-semibold text-slate-200 font-mono">Browser Voice Recorder</span>
+            <span class="text-xs font-semibold text-slate-200 font-mono">In-Browser Audio Recording</span>
             <span id="recording-timer" class="text-sm font-mono text-amber-300 hidden">00:00</span>
           </div>
 
@@ -388,43 +473,20 @@
             <div id="audio-playback-container" class="hidden flex flex-wrap items-center gap-3">
               <audio id="audio-player" controls class="h-9"></audio>
               <a id="btn-download" download="alessia-milestone1-imagineering-pitch.webm" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-400/20 text-xs font-mono transition-all">
-                💾 Download Recording
+                💾 Download Recording (.webm)
               </a>
             </div>
           </div>
           <p class="text-[11px] text-slate-400 font-light">
-            Once saved, attach this audio clip in our Preply chat window before our next session.
+            Once saved to your computer or phone, attach this file in Preply chat before our next live session.
           </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 5: The Imagineer's Presentation Rubric -->
-    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-4">
-      <div class="border-b border-slate-800 pb-3">
-        <span class="text-xs uppercase tracking-widest text-slate-400 font-mono">Part 5 • Evaluation</span>
-        <h2 class="text-lg font-serif text-slate-100 font-light">The Imagineering Pitch Rubric</h2>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-light">
-        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-1.5">
-          <span class="text-amber-300 font-mono font-semibold block">1. Spatial Walkthrough (40%)</span>
-          <p class="text-slate-400">Did you walk the listener through the space from the entrance? Did you include The Weenie and Berm?</p>
-        </div>
-        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-1.5">
-          <span class="text-amber-300 font-mono font-semibold block">2. 3-Act Pacing (30%)</span>
-          <p class="text-slate-400">Did you clearly structure the emotional pacing across Act 1 (Decompression), Act 2 (Show), and Act 3 (Climax)?</p>
-        </div>
-        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-1.5">
-          <span class="text-amber-300 font-mono font-semibold block">3. Imagineering Conviction (30%)</span>
-          <p class="text-slate-400">Did you eliminate apologies (*"Sorry for my English"*) and speak with creative confidence and authority?</p>
         </div>
       </div>
     </section>
 
     <!-- Preply Steps & Footer -->
     <footer class="text-center text-xs text-slate-500 pt-6 border-t border-slate-900 font-light space-y-2">
-      <div>Magic Journey • Executive Themed Entertainment Curriculum for Alessia</div>
+      <div>Magic Journey • The Imagineering English Studio for Alessia</div>
       <div class="text-[11px] text-slate-600">Based on <em>Magic Journey: My Fantastical Walt Disney Imagineering Career</em> by Kevin P. Rafferty</div>
     </footer>
 
@@ -432,50 +494,62 @@
 
   <!-- Interactive Scripts -->
   <script>
-    // Assemble Pitch
-    function assemblePitch() {
-      const b1 = document.getElementById('builder-beat1').value;
-      const b2 = document.getElementById('builder-beat2').value;
-      const b3 = document.getElementById('builder-beat3').value;
-      const container = document.getElementById('assembled-container');
-      const text = document.getElementById('assembled-text');
-
-      text.innerText = `"${b1} ${b2} ${b3}"`;
-      container.classList.remove('hidden');
+    // Copy Clickable Chip Word
+    function copyChip(word) {
+      navigator.clipboard.writeText(word);
+      const notice = document.getElementById('chip-copied-notice');
+      notice.innerText = `✓ "${word}" copied! Paste or use it in your sentence.`;
+      notice.classList.remove('hidden');
+      setTimeout(() => notice.classList.add('hidden'), 2200);
     }
 
-    // Quiz Logic
-    let score = 0;
-    const answered = { 1: false, 2: false, 3: false };
-    const correctAnswers = { 1: 'B', 2: 'A', 3: 'B' };
+    // Live Sentence Studio Updater
+    function updateLiveSentence() {
+      // Sentence 1
+      const s1Starter = document.getElementById('s1-starter').value;
+      const s1Adj = document.getElementById('s1-adjectives').value;
+      const s1Effect = document.getElementById('s1-effect').value;
+      const s1Text = `${s1Starter}, Willys Butte stands as a ${s1Adj} beacon, ${s1Effect}`;
+      document.getElementById('s1-preview').innerText = `"${s1Text}"`;
 
-    function answerQuiz(qNum, choice, btn) {
-      if (answered[qNum]) return;
-      answered[qNum] = true;
+      // Sentence 2
+      const s2Threat = document.getElementById('s2-threat').value;
+      const s2Adj = document.getElementById('s2-adjectives').value;
+      const s2Result = document.getElementById('s2-result').value;
+      const s2Text = `${s2Threat}, we construct ${s2Adj}, ${s2Result}`;
+      document.getElementById('s2-preview').innerText = `"${s2Text}"`;
 
-      const buttons = document.querySelectorAll(`.q${qNum}-btn`);
-      const feedback = document.getElementById(`q${qNum}-feedback`);
-      feedback.classList.remove('hidden');
+      // Sentence 3
+      const s3Act1 = document.getElementById('s3-act1').value;
+      const s3Act2 = document.getElementById('s3-act2').value;
+      const s3Act3 = document.getElementById('s3-act3').value;
+      const s3Text = `${s3Act1}, ${s3Act2}, ${s3Act3}`;
+      document.getElementById('s3-preview').innerText = `"${s3Text}"`;
 
-      if (choice === correctAnswers[qNum]) {
-        score++;
-        btn.classList.add('bg-emerald-950/80', 'border-emerald-500', 'text-emerald-200');
-        feedback.innerText = "✓ Spot on! Perfect Imagineering understanding.";
-        feedback.className = "text-[11px] text-emerald-400 font-mono font-medium";
-      } else {
-        btn.classList.add('bg-red-950/80', 'border-red-500', 'text-red-200');
-        feedback.innerText = `Incorrect. The correct answer is (${correctAnswers[qNum]}).`;
-        feedback.className = "text-[11px] text-red-400 font-mono font-medium";
-      }
-
-      document.getElementById('quiz-score').innerText = `Score: ${score} / 3`;
+      // Teleprompter and Full Script
+      compileFullPitch();
     }
 
-    // Canvas Background Particles
+    function compileFullPitch() {
+      const s1 = document.getElementById('s1-preview').innerText.replace(/"/g, '');
+      const s2 = document.getElementById('s2-preview').innerText.replace(/"/g, '');
+      const s3 = document.getElementById('s3-preview').innerText.replace(/"/g, '');
+      const combined = `"${s1} ${s2} ${s3}"`;
+
+      document.getElementById('full-script-text').innerText = combined;
+      document.getElementById('teleprompter-text').innerText = combined;
+    }
+
+    function copyFullScript() {
+      const text = document.getElementById('full-script-text').innerText;
+      navigator.clipboard.writeText(text);
+      alert("Script copied to clipboard!");
+    }
+
+    // Particles Canvas
     const canvas = document.getElementById('particles-canvas');
     const ctx = canvas.getContext('2d');
     let particles = [];
-    let mouse = { x: null, y: null, radius: 100 };
 
     function resizeCanvas() {
       canvas.width = window.innerWidth;
@@ -506,7 +580,6 @@
         this.opacity += this.pulse * this.pulseDir;
         if (this.opacity > 0.85) this.pulseDir = -1;
         if (this.opacity < 0.15) this.pulseDir = 1;
-
         if (this.y < 0) this.y = canvas.height;
         if (this.x < 0) this.x = canvas.width;
         if (this.x > canvas.width) this.x = 0;
@@ -601,6 +674,11 @@
         dot.classList.remove('animate-ping');
       }
     }
+
+    // Initialize live preview
+    window.onload = () => {
+      updateLiveSentence();
+    };
   </script>
 </body>
 </html>
