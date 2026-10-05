@@ -873,23 +873,31 @@
       q3_feeling: 'curious'
     };
 
+    function handleSelectChange(el) {
+      if (el) {
+        el.classList.remove('border-red-400', 'bg-red-50', 'border-emerald-400', 'bg-emerald-50');
+      }
+      updateLiveSummary();
+    }
+
     function updateLiveSummary() {
-      const q1L = document.getElementById('q1_landmark').value || 'Willys Butte';
-      const q1S = document.getElementById('q1_scale').value || 'monumental';
-      const q1Sun = document.getElementById('q1_sun').value || 'sun-bleached';
-      const q1F = document.getElementById('q1_feeling').value || 'awe';
-      const q1A = document.getElementById('q1_action').value || 'draws';
+      const q1L = document.getElementById('q1_landmark')?.value || '[ ... ]';
+      const q1S = document.getElementById('q1_scale')?.value || '[ ... ]';
+      const q1Sun = document.getElementById('q1_sun')?.value || '[ ... ]';
+      const q1F = document.getElementById('q1_feeling')?.value || '[ ... ]';
+      const q1A = document.getElementById('q1_action')?.value || '[ ... ]';
 
-      const q2B = document.getElementById('q2_barrier').value || 'sculpted rock berm';
-      const q2P = document.getElementById('q2_protect').value || 'hides';
-      const q2F = document.getElementById('q2_feeling').value || 'peaceful';
+      const q2B = document.getElementById('q2_barrier')?.value || '[ ... ]';
+      const q2P = document.getElementById('q2_protect')?.value || '[ ... ]';
+      const q2F = document.getElementById('q2_feeling')?.value || '[ ... ]';
 
-      const q3M = document.getElementById('q3_material').value || 'weathered timber';
-      const q3R = document.getElementById('q3_reveal').value || 'opens up';
-      const q3F = document.getElementById('q3_feeling').value || 'curious';
+      const q3M = document.getElementById('q3_material')?.value || '[ ... ]';
+      const q3R = document.getElementById('q3_reveal')?.value || '[ ... ]';
+      const q3F = document.getElementById('q3_feeling')?.value || '[ ... ]';
 
       const fullScript = `"At the end of the road, you see ${q1L}. It is ${q1S} and ${q1Sun}. Guests feel ${q1F} as it ${q1A} them forward! Around the park, we build a ${q2B}. It ${q2P} the ugly highway outside, so guests feel ${q2F} and safe inside our story. Guests walk through a rustic ${q3M} arch. Suddenly, the canyon ${q3R} dramatically, and they feel ${q3F} to explore!"`;
-      document.getElementById('live-final-script').innerText = fullScript;
+      const scriptEl = document.getElementById('live-final-script');
+      if (scriptEl) scriptEl.innerText = fullScript;
     }
 
     function checkSentenceQuestions() {
@@ -1017,18 +1025,16 @@
     // Initialize Game on Load
     window.onload = () => {
       initGame();
-      // Set defaults for selects
-      document.getElementById('q1_landmark').value = 'Willys Butte';
-      document.getElementById('q1_scale').value = 'monumental';
-      document.getElementById('q1_sun').value = 'sun-bleached';
-      document.getElementById('q1_feeling').value = 'awe';
-      document.getElementById('q1_action').value = 'draws';
-      document.getElementById('q2_barrier').value = 'sculpted rock berm';
-      document.getElementById('q2_protect').value = 'hides';
-      document.getElementById('q2_feeling').value = 'peaceful';
-      document.getElementById('q3_material').value = 'weathered timber';
-      document.getElementById('q3_reveal').value = 'opens up';
-      document.getElementById('q3_feeling').value = 'curious';
+      // Ensure all dropdowns start on the option to choose
+      const allSelects = [
+        'q1_landmark', 'q1_scale', 'q1_sun', 'q1_feeling', 'q1_action',
+        'q2_barrier', 'q2_protect', 'q2_feeling',
+        'q3_material', 'q3_reveal', 'q3_feeling'
+      ];
+      allSelects.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.value = '';
+      });
       updateLiveSummary();
     };
   </script>
