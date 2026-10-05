@@ -1,19 +1,19 @@
-# Magic Journey: The Imagineering English Curriculum 🎢✨
+# The Imagineering English Studio: Professional Curriculum 🎢✨
 ### Master English Program for Alessia (Architect & Themed Entertainment Designer)
-*Anchored directly in Kevin P. Rafferty’s "Magic Journey: My Fantastical Walt Disney Imagineering Career"*
+*Professional Themed Entertainment Architecture & Spatial Storytelling Methodology*
 
 ---
 
 ## 🧭 Pedagogical Rationale & The Imagineering Shift
 
 ### Why the Previous Approach Failed
-The previous curriculum leaned on high-stakes Wall Street sales tactics (Oren Klaff’s *Pitch Anything*—"croc brains," aggressive frame control, and predatory closing tactics) alongside abstract academic textbooks. For an architect and creative designer whose English is emerging:
-1. **Aggressive sales jargon caused cognitive paralysis.** Pushing an architect with emerging English to adopt high-finance bravado created artificial anxiety and unnatural posturing.
-2. **It disconnected design intuition from language.** Architects think in space, light, materials, sightlines, guest emotion, and physical flow. Klaff’s frames forced her into abstract financial maneuvers instead of descriptive spatial storytelling.
+The previous curriculum leaned on high-stakes aggressive sales tactics ("croc brains," confrontational frame control, and predatory closing tactics) alongside abstract corporate business frameworks. For an architect and creative designer whose English is emerging:
+1. **Aggressive corporate jargon caused cognitive paralysis.** Pushing an architect with emerging English to adopt high-finance bravado created artificial anxiety and unnatural posturing.
+2. **It disconnected design intuition from language.** Architects think in space, light, materials, sightlines, guest emotion, and physical flow. High-pressure sales frameworks forced her into abstract financial maneuvers instead of descriptive spatial storytelling.
 3. **It punished emerging fluency.** Trying to execute complex cognitive negotiation games while translating words in her head caused Alessia to freeze.
 
-### The Imagineering Solution: The Rafferty Method
-In **Kevin P. Rafferty’s *Magic Journey: My Fantastical Walt Disney Imagineering Career***, we discover how the world’s greatest theme park attractions were actually pitched, written, and built:
+### The Imagineering Solution: Spatial Architecture & Storytelling
+In professional Imagineering design practice, we discover how the world’s greatest theme park attractions were actually pitched, written, and built:
 - **Story & Spatial Walkthroughs:** Imagineers do not pitch with financial bullet points. They take the room on a sensory journey: *"Walk through the front door with me... In Act 1, we decompress the guest... In Act 2, the vehicle turns the corner into darkness..."*
 - **The Act 1 / Act 2 / Act 3 Attraction Pacing:** Every attraction is an architectural three-act play (Arrival & Decompression ➔ Theatrical Complication ➔ Climactic Kinetic Payoff).
 - **Marty Sklar’s Golden Rule:** *"Don’t tell me you can’t because... Tell me you can if..."*
@@ -24,16 +24,16 @@ In **Kevin P. Rafferty’s *Magic Journey: My Fantastical Walt Disney Imagineeri
 
 ## The 8-Module Imagineering Curriculum at a Glance
 
-| Module | Book Anchor (Kevin P. Rafferty) | Core Imagineering Concept | Featured Disney Attraction | Key Communication Focus |
+| Module | Architectural Anchor & Land Focus | Core Imagineering Concept | Featured Disney Attraction | Key Communication Focus |
 |---|---|---|---|---|
-| **01** | Ch. 3 & Ch. 18 | Placemaking, The Berm & The Weenie | **Cars Land & Radiator Springs** | Spatial orientation, perimeter sightline isolation, welcoming the guest |
-| **02** | Ch. 5 & Ch. 19 | Show Writing & Words That Paint Pictures | **Haunted Mansion & Pirates** | Evocative sensory adjectives, replacing generic words, mood setting |
-| **03** | Ch. 18 | The 3-Act Attraction Architecture | **Radiator Springs Racers** | Narrative sequencing (Decompression ➔ Show Darkness ➔ Kinetic Thrill) |
-| **04** | Ch. 10 | Pitching the Impossible & The Bold Reveal | **The Twilight Zone Tower of Terror** | The one-line hook, dramatic tension, elevator leaving the shaft, executive pitching |
-| **05** | Ch. 13 & Ch. 15 | 4D Sensory Design & Organic Architecture | **It's Tough to Be a Bug! (Tree of Life)** | Multi-sensory environmental immersion (scents, textures, spatial audio, lighting) |
-| **06** | Ch. 14 | Industrial Theming & High-Velocity Pacing | **Test Track (EPCOT)** | Technical clarity, stress testing, 65mph banked curves, defending Capex & safety |
-| **07** | Ch. 9 & Ch. 17 | Dimensional Playfulness & Kinetic Dining | **Toy Story Mania! & Pizza Port** | Scale distortion (toy-sized guests), kinetic animatronic props, crowd throughput |
-| **08** | Ch. 19 & Ch. 20 | Next-Gen Imagineering & The Grand Walkthrough | **Mickey & Minnie's Runaway Railway** | The 3-minute executive walkthrough pitch, trackless technology, "Create, Don't Replicate" |
+| **01** | Master Planning & Perimeter Sightlines | Placemaking, The Berm & The Weenie | **Cars Land & Radiator Springs** | Spatial orientation, perimeter sightline isolation, welcoming the guest |
+| **02** | Atmospheric Textures & Patina | Show Writing & Words That Paint Pictures | **Haunted Mansion & Pirates** | Evocative sensory adjectives, replacing generic words, mood setting |
+| **03** | Attraction Cadence & Sequencing | The 3-Act Attraction Architecture | **Radiator Springs Racers** | Narrative sequencing (Decompression ➔ Show Darkness ➔ Kinetic Thrill) |
+| **04** | Pitching the Concept & Elevator Reveal | Pitching the Impossible & The Bold Reveal | **The Twilight Zone Tower of Terror** | The one-line hook, dramatic tension, elevator leaving the shaft, executive pitching |
+| **05** | Multi-Sensory Immersion & Acoustics | 4D Sensory Design & Organic Architecture | **It's Tough to Be a Bug! (Tree of Life)** | Multi-sensory environmental immersion (scents, textures, spatial audio, lighting) |
+| **06** | Velocity, Banking & Hourly Throughput | Industrial Theming & High-Velocity Pacing | **Test Track (EPCOT)** | Technical clarity, stress testing, 65mph banked curves, defending Capex & safety |
+| **07** | Toy Scale Distortion & Kinetic Flow | Dimensional Playfulness & Kinetic Dining | **Toy Story Mania! & Pizza Port** | Scale distortion (toy-sized guests), kinetic animatronic props, crowd throughput |
+| **08** | Trackless AGV Systems & Capstone | Next-Gen Imagineering & The Grand Walkthrough | **Mickey & Minnie's Runaway Railway** | The 3-minute executive walkthrough pitch, trackless technology, "Create, Don't Replicate" |
 
 ---
 
@@ -42,8 +42,8 @@ In **Kevin P. Rafferty’s *Magic Journey: My Fantastical Walt Disney Imagineeri
 ---
 
 ### MODULE 1: The Spark of Placemaking, The Berm & The Weenie
-* **Book Chapter Anchor:** *Magic Journey*, Chapter 3 ("WED Behind the Ears") & Chapter 18 ("The Road to Cars Land").
-* **Kevin Rafferty Principle:** *"I’m a traditional build-a-berm-and-fill-the-inside-with-highly-detailed-immersive-stories-and-experiences-that-take-you-to-another-place-in-another-time kind of guy."*
+* **Architectural Domain:** Master Planning & Perimeter Sightlines (Cars Land & Radiator Springs).
+* **Core Design Principle:** *"Build a berm and fill the inside with highly detailed, immersive stories and experiences that take guests to another place in another time."*
 * **Core Concept:** Placemaking, Hub-and-Spoke geometry, perimeter berms, visual sightline intrusion, and Walt Disney’s "Weenie" (the visual magnet).
 
 #### 1. Core Vocabulary (Drill First 10 Mins)
@@ -115,7 +115,7 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
   > *IT:* *"Prima, una rilassante guida panoramica. Poi, una dark ride teatrale con musica. Infine, un'emozionante gara all'aperto!"*
 
 #### 4. Step-by-Step 50-Minute Lesson Plan & In-Class Drills
-* **00:00–07:00 (Warm-Up):** Discuss: *"Alessia, Kevin Rafferty says theme parks must take guests 'to another place in another time.' When you enter a theme park, what is the very first detail that tells your brain: 'I am no longer in the real world'?"*
+* **00:00–07:00 (Warm-Up):** Discuss: *"Alessia, in themed entertainment, design must take guests 'to another place in another time.' When you enter a theme park, what is the very first detail that tells your brain: 'I am no longer in the real world'?"*
 * **07:00–18:00 (Concept & Word Bank Intro):** Introduce the 4 Core Imagineering Terms and drill the Describing Words Bank (Scale, Texture, Atmosphere, and Guest Feelings).
 * **18:00–30:00 (Sentence Structure Drills):**
   * *Drill 1 (Weenie Upgrade):* Teacher prompts: *"Look down the street. What do you see?"* Alessia replies: *"At the end of the road, you see Willys Butte. It is monumental and sun-bleached. Guests feel awe as it draws them forward!"*
@@ -129,8 +129,8 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
 ---
 
 ### MODULE 2: Words That Paint Pictures (Show Writing for Architects)
-* **Book Chapter Anchor:** *Magic Journey*, Chapter 5 ("A Step in the Write Direction") & Chapter 19 ("To the Next-Generation Imagineers").
-* **Kevin Rafferty Principle:** *"X Atencio strung an unusual collection of words together like perfect pearls to say what he wanted to say in a most uncommon way... 'Your cadaverous pallor betrays an aura of foreboding, almost as if you sense a disquieting metamorphosis.' That’s the difference between something that works and something that works far beyond."*
+* **Architectural Domain:** Atmospheric Show Writing (Haunted Mansion & Pirates).
+* **Core Design Principle:** *"String an evocative collection of words together like perfect pearls to say what you want to say in a most uncommon way... 'Your cadaverous pallor betrays an aura of foreboding, almost as if you sense a disquieting metamorphosis.' That’s the difference between something that works and something that works far beyond."*
 * **Core Concept:** Show writing for architects. How precise, sensory English breathes life into physical blueprints, concept art, and spatial models.
 
 #### 1. Core Vocabulary
@@ -149,21 +149,21 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
 * **Frame 3 (The Emotional Beat):** *"This deliberate **atmospheric beat** prepares the guest's imagination for the mystery ahead."*
 
 #### 3. Step-by-Step 50-Minute Lesson Plan
-* **00:00–07:00 (Warm-Up):** Read the comparison from Chapter 19: *"Normal: 'You look scared because the room is changing.' Paranormal: 'Your cadaverous pallor betrays an aura of foreboding...'"* Ask Alessia: *"Which line would you rather have describing your architecture?"*
+* **00:00–07:00 (Warm-Up):** Read the comparison: *"Normal: 'You look scared because the room is changing.' Architectural Show Writing: 'Your cadaverous pallor betrays an aura of foreboding...'"* Ask Alessia: *"Which line would you rather have describing your architecture?"*
 * **07:00–18:00 (Concept Deep Dive):** Show a photograph of a castle gate or weathered tavern. Teach the "Language Upgrade Ladder":
   * Level 1 (Basic): *"It is an old stone wall."*
   * Level 2 (Architectural): *"It is a rusticated masonry wall with moss."*
   * Level 3 (Imagineering): *"It is an imposing medieval stone rampart, scarred by time and choked with wild ivy."*
 * **18:00–30:00 (Interactive Word Clinic):** Upgrade 4 generic words into evocative Imagineering descriptions: *Big ➔ Monumental / Imposing; Dark ➔ Shadow-drenched / Murky; Old ➔ Weathered / Time-worn; Bright ➔ Luminous / Radiant*.
-* **30:00–45:00 (Roleplay):** Kevin Rafferty Concept Pitch:
+* **30:00–45:00 (Roleplay):** Architectural Concept Pitch:
   * *Alessia's Task:* Describe an entrance courtyard to the Creative Board without using the words "nice," "good," "big," or "old."
 * **45:00–50:00 (Wrap-Up):** Provide recasts in the Preply scratchpad.
 
 ---
 
 ### MODULE 3: The 3-Act Attraction Architecture (Radiator Springs Racers)
-* **Book Chapter Anchor:** *Magic Journey*, Chapter 18 ("The Road to Cars Land").
-* **Kevin Rafferty Principle:** *"Act 1 would be the relaxing road trip where guests could settle in and decompress; Act 2 would be the show-controlled theatrical indoor experience with all of the Audio-Animatronics characters; and Act 3 would be the thrilling race across Ornament Valley and around Willys Butte."*
+* **Architectural Domain:** Attraction Cadence & Sequencing (Radiator Springs Racers).
+* **Core Design Principle:** *"Act 1 is the relaxing road trip where guests settle in and decompress; Act 2 is the show-controlled theatrical indoor experience with Audio-Animatronics characters; and Act 3 is the thrilling race across Ornament Valley and around Willys Butte."*
 * **Core Concept:** The three-act story arc translated into spatial geometry, vehicle velocity, and emotional pacing.
 
 #### 1. Core Vocabulary
@@ -182,8 +182,8 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
 * **Frame 3 (Act 3 Payoff):** *"Finally, **Act 3** bursts outdoors into a **climactic kinetic payoff**, racing guests through monumental landscape at top speed."*
 
 #### 3. Step-by-Step 50-Minute Lesson Plan
-* **00:00–07:00 (Warm-Up):** Discuss: *"Why does Pirates of the Caribbean begin with a slow float past the Blue Bayou instead of dropping straight down the waterfall?"* (Connect to Rafferty's principle of guest decompression).
-* **07:00–18:00 (Concept Deep Dive):** Walk through Rafferty's beat sheet for Radiator Springs Racers. Explain how spatial layout directly mirrors dramatic three-act screenplay structure.
+* **00:00–07:00 (Warm-Up):** Discuss: *"Why does Pirates of the Caribbean begin with a slow float past the Blue Bayou instead of dropping straight down the waterfall?"* (Connect to the principle of guest decompression).
+* **07:00–18:00 (Concept Deep Dive):** Walk through the spatial beat sheet for Radiator Springs Racers. Explain how spatial layout directly mirrors dramatic three-act screenplay structure.
 * **18:00–30:00 (Beat Sheet Construction):** Work with Alessia to map out a 3-act attraction of her own design: Act 1 (The Approach), Act 2 (The Discovery), Act 3 (The Great Escape).
 * **30:00–45:00 (Pitch Walkthrough):** Alessia presents her 3-Act attraction to a Disney Executive Committee, explaining how each act changes vehicle speed, lighting, and guest emotion.
 * **45:00–50:00 (Recasting & Feedback):** Coach transitions (*"Now, as we round the bend...", "Without warning...", "This propels us into..."*).
@@ -191,8 +191,8 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
 ---
 
 ### MODULE 4: Pitching the Impossible & The Bold Reveal (Tower of Terror)
-* **Book Chapter Anchor:** *Magic Journey*, Chapter 10 ("The Disney-MGM Studios Expansion").
-* **Kevin Rafferty Principle:** *"I responded with a playful hint of foreboding in my voice: 'The Twilight Zone Tower of Terror. Mwaaa ha ha ha haaa!' I had the legendary TV show's musical theme cued up on my cassette player and pushed PLAY... Michael and Frank were totally on board that elevator, especially when I pitched that it 'breaks free' of the vertical shaft only to travel horizontally into the Twilight Zone!"*
+* **Architectural Domain:** The Signature Reveal (The Twilight Zone Tower of Terror).
+* **Core Design Principle:** *"Set the mood with tension and music before revealing the signature twist. When pitching an impossible ride, take leadership right through the front door into the boiler room—and then reveal how the elevator breaks free of the vertical shaft to travel horizontally into the unknown."*
 * **Core Concept:** Pitching high-concept thrill attractions to senior leadership; crafting the irresistible one-line hook; engineering the architectural "impossible twist" that wins the green light.
 
 #### 1. Core Vocabulary
@@ -211,8 +211,8 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
 * **Frame 3 (The Signature Reveal):** *"Here is the moment that will blow their minds: The vehicle **breaks free of the track** and navigates seamlessly into the fifth dimension!"*
 
 #### 3. Step-by-Step 50-Minute Lesson Plan
-* **00:00–07:00 (Warm-Up):** Discuss: *"How did Kevin Rafferty convince Michael Eisner and Frank Wells to build Tower of Terror when the previous team’s 'murder mystery' concept had failed?"* (Answer: Clear story hook, iconic IP atmosphere, and the audacious horizontal elevator twist).
-* **07:00–18:00 (Pitch Anatomy):** Analyze Rafferty's pitch script: 1. The Hook ➔ 2. The Lobby Mood ➔ 3. The Pre-Show TV ➔ 4. The Boiler Room ➔ 5. The Signature Reveal ➔ 6. The Drops.
+* **00:00–07:00 (Warm-Up):** Discuss: *"How do you convince executive leadership to build a breakthrough attraction when traditional concepts fail?"* (Answer: Clear story hook, iconic atmospheric branding, and the audacious horizontal elevator twist).
+* **07:00–18:00 (Pitch Anatomy):** Analyze the pitch script: 1. The Hook ➔ 2. The Lobby Mood ➔ 3. The Pre-Show TV ➔ 4. The Boiler Room ➔ 5. The Signature Reveal ➔ 6. The Drops.
 * **18:00–30:00 (Drill):** Practice building dramatic vocal inflection and enthusiastic English conviction. Ban timid apologies (*"Sorry, my English is not good"*). Model bold Imagineering authority.
 * **30:00–45:00 (Roleplay):** Alessia pitches a supernatural or sci-fi high-capacity thrill ride to Michael Eisner (played by the teacher). The teacher asks tough questions: *"Why wouldn't guests just ride a normal drop tower at Six Flags?"* Alessia must defend the story and spatial reveal!
 * **45:00–50:00 (Feedback):** Focus on pacing, vocal projection, and punchy sentence endings.
@@ -220,8 +220,8 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
 ---
 
 ### MODULE 5: 4D Multi-Sensory Spatial Immersion (The Birds and the Bees)
-* **Book Chapter Anchor:** *Magic Journey*, Chapter 13 ("The Birds and the Bees") & Chapter 15 ("Mickey's PhilharMagic").
-* **Kevin Rafferty Principle:** *"Designing 'It's Tough to Be a Bug!' inside the roots of the Tree of Life taught us that true immersion engages every nerve ending: sound, scent, wind, temperature, and surprise tactile physical effects that make guests jump right out of their seats!"*
+* **Architectural Domain:** Multi-Sensory Immersion & Acoustics (Tree of Life & 4D Theater Spaces).
+* **Core Design Principle:** *"Designing multi-sensory spaces inside the roots of the Tree of Life taught us that true immersion engages every nerve ending: sound, scent, wind, temperature, and surprise tactile physical effects that make guests jump right out of their seats!"*
 * **Core Concept:** Multi-sensory environmental immersion; integrating tactile, olfactory, auditory, and climatic physical effects directly into architectural spaces.
 
 #### 1. Core Vocabulary
@@ -229,7 +229,7 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
    * *Example:* *"True Imagineering goes beyond visual sightlines to touch, smell, sound, and thermal cues."*
 2. **Olfactory Integration (Smellitzer)** (`/ɑːlˈfæk.tər.i ˌɪn.təˈɡreɪ.ʃən/`) — The precise deployment of custom scent cues triggered at specific story beats.
    * *Example:* *"As the stink bug turns around, a sulfurous stink puff blasts through the theater air ducts."*
-3. **Tactile Cues & In-Seat FX** (`/ˈtæk.taɪl kjuːz/`) — Physical physical sensations (pokes, vibrations, ticklers, water mists) integrated directly into the guest seating or handrails.
+3. **Tactile Cues & In-Seat FX** (`/ˈtæk.taɪl kjuːz/`) — Physical sensations (pokes, vibrations, ticklers, water mists) integrated directly into the guest seating or handrails.
    * *Example:* *"Under-seat rollers create the sensation of hundreds of hornet stingers and scampering cockroaches."*
 4. **Binaural / Spatial Audio** (`/baɪˈnɔː.rəl ˈɔː.di.oʊ/`) — Directional sound engineering that makes sounds appear to fly across the room or whisper directly into the guest's ear.
    * *Example:* *"Spatial audio channels track the flight of the bumblebee as it buzzes past the listener's left shoulder."*
@@ -249,8 +249,8 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
 ---
 
 ### MODULE 6: Industrial Theming & High-Velocity Pacing (Test Track)
-* **Book Chapter Anchor:** *Magic Journey*, Chapter 14 ("Test Track").
-* **Kevin Rafferty Principle:** *"Marty Sklar asked me to put some thought into how we could update and enhance the World of Motion pavilion... We realized guests didn't just want to watch car history; they wanted to become the test dummies, feeling the brutal heat, the freezing cold, the brake tests, and that breathtaking 65-mile-per-hour banked curve bursting outside the building!"*
+* **Architectural Domain:** Velocity, Banking & Hourly Throughput (Test Track).
+* **Core Design Principle:** *"Transform raw functional engineering into visceral excitement: guests don't just want to watch car history; they want to become the test dummies, feeling the brutal heat, the freezing cold, the brake tests, and that breathtaking 65-mile-per-hour banked curve bursting outside the building!"*
 * **Core Concept:** Transforming raw industrial engineering into a heart-stopping guest narrative; handling technical specifications, throughput, and structural constraints with executive clarity.
 
 #### 1. Core Vocabulary
@@ -278,8 +278,8 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
 ---
 
 ### MODULE 7: Dimensional Playfulness & Kinetic Dining (Pan Galactic & Toy Story)
-* **Book Chapter Anchor:** *Magic Journey*, Chapter 9 ("Pan Galactic Pizza Port") & Chapter 17 ("Toy Story Midway Mania!").
-* **Kevin Rafferty Principle:** *"Tony Solaroni at Pan Galactic Pizza Port was a riot—he’s an alien operating a massive, noisy pizza-making machine suspended over the restaurant that constantly malfunctions! And for Toy Story Mania, we shrunk the guests down to the size of a little green army man so everything around them looked gigantic, nostalgic, and totally playful."*
+* **Architectural Domain:** Toy Scale Distortion & Kinetic Flow (Toy Story & Themed Dining).
+* **Core Design Principle:** *"Scale distortion and theatrical kinetic props bring spaces to life—whether through an alien operating a massive, noisy pizza-making machine suspended over the restaurant or shrinking guests down to the size of a little green army man so everything around them looks gigantic, nostalgic, and playful."*
 * **Core Concept:** Scale distortion (making guests feel tiny or huge), whimsical environmental storytelling, kinetic dining installations, and interactive crowd circulation.
 
 #### 1. Core Vocabulary
@@ -298,7 +298,7 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
 * **Frame 3 (Circulation & Joy):** *"This converts a standard ordering line into an unforgettable theatrical experience, increasing **dining throughput** by 25%."*
 
 #### 3. Step-by-Step 50-Minute Lesson Plan
-* **00:00–07:00 (Warm-Up):** Discuss: *"Why do people remember Tony Solaroni at Tokyo Disneyland thirty years later? How does humor and playfulness change architectural design?"*
+* **00:00–07:00 (Warm-Up):** Discuss: *"Why do people remember kinetic characters and themed restaurants thirty years later? How does humor and playfulness change architectural design?"*
 * **07:00–18:00 (The Architecture of Play):** Contrast serious monuments with whimsical themed spaces. Discuss oversized furniture, bright color palettes, kinetic props, and interactive queues.
 * **18:00–30:00 (Sentence Framing & Humor):** Practice using warm, humorous, and enthusiastic English. Model how Imagineers pitch comedy without losing professional credibility.
 * **30:00–45:00 (Pitch Roleplay):** Alessia pitches a whimsical themed café or interactive family attraction (e.g., a giant chef’s kitchen or an oversized board game world) to the park's Food & Beverage Director.
@@ -307,12 +307,12 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
 ---
 
 ### MODULE 8: Next-Gen Imagineering & The Grand Walkthrough Pitch
-* **Book Chapter Anchor:** *Magic Journey*, Chapter 19 ("To the Next-Generation Imagineers") & Chapter 20 ("What a Ride!").
-* **Kevin Rafferty Principle:** *"Create, don’t replicate! If you’re working on something new and someone asks you to describe it and you start by saying, 'It’s like...', slam on the brakes and ask yourself: Why am I working on something that is like something else? Find your own sound! And remember Marty's rule: Don’t tell me you can’t because... tell me you can if..."*
+* **Architectural Domain:** Trackless AGV Systems & Capstone Pitch (Mickey & Minnie's Runaway Railway).
+* **Core Design Principle:** *"Create, don’t replicate! If you’re working on something new and someone asks you to describe it and you start by saying, 'It’s like...', slam on the brakes and ask yourself: Why am I working on something that is like something else? Find your own sound! And remember Marty's rule: Don’t tell me you can’t because... tell me you can if..."*
 * **Core Concept:** Trackless ride vehicle architecture, 2.5D dimensional physical environments, cross-disciplinary collaboration, and delivering the full 3-minute executive Imagineering walkthrough pitch to the Walt Disney Imagineering Board.
 
 #### 1. Core Vocabulary
-1. **"Create, Don't Replicate"** — Kevin Rafferty’s cardinal rule: never build safe copies of existing attractions; invent new emotional and spatial paradigms.
+1. **"Create, Don't Replicate"** — Core studio principle: never build safe copies of existing attractions; invent new emotional and spatial paradigms.
    * *Example:* *"We aren't making another pirate boat ride; we are creating the first trackless dimensional cartoon dark ride in history."*
 2. **"Tell Me You Can If..."** — Marty Sklar’s legendary Imagineering problem-solving mindset: transforming structural or budget roadblocks into innovative breakthroughs.
    * *Example:* *"Don't tell me the budget can't support steel; tell me we can if we engineer timber trusses with forced perspective."*
@@ -330,7 +330,7 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
   > *"This is not just a ride; it is a one-of-a-kind emotional milestone that guests will cherish for a lifetime. As Imagineers, we don't replicate the past—we create the future!"*
 
 #### 3. Step-by-Step 50-Minute Graduation Pitch & Debrief
-* **00:00–05:00 (Warm-Up & Mindset):** Read Kevin Rafferty's message to Next-Gen Imagineers in Chapter 19: *"Fan your spark into a flame... Betray that aura of average!"* Remind Alessia: she is the architect; speak with authority and passion.
+* **00:00–05:00 (Warm-Up & Mindset):** Pre-pitch mindset: *"Fan your spark into a flame... Betray that aura of average!"* Remind Alessia: she is the architect; speak with authority and passion.
 * **05:00–25:00 (The Grand Graduation Pitch):** Alessia presents her complete, original 3-minute Imagineering attraction pitch to a simulated panel of Disney Executives (Marty Sklar, Bob Iger, Creative Producer).
   * *Pitch Requirements:* Must include (1) The Weenie & Placemaking Arrival, (2) The 3-Act Structure, (3) A Signature Reveal or 4D sensory element, and (4) Clear executive conviction.
 * **25:00–40:00 (Executive Q&A & "Plussing" Session):** The panel challenges her with 2 creative constraints:
@@ -339,4 +339,5 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
 * **40:00–50:00 (Course Graduation & Certificate Review):** Celebrate her growth, review her personal vocabulary bank, and set long-term English professional goals.
 
 ---
-*Created for Alessia • The Imagineering English Studio • Based on "Magic Journey" by Kevin P. Rafferty*
+*Created for Alessia • The Imagineering English Studio • Themed Entertainment Architecture & Spatial Storytelling*
+

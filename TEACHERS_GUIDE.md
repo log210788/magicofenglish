@@ -1,6 +1,6 @@
-# The Imagineer’s Coaching Playbook: How to Teach Alessia 🎢🎓
+# The Imagineer’s Coaching Field Guide: How to Teach Alessia 🎢🎓
 ### Pedagogical Field Guide for Teaching an Architect with Emerging English
-*Grounded in Kevin P. Rafferty’s "Magic Journey: My Fantastical Walt Disney Imagineering Career"*
+*Pedagogical Field Guide for Themed Entertainment Architecture & Spatial Storytelling*
 
 ---
 
@@ -9,10 +9,10 @@
 If you are teaching Alessia and feeling like lessons were stalling, here is the diagnosis:
 
 > **The Problem With the Previous Method:**  
-> The previous curriculum forced Alessia into Oren Klaff’s high-stakes Wall Street sales psychology (*"croc brains," aggressive frame control, investor closing*). For a creative designer with emerging English, this was disastrous. It triggered performance anxiety, forced unnatural corporate posturing, and created severe cognitive overload. Alessia was trying to juggle aggressive MBA negotiation theory while desperately searching for basic English vocabulary.
+> The previous curriculum forced Alessia into high-stakes corporate sales psychology (*"croc brains," aggressive frame control, investor closing*). For a creative designer with emerging English, this was disastrous. It triggered performance anxiety, forced unnatural corporate posturing, and created severe cognitive overload. Alessia was trying to juggle aggressive negotiation theory while desperately searching for basic English vocabulary.
 
-> **The Solution: The Kevin Rafferty Imagineering Method**  
-> In *Magic Journey*, legendary Disney Imagineer Kevin P. Rafferty reveals how real theme park legends (Marty Sklar, Herb Ryman, John Hench, X Atencio) pitch and create:
+> **The Solution: The Imagineering Studio Method**  
+> In authentic Imagineering design practice, we learn how real theme park legends (Marty Sklar, Herb Ryman, John Hench, X Atencio) pitch and create:
 > 1. **They walk through the space:** Imagineers don't recite financial slides. They guide the room through the physical attraction: *"Step through the entrance with me... In Act 1, we decompress the guest... As the vehicle rounds the corner into darkness..."*
 > 2. **Architecture is spatial, not verbal:** Alessia's spatial intelligence is world-class. When you anchor her English to physical spaces, blueprints, lighting, and guest movement, words flow naturally.
 > 3. **The environment is collaborative, not combative:** In Imagineering, creative discussions are built on **"Plussing"** (*"Yes, and how can we plus that?"*) and Marty Sklar’s rule: *"Don’t tell me you can’t because... tell me you can if..."*
@@ -60,7 +60,7 @@ Keep this exact rhythm every single session. It removes anxiety for both you and
 ┌─────────────────────────────────────────────────────────────┐
 │ 00:00 - 07:00 │ Phase 1: The Warm-Up & Audio Homework Debrief│
 ├───────────────┼─────────────────────────────────────────────┤
-│ 07:00 - 18:00 │ Phase 2: The Rafferty Story & Concept Intro │
+│ 07:00 - 18:00 │ Phase 2: Core Concept & Spatial Intro        │
 ├───────────────┼─────────────────────────────────────────────┤
 │ 18:00 - 30:00 │ Phase 3: Controlled Practice & Chunks       │
 ├───────────────┼─────────────────────────────────────────────┤
@@ -74,9 +74,9 @@ Keep this exact rhythm every single session. It removes anxiety for both you and
 * **Goal:** Warm up her vocal muscles without performance pressure.
 * **What you say:** *"Hi Alessia! Great to see you. I listened to your homework voice note. I loved how you described [specific detail]. What was one creative highlight in your work this week?"*
 
-### Phase 2: The Rafferty Story & Concept Intro (11 mins)
-* **Goal:** Anchor the lesson in a real Imagineering story from *Magic Journey*.
-* **What you say:** *"Today we are looking at Kevin Rafferty's pitch for Tower of Terror. When Michael Eisner asked 'What are we seeing today?', Kevin put on the Twilight Zone music cassette and took them right through the front door into the boiler room. Let's look at the three terms Kevin used..."*
+### Phase 2: Core Concept & Spatial Intro (11 mins)
+* **Goal:** Anchor the lesson in a real Imagineering design case study.
+* **What you say:** *"Today we are looking at the pitch for Tower of Terror. When leadership asked 'What are we seeing today?', the team put on the Twilight Zone music and took them right through the front door into the boiler room. Let's look at the three terms we use to frame this space..."*
 * **Rule:** Introduce strictly **3 to 4 core vocabulary terms** per lesson. Quality over quantity.
 
 ### Phase 3: Controlled Practice & Sentence Chunks (12 mins)
@@ -124,16 +124,16 @@ When Alessia says *"I can't explain this in English"*, smile and say:
 
 ## 5. Module-by-Module Teacher Quick Reference
 
-| Module | Chapter in *Magic Journey* | Your Roleplay Persona | Teacher Script Cue |
+| Module | Spatial Focus & Land | Your Roleplay Persona | Teacher Script Cue |
 |---|---|---|---|
-| **01** | Ch. 3 & 18 (Cars Land) | Marty Sklar (Creative Exec) | *"Walk me through the arrival plaza. How does the berm protect our sightlines?"* |
-| **02** | Ch. 5 & 19 (Show Writing) | Creative Director | *"Give me the atmospheric beat for this courtyard. Ban the words 'nice' and 'old'!"* |
-| **03** | Ch. 18 (Radiator Springs) | Attraction Producer | *"Walk me through Act 1, Act 2, and Act 3. Where does the vehicle accelerate?"* |
-| **04** | Ch. 10 (Tower of Terror) | Michael Eisner (CEO) | *"Alessia, why shouldn't I just build a normal drop tower? What's your signature reveal?"* |
-| **05** | Ch. 13 & 15 (Tree of Life) | Show Effects Lead | *"What are the guests smelling and feeling in this 4D chamber?"* |
-| **06** | Ch. 14 (Test Track) | General Motors Sponsor | *"How does this 65mph banked curve work safely with our hourly capacity target?"* |
-| **07** | Ch. 9 & 17 (Toy Story) | Operations Director | *"How does shrinking guests to toy size prevent queue line boredom?"* |
-| **08** | Ch. 19 & 20 (Runaway Railway)| Imagineering Executive Board| *"Take the board on a 3-minute full attraction walkthrough. Show us your vision!"* |
+| **01** | Master Planning & Berm (Cars Land) | Marty Sklar (Creative Exec) | *"Walk me through the arrival plaza. How does the berm protect our sightlines?"* |
+| **02** | Atmospheric Textures (Show Writing) | Creative Director | *"Give me the atmospheric beat for this courtyard. Ban the words 'nice' and 'old'!"* |
+| **03** | Attraction Cadence (Radiator Springs) | Attraction Producer | *"Walk me through Act 1, Act 2, and Act 3. Where does the vehicle accelerate?"* |
+| **04** | The Signature Reveal (Tower of Terror) | Michael Eisner (CEO) | *"Alessia, why shouldn't I just build a normal drop tower? What's your signature reveal?"* |
+| **05** | Multi-Sensory 4D (Tree of Life) | Show Effects Lead | *"What are the guests smelling and feeling in this 4D chamber?"* |
+| **06** | Velocity & Banking (Test Track) | General Motors Sponsor | *"How does this 65mph banked curve work safely with our hourly capacity target?"* |
+| **07** | Kinetic Playfulness (Toy Story) | Operations Director | *"How does shrinking guests to toy size prevent queue line boredom?"* |
+| **08** | Trackless Capstone (Runaway Railway) | Imagineering Executive Board | *"Take the board on a 3-minute full attraction walkthrough. Show us your vision!"* |
 
 ---
 
@@ -147,4 +147,4 @@ Before every session with Alessia:
 - [ ] Keep the 70/30 rule at the front of your mind: **listen more, recast gently, inspire always.**
 
 ---
-*The Imagineer’s Coaching Playbook • Built for teaching Alessia • Based on Kevin P. Rafferty's Magic Journey*
+*The Imagineer’s Coaching Field Guide • Built for teaching Alessia • Themed Entertainment Architecture & Spatial Storytelling*
