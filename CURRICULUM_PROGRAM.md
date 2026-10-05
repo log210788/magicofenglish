@@ -95,19 +95,19 @@ To express spatial scale, materials, and mood, Alessia must move beyond generic 
 These four structural scaffolds give Alessia immediate confidence to pitch spatial concepts in short, punchy English:
 
 * **Formula A (The Sightline Magnet / Weenie):**
-  > `At the end of [the vista], you see [The Landmark]. It is [word 1] and [word 2]. It draws guests forward.`
-  > *Model:* *"At the end of the road, you see Willys Butte. It is monumental and sun-bleached. It draws guests forward."*
-  > *ES:* *"Al final del camino, ves Willys Butte. Es monumental y soleado. Atrae a los visitantes hacia adelante."*
+  > `At the end of [the vista], you see [The Landmark]. It is [word 1] and [word 2]. Guests feel [emotion] as it draws them forward!`
+  > *Model:* *"At the end of the road, you see Willys Butte. It is monumental and sun-bleached. Guests feel awe as it draws them forward!"*
+  > *ES:* *"Al final del camino, ves Willys Butte. Es monumental y soleado. ¡Los visitantes sienten asombro mientras los atrae hacia adelante!"*
 
 * **Formula B (Immersion Defense / The Berm):**
-  > `Around the park, we build a [material] berm. It hides the [outside distraction].`
-  > *Model:* *"Around the park, we build a sculpted rock berm. It hides the highway outside."*
-  > *ES:* *"Alrededor del parque, construimos un terraplén de roca esculpida. Oculta la autopista exterior."*
+  > `Around the park, we build a [material] berm. It hides the [outside distraction], so guests feel [emotion] and safe.`
+  > *Model:* *"Around the park, we build a sculpted rock berm. It hides the ugly highway outside, so guests feel peaceful and safe."*
+  > *ES:* *"Alrededor del parque, construimos un terraplén de roca esculpida. Oculta la fea autopista exterior, para que los visitantes se sientan en paz y protegidos."*
 
 * **Formula C (Threshold Portal / Space Reveal):**
-  > `Guests walk through a [material] arch. The [space] opens up dramatically!`
-  > *Model:* *"Guests walk through a rustic timber arch. The canyon opens up dramatically!"*
-  > *ES:* *"Los visitantes cruzan un arco de madera rústica. ¡El cañón se abre dramáticamente!"*
+  > `Guests walk through a [material] arch. Suddenly, the canyon opens up dramatically, and they feel [emotion] to explore!`
+  > *Model:* *"Guests walk through a rustic weathered timber arch. Suddenly, the canyon opens up dramatically, and they feel curious to explore!"*
+  > *ES:* *"Los visitantes cruzan un arco rústico de madera envejecida. De repente, ¡el cañón se abre dramáticamente y se sienten curiosos por explorar!"*
 
 * **Formula D (The 3-Act Attraction Architecture):**
   > `First, [Act 1 - calm]. Next, [Act 2 - dark ride]. Finally, [Act 3 - fast race]!`
@@ -116,13 +116,14 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
 
 #### 4. Step-by-Step 50-Minute Lesson Plan & In-Class Drills
 * **00:00–07:00 (Warm-Up):** Discuss: *"Alessia, Kevin Rafferty says theme parks must take guests 'to another place in another time.' When you enter a theme park, what is the very first detail that tells your brain: 'I am no longer in the real world'?"*
-* **07:00–18:00 (Concept & Word Bank Intro):** Introduce the 4 Core Imagineering Terms and drill the Describing Words Bank (Scale, Texture, Atmosphere).
+* **07:00–18:00 (Concept & Word Bank Intro):** Introduce the 4 Core Imagineering Terms and drill the Describing Words Bank (Scale, Texture, Atmosphere, and Guest Feelings).
 * **18:00–30:00 (Sentence Structure Drills):**
-  * *Drill 1 (Weenie Upgrade):* Teacher prompts: *"Look down the street. What do you see?"* Alessia replies: *"At the end of the road, you see Willys Butte. It is monumental and sun-bleached. It draws guests forward."*
-  * *Drill 2 (Berm Defense):* Teacher prompts: *"Why do we need this berm?"* Alessia replies: *"Around the park, we build a sculpted rock berm. It hides the highway outside."*
+  * *Drill 1 (Weenie Upgrade):* Teacher prompts: *"Look down the street. What do you see?"* Alessia replies: *"At the end of the road, you see Willys Butte. It is monumental and sun-bleached. Guests feel awe as it draws them forward!"*
+  * *Drill 2 (Berm Defense):* Teacher prompts: *"Why do we need this berm?"* Alessia replies: *"Around the park, we build a sculpted rock berm. It hides the ugly highway outside, so guests feel peaceful and safe."*
+  * *Drill 3 (Canyon Portal):* Teacher prompts: *"What happens at the arch?"* Alessia replies: *"Guests walk through a rustic weathered timber arch. Suddenly, the canyon opens up dramatically, and they feel curious to explore!"*
 * **30:00–45:00 (Simulated Design Crit):** You play Marty Sklar (Executive Creative Director):
   * *Prompt:* *"Alessia, we have an 8-acre site right next to an ugly highway in Anaheim. Walk me through your master plan. How do you protect guest immersion and where do you guide their eyes? You have 60 to 90 seconds."*
-  * *Goal:* Alessia presents the 4 short sentences (Weenie, Berm, Portal, 3-Act Ride) with rhythm and confidence, zero apologies.
+  * *Goal:* Alessia presents the 3 short sentences with architectural description and guest feelings with rhythm and confidence, zero apologies.
 * **45:00–50:00 (Recast Feedback & Assignment):** Recast 2 phrases in the Preply chat. Assign Milestone 1 in `homework.html`.
 
 ---
