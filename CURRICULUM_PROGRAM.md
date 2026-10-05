@@ -97,22 +97,22 @@ These four structural scaffolds give Alessia immediate confidence to pitch spati
 * **Formula A (The Sightline Magnet / Weenie):**
   > `At the end of [the vista], you see [The Landmark]. It is [word 1] and [word 2]. Guests feel [emotion] as it draws them forward!`
   > *Model:* *"At the end of the road, you see Willys Butte. It is monumental and sun-bleached. Guests feel awe as it draws them forward!"*
-  > *ES:* *"Al final del camino, ves Willys Butte. Es monumental y soleado. ¡Los visitantes sienten asombro mientras los atrae hacia adelante!"*
+  > *IT:* *"In fondo alla strada, vedi Willys Butte. È monumentale e schiarito dal sole. Gli ospiti provano stupore mentre li attira in avanti!"*
 
 * **Formula B (Immersion Defense / The Berm):**
   > `Around the park, we build a [material] berm. It hides the [outside distraction], so guests feel [emotion] and safe.`
   > *Model:* *"Around the park, we build a sculpted rock berm. It hides the ugly highway outside, so guests feel peaceful and safe."*
-  > *ES:* *"Alrededor del parque, construimos un terraplén de roca esculpida. Oculta la fea autopista exterior, para que los visitantes se sientan en paz y protegidos."*
+  > *IT:* *"Intorno al parco, costruiamo un terrapieno di roccia scolpita. Nasconde la brutta autostrada all'esterno, così gli ospiti si sentono sereni e protetti."*
 
 * **Formula C (Threshold Portal / Space Reveal):**
   > `Guests walk through a [material] arch. Suddenly, the canyon opens up dramatically, and they feel [emotion] to explore!`
   > *Model:* *"Guests walk through a rustic weathered timber arch. Suddenly, the canyon opens up dramatically, and they feel curious to explore!"*
-  > *ES:* *"Los visitantes cruzan un arco rústico de madera envejecida. De repente, ¡el cañón se abre dramáticamente y se sienten curiosos por explorar!"*
+  > *IT:* *"Gli ospiti attraversano un arco rustico in legno invecchiato. All'improvviso, il canyon si apre drammaticamente e provano curiosità di esplorare!"*
 
 * **Formula D (The 3-Act Attraction Architecture):**
   > `First, [Act 1 - calm]. Next, [Act 2 - dark ride]. Finally, [Act 3 - fast race]!`
   > *Model:* *"First, a calm scenic drive. Next, a theatrical dark ride with music. Finally, an exhilarating outdoor race!"*
-  > *ES:* *"Primero, un paseo panorámico tranquilo. Luego, un paseo teatral con música. Finalmente, ¡una emocionante carrera exterior!"*
+  > *IT:* *"Prima, una rilassante guida panoramica. Poi, una dark ride teatrale con musica. Infine, un'emozionante gara all'aperto!"*
 
 #### 4. Step-by-Step 50-Minute Lesson Plan & In-Class Drills
 * **00:00–07:00 (Warm-Up):** Discuss: *"Alessia, Kevin Rafferty says theme parks must take guests 'to another place in another time.' When you enter a theme park, what is the very first detail that tells your brain: 'I am no longer in the real world'?"*

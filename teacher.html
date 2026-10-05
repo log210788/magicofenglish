@@ -230,18 +230,18 @@
           "Beat 3 (Portal): 'Guests walk through a rustic timber arch. The canyon opens up dramatically!'",
           "Beat 4 (Pacing): 'First, a calm scenic drive. Next, a theatrical dark ride. Finally, an exhilarating outdoor race!'"
         ],
-        spanishSupport: {
-          weenie: "El imán visual (orientación)",
-          berm: "El terraplén perimetral (defensa visual)",
-          placemaking: "Creación de lugar / ambientación inmersiva",
-          striated: "Estriado / con capas geológicas",
-          weathered: "Desgastado por el clima y el tiempo",
-          sunDrenched: "Bañado por el sol"
+        italianSupport: {
+          weenie: "Il punto focale / faro visivo (orientamento)",
+          berm: "Il terrapieno perimetrale (difesa visiva)",
+          placemaking: "Creazione di luogo / ambientazione immersiva",
+          striated: "Striato / con stratificazioni geologiche",
+          weathered: "Legno invecchiato dal clima e dal tempo",
+          sunDrenched: "Schiarito / baciato dal sole"
         },
         teacherScript: {
           warmup: "Say: 'Hi Alessia! Kevin Rafferty says theme parks must take guests to another place in another time. When you look at the photo of the rustic portal in homework.html, what materials do you see?'",
-          intro: "Say: 'Today we master three physical elements: The Weenie (el imán visual), The Berm (el terraplén), and The Portal (el umbral). Notice how weathered timber and striated rockwork tell a story without words.'",
-          drill: "Open homework.html with Alessia. Play the Picture Matching Game (Paso 2) together, then guide her through the Dropdown Sentence Questions (Paso 3)."
+          intro: "Say: 'Today we master three physical elements: The Weenie (il faro visivo), The Berm (il terrapieno), and The Portal (il portale). Notice how weathered timber and striated rockwork tell a story without words.'",
+          drill: "Open homework.html with Alessia. Play the Picture Matching Game (Passo 2) together, then guide her through the Dropdown Sentence Questions (Passo 3)."
         },
         roleplay: {
           client: "Marty Sklar (Executive Creative Director)",
@@ -465,7 +465,26 @@
               </div>
             `).join('')}
           </div>
+        ${l.italianSupport ? `
+        <!-- Italian Scaffolding & Native Architectural Cognates -->
+        <div class="space-y-3 pt-2 border-t border-cockpit-border">
+          <div class="flex items-center justify-between">
+            <span class="text-xs uppercase font-mono tracking-wider text-emerald-400 font-bold flex items-center gap-1.5">
+              <span>🇮🇹</span>
+              <span>Italian Architectural Scaffolding (Native Cognates & Prompts):</span>
+            </span>
+            <span class="text-[10px] text-slate-400 font-mono">Alessia's native bridge</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-xs">
+            ${Object.entries(l.italianSupport).map(([key, val]) => `
+              <div class="p-2.5 rounded-xl bg-slate-900 border border-cockpit-border space-y-0.5">
+                <span class="font-mono text-emerald-300 font-semibold text-[11px] block capitalize">${key}:</span>
+                <span class="text-slate-300 text-[11px]">${val}</span>
+              </div>
+            `).join('')}
+          </div>
         </div>
+        ` : ''}
 
         ${l.describingWords ? `
         <!-- Describing Words Toolkit (Click to Copy into Scratchpad) -->
