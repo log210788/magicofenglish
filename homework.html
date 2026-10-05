@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Milestone 1: Placemaking &amp; Visual Storytelling | Alessia</title>
+  <title>Milestone 1: Look, Learn, Match &amp; Speak | Alessia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -23,7 +23,6 @@
               surface: '#20252e',
               elevated: '#282e3a',
               border: '#373f4e',
-              borderLight: '#475266',
               terracotta: '#df6a44',
               ochre: '#e5a54b',
               sand: '#e8dcce',
@@ -37,7 +36,6 @@
     }
   </script>
   <style>
-    /* Architectural Design Board Styling */
     body {
       background-color: #16191f;
       background-image: 
@@ -49,9 +47,6 @@
       background: #20252e;
       border: 1px solid #373f4e;
       box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.45);
-    }
-    .board-card:hover {
-      border-color: #4f5a6e;
     }
     .photo-frame {
       background: #191d24;
@@ -66,31 +61,14 @@
       font-size: 10px;
       font-weight: 600;
     }
-    .interactive-chip {
-      cursor: pointer;
-      user-select: none;
-      transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .interactive-chip:hover {
-      transform: translateY(-2px);
-    }
-    .interactive-chip.selected {
-      background-color: #df6a44 !important;
-      border-color: #f38b67 !important;
-      color: #ffffff !important;
-      box-shadow: 0 4px 12px rgba(223, 106, 68, 0.35);
-    }
-    .interactive-chip.selected .es-tag {
-      color: #ffd8cc !important;
-    }
   </style>
 </head>
-<body class="text-slate-200 font-sans antialiased min-h-screen py-8 md:py-14 px-4 sm:px-6">
+<body class="text-slate-200 font-sans antialiased min-h-screen py-8 md:py-12 px-4 sm:px-6">
 
   <!-- Main Container -->
-  <div class="max-w-4xl mx-auto space-y-12">
+  <div class="max-w-4xl mx-auto space-y-10">
 
-    <!-- Top Navigation & Studio Badge -->
+    <!-- Top Navigation -->
     <header class="flex flex-wrap items-center justify-between gap-4 border-b border-studio-border/70 pb-4 text-xs">
       <a href="index.html" class="inline-flex items-center gap-2 text-studio-ochre hover:text-amber-200 font-medium transition-colors">
         <span class="text-sm">←</span>
@@ -98,7 +76,7 @@
       </a>
       <div class="flex items-center gap-3">
         <span class="px-2.5 py-1 rounded bg-studio-elevated border border-studio-border text-slate-300 font-mono text-[11px]">
-          FIELD ASSIGNMENT • MILESTONE 01
+          TASK • MILESTONE 01
         </span>
         <span class="inline-flex items-center gap-1.5 text-studio-sage font-medium text-[11px]">
           <span class="w-2 h-2 rounded-full bg-studio-sage animate-pulse"></span>
@@ -107,753 +85,459 @@
       </div>
     </header>
 
-    <!-- Header Hero: Human & Architectural -->
-    <div class="space-y-4">
+    <!-- Header Hero -->
+    <div class="space-y-3">
       <div class="inline-block px-3 py-1 rounded bg-studio-terracotta/15 border border-studio-terracotta/30 text-studio-terracotta text-xs font-mono font-medium">
-        WALT DISNEY IMAGINEERING METHOD • KEVIN P. RAFFERTY (CH. 18)
+        DISNEY IMAGINEERING METHOD • ARCHITECTURAL ENGLISH
       </div>
       <h1 class="text-3xl md:text-5xl font-serif text-slate-100 font-normal tracking-wide">
-        Placemaking, The Berm &amp; <span class="italic text-studio-ochre font-light">The 3-Act Walkthrough</span>
+        Look, Learn, Match &amp; <span class="italic text-studio-ochre font-light">Speak</span>
       </h1>
       <p class="text-slate-300 text-sm md:text-base max-w-2xl font-light leading-relaxed">
-        An interactive architectural masterclass for Alessia. Learn the descriptive vocabulary and structural sentence patterns Imagineers use to pitch spaces, sightlines, and guest emotions.
+        Aprende inglés de forma visual, práctica y sin complicaciones. Observa las 3 escenas reales de Disney Imagineering, descubre sus palabras clave, asócialas en el juego y completa las frases con los desplegables.
       </p>
-      <div class="p-3 rounded-lg bg-studio-elevated/70 border border-studio-border/80 text-xs text-slate-300 flex items-start gap-2.5">
-        <span class="text-studio-ochre text-base not-italic">🇪🇸</span>
-        <div>
-          <span class="font-semibold text-slate-200 block">Guía en español para Alessia:</span>
-          Cada palabra descriptiva incluye su traducción y contexto arquitectónico. Observa las fotografías reales generadas para este curso, selecciona las palabras exactas que describen la escena y construye tu presentación paso a paso.
-        </div>
-      </div>
     </div>
 
-    <!-- SECTION 1: THE THREE ARCHITECTURAL PILLARS (WITH REAL PHOTOS & SPANISH CONCEPTS) -->
+    <!-- ============================================================== -->
+    <!-- STEP 1: SCENE IMAGES + WORDS + MEANING + SPANISH TRANSLATION -->
+    <!-- ============================================================== -->
     <section class="space-y-6">
       <div class="border-b border-studio-border pb-2.5 flex items-center justify-between">
         <div>
-          <span class="stamp-label text-studio-ochre">Part 1 • The Visual Foundation</span>
-          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">The 3 Physical Elements of Imagineering</h2>
+          <span class="stamp-label text-studio-ochre">Paso 1 • Mira y Aprende</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">The 3 Scenes &amp; Their Describing Words</h2>
         </div>
-        <span class="text-xs font-mono text-slate-400">Chapters 3 &amp; 18</span>
+        <span class="text-xs font-mono text-studio-sage">Fotos + Palabras + Traducción</span>
       </div>
 
-      <!-- Gallery Grid -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-        <!-- Card 1: The Weenie -->
-        <div class="board-card rounded-xl p-4 space-y-3 flex flex-col justify-between">
-          <div class="space-y-2.5">
-            <div class="photo-frame rounded-lg overflow-hidden">
-              <img src="assets/images/weenie_rockwork.jpg" alt="Willys Butte in Radiator Springs - The Weenie" class="w-full h-44 object-cover rounded hover:scale-105 transition-transform duration-300">
+        <!-- Scene 1: Willys Butte -->
+        <div class="board-card rounded-2xl p-4 space-y-3 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="photo-frame rounded-xl overflow-hidden">
+              <img src="assets/images/weenie_rockwork.jpg" alt="Willys Butte in Radiator Springs" class="w-full h-44 object-cover rounded hover:scale-105 transition-transform duration-300">
             </div>
             <div>
-              <span class="stamp-label text-studio-ochre text-[10px]">Element 01 • Wayfinding</span>
-              <h3 class="text-lg font-serif text-slate-100 font-semibold">The Weenie</h3>
-              <p class="text-xs text-studio-ochre/90 italic font-serif">El Imán Visual / Faro Arquitectónico</p>
+              <span class="stamp-label text-studio-ochre text-[10px]">Photo 1 • The Landmark (El Weenie)</span>
+              <h3 class="text-lg font-serif text-slate-100 font-semibold">Willys Butte Peak</h3>
+              <p class="text-xs text-studio-ochre/90 italic font-serif">La montaña icónica al final del camino</p>
             </div>
-            <p class="text-xs text-slate-300 leading-relaxed font-light">
-              Walt Disney’s term for an iconic, monumental visual anchor at the end of a sightline (like Willys Butte) that commands the horizon and guides guest flow forward.
-            </p>
+
+            <!-- Words List for Scene 1 -->
+            <div class="space-y-2 pt-1">
+              <div class="p-2.5 rounded-lg bg-studio-canvas border border-studio-border/70 space-y-0.5">
+                <div class="flex items-center justify-between">
+                  <strong class="text-studio-ochre font-mono text-xs">monumental</strong>
+                  <span class="text-[11px] text-studio-sand font-medium">monumental, colosal</span>
+                </div>
+                <p class="text-[11px] text-slate-400 font-light">Meaning: Huge in scale, impressive size.</p>
+              </div>
+
+              <div class="p-2.5 rounded-lg bg-studio-canvas border border-studio-border/70 space-y-0.5">
+                <div class="flex items-center justify-between">
+                  <strong class="text-studio-ochre font-mono text-xs">sun-bleached</strong>
+                  <span class="text-[11px] text-studio-sand font-medium">blanqueado por el sol</span>
+                </div>
+                <p class="text-[11px] text-slate-400 font-light">Meaning: Lightened in color by intense desert sun.</p>
+              </div>
+
+              <div class="p-2.5 rounded-lg bg-studio-canvas border border-studio-border/70 space-y-0.5">
+                <div class="flex items-center justify-between">
+                  <strong class="text-studio-ochre font-mono text-xs">draws guests</strong>
+                  <span class="text-[11px] text-studio-sand font-medium">atrae a los visitantes</span>
+                </div>
+                <p class="text-[11px] text-slate-400 font-light">Meaning: Naturally pulls eyes and feet forward.</p>
+              </div>
+            </div>
           </div>
-          <div class="pt-2 border-t border-studio-border/60 text-[11px] font-mono text-slate-400">
-            <strong class="text-slate-200">En español:</strong> Estructura monumental que atrae la vista para que el visitante nunca se sienta perdido.
+          <div class="p-2 rounded bg-studio-elevated/70 text-[11px] text-slate-300 font-mono text-center">
+            📸 Willys Butte attracts every visitor.
           </div>
         </div>
 
-        <!-- Card 2: The Perimeter Berm -->
-        <div class="board-card rounded-xl p-4 space-y-3 flex flex-col justify-between">
-          <div class="space-y-2.5">
-            <div class="photo-frame rounded-lg overflow-hidden">
+        <!-- Scene 2: Perimeter Berm -->
+        <div class="board-card rounded-2xl p-4 space-y-3 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="photo-frame rounded-xl overflow-hidden">
               <img src="assets/images/perimeter_berm.jpg" alt="Perimeter Berm isolating theme park land" class="w-full h-44 object-cover rounded hover:scale-105 transition-transform duration-300">
             </div>
             <div>
-              <span class="stamp-label text-studio-sage text-[10px]">Element 02 • Sightline Defense</span>
+              <span class="stamp-label text-studio-sage text-[10px]">Photo 2 • Sightline Defense (El Berm)</span>
               <h3 class="text-lg font-serif text-slate-100 font-semibold">The Perimeter Berm</h3>
-              <p class="text-xs text-studio-sage/90 italic font-serif">El Terraplén Perimetral Protector</p>
+              <p class="text-xs text-studio-sage/90 italic font-serif">El terraplén protector de roca y pinos</p>
             </div>
-            <p class="text-xs text-slate-300 leading-relaxed font-light">
-              An elevated rockwork ridge and landscaped earth mound wrapped around the boundary to block highways and outside city views, preserving complete thematic immersion.
-            </p>
+
+            <!-- Words List for Scene 2 -->
+            <div class="space-y-2 pt-1">
+              <div class="p-2.5 rounded-lg bg-studio-canvas border border-studio-border/70 space-y-0.5">
+                <div class="flex items-center justify-between">
+                  <strong class="text-studio-sage font-mono text-xs">perimeter berm</strong>
+                  <span class="text-[11px] text-studio-sand font-medium">terraplén perimetral</span>
+                </div>
+                <p class="text-[11px] text-slate-400 font-light">Meaning: Earth wall built around the park edge.</p>
+              </div>
+
+              <div class="p-2.5 rounded-lg bg-studio-canvas border border-studio-border/70 space-y-0.5">
+                <div class="flex items-center justify-between">
+                  <strong class="text-studio-sage font-mono text-xs">sculpted rockwork</strong>
+                  <span class="text-[11px] text-studio-sand font-medium">roca esculpida</span>
+                </div>
+                <p class="text-[11px] text-slate-400 font-light">Meaning: Hand-crafted artificial rock layers.</p>
+              </div>
+
+              <div class="p-2.5 rounded-lg bg-studio-canvas border border-studio-border/70 space-y-0.5">
+                <div class="flex items-center justify-between">
+                  <strong class="text-studio-sage font-mono text-xs">hides the highway</strong>
+                  <span class="text-[11px] text-studio-sand font-medium">oculta la autopista</span>
+                </div>
+                <p class="text-[11px] text-slate-400 font-light">Meaning: Blocks outside traffic and city buildings.</p>
+              </div>
+            </div>
           </div>
-          <div class="pt-2 border-t border-studio-border/60 text-[11px] font-mono text-slate-400">
-            <strong class="text-slate-200">En español:</strong> Barrera de tierra y roca esculpida que aísla el parque del mundo real exterior.
+          <div class="p-2 rounded bg-studio-elevated/70 text-[11px] text-slate-300 font-mono text-center">
+            📸 The rock berm protects immersion.
           </div>
         </div>
 
-        <!-- Card 3: The Transition Portal -->
-        <div class="board-card rounded-xl p-4 space-y-3 flex flex-col justify-between">
-          <div class="space-y-2.5">
-            <div class="photo-frame rounded-lg overflow-hidden">
-              <img src="assets/images/canyon_portal.jpg" alt="Rustic canyon gateway transition portal" class="w-full h-44 object-cover rounded hover:scale-105 transition-transform duration-300">
+        <!-- Scene 3: Canyon Portal -->
+        <div class="board-card rounded-2xl p-4 space-y-3 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="photo-frame rounded-xl overflow-hidden">
+              <img src="assets/images/canyon_portal.jpg" alt="Rustic canyon portal entry" class="w-full h-44 object-cover rounded hover:scale-105 transition-transform duration-300">
             </div>
             <div>
-              <span class="stamp-label text-studio-terracotta text-[10px]">Element 03 • Sensory Threshold</span>
-              <h3 class="text-lg font-serif text-slate-100 font-semibold">Transition Portal</h3>
-              <p class="text-xs text-studio-terracotta/90 italic font-serif">El Portal de Transición Sensorial</p>
+              <span class="stamp-label text-studio-terracotta text-[10px]">Photo 3 • Entrance Gateway (El Portal)</span>
+              <h3 class="text-lg font-serif text-slate-100 font-semibold">Rustic Canyon Portal</h3>
+              <p class="text-xs text-studio-terracotta/90 italic font-serif">El portal de entrada rústico de madera</p>
             </div>
-            <p class="text-xs text-slate-300 leading-relaxed font-light">
-              An architectural gateway (weathered timber archway) using spatial compression to transition guests from a busy arrival plaza into a sun-drenched canyon vista.
-            </p>
+
+            <!-- Words List for Scene 3 -->
+            <div class="space-y-2 pt-1">
+              <div class="p-2.5 rounded-lg bg-studio-canvas border border-studio-border/70 space-y-0.5">
+                <div class="flex items-center justify-between">
+                  <strong class="text-studio-terracotta font-mono text-xs">weathered timber</strong>
+                  <span class="text-[11px] text-studio-sand font-medium">madera envejecida</span>
+                </div>
+                <p class="text-[11px] text-slate-400 font-light">Meaning: Rustic wooden beams aged by rain and wind.</p>
+              </div>
+
+              <div class="p-2.5 rounded-lg bg-studio-canvas border border-studio-border/70 space-y-0.5">
+                <div class="flex items-center justify-between">
+                  <strong class="text-studio-terracotta font-mono text-xs">canyon portal</strong>
+                  <span class="text-[11px] text-studio-sand font-medium">portal del cañón</span>
+                </div>
+                <p class="text-[11px] text-slate-400 font-light">Meaning: An architectural entry arch framing the view.</p>
+              </div>
+
+              <div class="p-2.5 rounded-lg bg-studio-canvas border border-studio-border/70 space-y-0.5">
+                <div class="flex items-center justify-between">
+                  <strong class="text-studio-terracotta font-mono text-xs">opens up</strong>
+                  <span class="text-[11px] text-studio-sand font-medium">se abre de golpe</span>
+                </div>
+                <p class="text-[11px] text-slate-400 font-light">Meaning: Space dramatically expands after the arch.</p>
+              </div>
+            </div>
           </div>
-          <div class="pt-2 border-t border-studio-border/60 text-[11px] font-mono text-slate-400">
-            <strong class="text-slate-200">En español:</strong> Umbral arquitectónico que comprime y expande el espacio para transportar al huésped.
+          <div class="p-2 rounded bg-studio-elevated/70 text-[11px] text-slate-300 font-mono text-center">
+            📸 The timber arch frames the canyon.
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- SECTION 2: INTERACTIVE VISUAL INSPECTION CHALLENGE (NEW PHOTO EXERCISE!) -->
+    <!-- ============================================================== -->
+    <!-- STEP 2: THE GAME - MATCH WORDS WITH THE RIGHT PICTURE -->
+    <!-- ============================================================== -->
     <section class="board-card rounded-2xl p-6 md:p-8 space-y-6 border-studio-ochre/40">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-studio-border pb-4">
+      <div class="border-b border-studio-border pb-3 flex flex-wrap items-center justify-between gap-2">
         <div>
-          <span class="stamp-label text-studio-ochre">Part 2 • Interactive Visual Exercise</span>
-          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">The Architect's Visual Inspection Challenge</h2>
+          <span class="stamp-label text-studio-ochre">Paso 2 • El Juego</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Game: Match the Words to the Right Picture!</h2>
         </div>
-        <span class="text-xs font-mono text-studio-terracotta bg-studio-terracotta/10 px-3 py-1 rounded border border-studio-terracotta/30 self-start sm:self-auto">
-          Interactive Picture Task
+        <span class="text-xs font-mono text-studio-terracotta bg-studio-terracotta/15 px-3 py-1 rounded border border-studio-terracotta/30">
+          🎮 Asocia las palabras con su foto
         </span>
       </div>
 
       <div class="space-y-4">
-        <p class="text-xs md:text-sm text-slate-300 leading-relaxed font-light">
-          <strong>Your Mission:</strong> Look closely at this architectural photograph below. Select the <strong>4 describing words</strong> from the bank that accurately describe the scale, materials, lighting, and spatial framing in this scene.
+        <p class="text-xs md:text-sm text-slate-300 font-light leading-relaxed">
+          <strong>¿Cómo jugar?</strong> Mira las 9 fichas en la reserva de palabras. Haz clic en el botón de la foto correspondiente (<strong class="text-studio-ochre">Foto 1</strong>, <strong class="text-studio-sage">Foto 2</strong>, o <strong class="text-studio-terracotta">Foto 3</strong>) para colocar cada palabra en su caja. Si te equivocas, haz clic en la palabra para devolverla.
         </p>
 
-        <!-- Active Challenge Image Frame -->
-        <div class="photo-frame rounded-xl bg-studio-canvas p-2">
-          <div class="relative rounded-lg overflow-hidden max-h-[380px]">
-            <img id="challenge-photo" src="assets/images/canyon_portal.jpg" alt="Architectural Photo for Challenge" class="w-full h-full object-cover">
-            <div class="absolute bottom-3 left-3 bg-studio-ink/80 backdrop-blur-md px-3 py-1.5 rounded border border-slate-700/80 text-[11px] font-mono text-slate-200">
-              📸 Subject: Canyon Entrance Portal &amp; Distant Mountain Vista
+        <!-- Unassigned Word Bank Pool -->
+        <div class="p-4 rounded-xl bg-studio-canvas border border-studio-border space-y-2">
+          <div class="flex items-center justify-between text-xs font-mono">
+            <span class="text-slate-300 font-semibold">📦 Reserva de Palabras (Words Pool):</span>
+            <span id="pool-counter" class="text-studio-ochre">9 palabras por asignar</span>
+          </div>
+          <div id="word-pool" class="flex flex-wrap gap-2 pt-1">
+            <!-- Dynamically populated via JS -->
+          </div>
+        </div>
+
+        <!-- 3 Picture Drop Targets / Buckets -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+
+          <!-- Target Bucket 1: Willys Butte -->
+          <div class="p-4 rounded-xl bg-studio-elevated border border-studio-border space-y-3">
+            <div class="flex items-center gap-2.5 border-b border-studio-border/60 pb-2">
+              <img src="assets/images/weenie_rockwork.jpg" alt="Foto 1" class="w-10 h-10 object-cover rounded-md border border-studio-ochre/50">
+              <div>
+                <span class="text-[10px] font-mono uppercase text-studio-ochre block font-semibold">Foto 1: The Landmark</span>
+                <strong class="text-xs text-slate-100">Willys Butte Peak</strong>
+              </div>
+            </div>
+            <div id="bucket-pic1" class="min-h-[120px] p-2.5 rounded-lg bg-studio-canvas border border-dashed border-studio-border/80 flex flex-col gap-1.5">
+              <span class="text-[11px] text-slate-500 font-mono italic text-center my-auto empty-hint">Coloca aquí 3 palabras de la Foto 1</span>
             </div>
           </div>
-        </div>
 
-        <!-- Selectable Words Grid -->
-        <div class="space-y-2">
-          <div class="flex items-center justify-between text-xs font-mono text-slate-400">
-            <span>Select 4 Correct Describing Words (Click to toggle):</span>
-            <span id="selected-counter" class="text-studio-ochre font-bold">0 / 4 Selected</span>
+          <!-- Target Bucket 2: Perimeter Berm -->
+          <div class="p-4 rounded-xl bg-studio-elevated border border-studio-border space-y-3">
+            <div class="flex items-center gap-2.5 border-b border-studio-border/60 pb-2">
+              <img src="assets/images/perimeter_berm.jpg" alt="Foto 2" class="w-10 h-10 object-cover rounded-md border border-studio-sage/50">
+              <div>
+                <span class="text-[10px] font-mono uppercase text-studio-sage block font-semibold">Foto 2: Sightline Defense</span>
+                <strong class="text-xs text-slate-100">Perimeter Berm</strong>
+              </div>
+            </div>
+            <div id="bucket-pic2" class="min-h-[120px] p-2.5 rounded-lg bg-studio-canvas border border-dashed border-studio-border/80 flex flex-col gap-1.5">
+              <span class="text-[11px] text-slate-500 font-mono italic text-center my-auto empty-hint">Coloca aquí 3 palabras de la Foto 2</span>
+            </div>
           </div>
 
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-xs">
-            <!-- Option 1 (Correct) -->
-            <button onclick="toggleChallengeWord(this, true, 'weathered timber')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
-              <span class="font-semibold text-slate-100 block">weathered timber</span>
-              <span class="es-tag text-[10px] text-slate-400 italic block">madera envejecida</span>
-            </button>
+          <!-- Target Bucket 3: Canyon Portal -->
+          <div class="p-4 rounded-xl bg-studio-elevated border border-studio-border space-y-3">
+            <div class="flex items-center gap-2.5 border-b border-studio-border/60 pb-2">
+              <img src="assets/images/canyon_portal.jpg" alt="Foto 3" class="w-10 h-10 object-cover rounded-md border border-studio-terracotta/50">
+              <div>
+                <span class="text-[10px] font-mono uppercase text-studio-terracotta block font-semibold">Foto 3: Entrance Portal</span>
+                <strong class="text-xs text-slate-100">Canyon Timber Arch</strong>
+              </div>
+            </div>
+            <div id="bucket-pic3" class="min-h-[120px] p-2.5 rounded-lg bg-studio-canvas border border-dashed border-studio-border/80 flex flex-col gap-1.5">
+              <span class="text-[11px] text-slate-500 font-mono italic text-center my-auto empty-hint">Coloca aquí 3 palabras de la Foto 3</span>
+            </div>
+          </div>
 
-            <!-- Option 2 (Correct) -->
-            <button onclick="toggleChallengeWord(this, true, 'striated rockwork')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
-              <span class="font-semibold text-slate-100 block">striated rockwork</span>
-              <span class="es-tag text-[10px] text-slate-400 italic block">roca estratificada</span>
-            </button>
+        </div>
 
-            <!-- Option 3 (Distractor) -->
-            <button onclick="toggleChallengeWord(this, false, 'modern steel curtain')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
-              <span class="font-semibold text-slate-100 block">modern steel curtain</span>
-              <span class="es-tag text-[10px] text-slate-400 italic block">muro de acero moderno</span>
+        <!-- Check Button & Game Feedback -->
+        <div class="pt-3 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2">
+            <button onclick="checkGameMatches()" class="px-6 py-2.5 rounded-xl bg-studio-terracotta hover:bg-[#eb744e] text-white font-medium text-xs font-mono shadow-md transition-all">
+              ✓ Comprobar Mi Juego (Check Matches)
             </button>
-
-            <!-- Option 4 (Correct) -->
-            <button onclick="toggleChallengeWord(this, true, 'sun-drenched vista')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
-              <span class="font-semibold text-slate-100 block">sun-drenched vista</span>
-              <span class="es-tag text-[10px] text-slate-400 italic block">vista bañada por sol</span>
-            </button>
-
-            <!-- Option 5 (Distractor) -->
-            <button onclick="toggleChallengeWord(this, false, 'subterranean crypt')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
-              <span class="font-semibold text-slate-100 block">subterranean crypt</span>
-              <span class="es-tag text-[10px] text-slate-400 italic block">cripta subterránea</span>
-            </button>
-
-            <!-- Option 6 (Correct) -->
-            <button onclick="toggleChallengeWord(this, true, 'frames the peak')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
-              <span class="font-semibold text-slate-100 block">frames the peak</span>
-              <span class="es-tag text-[10px] text-slate-400 italic block">enmarca la montaña</span>
-            </button>
-
-            <!-- Option 7 (Distractor) -->
-            <button onclick="toggleChallengeWord(this, false, 'neon-bathed boulevard')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
-              <span class="font-semibold text-slate-100 block">neon-bathed boulevard</span>
-              <span class="es-tag text-[10px] text-slate-400 italic block">bulevar de neones</span>
-            </button>
-
-            <!-- Option 8 (Distractor) -->
-            <button onclick="toggleChallengeWord(this, false, 'flat mirror glass')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
-              <span class="font-semibold text-slate-100 block">flat mirror glass</span>
-              <span class="es-tag text-[10px] text-slate-400 italic block">vidrio plano espejo</span>
+            <button onclick="resetGame()" class="px-3.5 py-2.5 rounded-xl bg-studio-surface hover:bg-studio-canvas border border-studio-border text-slate-400 hover:text-slate-200 text-xs font-mono transition-colors">
+              ↺ Reiniciar
             </button>
           </div>
+          <span id="game-status" class="text-xs font-mono text-slate-400">Asigna las 9 palabras antes de comprobar.</span>
         </div>
 
-        <!-- Action & Feedback -->
-        <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <button onclick="evaluateChallenge()" class="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-studio-terracotta hover:bg-[#eb744e] text-white font-medium font-mono text-xs transition-all shadow-md">
-            Verify My Architectural Analysis
-          </button>
-          <span id="challenge-status" class="text-xs font-mono text-slate-400">Select 4 describing words above.</span>
-        </div>
-
-        <!-- Result Card -->
-        <div id="challenge-result-box" class="hidden p-4 rounded-xl bg-studio-elevated border border-studio-border space-y-2 text-xs">
-          <div class="flex items-center gap-2 font-mono font-semibold" id="challenge-title"></div>
-          <p id="challenge-explanation" class="text-slate-300 leading-relaxed font-light"></p>
-          <div class="p-3 rounded-lg bg-studio-canvas border border-studio-border/70 text-slate-200 font-serif italic text-sm">
-            <span class="font-mono text-studio-ochre not-italic text-xs block mb-1">Architectural Model Pitch Line:</span>
-            <span id="challenge-model-sentence"></span>
-          </div>
-        </div>
-
+        <!-- Result Box -->
+        <div id="game-result-box" class="hidden p-4 rounded-xl border text-xs font-mono space-y-1"></div>
       </div>
     </section>
 
-    <!-- SECTION 3: THE BILINGUAL DESCRIBING WORDS BANK -->
-    <section class="space-y-6">
-      <div class="border-b border-studio-border pb-2.5 flex items-center justify-between">
-        <div>
-          <span class="stamp-label text-studio-ochre">Part 3 • Complete Descriptive Lexicon</span>
-          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">The Describing Words Bank (Bilingual)</h2>
-        </div>
-        <span class="text-xs font-mono text-slate-400">English + Español</span>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-
-        <!-- Column 1: Scale & Presence -->
-        <div class="board-card rounded-xl p-5 space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="stamp-label text-studio-ochre">1. Scale &amp; Presence (Escala y Altura)</span>
-            <span class="text-[10px] text-slate-400 font-mono">Dimension</span>
-          </div>
-          <p class="text-[11px] text-slate-400">Replaces generic words like <em>"big"</em> or <em>"tall"</em>:</p>
-          
-          <div class="space-y-2 font-mono text-[11px]">
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">monumental</strong>
-                <span class="text-slate-400 block text-[10px]">/ˌmɑː.njəˈmen.t̬əl/</span>
-              </div>
-              <span class="text-studio-ochre text-[10px] text-right">monumental, colosal</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">towering</strong>
-                <span class="text-slate-400 block text-[10px]">/ˈtaʊ.ɚ.ɪŋ/</span>
-              </div>
-              <span class="text-studio-ochre text-[10px] text-right">altísimo, imponente</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">soaring</strong>
-                <span class="text-slate-400 block text-[10px]">/ˈsɔːr.ɪŋ/</span>
-              </div>
-              <span class="text-studio-ochre text-[10px] text-right">majestuoso, elevado</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">imposing</strong>
-                <span class="text-slate-400 block text-[10px]">/ɪmˈpoʊ.zɪŋ/</span>
-              </div>
-              <span class="text-studio-ochre text-[10px] text-right">de presencia imponente</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">cavernous</strong>
-                <span class="text-slate-400 block text-[10px]">/ˈkæv.ɚ.nəs/</span>
-              </div>
-              <span class="text-studio-ochre text-[10px] text-right">cavernoso, inmenso</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Column 2: Texture & Rockwork -->
-        <div class="board-card rounded-xl p-5 space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="stamp-label text-studio-terracotta">2. Texture &amp; Rockwork (Textura y Roca)</span>
-            <span class="text-[10px] text-slate-400 font-mono">Materials</span>
-          </div>
-          <p class="text-[11px] text-slate-400">Replaces generic words like <em>"old"</em> or <em>"rocky"</em>:</p>
-
-          <div class="space-y-2 font-mono text-[11px]">
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">striated</strong>
-                <span class="text-slate-400 block text-[10px]">/ˈstraɪ.eɪ.t̬ɪd/</span>
-              </div>
-              <span class="text-studio-terracotta text-[10px] text-right">estriado, con capas</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">weathered</strong>
-                <span class="text-slate-400 block text-[10px]">/ˈweð.ɚd/</span>
-              </div>
-              <span class="text-studio-terracotta text-[10px] text-right">desgastado por clima</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">sun-bleached</strong>
-                <span class="text-slate-400 block text-[10px]">/ˈsʌn.bliːtʃt/</span>
-              </div>
-              <span class="text-studio-terracotta text-[10px] text-right">blanqueado por sol</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">sculpted</strong>
-                <span class="text-slate-400 block text-[10px]">/ˈskʌlp.tɪd/</span>
-              </div>
-              <span class="text-studio-terracotta text-[10px] text-right">esculpido a mano</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">rusticated</strong>
-                <span class="text-slate-400 block text-[10px]">/ˈrʌs.tɪ.keɪ.t̬ɪd/</span>
-              </div>
-              <span class="text-studio-terracotta text-[10px] text-right">mampostería tosca</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Column 3: Atmosphere & Light -->
-        <div class="board-card rounded-xl p-5 space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="stamp-label text-studio-ochre">3. Atmosphere &amp; Light (Luz y Ambiente)</span>
-            <span class="text-[10px] text-slate-400 font-mono">Illumination</span>
-          </div>
-          <p class="text-[11px] text-slate-400">Replaces generic words like <em>"bright"</em> or <em>"dark"</em>:</p>
-
-          <div class="space-y-2 font-mono text-[11px]">
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">sun-drenched</strong>
-                <span class="text-slate-400 block text-[10px]">/ˈsʌn.drentʃt/</span>
-              </div>
-              <span class="text-studio-ochre text-[10px] text-right">bañado por el sol</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">amber-hued</strong>
-                <span class="text-slate-400 block text-[10px]">/ˈæm.bɚ.hjuːd/</span>
-              </div>
-              <span class="text-studio-ochre text-[10px] text-right">de tonos ámbar cálidos</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">shadow-drenched</strong>
-                <span class="text-slate-400 block text-[10px]">/ˈʃæd.oʊ.drentʃt/</span>
-              </div>
-              <span class="text-studio-ochre text-[10px] text-right">envuelto en sombras</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">luminous</strong>
-                <span class="text-slate-400 block text-[10px]">/ˈluː.mə.nəs/</span>
-              </div>
-              <span class="text-studio-ochre text-[10px] text-right">luminoso, radiante</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">neon-bathed</strong>
-                <span class="text-slate-400 block text-[10px]">/ˈniː.ɑːn beɪðd/</span>
-              </div>
-              <span class="text-studio-ochre text-[10px] text-right">bañado en luces de neón</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Column 4: Spatial Movement Verbs -->
-        <div class="board-card rounded-xl p-5 space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="stamp-label text-studio-sage">4. Spatial Action Verbs (Verbos Espaciales)</span>
-            <span class="text-[10px] text-slate-400 font-mono">Action</span>
-          </div>
-          <p class="text-[11px] text-slate-400">Verbs that describe what architecture actually does:</p>
-
-          <div class="space-y-2 font-mono text-[11px]">
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">commands</strong>
-                <span class="text-slate-400 block text-[10px]">(verb)</span>
-              </div>
-              <span class="text-studio-sage text-[10px] text-right">domina el horizonte</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">anchors</strong>
-                <span class="text-slate-400 block text-[10px]">(verb)</span>
-              </div>
-              <span class="text-studio-sage text-[10px] text-right">ancla la vista central</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">draws</strong>
-                <span class="text-slate-400 block text-[10px]">(verb)</span>
-              </div>
-              <span class="text-studio-sage text-[10px] text-right">atrae la mirada</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">isolates</strong>
-                <span class="text-slate-400 block text-[10px]">(verb)</span>
-              </div>
-              <span class="text-studio-sage text-[10px] text-right">aísla de distracciones</span>
-            </div>
-
-            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
-              <div>
-                <strong class="text-slate-100">frames</strong>
-                <span class="text-slate-400 block text-[10px]">(verb)</span>
-              </div>
-              <span class="text-studio-sage text-[10px] text-right">enmarca un panorama</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SECTION 4: THE 4 STRUCTURAL SENTENCE FORMULAS (SIMPLIFIED & BILINGUAL) -->
-    <section class="space-y-6">
-      <div class="border-b border-studio-border pb-2.5 flex items-center justify-between">
-        <div>
-          <span class="stamp-label text-studio-ochre">Part 4 • Simplified Sentence Blueprints</span>
-          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">The 4 Architectural Sentence Formulas</h2>
-        </div>
-        <span class="text-xs font-mono text-studio-sage">Estructuras Simples para Alessia</span>
-      </div>
-
-      <div class="p-3 rounded-lg bg-studio-surface border border-studio-border text-xs text-slate-300 font-light">
-        💡 <strong>Regla de oro de Imagineering:</strong> Frases cortas, claras y con ritmo natural. Cero oraciones largas de 25 palabras. Di qué hay, describe con 2 palabras clave, y explica el efecto en el visitante.
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-
-        <!-- Formula A -->
-        <div class="board-card rounded-xl p-5 space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="stamp-label text-studio-ochre">Formula A: The Landmark (El Weenie)</span>
-            <span class="text-[10px] text-slate-400 font-mono">Orientación</span>
-          </div>
-          <div class="p-3 rounded bg-studio-canvas font-mono text-[11px] text-slate-200 border border-studio-border leading-relaxed">
-            At the end of <span class="text-studio-ochre">[the vista]</span>, you see <span class="text-studio-sage">[The Landmark]</span>.<br>
-            It is <span class="text-studio-terracotta">[word 1]</span> and <span class="text-studio-terracotta">[word 2]</span>. It draws guests forward.
-          </div>
-          <div class="text-slate-200 font-serif italic text-sm pt-0.5">
-            "At the end of the road, you see Willys Butte. It is <strong>monumental</strong> and <strong>sun-bleached</strong>. It draws guests forward."
-          </div>
-          <div class="p-2.5 rounded bg-studio-canvas/60 border border-studio-border/50 text-[11px] text-slate-400 font-mono">
-            <strong class="text-studio-ochre">Traducción:</strong> "Al final del camino, ves Willys Butte. Es monumental y soleado. Atrae a los visitantes hacia adelante."
-          </div>
-        </div>
-
-        <!-- Formula B -->
-        <div class="board-card rounded-xl p-5 space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="stamp-label text-studio-sage">Formula B: Immersion Defense (El Berm)</span>
-            <span class="text-[10px] text-slate-400 font-mono">Protección Visual</span>
-          </div>
-          <div class="p-3 rounded bg-studio-canvas font-mono text-[11px] text-slate-200 border border-studio-border leading-relaxed">
-            Around the park, we build a <span class="text-studio-sage">[material] berm</span>.<br>
-            It hides the <span class="text-red-400">[outside highway / distraction]</span>.
-          </div>
-          <div class="text-slate-200 font-serif italic text-sm pt-0.5">
-            "Around the park, we build a <strong>sculpted rock berm</strong>. It hides the <strong>highway outside</strong>."
-          </div>
-          <div class="p-2.5 rounded bg-studio-canvas/60 border border-studio-border/50 text-[11px] text-slate-400 font-mono">
-            <strong class="text-studio-sage">Traducción:</strong> "Alrededor del parque, construimos un terraplén de roca esculpida. Oculta la autopista exterior."
-          </div>
-        </div>
-
-        <!-- Formula C -->
-        <div class="board-card rounded-xl p-5 space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="stamp-label text-studio-terracotta">Formula C: Threshold Portal (El Portal)</span>
-            <span class="text-[10px] text-slate-400 font-mono">Umbral Espacial</span>
-          </div>
-          <div class="p-3 rounded bg-studio-canvas font-mono text-[11px] text-slate-200 border border-studio-border leading-relaxed">
-            Guests walk through a <span class="text-studio-ochre">[material] arch</span>.<br>
-            The <span class="text-studio-terracotta">[space]</span> opens up dramatically!
-          </div>
-          <div class="text-slate-200 font-serif italic text-sm pt-0.5">
-            "Guests walk through a <strong>rustic timber arch</strong>. The <strong>canyon opens up</strong> dramatically!"
-          </div>
-          <div class="p-2.5 rounded bg-studio-canvas/60 border border-studio-border/50 text-[11px] text-slate-400 font-mono">
-            <strong class="text-studio-terracotta">Traducción:</strong> "Los visitantes cruzan un arco de madera rústica. ¡El cañón se abre dramáticamente!"
-          </div>
-        </div>
-
-        <!-- Formula D -->
-        <div class="board-card rounded-xl p-5 space-y-3">
-          <div class="flex items-center justify-between">
-            <span class="stamp-label text-amber-300">Formula D: 3-Act Attraction (El Ritmo)</span>
-            <span class="text-[10px] text-slate-400 font-mono">Paseo de 3 Fases</span>
-          </div>
-          <div class="p-3 rounded bg-studio-canvas font-mono text-[11px] text-slate-200 border border-studio-border leading-relaxed">
-            First, <span class="text-studio-sage">[Act 1 calm]</span>.<br>
-            Next, <span class="text-studio-ochre">[Act 2 dark ride]</span>.<br>
-            Finally, <span class="text-studio-terracotta">[Act 3 fast race]</span>!
-          </div>
-          <div class="text-slate-200 font-serif italic text-sm pt-0.5">
-            "First, a <strong>calm scenic drive</strong>. Next, a <strong>theatrical dark ride</strong>. Finally, an <strong>exhilarating outdoor race</strong>!"
-          </div>
-          <div class="p-2.5 rounded bg-studio-canvas/60 border border-studio-border/50 text-[11px] text-slate-400 font-mono">
-            <strong class="text-amber-300">Traducción:</strong> "Primero, un paseo panorámico tranquilo. Luego, un paseo teatral. Finalmente, ¡una emocionante carrera exterior!"
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SECTION 5: INTERACTIVE GUIDED SENTENCE STUDIO (CUSTOM PITCH BUILDER) -->
+    <!-- ============================================================== -->
+    <!-- STEP 3: QUESTIONS WITH DROP BOXES -->
+    <!-- ============================================================== -->
     <section class="board-card rounded-2xl p-6 md:p-8 space-y-6">
-      <div class="border-b border-studio-border pb-3 flex items-center justify-between">
+      <div class="border-b border-studio-border pb-3 flex flex-wrap items-center justify-between gap-2">
         <div>
-          <span class="stamp-label text-studio-ochre">Part 5 • Interactive Pitch Builder</span>
-          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Customize Your Walkthrough Pitch Script</h2>
+          <span class="stamp-label text-studio-ochre">Paso 3 • Preguntas con Desplegables</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Complete the Descriptions with Dropdown Boxes</h2>
         </div>
-        <span class="text-xs font-mono text-studio-sage">Interactive Studio</span>
+        <span class="text-xs font-mono text-studio-sage">Elige la palabra correcta</span>
       </div>
 
-      <div class="space-y-4 text-xs">
+      <div class="space-y-6 text-xs">
         <p class="text-slate-300 font-light leading-relaxed">
-          Elige tus opciones favoritas para cada frase. El guión en inglés y su traducción al español se compilarán automáticamente en el teleprónter inferior para tu grabación de voz.
+          Mira cada foto y elige la palabra adecuada en los menús desplegables para completar la frase arquitectónica.
         </p>
 
-        <!-- Sentence 1 Customizer -->
-        <div class="p-4 rounded-xl bg-studio-canvas border border-studio-border space-y-3">
-          <div class="flex items-center justify-between font-mono text-[11px]">
-            <span class="text-studio-ochre font-semibold">Sentence 1: The Landmark (El Weenie / Imán Visual)</span>
-            <span class="text-slate-500">Formula A</span>
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] font-mono">
+        <!-- Question 1: Photo 1 (Willys Butte) -->
+        <div class="p-5 rounded-xl bg-studio-canvas border border-studio-border space-y-3">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/weenie_rockwork.jpg" alt="Foto 1" class="w-12 h-12 object-cover rounded-lg border border-studio-ochre/50">
             <div>
-              <label class="text-slate-400 block mb-1">1. Ubicación (Location):</label>
-              <select id="s1-starter" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
-                <option value="At the end of the road," data-es="Al final del camino,">At the end of the road (Al final del camino)</option>
-                <option value="In the center of the vista," data-es="En el centro de la vista,">In the center of the vista (En el centro de la vista)</option>
-                <option value="Across the canyon," data-es="Al otro lado del cañón,">Across the canyon (Al otro lado del cañón)</option>
-              </select>
-            </div>
-            <div>
-              <label class="text-slate-400 block mb-1">2. Qué ves (What You See):</label>
-              <select id="s1-landmark" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
-                <option value="you see Willys Butte." data-es="ves Willys Butte.">you see Willys Butte (ves Willys Butte)</option>
-                <option value="you see the iconic mountain." data-es="ves la montaña icónica.">you see the iconic mountain (ves la montaña)</option>
-                <option value="you see the red rock peak." data-es="ves el pico de roca roja.">you see the red rock peak (ves el pico de roca)</option>
-              </select>
-            </div>
-            <div>
-              <label class="text-slate-400 block mb-1">3. Descripción y efecto:</label>
-              <select id="s1-adjectives" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
-                <option value="It is monumental and sun-bleached. It draws guests forward." data-es="Es monumental y soleado. Atrae a los visitantes hacia adelante.">monumental and sun-bleached (monumental y soleado)</option>
-                <option value="It is towering and striated. It guides every eye forward." data-es="Es altísimo y estriado. Guía todas las miradas hacia adelante.">towering and striated (altísimo y estriado)</option>
-                <option value="It is warm and weathered. It anchors the whole land." data-es="Es cálido y desgastado. Ancla todo el parque.">warm and weathered (cálido y desgastado)</option>
-              </select>
+              <span class="text-[10px] font-mono uppercase text-studio-ochre font-semibold">Question 1 • Describing Photo 1</span>
+              <h3 class="text-sm font-serif text-slate-100 font-medium">The Landmark at the end of Route 66</h3>
             </div>
           </div>
-          <div class="pt-1 space-y-1">
-            <p id="s1-live" class="text-slate-100 font-serif italic text-sm">
-              "At the end of the road, you see Willys Butte. It is monumental and sun-bleached. It draws guests forward."
-            </p>
-            <p id="s1-live-es" class="text-studio-sage font-mono text-[11px]">
-              ES: "Al final del camino, ves Willys Butte. Es monumental y soleado. Atrae a los visitantes hacia adelante."
-            </p>
+
+          <!-- Sentence with Dropdown Selects -->
+          <div class="p-3.5 rounded-lg bg-studio-surface border border-studio-border text-slate-100 text-sm leading-loose font-serif">
+            "At the end of the road, you see 
+            <select id="q1_landmark" onchange="updateLiveSummary()" class="p-1 px-2 mx-1 rounded bg-studio-elevated border border-studio-ochre/60 text-studio-ochre font-mono text-xs">
+              <option value="">[elige...]</option>
+              <option value="Willys Butte">Willys Butte</option>
+              <option value="a busy highway">a busy highway</option>
+            </select>. 
+            It is 
+            <select id="q1_scale" onchange="updateLiveSummary()" class="p-1 px-2 mx-1 rounded bg-studio-elevated border border-studio-ochre/60 text-studio-ochre font-mono text-xs">
+              <option value="">[elige...]</option>
+              <option value="monumental">monumental</option>
+              <option value="tiny">tiny</option>
+            </select> 
+            and 
+            <select id="q1_sun" onchange="updateLiveSummary()" class="p-1 px-2 mx-1 rounded bg-studio-elevated border border-studio-ochre/60 text-studio-ochre font-mono text-xs">
+              <option value="">[elige...]</option>
+              <option value="flat">flat</option>
+              <option value="sun-bleached">sun-bleached</option>
+            </select>. 
+            It 
+            <select id="q1_action" onchange="updateLiveSummary()" class="p-1 px-2 mx-1 rounded bg-studio-elevated border border-studio-ochre/60 text-studio-ochre font-mono text-xs">
+              <option value="">[elige...]</option>
+              <option value="draws">draws</option>
+              <option value="stops">stops</option>
+            </select> 
+            guests forward!"
+          </div>
+
+          <div class="text-[11px] text-slate-400 font-mono">
+            <strong>Traducción:</strong> "Al final del camino, ves [Willys Butte]. Es [monumental] y [blanqueado por el sol]. ¡[Atrae] a los visitantes hacia adelante!"
           </div>
         </div>
 
-        <!-- Sentence 2 Customizer -->
-        <div class="p-4 rounded-xl bg-studio-canvas border border-studio-border space-y-3">
-          <div class="flex items-center justify-between font-mono text-[11px]">
-            <span class="text-studio-sage font-semibold">Sentence 2: The Berm (El Berm Perimetral)</span>
-            <span class="text-slate-500">Formula B</span>
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] font-mono">
+        <!-- Question 2: Photo 2 (The Perimeter Berm) -->
+        <div class="p-5 rounded-xl bg-studio-canvas border border-studio-border space-y-3">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/perimeter_berm.jpg" alt="Foto 2" class="w-12 h-12 object-cover rounded-lg border border-studio-sage/50">
             <div>
-              <label class="text-slate-400 block mb-1">1. Dónde (Where):</label>
-              <select id="s2-location" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
-                <option value="Around the park," data-es="Alrededor del parque,">Around the park (Alrededor del parque)</option>
-                <option value="Along the perimeter," data-es="A lo largo del perímetro,">Along the perimeter (A lo largo del perímetro)</option>
-                <option value="Behind the main street," data-es="Detrás de la calle principal,">Behind the main street (Detrás de la calle)</option>
-              </select>
-            </div>
-            <div>
-              <label class="text-slate-400 block mb-1">2. Qué construimos (Structure):</label>
-              <select id="s2-berm" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
-                <option value="we build a sculpted rock berm." data-es="construimos un terraplén de roca esculpida.">we build a sculpted rock berm (terraplén de roca)</option>
-                <option value="we build a tall earth berm." data-es="construimos un terraplén de tierra alto.">we build a tall earth berm (terraplén de tierra)</option>
-                <option value="we place pine trees and rockwork." data-es="colocamos pinos densos y roca.">we place pine trees and rockwork (pinos y roca)</option>
-              </select>
-            </div>
-            <div>
-              <label class="text-slate-400 block mb-1">3. Qué protege (Purpose):</label>
-              <select id="s2-purpose" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
-                <option value="It hides the highway outside." data-es="Oculta la autopista exterior.">It hides the highway outside (Oculta la autopista)</option>
-                <option value="It blocks outside traffic and noise." data-es="Bloquea el tráfico y el ruido exterior.">It blocks outside traffic and noise (Bloquea tráfico y ruido)</option>
-                <option value="It protects total immersion." data-es="Protege la inmersión total.">It protects total immersion (Protege la inmersión)</option>
-              </select>
+              <span class="text-[10px] font-mono uppercase text-studio-sage font-semibold">Question 2 • Describing Photo 2</span>
+              <h3 class="text-sm font-serif text-slate-100 font-medium">The Protective Rockwork Barrier</h3>
             </div>
           </div>
-          <div class="pt-1 space-y-1">
-            <p id="s2-live" class="text-slate-100 font-serif italic text-sm">
-              "Around the park, we build a sculpted rock berm. It hides the highway outside."
-            </p>
-            <p id="s2-live-es" class="text-studio-sage font-mono text-[11px]">
-              ES: "Alrededor del parque, construimos un terraplén de roca esculpida. Oculta la autopista exterior."
-            </p>
+
+          <!-- Sentence with Dropdown Selects -->
+          <div class="p-3.5 rounded-lg bg-studio-surface border border-studio-border text-slate-100 text-sm leading-loose font-serif">
+            "Around the park, we build a 
+            <select id="q2_barrier" onchange="updateLiveSummary()" class="p-1 px-2 mx-1 rounded bg-studio-elevated border border-studio-sage/60 text-studio-sage font-mono text-xs">
+              <option value="">[elige...]</option>
+              <option value="glass window">glass window</option>
+              <option value="sculpted rock berm">sculpted rock berm</option>
+            </select>. 
+            It 
+            <select id="q2_protect" onchange="updateLiveSummary()" class="p-1 px-2 mx-1 rounded bg-studio-elevated border border-studio-sage/60 text-studio-sage font-mono text-xs">
+              <option value="">[elige...]</option>
+              <option value="hides">hides</option>
+              <option value="shows">shows</option>
+            </select> 
+            the ugly highway outside and protects our story."
+          </div>
+
+          <div class="text-[11px] text-slate-400 font-mono">
+            <strong>Traducción:</strong> "Alrededor del parque, construimos un [terraplén de roca esculpida]. [Oculta] la fea autopista exterior y protege nuestra historia."
           </div>
         </div>
 
-        <!-- Sentence 3 Customizer -->
-        <div class="p-4 rounded-xl bg-studio-canvas border border-studio-border space-y-3">
-          <div class="flex items-center justify-between font-mono text-[11px]">
-            <span class="text-studio-terracotta font-semibold">Sentence 3: The Portal (El Portal de Entrada)</span>
-            <span class="text-slate-500">Formula C</span>
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] font-mono">
+        <!-- Question 3: Photo 3 (The Canyon Portal) -->
+        <div class="p-5 rounded-xl bg-studio-canvas border border-studio-border space-y-3">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/canyon_portal.jpg" alt="Foto 3" class="w-12 h-12 object-cover rounded-lg border border-studio-terracotta/50">
             <div>
-              <label class="text-slate-400 block mb-1">1. Cómo entran (Entry):</label>
-              <select id="s3-entry" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
-                <option value="Guests walk through a rustic timber arch." data-es="Los visitantes cruzan un arco de madera rústica.">Guests walk through a rustic timber arch (Arco de madera rústica)</option>
-                <option value="Guests pass under a weathered wooden portal." data-es="Los visitantes pasan bajo un portal de madera desgastada.">Guests pass under a weathered wooden portal (Portal de madera)</option>
-                <option value="Guests step through a natural rock opening." data-es="Los visitantes cruzan una abertura natural de roca.">Guests step through a natural rock opening (Abertura de roca)</option>
-              </select>
-            </div>
-            <div>
-              <label class="text-slate-400 block mb-1">2. La revelación espacial (Spatial Reveal):</label>
-              <select id="s3-reveal" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
-                <option value="The canyon opens up dramatically!" data-es="¡El cañón se abre dramáticamente!">The canyon opens up dramatically! (¡El cañón se abre!)</option>
-                <option value="The view expands into the wide desert!" data-es="¡La vista se expande hacia el amplio desierto!">The view expands into the wide desert! (¡La vista se abre!)</option>
-                <option value="You discover a sun-drenched new world!" data-es="¡Descubres un nuevo mundo bañado por el sol!">You discover a sun-drenched new world! (¡Nuevo mundo soleado!)</option>
-              </select>
+              <span class="text-[10px] font-mono uppercase text-studio-terracotta font-semibold">Question 3 • Describing Photo 3</span>
+              <h3 class="text-sm font-serif text-slate-100 font-medium">The Wooden Entrance Gateway</h3>
             </div>
           </div>
-          <div class="pt-1 space-y-1">
-            <p id="s3-live" class="text-slate-100 font-serif italic text-sm">
-              "Guests walk through a rustic timber arch. The canyon opens up dramatically!"
-            </p>
-            <p id="s3-live-es" class="text-studio-sage font-mono text-[11px]">
-              ES: "Los visitantes cruzan un arco de madera rústica. ¡El cañón se abre dramáticamente!"
-            </p>
+
+          <!-- Sentence with Dropdown Selects -->
+          <div class="p-3.5 rounded-lg bg-studio-surface border border-studio-border text-slate-100 text-sm leading-loose font-serif">
+            "Guests walk through a rustic 
+            <select id="q3_material" onchange="updateLiveSummary()" class="p-1 px-2 mx-1 rounded bg-studio-elevated border border-studio-terracotta/60 text-studio-terracotta font-mono text-xs">
+              <option value="">[elige...]</option>
+              <option value="weathered timber">weathered timber</option>
+              <option value="plastic curtain">plastic curtain</option>
+            </select> 
+            arch. Suddenly, the canyon 
+            <select id="q3_reveal" onchange="updateLiveSummary()" class="p-1 px-2 mx-1 rounded bg-studio-elevated border border-studio-terracotta/60 text-studio-terracotta font-mono text-xs">
+              <option value="">[elige...]</option>
+              <option value="closes down">closes down</option>
+              <option value="opens up">opens up</option>
+            </select> 
+            dramatically!"
+          </div>
+
+          <div class="text-[11px] text-slate-400 font-mono">
+            <strong>Traducción:</strong> "Los visitantes cruzan un arco rústico de [madera envejecida]. De repente, ¡el cañón [se abre] dramáticamente!"
           </div>
         </div>
 
-        <!-- Sentence 4 Customizer -->
-        <div class="p-4 rounded-xl bg-studio-canvas border border-studio-border space-y-3">
-          <div class="flex items-center justify-between font-mono text-[11px]">
-            <span class="text-amber-300 font-semibold">Sentence 4: 3-Act Ride Architecture (Las 3 Fases del Paseo)</span>
-            <span class="text-slate-500">Formula D</span>
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] font-mono">
-            <div>
-              <label class="text-slate-400 block mb-1">1. Act 1 (Descompresión):</label>
-              <select id="s4-act1" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
-                <option value="First, a calm scenic drive." data-es="Primero, un paseo panorámico tranquilo.">Act 1: First, a calm scenic drive (Paseo tranquilo)</option>
-                <option value="First, a slow cruise through the canyon." data-es="Primero, un recorrido lento por el cañón.">Act 1: First, a slow cruise through the canyon (Crucero lento)</option>
-              </select>
-            </div>
-            <div>
-              <label class="text-slate-400 block mb-1">2. Act 2 (Show Interior):</label>
-              <select id="s4-act2" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
-                <option value="Next, a theatrical dark ride with music." data-es="Luego, un paseo teatral interior con música.">Act 2: Next, a theatrical dark ride with music (Paseo teatral)</option>
-                <option value="Next, a colorful indoor show with characters." data-es="Luego, un espectáculo interior con personajes.">Act 2: Next, a colorful indoor show with characters (Show interior)</option>
-              </select>
-            </div>
-            <div>
-              <label class="text-slate-400 block mb-1">3. Act 3 (Clímax Cinético):</label>
-              <select id="s4-act3" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
-                <option value="Finally, an exhilarating outdoor race!" data-es="Finalmente, ¡una emocionante carrera exterior!">Act 3: Finally, an exhilarating outdoor race! (Carrera veloz)</option>
-                <option value="Finally, a thrilling 45mph desert race!" data-es="Finalmente, ¡una emocionante carrera a 45mph!">Act 3: Finally, a thrilling 45mph desert race! (Carrera a 45mph)</option>
-              </select>
-            </div>
-          </div>
-          <div class="pt-1 space-y-1">
-            <p id="s4-live" class="text-slate-100 font-serif italic text-sm">
-              "For the ride: first, a calm scenic drive. Next, a theatrical dark ride with music. Finally, an exhilarating outdoor race!"
-            </p>
-            <p id="s4-live-es" class="text-studio-sage font-mono text-[11px]">
-              ES: "Para el paseo: primero, un paseo panorámico tranquilo. Luego, un paseo teatral con música. Finalmente, ¡una emocionante carrera exterior!"
-            </p>
-          </div>
+        <!-- Check Sentences Button -->
+        <div class="pt-2 flex flex-wrap items-center justify-between gap-3">
+          <button onclick="checkSentenceQuestions()" class="px-6 py-2.5 rounded-xl bg-studio-terracotta hover:bg-[#eb744e] text-white font-medium text-xs font-mono shadow-md transition-all">
+            ✓ Comprobar Mis Frases (Check Sentences)
+          </button>
+          <span id="questions-status" class="text-xs font-mono text-slate-400">Completa todos los desplegables.</span>
         </div>
 
+        <!-- Questions Result Box -->
+        <div id="questions-result-box" class="hidden p-4 rounded-xl border text-xs font-mono space-y-1"></div>
       </div>
     </section>
 
-    <!-- SECTION 6: VOCAL TELEPROMPTER & IN-BROWSER AUDIO RECORDER -->
+    <!-- ============================================================== -->
+    <!-- STEP 4: READ YOUR COMPLETED SENTENCES & RECORD -->
+    <!-- ============================================================== -->
     <section class="board-card rounded-2xl p-6 md:p-8 space-y-6 border-studio-ochre/30">
       <div class="border-b border-studio-border pb-3 flex items-center justify-between">
         <div>
-          <span class="stamp-label text-studio-ochre">Part 6 • Audio Deliverable</span>
-          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Record Your 60–90 Second Walkthrough Pitch</h2>
+          <span class="stamp-label text-studio-ochre">Paso 4 • Graba Tu Voz</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Read Your Completed Sentences &amp; Record</h2>
         </div>
-        <span class="text-xs font-mono text-studio-sage">Preply Homework</span>
+        <span class="text-xs font-mono text-studio-sage">Preply Audio Homework</span>
       </div>
 
       <div class="space-y-4">
-        <!-- Teleprompter Card -->
+        <p class="text-xs md:text-sm text-slate-300 font-light leading-relaxed">
+          ¡Excelente trabajo, Alessia! Ahora lee en voz alta tus 3 frases completas. Haz una pausa tranquila después de cada punto. No tengas prisa.
+        </p>
+
+        <!-- Final Script Box -->
         <div class="p-5 rounded-xl bg-studio-canvas border border-studio-border space-y-3">
           <div class="flex items-center justify-between">
-            <span class="stamp-label text-studio-ochre text-[10px]">Your Live Teleprompter (Read Aloud with Conviction):</span>
-            <button onclick="copyTeleprompter()" class="px-2.5 py-1 rounded bg-studio-surface border border-studio-border text-[10px] font-mono text-slate-300 hover:text-studio-ochre transition-colors">
-              📋 Copy Text
+            <span class="stamp-label text-studio-ochre text-[10px]">Tu Guión Final (Lee estas 3 frases):</span>
+            <button onclick="copyFinalScript()" class="px-2.5 py-1 rounded bg-studio-surface border border-studio-border text-[10px] font-mono text-slate-300 hover:text-studio-ochre transition-colors">
+              📋 Copiar Texto
             </button>
           </div>
 
-          <!-- English Script -->
-          <div class="p-3.5 rounded-lg bg-studio-surface border border-studio-border/80">
-            <span class="text-[10px] font-mono text-studio-ochre uppercase block mb-1">English Script to Read:</span>
-            <p id="teleprompter-script" class="font-serif text-base text-slate-100 italic leading-relaxed">
-              "At the end of the road, you see Willys Butte. It is monumental and sun-bleached. It draws guests forward. Around the park, we build a sculpted rock berm. It hides the highway outside. Guests walk through a rustic timber arch. The canyon opens up dramatically! For the ride: first, a calm scenic drive. Next, a theatrical dark ride with music. Finally, an exhilarating outdoor race!"
-            </p>
-          </div>
+          <p id="live-final-script" class="font-serif text-base md:text-lg text-slate-100 italic leading-relaxed">
+            "At the end of the road, you see Willys Butte. It is monumental and sun-bleached. It draws guests forward. Around the park, we build a sculpted rock berm. It hides the ugly highway outside and protects our story. Guests walk through a rustic weathered timber arch. Suddenly, the canyon opens up dramatically!"
+          </p>
 
-          <!-- Spanish Guide -->
-          <div class="p-3 rounded-lg bg-studio-surface/50 border border-studio-border/50">
-            <span class="text-[10px] font-mono text-studio-sage uppercase block mb-1">Guía en Español (Para sentirte 100% segura mientras lees):</span>
-            <p id="teleprompter-script-es" class="font-mono text-xs text-slate-400 leading-relaxed">
-              "Al final del camino, ves Willys Butte. Es monumental y soleado. Atrae a los visitantes hacia adelante. Alrededor del parque, construimos un terraplén de roca esculpida. Oculta la autopista exterior. Los visitantes cruzan un arco de madera rústica. ¡El cañón se abre dramáticamente! Para el paseo: primero, un paseo panorámico tranquilo. Luego, un paseo teatral con música. Finalmente, ¡una emocionante carrera exterior!"
-            </p>
+          <div class="p-3 rounded-lg bg-studio-surface/60 border border-studio-border/50 text-[11px] font-mono text-slate-400 leading-relaxed">
+            <strong class="text-studio-sage">Guía en español para leer con total tranquilidad:</strong><br>
+            "Al final del camino, ves Willys Butte. Es monumental y soleado. Atrae a los visitantes hacia adelante. Alrededor del parque, construimos un terraplén de roca esculpida. Oculta la fea autopista exterior y protege nuestra historia. Los visitantes cruzan un arco rústico de madera envejecida. De repente, ¡el cañón se abre dramáticamente!"
           </div>
         </div>
 
-        <!-- Recording Interface -->
+        <!-- Recorder Controls -->
         <div class="p-5 rounded-xl bg-studio-elevated border border-studio-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <div class="flex items-center gap-4">
             <button id="btn-record" onclick="toggleRecording()" class="px-6 py-3 rounded-xl bg-studio-terracotta hover:bg-[#eb744e] text-white font-medium text-xs font-mono flex items-center gap-2.5 transition-all shadow-md">
               <span id="record-dot" class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
-              <span id="record-text">Start Recording Pitch</span>
+              <span id="record-text">Grabar Mi Audio (Record)</span>
             </button>
             <span id="recording-timer" class="font-mono text-base text-studio-ochre hidden">00:00</span>
           </div>
 
           <div id="audio-playback-container" class="hidden flex flex-wrap items-center gap-3">
             <audio id="audio-player" controls class="h-9"></audio>
-            <a id="btn-download" download="alessia-milestone1-imagineering-pitch.webm" class="px-3.5 py-2 rounded-lg bg-studio-surface hover:bg-studio-canvas border border-studio-border text-studio-ochre font-mono text-xs transition-colors">
-              💾 Save WebM Audio
+            <a id="btn-download" download="alessia-milestone1-audio.webm" class="px-3.5 py-2 rounded-lg bg-studio-surface hover:bg-studio-canvas border border-studio-border text-studio-ochre font-mono text-xs transition-colors">
+              💾 Guardar Archivo de Audio (.webm)
             </a>
           </div>
         </div>
 
-        <!-- Submission Steps -->
+        <!-- Submission Instruction -->
         <div class="p-3.5 rounded-lg bg-studio-canvas border border-studio-border/70 text-xs text-slate-400 font-light flex items-center justify-between">
-          <span>Envía este archivo de audio por el chat de Preply antes de nuestra próxima sesión en vivo. Habla con calma y sin prisas.</span>
-          <span class="text-studio-sage font-mono text-[11px]">✓ Formato Preply Listo</span>
+          <span>Envía este archivo de audio por el chat de Preply antes de la próxima clase. ¡Son solo 3 frases claras!</span>
+          <span class="text-studio-sage font-mono text-[11px]">✓ Listo para Preply</span>
         </div>
       </div>
     </section>
@@ -866,128 +550,263 @@
 
   </div>
 
-  <!-- Interactive JavaScript -->
+  <!-- Interactive JavaScript Logic -->
   <script>
-    // Visual Inspection Challenge Logic
-    let selectedWords = [];
-    const correctWords = ['weathered timber', 'striated rockwork', 'sun-drenched vista', 'frames the peak'];
+    // -------------------------------------------------------------
+    // STEP 2 GAME DATA & LOGIC: MATCH WORDS WITH PICTURES
+    // -------------------------------------------------------------
+    const gameWords = [
+      { id: 'w1', text: 'monumental', es: 'monumental, colosal', target: 'pic1' },
+      { id: 'w2', text: 'sun-bleached', es: 'blanqueado por sol', target: 'pic1' },
+      { id: 'w3', text: 'draws guests', es: 'atrae visitantes', target: 'pic1' },
+      { id: 'w4', text: 'perimeter berm', es: 'terraplén perimetral', target: 'pic2' },
+      { id: 'w5', text: 'sculpted rockwork', es: 'roca esculpida', target: 'pic2' },
+      { id: 'w6', text: 'hides the highway', es: 'oculta la autopista', target: 'pic2' },
+      { id: 'w7', text: 'weathered timber', es: 'madera envejecida', target: 'pic3' },
+      { id: 'w8', text: 'canyon portal', es: 'portal de entrada', target: 'pic3' },
+      { id: 'w9', text: 'opens up', es: 'se abre de golpe', target: 'pic3' }
+    ];
 
-    function toggleChallengeWord(btn, isCorrect, wordText) {
-      const idx = selectedWords.findIndex(w => w.text === wordText);
-      if (idx >= 0) {
-        selectedWords.splice(idx, 1);
-        btn.classList.remove('selected');
-      } else {
-        if (selectedWords.length >= 4) {
-          alert("You can select at most 4 describing words. Deselect one first!");
-          return;
-        }
-        selectedWords.push({ btn: btn, isCorrect: isCorrect, text: wordText });
-        btn.classList.add('selected');
-      }
+    // Current location of each word: null (in pool) or 'pic1', 'pic2', 'pic3'
+    let wordLocations = {};
 
-      document.getElementById('selected-counter').innerText = `${selectedWords.length} / 4 Selected`;
+    function initGame() {
+      // Shuffle words initially
+      const shuffled = [...gameWords].sort(() => Math.random() - 0.5);
+      wordLocations = {};
+      shuffled.forEach(w => {
+        wordLocations[w.id] = null;
+      });
+      renderGame();
     }
 
-    function evaluateChallenge() {
-      if (selectedWords.length !== 4) {
-        alert("Please select exactly 4 describing words to complete your architectural inspection!");
+    function renderGame() {
+      const poolEl = document.getElementById('word-pool');
+      const pic1El = document.getElementById('bucket-pic1');
+      const pic2El = document.getElementById('bucket-pic2');
+      const pic3El = document.getElementById('bucket-pic3');
+
+      poolEl.innerHTML = '';
+      pic1El.innerHTML = '';
+      pic2El.innerHTML = '';
+      pic3El.innerHTML = '';
+
+      let poolCount = 0;
+      let pic1Count = 0;
+      let pic2Count = 0;
+      let pic3Count = 0;
+
+      gameWords.forEach(w => {
+        const loc = wordLocations[w.id];
+
+        if (loc === null) {
+          poolCount++;
+          // Render in pool with 3 quick-assign buttons
+          const chip = document.createElement('div');
+          chip.className = 'p-2 px-3 rounded-lg bg-studio-surface border border-studio-border flex flex-col gap-1 text-xs';
+          chip.innerHTML = `
+            <div class="flex items-center justify-between gap-2">
+              <strong class="text-slate-100 font-mono">${w.text}</strong>
+              <span class="text-[10px] text-slate-400 italic">(${w.es})</span>
+            </div>
+            <div class="flex items-center gap-1 pt-1 font-mono text-[10px]">
+              <span class="text-slate-500 mr-0.5">Asignar a:</span>
+              <button onclick="assignWord('${w.id}', 'pic1')" class="px-1.5 py-0.5 rounded bg-studio-canvas hover:bg-studio-ochre/20 text-studio-ochre border border-studio-border">1. Butte</button>
+              <button onclick="assignWord('${w.id}', 'pic2')" class="px-1.5 py-0.5 rounded bg-studio-canvas hover:bg-studio-sage/20 text-studio-sage border border-studio-border">2. Berm</button>
+              <button onclick="assignWord('${w.id}', 'pic3')" class="px-1.5 py-0.5 rounded bg-studio-canvas hover:bg-studio-terracotta/20 text-studio-terracotta border border-studio-border">3. Portal</button>
+            </div>
+          `;
+          poolEl.appendChild(chip);
+        } else {
+          // Render inside assigned bucket
+          const assignedChip = document.createElement('div');
+          assignedChip.className = 'p-2 rounded bg-studio-surface border border-studio-border flex items-center justify-between text-xs cursor-pointer hover:border-red-400/50 group transition-colors';
+          assignedChip.title = "Haz clic para devolver a la reserva";
+          assignedChip.onclick = () => returnWordToPool(w.id);
+          assignedChip.innerHTML = `
+            <div>
+              <strong class="text-slate-200 font-mono text-xs">${w.text}</strong>
+              <span class="text-[10px] text-slate-400 block">(${w.es})</span>
+            </div>
+            <span class="text-[10px] text-slate-500 group-hover:text-red-400 font-mono">✕ quitar</span>
+          `;
+
+          if (loc === 'pic1') {
+            pic1El.appendChild(assignedChip);
+            pic1Count++;
+          } else if (loc === 'pic2') {
+            pic2El.appendChild(assignedChip);
+            pic2Count++;
+          } else if (loc === 'pic3') {
+            pic3El.appendChild(assignedChip);
+            pic3Count++;
+          }
+        }
+      });
+
+      // Update empty hints
+      if (pic1Count === 0) {
+        pic1El.innerHTML = '<span class="text-[11px] text-slate-500 font-mono italic text-center my-auto empty-hint">Coloca aquí 3 palabras de la Foto 1</span>';
+      }
+      if (pic2Count === 0) {
+        pic2El.innerHTML = '<span class="text-[11px] text-slate-500 font-mono italic text-center my-auto empty-hint">Coloca aquí 3 palabras de la Foto 2</span>';
+      }
+      if (pic3Count === 0) {
+        pic3El.innerHTML = '<span class="text-[11px] text-slate-500 font-mono italic text-center my-auto empty-hint">Coloca aquí 3 palabras de la Foto 3</span>';
+      }
+
+      // Update pool counter
+      document.getElementById('pool-counter').innerText = `${poolCount} palabras por asignar`;
+      if (poolCount === 0) {
+        document.getElementById('pool-counter').innerText = '✓ Todas las palabras han sido asignadas';
+        document.getElementById('pool-counter').className = 'text-studio-sage font-semibold';
+      } else {
+        document.getElementById('pool-counter').className = 'text-studio-ochre font-semibold';
+      }
+    }
+
+    function assignWord(wordId, targetBucket) {
+      wordLocations[wordId] = targetBucket;
+      renderGame();
+      document.getElementById('game-result-box').classList.add('hidden');
+    }
+
+    function returnWordToPool(wordId) {
+      wordLocations[wordId] = null;
+      renderGame();
+      document.getElementById('game-result-box').classList.add('hidden');
+    }
+
+    function resetGame() {
+      initGame();
+      document.getElementById('game-result-box').classList.add('hidden');
+      document.getElementById('game-status').innerText = 'Asigna las 9 palabras antes de comprobar.';
+      document.getElementById('game-status').className = 'text-xs font-mono text-slate-400';
+    }
+
+    function checkGameMatches() {
+      let unassigned = Object.values(wordLocations).filter(loc => loc === null).length;
+      if (unassigned > 0) {
+        alert(`Te faltan ${unassigned} palabras por asignar a las fotos.`);
         return;
       }
 
-      const resultBox = document.getElementById('challenge-result-box');
-      const title = document.getElementById('challenge-title');
-      const explanation = document.getElementById('challenge-explanation');
-      const modelSentence = document.getElementById('challenge-model-sentence');
+      let correctCount = 0;
+      gameWords.forEach(w => {
+        if (wordLocations[w.id] === w.target) {
+          correctCount++;
+        }
+      });
 
-      const correctCount = selectedWords.filter(w => w.isCorrect).length;
+      const resBox = document.getElementById('game-result-box');
+      resBox.classList.remove('hidden');
 
-      resultBox.classList.remove('hidden');
-
-      if (correctCount === 4) {
-        title.innerHTML = '<span class="text-studio-sage text-base">✓</span> <span class="text-studio-sage">Flawless Architectural Inspection! (4/4 Correct)</span>';
-        explanation.innerText = "¡Excelente ojo arquitectónico, Alessia! Has identificado con precisión la madera rústica envejecida (weathered timber), los estratos de roca (striated rockwork), la iluminación dorada (sun-drenched vista) y el encuadre espacial hacia la cumbre (frames the peak).";
-        modelSentence.innerText = '"Notice how the rustic portal crafted from weathered timber frames a sun-drenched, striated mountain peak, naturally drawing guests through the canyon."';
+      if (correctCount === 9) {
+        resBox.className = 'p-4 rounded-xl border border-studio-sage bg-studio-sage/15 text-slate-200 text-xs font-mono space-y-1.5';
+        resBox.innerHTML = `
+          <strong class="text-studio-sage text-sm block">🎉 ¡Excelente! 9/9 Asociaciones Correctas</strong>
+          <p class="font-sans text-xs text-slate-300">Has identificado a la perfección qué palabras corresponden a Willys Butte (monumental, sun-bleached, draws guests), al Berm (perimeter berm, sculpted rockwork, hides the highway) y al Portal (weathered timber, canyon portal, opens up).</p>
+        `;
+        document.getElementById('game-status').innerText = '✓ ¡Juego completado con éxito!';
+        document.getElementById('game-status').className = 'text-xs font-mono text-studio-sage font-bold';
       } else {
-        title.innerHTML = `<span class="text-studio-terracotta text-base">⚠</span> <span class="text-studio-terracotta">${correctCount} of 4 Accurate Descriptors</span>`;
-        explanation.innerText = "Buen intento. Observa bien los materiales en la foto: no hay acero moderno ni cristales planos. Los elementos clave son la madera envejecida (weathered timber), la roca estriada (striated rockwork) y el arco que enmarca la cumbre (frames the peak). ¡Revisa tus selecciones y prueba de nuevo!";
-        modelSentence.innerText = '"Notice how the rustic portal crafted from weathered timber frames a sun-drenched, striated mountain peak, naturally drawing guests through the canyon."';
+        resBox.className = 'p-4 rounded-xl border border-studio-terracotta bg-studio-terracotta/15 text-slate-200 text-xs font-mono space-y-1.5';
+        resBox.innerHTML = `
+          <strong class="text-studio-terracotta text-sm block">⚠ ${correctCount} de 9 Correctas</strong>
+          <p class="font-sans text-xs text-slate-300">Casi lo tienes. Revisa las fotos arriba en el Paso 1: recuerda que "timber" es madera para el arco del portal, "berm" es el terraplén de roca exterior, y "monumental" es para la gran montaña.</p>
+        `;
+        document.getElementById('game-status').innerText = `${correctCount}/9 correctas. ¡Revisa y prueba otra vez!`;
+        document.getElementById('game-status').className = 'text-xs font-mono text-studio-terracotta font-bold';
       }
     }
 
-    // Helper to get attribute from selected option
-    function getSelectedAttr(selectId, attr) {
-      const el = document.getElementById(selectId);
-      if (!el || el.selectedIndex < 0) return '';
-      return el.options[el.selectedIndex].getAttribute(attr) || '';
+    // -------------------------------------------------------------
+    // STEP 3: QUESTIONS WITH DROPDOWN BOXES
+    // -------------------------------------------------------------
+    const correctAnswers = {
+      q1_landmark: 'Willys Butte',
+      q1_scale: 'monumental',
+      q1_sun: 'sun-bleached',
+      q1_action: 'draws',
+      q2_barrier: 'sculpted rock berm',
+      q2_protect: 'hides',
+      q3_material: 'weathered timber',
+      q3_reveal: 'opens up'
+    };
+
+    function updateLiveSummary() {
+      const q1L = document.getElementById('q1_landmark').value || 'Willys Butte';
+      const q1S = document.getElementById('q1_scale').value || 'monumental';
+      const q1Sun = document.getElementById('q1_sun').value || 'sun-bleached';
+      const q1A = document.getElementById('q1_action').value || 'draws';
+
+      const q2B = document.getElementById('q2_barrier').value || 'sculpted rock berm';
+      const q2P = document.getElementById('q2_protect').value || 'hides';
+
+      const q3M = document.getElementById('q3_material').value || 'weathered timber';
+      const q3R = document.getElementById('q3_reveal').value || 'opens up';
+
+      const fullScript = `"At the end of the road, you see ${q1L}. It is ${q1S} and ${q1Sun}. It ${q1A} guests forward. Around the park, we build a ${q2B}. It ${q2P} the ugly highway outside and protects our story. Guests walk through a rustic ${q3M} arch. Suddenly, the canyon ${q3R} dramatically!"`;
+      document.getElementById('live-final-script').innerText = fullScript;
     }
 
-    // Live Pitch Studio Updater (Simplified 4-Sentence Imagineering Pitch)
-    function updatePitchStudio() {
-      // S1: The Landmark (Weenie)
-      const s1Starter = document.getElementById('s1-starter').value;
-      const s1StarterEs = getSelectedAttr('s1-starter', 'data-es');
-      const s1Landmark = document.getElementById('s1-landmark').value;
-      const s1LandmarkEs = getSelectedAttr('s1-landmark', 'data-es');
-      const s1Adj = document.getElementById('s1-adjectives').value;
-      const s1AdjEs = getSelectedAttr('s1-adjectives', 'data-es');
+    function checkSentenceQuestions() {
+      let total = 8;
+      let score = 0;
+      let allFilled = true;
 
-      const s1En = `${s1Starter} ${s1Landmark} ${s1Adj}`;
-      const s1Es = `${s1StarterEs} ${s1LandmarkEs} ${s1AdjEs}`;
-      document.getElementById('s1-live').innerText = `"${s1En}"`;
-      document.getElementById('s1-live-es').innerText = `ES: "${s1Es}"`;
+      for (let key in correctAnswers) {
+        const el = document.getElementById(key);
+        if (!el.value) {
+          allFilled = false;
+        } else if (el.value === correctAnswers[key]) {
+          score++;
+          el.classList.remove('border-studio-terracotta');
+          el.classList.add('border-studio-sage', 'bg-studio-sage/20');
+        } else {
+          el.classList.remove('border-studio-sage', 'bg-studio-sage/20');
+          el.classList.add('border-studio-terracotta', 'bg-studio-terracotta/20');
+        }
+      }
 
-      // S2: The Berm
-      const s2Loc = document.getElementById('s2-location').value;
-      const s2LocEs = getSelectedAttr('s2-location', 'data-es');
-      const s2Berm = document.getElementById('s2-berm').value;
-      const s2BermEs = getSelectedAttr('s2-berm', 'data-es');
-      const s2Purp = document.getElementById('s2-purpose').value;
-      const s2PurpEs = getSelectedAttr('s2-purpose', 'data-es');
+      if (!allFilled) {
+        alert("Por favor, selecciona una opción en todos los desplegables antes de comprobar.");
+        return;
+      }
 
-      const s2En = `${s2Loc} ${s2Berm} ${s2Purp}`;
-      const s2Es = `${s2LocEs} ${s2BermEs} ${s2PurpEs}`;
-      document.getElementById('s2-live').innerText = `"${s2En}"`;
-      document.getElementById('s2-live-es').innerText = `ES: "${s2Es}"`;
+      const resBox = document.getElementById('questions-result-box');
+      resBox.classList.remove('hidden');
 
-      // S3: The Portal
-      const s3Entry = document.getElementById('s3-entry').value;
-      const s3EntryEs = getSelectedAttr('s3-entry', 'data-es');
-      const s3Reveal = document.getElementById('s3-reveal').value;
-      const s3RevealEs = getSelectedAttr('s3-reveal', 'data-es');
+      if (score === total) {
+        resBox.className = 'p-4 rounded-xl border border-studio-sage bg-studio-sage/15 text-slate-200 text-xs font-mono space-y-1';
+        resBox.innerHTML = `
+          <strong class="text-studio-sage text-sm block">🎉 ¡Perfecto! 8/8 Desplegables Correctos</strong>
+          <p class="font-sans text-xs text-slate-300">Tus 3 frases están completas con un vocabulario arquitectónico impecable. Ahora ve al Paso 4 abajo y léelas para tu grabación de voz.</p>
+        `;
+        document.getElementById('questions-status').innerText = '✓ ¡8/8 Correcto!';
+        document.getElementById('questions-status').className = 'text-xs font-mono text-studio-sage font-bold';
+      } else {
+        resBox.className = 'p-4 rounded-xl border border-studio-terracotta bg-studio-terracotta/15 text-slate-200 text-xs font-mono space-y-1';
+        resBox.innerHTML = `
+          <strong class="text-studio-terracotta text-sm block">⚠ ${score} de ${total} Correctos</strong>
+          <p class="font-sans text-xs text-slate-300">Los desplegables resaltados en rojo necesitan corrección. Revisa los términos del Paso 1 y cámbialos.</p>
+        `;
+        document.getElementById('questions-status').innerText = `${score}/8 correctos. ¡Corrige los rojos!`;
+        document.getElementById('questions-status').className = 'text-xs font-mono text-studio-terracotta font-bold';
+      }
 
-      const s3En = `${s3Entry} ${s3Reveal}`;
-      const s3Es = `${s3EntryEs} ${s3RevealEs}`;
-      document.getElementById('s3-live').innerText = `"${s3En}"`;
-      document.getElementById('s3-live-es').innerText = `ES: "${s3Es}"`;
-
-      // S4: 3-Act Ride Architecture
-      const s4A1 = document.getElementById('s4-act1').value;
-      const s4A1Es = getSelectedAttr('s4-act1', 'data-es');
-      const s4A2 = document.getElementById('s4-act2').value;
-      const s4A2Es = getSelectedAttr('s4-act2', 'data-es');
-      const s4A3 = document.getElementById('s4-act3').value;
-      const s4A3Es = getSelectedAttr('s4-act3', 'data-es');
-
-      const s4En = `For the ride: ${s4A1} ${s4A2} ${s4A3}`;
-      const s4Es = `Para el paseo: ${s4A1Es} ${s4A2Es} ${s4A3Es}`;
-      document.getElementById('s4-live').innerText = `"${s4En}"`;
-      document.getElementById('s4-live-es').innerText = `ES: "${s4Es}"`;
-
-      // Teleprompter Full Script
-      const fullScript = `"${s1En} ${s2En} ${s3En} ${s4En}"`;
-      const fullScriptEs = `"${s1Es} ${s2Es} ${s3Es} ${s4Es}"`;
-      document.getElementById('teleprompter-script').innerText = fullScript;
-      document.getElementById('teleprompter-script-es').innerText = fullScriptEs;
+      updateLiveSummary();
     }
 
-    function copyTeleprompter() {
-      const text = document.getElementById('teleprompter-script').innerText;
+    function copyFinalScript() {
+      const text = document.getElementById('live-final-script').innerText;
       navigator.clipboard.writeText(text);
-      alert("Script copied to clipboard!");
+      alert("Texto copiado al portapapeles!");
     }
 
-    // Audio Recorder (MediaRecorder API)
+    // -------------------------------------------------------------
+    // STEP 4: IN-BROWSER AUDIO RECORDER
+    // -------------------------------------------------------------
     let mediaRecorder;
     let audioChunks = [];
     let isRecording = false;
@@ -1024,7 +843,7 @@
 
           mediaRecorder.start();
           isRecording = true;
-          text.innerText = "Stop Recording";
+          text.innerText = "Detener Grabación (Stop)";
           dot.classList.add('animate-ping');
           timer.classList.remove('hidden');
           secondsRecorded = 0;
@@ -1038,21 +857,31 @@
           }, 1000);
 
         } catch (err) {
-          alert("Microphone access is required to record in the browser, or you can record on your phone and attach to Preply!");
+          alert("Se requiere acceso al micrófono para grabar en el navegador, o puedes grabar una nota de voz en tu teléfono y enviarla a Preply.");
         }
       } else {
         mediaRecorder.stop();
         mediaRecorder.stream.getTracks().forEach(track => track.stop());
         isRecording = false;
         clearInterval(timerInterval);
-        text.innerText = "Record Again";
+        text.innerText = "Grabar de Nuevo (Record Again)";
         dot.classList.remove('animate-ping');
       }
     }
 
-    // Initialize
+    // Initialize Game on Load
     window.onload = () => {
-      updatePitchStudio();
+      initGame();
+      // Set defaults for selects
+      document.getElementById('q1_landmark').value = 'Willys Butte';
+      document.getElementById('q1_scale').value = 'monumental';
+      document.getElementById('q1_sun').value = 'sun-bleached';
+      document.getElementById('q1_action').value = 'draws';
+      document.getElementById('q2_barrier').value = 'sculpted rock berm';
+      document.getElementById('q2_protect').value = 'hides';
+      document.getElementById('q3_material').value = 'weathered timber';
+      document.getElementById('q3_reveal').value = 'opens up';
+      updateLiveSummary();
     };
   </script>
 </body>
