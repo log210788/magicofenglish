@@ -30,8 +30,7 @@ In authentic Imagineering design practice (creator of *Radiator Springs Racers, 
 
 ## 🧭 Quick Navigation & System Architecture
 
-### 🎛️ For the Teacher (Your In-Class Cockpit)
-- **[Live Teacher's Cockpit](file:///D:/Documents/Alessia/teacher.html)** (`teacher.html`): Live Preply in-class companion with 50-minute phase timer, instant emergency rescue prompts, Preply chat scratchpad, and 8 dynamic lesson guide cards.
+### 🎛️ For the Teacher (Curriculum & Methodology)
 - **[The Imagineer’s Coaching Field Guide](file:///D:/Documents/Alessia/TEACHERS_GUIDE.md)** (`TEACHERS_GUIDE.md`): Pedagogical guide covering the 70/30 STT rule, the 7-second silence rule, recasting techniques, and how to coach an architect without grammar lectures.
 - **[The 8-Module Master Curriculum](file:///D:/Documents/Alessia/CURRICULUM_PROGRAM.md)** (`CURRICULUM_PROGRAM.md`): Complete lesson-by-lesson syllabus with spatial anchors, vocabulary drills, sentence starters, and simulated Disney executive roleplay briefs.
 
@@ -60,7 +59,6 @@ In authentic Imagineering design practice (creator of *Radiator Springs Racers, 
 When pushed to GitHub Pages on `main`:
 - 👉 **[Executive Student Roadmap](https://log210788.github.io/magicofenglish/)**
 - 👉 **[Milestone 1 Assignment Portal](https://log210788.github.io/magicofenglish/homework.html)**
-- 👉 **[Live Teacher Cockpit](https://log210788.github.io/magicofenglish/teacher.html)**
 
 ---
 *Created for Alessia • The Imagineering English Studio • Themed Entertainment Architecture & Spatial Storytelling*

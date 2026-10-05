@@ -140,7 +140,7 @@ When Alessia says *"I can't explain this in English"*, smile and say:
 ## 6. Pre-Lesson Teacher Checklist
 
 Before every session with Alessia:
-- [ ] Open [`teacher.html`](file:///D:/Documents/Alessia/teacher.html) on your second monitor.
+- [ ] Review the module focus and vocabulary in [`CURRICULUM_PROGRAM.md`](file:///D:/Documents/Alessia/CURRICULUM_PROGRAM.md).
 - [ ] Review her latest voice recording submission from [`homework.html`](file:///D:/Documents/Alessia/homework.html).
 - [ ] Prepare 1 specific compliment about her design vocabulary.
 - [ ] Have your "Preply Chat Scratchpad" ready to paste recasts.
