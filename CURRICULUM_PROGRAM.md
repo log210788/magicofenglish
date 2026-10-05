@@ -91,34 +91,38 @@ To express spatial scale, materials, and mood, Alessia must move beyond generic 
   * `isolates` — Protects the internal world from outside distractions.
   * `unfolds` — Gradually reveals itself as the guest walks forward.
 
-#### 3. The 4 Modular Architectural Sentence Formulas
-These four structural scaffolds give Alessia immediate fluency to construct executive descriptions:
+#### 3. The 4 Simplified Architectural Sentence Formulas
+These four structural scaffolds give Alessia immediate confidence to pitch spatial concepts in short, punchy English:
 
 * **Formula A (The Sightline Magnet / Weenie):**
-  > `[Spatial Starter] + [Architectural Element] + [Action Verb] + as a [Scale Adjective + Texture Adjective] beacon, naturally [Circulation Verb] + [Guest Effect].`
-  > *Model:* *"Rising at the end of the central vista, Willys Butte stands as a monumental, sun-bleached beacon, naturally drawing guest sightlines forward into the land."*
+  > `At the end of [the vista], you see [The Landmark]. It is [word 1] and [word 2]. It draws guests forward.`
+  > *Model:* *"At the end of the road, you see Willys Butte. It is monumental and sun-bleached. It draws guests forward."*
+  > *ES:* *"Al final del camino, ves Willys Butte. Es monumental y soleado. Atrae a los visitantes hacia adelante."*
 
 * **Formula B (Immersion Defense / The Berm):**
-  > `In order to eliminate [Sightline Intrusion], we construct a [Dimension] [Texture/Scale Adjectives] berm, which completely isolates [The Themed Land] from [The Real World].`
-  > *Model:* *"In order to eliminate sightline intrusion from the freeway, we construct a 12-meter sculpted, striated rockwork berm, which completely isolates Radiator Springs from the outside city."*
+  > `Around the park, we build a [material] berm. It hides the [outside distraction].`
+  > *Model:* *"Around the park, we build a sculpted rock berm. It hides the highway outside."*
+  > *ES:* *"Alrededor del parque, construimos un terraplén de roca esculpida. Oculta la autopista exterior."*
 
-* **Formula C (Sensory Threshold / Portal Transition):**
-  > `As guests pass beneath [Architectural Gateway], the space [dramatically expands / compresses], transitioning from [Atmosphere A] into [Atmosphere B].`
-  > *Model:* *"As guests pass beneath the rustic timber entry portal, the space dramatically expands, transitioning from the busy arrival plaza into an amber-hued, sun-drenched canyon."*
+* **Formula C (Threshold Portal / Space Reveal):**
+  > `Guests walk through a [material] arch. The [space] opens up dramatically!`
+  > *Model:* *"Guests walk through a rustic timber arch. The canyon opens up dramatically!"*
+  > *ES:* *"Los visitantes cruzan un arco de madera rústica. ¡El cañón se abre dramáticamente!"*
 
 * **Formula D (The 3-Act Attraction Architecture):**
-  > `In Act 1, we decompress guests with [Scenic Outdoor Activity], before transitioning into Act 2's [Theatrical Indoor Dark Ride], which culminates in Act 3 with [Climactic Kinetic Payoff].`
-  > *Model:* *"In Act 1, we decompress guests with a gentle canyon cruise, before transitioning into Act 2's show-controlled dark ride with Audio-Animatronics, which culminates in Act 3 with a thrilling 45mph desert race!"*
+  > `First, [Act 1 - calm]. Next, [Act 2 - dark ride]. Finally, [Act 3 - fast race]!`
+  > *Model:* *"First, a calm scenic drive. Next, a theatrical dark ride with music. Finally, an exhilarating outdoor race!"*
+  > *ES:* *"Primero, un paseo panorámico tranquilo. Luego, un paseo teatral con música. Finalmente, ¡una emocionante carrera exterior!"*
 
 #### 4. Step-by-Step 50-Minute Lesson Plan & In-Class Drills
 * **00:00–07:00 (Warm-Up):** Discuss: *"Alessia, Kevin Rafferty says theme parks must take guests 'to another place in another time.' When you enter a theme park, what is the very first detail that tells your brain: 'I am no longer in the real world'?"*
 * **07:00–18:00 (Concept & Word Bank Intro):** Introduce the 4 Core Imagineering Terms and drill the Describing Words Bank (Scale, Texture, Atmosphere).
 * **18:00–30:00 (Sentence Structure Drills):**
-  * *Drill 1 (Adjective Upgrade):* Teacher says flat sentence: *"There is a big mountain at the end of the road."* Alessia upgrades using Formula A and 2 descriptive words: *"Rising at the end of the corridor, Willys Butte commands the horizon as a towering, striated landmark..."*
-  * *Drill 2 (Berm Defense):* Teacher prompts: *"Why do we need this dirt mound?"* Alessia replies using Formula B: *"In order to eliminate sightline intrusion..."*
+  * *Drill 1 (Weenie Upgrade):* Teacher prompts: *"Look down the street. What do you see?"* Alessia replies: *"At the end of the road, you see Willys Butte. It is monumental and sun-bleached. It draws guests forward."*
+  * *Drill 2 (Berm Defense):* Teacher prompts: *"Why do we need this berm?"* Alessia replies: *"Around the park, we build a sculpted rock berm. It hides the highway outside."*
 * **30:00–45:00 (Simulated Design Crit):** You play Marty Sklar (Executive Creative Director):
-  * *Prompt:* *"Alessia, we have an 8-acre site right next to an ugly highway in Anaheim. Walk me through your master plan. How do you protect guest immersion and where do you guide their eyes? Use your describing words! You have 90 seconds."*
-  * *Goal:* Alessia presents for 90 seconds using Formulas A, B, and D without apologizing for her English.
+  * *Prompt:* *"Alessia, we have an 8-acre site right next to an ugly highway in Anaheim. Walk me through your master plan. How do you protect guest immersion and where do you guide their eyes? You have 60 to 90 seconds."*
+  * *Goal:* Alessia presents the 4 short sentences (Weenie, Berm, Portal, 3-Act Ride) with rhythm and confidence, zero apologies.
 * **45:00–50:00 (Recast Feedback & Assignment):** Recast 2 phrases in the Preply chat. Assign Milestone 1 in `homework.html`.
 
 ---
