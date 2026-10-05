@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher's Live Cockpit | The Imagineering English Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            cockpit: {
+              bg: '#0a0d14',
+              surface: '#121824',
+              card: '#161f30',
+              border: '#1f293d',
+              accent: '#f6d365',
+              blue: '#60a5fa',
+              emerald: '#34d399',
+              red: '#f87171'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cockpit-bg text-slate-200 font-sans antialiased min-h-screen p-4 md:p-6 selection:bg-amber-400 selection:text-slate-950">
+
+  <div class="max-w-7xl mx-auto space-y-6">
+
+    <!-- Top Cockpit Header & Live Lesson Timer -->
+    <header class="p-5 rounded-2xl bg-cockpit-surface border border-cockpit-border flex flex-col md:flex-row md:items-center justify-between gap-4 shadow-xl">
+      <div class="space-y-1">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-mono uppercase bg-amber-400/10 text-amber-300 border border-amber-400/20">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Live Teacher Cockpit • Preply Companion</span>
+        </div>
+        <h1 class="text-xl md:text-2xl font-bold text-white flex items-center gap-2">
+          <span>How to Teach Alessia</span>
+          <span class="text-xs font-mono font-normal text-slate-400">| The Kevin Rafferty Imagineering Method</span>
+        </h1>
+      </div>
+
+      <!-- Live 50-Min Lesson Clock / Timer -->
+      <div class="flex items-center gap-3 bg-cockpit-card p-3 rounded-xl border border-cockpit-border">
+        <div class="text-right">
+          <span class="text-[10px] uppercase font-mono text-slate-400 block">Class Clock (50 Min)</span>
+          <span id="timer-display" class="text-2xl font-mono font-bold text-amber-300">00:00</span>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <button id="btn-timer-start" onclick="toggleTimer()" class="px-3 py-1.5 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 text-xs font-mono border border-emerald-500/30 transition-all">
+            Start
+          </button>
+          <button onclick="resetTimer()" class="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 text-xs font-mono border border-slate-700 transition-all">
+            Reset
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Quick Emergency Rescue Bar (Floating Anchor) -->
+    <div class="p-4 rounded-2xl bg-gradient-to-r from-red-950/30 via-cockpit-surface to-slate-900 border border-red-500/30 flex flex-wrap items-center justify-between gap-3 text-xs">
+      <div class="flex items-center gap-2 text-red-300 font-semibold font-mono">
+        <span class="text-base">🚨</span>
+        <span>EMERGENCY RESCUE PROMPTS (IF ALESSIA FREEZES):</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-2">
+        <button onclick="copyPrompt('Start with: \'Picture this: As the guest enters...\'')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-mono transition-all text-[11px]">
+          📋 "Feed Starter"
+        </button>
+        <button onclick="copyPrompt('Alessia, remember Marty Sklar\'s rule: Don\'t tell me you can\'t because... Tell me you can if! How can we say it with 3 simple words?')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-mono transition-all text-[11px]">
+          📋 "Marty's Law (Can If)"
+        </button>
+        <button onclick="copyPrompt('Alessia, strike that word! You are the lead architect in the room. Never apologize for your English. Walk us through the space!')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-mono transition-all text-[11px]">
+          📋 "Ban Apology"
+        </button>
+        <button onclick="copyPrompt('Would you guide guests with a central Weenie here, or with lighting along the perimeter berm?')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-mono transition-all text-[11px]">
+          📋 "Binary Choice"
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Grid: Lesson Navigator + Dynamic Lesson Guide -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+      <!-- Left Sidebar: Lesson Switcher & Universal 5-Phase Rhythm (4 Cols) -->
+      <div class="lg:col-span-4 space-y-6">
+
+        <!-- Lesson Selector Buttons -->
+        <div class="p-5 rounded-2xl bg-cockpit-surface border border-cockpit-border space-y-3">
+          <span class="text-xs uppercase font-mono tracking-wider text-slate-400 font-bold block">
+            Select Active Lesson:
+          </span>
+          <div class="grid grid-cols-2 gap-2 text-xs font-mono">
+            <button onclick="loadLesson(1)" id="btn-lesson-1" class="lesson-tab-btn p-2.5 rounded-xl border text-left transition-all bg-amber-400/20 border-amber-400/50 text-amber-300">
+              01. Placemaking &amp; Berm
+            </button>
+            <button onclick="loadLesson(2)" id="btn-lesson-2" class="lesson-tab-btn p-2.5 rounded-xl border text-left transition-all bg-cockpit-card border-cockpit-border text-slate-400 hover:text-slate-200">
+              02. Show Writing
+            </button>
+            <button onclick="loadLesson(3)" id="btn-lesson-3" class="lesson-tab-btn p-2.5 rounded-xl border text-left transition-all bg-cockpit-card border-cockpit-border text-slate-400 hover:text-slate-200">
+              03. 3-Act Architecture
+            </button>
+            <button onclick="loadLesson(4)" id="btn-lesson-4" class="lesson-tab-btn p-2.5 rounded-xl border text-left transition-all bg-cockpit-card border-cockpit-border text-slate-400 hover:text-slate-200">
+              04. Tower of Terror Pitch
+            </button>
+            <button onclick="loadLesson(5)" id="btn-lesson-5" class="lesson-tab-btn p-2.5 rounded-xl border text-left transition-all bg-cockpit-card border-cockpit-border text-slate-400 hover:text-slate-200">
+              05. 4D Sensory Design
+            </button>
+            <button onclick="loadLesson(6)" id="btn-lesson-6" class="lesson-tab-btn p-2.5 rounded-xl border text-left transition-all bg-cockpit-card border-cockpit-border text-slate-400 hover:text-slate-200">
+              06. Test Track &amp; Speed
+            </button>
+            <button onclick="loadLesson(7)" id="btn-lesson-7" class="lesson-tab-btn p-2.5 rounded-xl border text-left transition-all bg-cockpit-card border-cockpit-border text-slate-400 hover:text-slate-200">
+              07. Kinetic Play &amp; Dining
+            </button>
+            <button onclick="loadLesson(8)" id="btn-lesson-8" class="lesson-tab-btn p-2.5 rounded-xl border text-left transition-all bg-cockpit-card border-cockpit-border text-slate-400 hover:text-slate-200">
+              08. Grand Walkthrough
+            </button>
+          </div>
+        </div>
+
+        <!-- 5-Phase Lesson Clock Guide -->
+        <div class="p-5 rounded-2xl bg-cockpit-surface border border-cockpit-border space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs uppercase font-mono tracking-wider text-slate-400 font-bold">
+              Universal 50-Min Lesson Rhythm:
+            </span>
+            <span class="text-[11px] font-mono text-emerald-400">STT 70%</span>
+          </div>
+
+          <div class="space-y-2 text-xs">
+            <div class="p-2.5 rounded-xl bg-cockpit-card border border-cockpit-border flex items-center justify-between">
+              <span class="font-semibold text-slate-300">Phase 1: Warm-Up &amp; Audio Homework</span>
+              <span class="font-mono text-amber-300">00:00 - 07:00</span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-cockpit-card border border-cockpit-border flex items-center justify-between">
+              <span class="font-semibold text-slate-300">Phase 2: Rafferty Concept Intro</span>
+              <span class="font-mono text-amber-300">07:00 - 18:00</span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-cockpit-card border border-cockpit-border flex items-center justify-between">
+              <span class="font-semibold text-slate-300">Phase 3: Controlled Practice &amp; Starters</span>
+              <span class="font-mono text-amber-300">18:00 - 30:00</span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-cockpit-card border border-cockpit-border flex items-center justify-between">
+              <span class="font-semibold text-slate-300">Phase 4: Simulated Walkthrough Roleplay</span>
+              <span class="font-mono text-amber-300">30:00 - 45:00</span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-cockpit-card border border-cockpit-border flex items-center justify-between">
+              <span class="font-semibold text-slate-300">Phase 5: Recast Feedback &amp; Chat Drop</span>
+              <span class="font-mono text-amber-300">45:00 - 50:00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Golden Teaching Reminders -->
+        <div class="p-4 rounded-2xl bg-slate-900/80 border border-cockpit-border space-y-2 text-xs text-slate-400">
+          <span class="text-amber-300 font-semibold font-mono uppercase block text-[11px]">Imagineering Coaching Rules:</span>
+          <p>• <strong>STT 70%:</strong> Alessia talks 70%, you talk 30%.</p>
+          <p>• <strong>The 7-Second Rule:</strong> Count to 7 silently after asking a question before jumping in.</p>
+          <p>• <strong>Walk Through the Space:</strong> Anchor her English in physical rooms and sensory feelings.</p>
+          <p>• <strong>Recast, Don't Lecture:</strong> Rephrase her ideas into Imagineering language with zero shame.</p>
+        </div>
+
+      </div>
+
+      <!-- Right Main View: Dynamic Lesson Cockpit Card (8 Cols) -->
+      <div class="lg:col-span-8 space-y-6">
+
+        <div id="lesson-content-card" class="p-6 md:p-8 rounded-2xl bg-cockpit-surface border border-cockpit-border space-y-6 shadow-xl">
+          <!-- Dynamic Content Loaded by JS -->
+        </div>
+
+        <!-- In-Class Recast Scratchpad (Copy directly to Preply Chat) -->
+        <div class="p-6 rounded-2xl bg-cockpit-surface border border-cockpit-border space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs uppercase font-mono tracking-wider text-amber-300 font-bold">
+              Live Preply Chat Scratchpad (Take Notes &amp; Recast):
+            </span>
+            <button onclick="copyScratchpad()" class="px-3 py-1 rounded-lg bg-amber-400/20 hover:bg-amber-400/30 text-amber-300 text-xs font-mono border border-amber-400/30 transition-all">
+              Copy to Clipboard
+            </button>
+          </div>
+          <textarea id="scratchpad-text" rows="3" placeholder="Type upgraded sentences here during class to paste into Preply (e.g. Instead of 'big rock', say: 'A 12-meter sculpted rockwork berm preserving 100% thematic immersion')..." class="w-full rounded-xl bg-cockpit-bg border border-cockpit-border p-3.5 text-xs font-mono text-slate-200 focus:outline-none focus:border-amber-400 transition-colors"></textarea>
+          <span id="copy-status" class="text-xs text-emerald-400 font-mono hidden">Copied to clipboard! Ready to paste into Preply chat.</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    // Comprehensive Lesson Database based on Kevin Rafferty's Magic Journey
+    const lessons = {
+      1: {
+        title: "Module 1: Placemaking, The Berm & The Weenie",
+        chapter: "Magic Journey Ch. 3 & 18 • Cars Land & WED Enterprises",
+        focus: "Master planning, perimeter sightlines, eliminating highway bleed, and visual magnets.",
+        vocab: [
+          { word: "Placemaking", ipa: "/ˈpleɪsˌmeɪ.kɪŋ/", def: "Designing an environment so richly textured that guests believe they entered another world." },
+          { word: "The Weenie", ipa: "/ˈwiː.ni/", def: "Walt Disney's term for an iconic visual anchor that draws guests forward." },
+          { word: "Perimeter Berm", ipa: "/pəˈrɪm.ɪ.tər bɜːrm/", def: "Landscaped earth barrier blocking real-world noise, roads, and sightlines." },
+          { word: "Sightline Intrusion", ipa: "/ˈsaɪt.laɪn ɪnˈtruː.ʒən/", def: "Unwanted view of outside utilities or buildings breaking the fantasy." }
+        ],
+        starters: [
+          "Beat 1 (Vision): 'Our goal here is total placemaking—transporting the guest out of reality into a living story.'",
+          "Beat 2 (Weenie): 'At the end of this main sightline, Willys Butte stands as our iconic Weenie, drawing every eye forward.'",
+          "Beat 3 (Berm): 'We wrap the boundary with a 12-meter sculpted berm to eliminate sightline intrusion from the freeway.'"
+        ],
+        teacherScript: {
+          warmup: "Say: 'Hi Alessia! Kevin Rafferty says theme parks must take guests to another place in another time. When you design a park, what is the first detail that tells the guest: reality is gone?'",
+          intro: "Say: 'Kevin Rafferty insisted on building traditional berms for Cars Land to block Anaheim traffic. Today we master three words: Placemaking, The Weenie, and The Berm.'",
+          drill: "Model Beat 1, 2, and 3. Have her repeat. Then say: 'Now change Willys Butte to an ancient Egyptian temple. Go!'"
+        },
+        roleplay: {
+          client: "Marty Sklar (Executive Creative Director)",
+          prompt: "'Alessia, we have an 8-acre site right next to an ugly highway. Walk me through your master plan. How do you protect guest immersion and where do you guide their eyes? You have 90 seconds!'"
+        }
+      },
+      2: {
+        title: "Module 2: Words That Paint Pictures (Show Writing for Architects)",
+        chapter: "Magic Journey Ch. 5 & 19 • X Atencio, Haunted Mansion & Pirates",
+        focus: "Using evocative sensory language to describe materials, atmosphere, and lighting.",
+        vocab: [
+          { word: "Evocative Language", ipa: "/ɪˈvɑː.kə.tɪv/", def: "Words that summon vivid sensory images and moods in the listener's imagination." },
+          { word: "Atmospheric Beat", ipa: "/ˌæt.məsˈfer.ɪk biːt/", def: "A spatial moment where light, sound, and texture establish a specific mood." },
+          { word: "Weathering & Patina", ipa: "/pəˈtiː.nə/", def: "Architectural distressing that gives materials historical authenticity." },
+          { word: "Show Scene", ipa: "/ʃoʊ siːn/", def: "A fully staged dimensional space where an attraction story moment occurs." }
+        ],
+        starters: [
+          "Beat 1 (Atmosphere): 'Picture this: The guest steps into a shadow-drenched corridor steeped in authentic weathering and patina.'",
+          "Beat 2 (Materials): 'Notice the textures—these are not plain planks, but sun-bleached, distressed timbers scarred by time.'",
+          "Beat 3 (Emotion): 'This atmospheric beat establishes palpable anticipation before the main show scene reveals itself.'"
+        ],
+        teacherScript: {
+          warmup: "Say: 'Kevin loves how X Atencio wrote: Cadaverous pallor betrays an aura of foreboding instead of: You look scared. How do words change architecture?'",
+          intro: "Teach the Language Upgrade Ladder: Basic (Old wall) ➔ Architectural (Masonry with moss) ➔ Imagineering (Timeworn rampart scarred by time).",
+          drill: "Ban the words 'nice', 'good', 'big', and 'old'. Give her an image and drill evocative upgrades."
+        },
+        roleplay: {
+          client: "Disney Creative Board Director",
+          prompt: "'Alessia, pitch this entrance courtyard to the board. Paint a picture with your words. Make us feel the atmosphere without using generic adjectives!'"
+        }
+      },
+      3: {
+        title: "Module 3: The 3-Act Attraction Architecture",
+        chapter: "Magic Journey Ch. 18 • Radiator Springs Racers",
+        focus: "Sequencing guest pacing: Act 1 Decompression ➔ Act 2 Theatrical Dark Ride ➔ Act 3 Kinetic Payoff.",
+        vocab: [
+          { word: "Act 1 Decompression", ipa: "/ˌdiː.kəmˈpreʃ.ən/", def: "Introductory scenic phase allowing guests to unwind and absorb the story." },
+          { word: "Act 2 Show Scenes", ipa: "/θiˈæt.rɪ.kəl/", def: "The enclosed, show-controlled dark ride featuring Audio-Animatronics." },
+          { word: "Act 3 Kinetic Payoff", ipa: "/kɪˈnet.ɪk ˈpeɪ.ɑːf/", def: "The high-speed, visceral release where ride vehicles reach peak velocity." },
+          { word: "Ride Cadence", ipa: "/ˈkeɪ.dəns/", def: "The rhythmic tempo alternating between gentle serenity and adrenaline." }
+        ],
+        starters: [
+          "Beat 1 (Act 1): 'In Act 1, we decompress the guest with a gentle scenic float to detach them from park distractions.'",
+          "Beat 2 (Act 2): 'In Act 2, the vehicle glides into theatrical darkness, surrounded by lifelike Audio-Animatronics.'",
+          "Beat 3 (Act 3): 'Finally, Act 3 bursts outdoors into a climactic kinetic payoff, racing side-by-side at high speed!'"
+        ],
+        teacherScript: {
+          warmup: "Ask: 'Why did Kevin Rafferty put a slow scenic road trip before the race in Radiator Springs Racers?' (To decompress guests).",
+          intro: "Explain the 3-Act structure of theme park rides. Show how spatial layout matches a screenplay.",
+          drill: "Drill transitions: 'First we decompress... then we transition into... culminating in a kinetic payoff.'"
+        },
+        roleplay: {
+          client: "Attraction Senior Producer",
+          prompt: "'Alessia, walk me beat-by-beat through your attraction from dispatch to unload. How does the cadence change across Acts 1, 2, and 3?'"
+        }
+      },
+      4: {
+        title: "Module 4: Pitching the Impossible & The Bold Reveal",
+        chapter: "Magic Journey Ch. 10 • The Twilight Zone Tower of Terror",
+        focus: "Crafting the one-line hook, pre-show exposition, and the shocking spatial breakthrough.",
+        vocab: [
+          { word: "The Logline Hook", ipa: "/ˈlɑːɡ.laɪn/", def: "A punchy single sentence capturing the dramatic paradox of the attraction." },
+          { word: "Pre-Show Exposition", ipa: "/ˌpriːˈʃoʊ/", def: "The narrative setup delivered before boarding the ride (e.g. Library TV)." },
+          { word: "The Signature Reveal", ipa: "/ˈsɪɡ.nə.tʃər rɪˈviːl/", def: "The shocking architectural or mechanical twist that guests never expect." },
+          { word: "Suspension of Disbelief", ipa: "/səˈspen.ʃən/", def: "The guest's complete acceptance of the fiction due to flawless detail." }
+        ],
+        starters: [
+          "Beat 1 (Hook): 'Here is our concept: A luxury 1930s hotel where guests board an elevator that defies the laws of physics.'",
+          "Beat 2 (Pre-Show): 'Our library pre-show builds intense narrative suspense while guests examine timeworn artifacts.'",
+          "Beat 3 (Signature Reveal): 'Here is the moment that blows their minds: The elevator breaks free of the vertical shaft and navigates into the Twilight Zone!'"
+        ],
+        teacherScript: {
+          warmup: "Discuss: 'How did Kevin Rafferty pitch Tower of Terror to Michael Eisner? He played the cassette tape and walked through the front door.'",
+          intro: "Explain the importance of the Signature Reveal. Why did Eisner shout 'Home run!' when the car left the shaft?",
+          drill: "Model bold vocal projection. Ban timid phrasing: 'Maybe we can try...' ➔ 'Here is the signature reveal!'"
+        },
+        roleplay: {
+          client: "Michael Eisner & Frank Wells (Disney Leadership)",
+          prompt: "'Alessia, why shouldn't we just buy an off-the-shelf drop tower from an amusement park vendor? What makes this a Disney E-ticket? You have 2 minutes!'"
+        }
+      },
+      5: {
+        title: "Module 5: 4D Multi-Sensory Spatial Immersion",
+        chapter: "Magic Journey Ch. 13 & 15 • It's Tough to Be a Bug! & PhilharMagic",
+        focus: "Designing beyond the visual: scents (Smellitzers), tactile cues, spatial audio, and thermal shifts.",
+        vocab: [
+          { word: "Multi-Sensory Immersion", ipa: "/ˌmʌl.tiˈsen.sər.i/", def: "Stimulating all five human senses simultaneously to create total realism." },
+          { word: "Smellitzer", ipa: "/ˈsmel.ɪt.sər/", def: "Disney's proprietary scent-dispensing mechanism triggered at precise story cues." },
+          { word: "Tactile In-Seat FX", ipa: "/ˈtæk.taɪl/", def: "Physical sensations (air blasts, water drops, seat pokes) integrated into seating." },
+          { word: "Spatial Audio", ipa: "/ˈspeɪ.ʃəl/", def: "Directional acoustic design that moves sounds across 3D physical coordinates." }
+        ],
+        starters: [
+          "Beat 1 (Beyond Sight): 'We don’t want guests just to look at the room; we immerse them through multi-sensory design.'",
+          "Beat 2 (Sensory Cue): 'At the exact story beat, a proprietary Smellitzer releases an olfactory burst paired with a chilled air blast.'",
+          "Beat 3 (Tactile Realism): 'Subtle tactile cues in the seats convince guests that creatures are scampering beneath them!'"
+        ],
+        teacherScript: {
+          warmup: "Ask: 'What do guests smell in PhilharMagic (apple pie) and feel in It\\'s Tough to Be a Bug (stinging seats)? Why does this heighten architecture?'",
+          intro: "Break down the 5 senses of themed spaces: sight, sound, touch, smell, thermal feeling.",
+          drill: "Give her an architectural room. Have her describe all 5 senses using evocative sensory verbs."
+        },
+        roleplay: {
+          client: "Show Effects & Technical Director",
+          prompt: "'Alessia, walk me through this 4D theater space. What are the guests smelling, hearing, and physically feeling at the climactic moment?'"
+        }
+      },
+      6: {
+        title: "Module 6: Industrial Theming & High-Velocity Pacing",
+        chapter: "Magic Journey Ch. 14 • Test Track (EPCOT)",
+        focus: "Turning utilitarian engineering into dramatic storytelling; banking curves, dispatch intervals, and capacity.",
+        vocab: [
+          { word: "Industrial Storytelling", ipa: "/ɪnˈdʌs.tri.əl/", def: "Transforming functional engineering structures into suspenseful themed environments." },
+          { word: "Superelevation", ipa: "/ˌsuː.pɚˌel.əˈveɪ.ʃən/", def: "Banking track curves at steep angles (up to 54°) to permit high-speed turns." },
+          { word: "Hourly Throughput", ipa: "/ˈθruː.pʊt/", def: "Total number of guests processed per hour through the attraction." },
+          { word: "Dispatch Interval", ipa: "/dɪˈspætʃ/", def: "The exact cycle time in seconds between departing ride vehicles." }
+        ],
+        starters: [
+          "Beat 1 (Industrial Framing): 'Rather than concealing the engineering, we celebrate it through authentic industrial storytelling.'",
+          "Beat 2 (Velocity): 'The vehicle endures environmental stress chambers before launching onto a 50-degree superelevation curve at 65mph.'",
+          "Beat 3 (Capacity): 'Synchronized 12-second dispatch intervals guarantee our operational throughput exceeds 1,800 guests per hour.'"
+        ],
+        teacherScript: {
+          warmup: "Ask: 'How did Kevin Rafferty take a boring car factory and turn Test Track into EPCOT\\'s biggest thrill?'",
+          intro: "Teach technical communication: Acknowledge engineering hurdle ➔ Present spatial fix ➔ Reaffirm safety and thrill.",
+          drill: "Practice pronouncing technical terms clearly: Superelevation, telemetry, chassis, throughput."
+        },
+        roleplay: {
+          client: "General Motors Corporate Sponsor & VP of Operations",
+          prompt: "'Alessia, our board is nervous about safety and ride capacity. Defend this high-speed exterior banked track layout!'"
+        }
+      },
+      7: {
+        title: "Module 7: Dimensional Playfulness & Kinetic Dining",
+        chapter: "Magic Journey Ch. 9 & 17 • Pan Galactic Pizza Port & Toy Story Mania!",
+        focus: "Scale distortion (toy-scale environments), kinetic animatronic props, and playful circulation.",
+        vocab: [
+          { word: "Scale Distortion", ipa: "/skeɪl dɪˈstɔːr.ʃən/", def: "Architecturally exaggerating the size of everyday objects to alter guest perception." },
+          { word: "Kinetic Installation", ipa: "/kɪˈnet.ɪk/", def: "Moving architectural and mechanical systems that animate a static dining or queue room." },
+          { word: "Themed Dining Circulation", ipa: "/ˈdaɪ.nɪŋ/", def: "Designing F&B environments where food ordering and queuing are part of the show." },
+          { word: "Interactive Immersion", ipa: "/ˌɪn.t̬ɚˈæk.tɪv/", def: "Empowering guests to physically manipulate targets or effects in the environment." }
+        ],
+        starters: [
+          "Beat 1 (Scale Shift): 'By utilizing deliberate scale distortion, we shrink the guest down into a playful toy-sized world.'",
+          "Beat 2 (Kinetic Show): 'The entire dining space is activated by a kinetic animatronic installation with moving overhead conveyors.'",
+          "Beat 3 (Throughput Joy): 'This transforms a mundane food line into an unforgettable show, boosting guest satisfaction and retail spend.'"
+        ],
+        teacherScript: {
+          warmup: "Ask: 'Why did Kevin Rafferty invent Tony Solaroni at Tokyo Disneyland? How does humor make architecture better?'",
+          intro: "Discuss toy-scale placemaking: giant crayons, oversized dice, and kinetic props.",
+          drill: "Model warm, playful English delivery. Contrast dry corporate speak with joyful Imagineering charm."
+        },
+        roleplay: {
+          client: "VP of Food & Beverage and Retail",
+          prompt: "'Alessia, our dining hall is cold and boring. Guests get restless standing in line. Pitch your kinetic themed dining concept!'"
+        }
+      },
+      8: {
+        title: "Module 8: Next-Gen Imagineering & The Grand Walkthrough Pitch",
+        chapter: "Magic Journey Ch. 19 & 20 • Mickey & Minnie's Runaway Railway",
+        focus: "Trackless ride vehicles, 2.5D dimensional worlds, Rafferty's 'Create Don't Replicate', and graduation pitch.",
+        vocab: [
+          { word: "Trackless AGV", ipa: "/ˈtræk.ləs/", def: "Automated ride vehicles without visible tracks that move unpredictably." },
+          { word: "2.5D Dimensional Set", ipa: "/tuː pɔɪnt faɪv diː/", def: "Layering flat cartoon planes with deep physical sculpture to simulate living animation." },
+          { word: "Tell Me You Can If", ipa: "/kæn ɪf/", def: "Marty Sklar's golden rule for turning constraints into innovative design wins." },
+          { word: "Create, Don't Replicate", ipa: "/rɪˈplɪ.keɪt/", def: "Kevin Rafferty's core principle: never build copies; invent original paradigms." }
+        ],
+        starters: [
+          "Beat 1 (The Vision): 'Welcome to our next-generation attraction. As Kevin Rafferty said: Create, don’t replicate!'",
+          "Beat 2 (The Walkthrough): 'Trackless AGVs glide through 2.5D dimensional sets, breaking every expectation of what a ride can be.'",
+          "Beat 3 (The Payoff): 'When asked if this was possible, we remembered Marty\'s rule: We can if we pioneer this new spatial medium!'"
+        ],
+        teacherScript: {
+          warmup: "Read Rafferty's message to Next-Gen Imagineers in Ch. 19: 'Fan your spark into a flame... Betray the aura of average!'",
+          intro: "Set the stage for the Graduation Pitch: 3 uninterrupted minutes covering Arrival, 3 Acts, and Signature Reveal.",
+          drill: "Pre-pitch vocal warm-up. Remind her: Stand tall, breathe, zero apologies, pure Imagineering conviction!"
+        },
+        roleplay: {
+          client: "Walt Disney Imagineering Executive Creative Committee",
+          prompt: "'Alessia, the committee is assembled. Present your original attraction from front entrance to final exit. Show us the magic!'"
+        }
+      }
+    };
+
+    // Render Lesson Card
+    function loadLesson(num) {
+      const l = lessons[num];
+      if (!l) return;
+
+      // Update button styles
+      document.querySelectorAll('.lesson-tab-btn').forEach((btn, idx) => {
+        if (idx + 1 === num) {
+          btn.className = "lesson-tab-btn p-2.5 rounded-xl border text-left transition-all bg-amber-400/20 border-amber-400/50 text-amber-300 font-bold";
+        } else {
+          btn.className = "lesson-tab-btn p-2.5 rounded-xl border text-left transition-all bg-cockpit-card border-cockpit-border text-slate-400 hover:text-slate-200";
+        }
+      });
+
+      const card = document.getElementById('lesson-content-card');
+      card.innerHTML = `
+        <div class="border-b border-cockpit-border pb-4 space-y-1">
+          <div class="inline-flex items-center gap-2 text-xs font-mono text-amber-300 uppercase">
+            <span>${l.chapter}</span>
+          </div>
+          <h2 class="text-2xl font-bold text-white">${l.title}</h2>
+          <p class="text-xs text-slate-400">${l.focus}</p>
+        </div>
+
+        <!-- 4 Core Vocab Terms -->
+        <div class="space-y-3">
+          <span class="text-xs uppercase font-mono tracking-wider text-amber-300 font-bold block">
+            Core Imagineering Vocabulary (Drill First 10 Mins):
+          </span>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+            ${l.vocab.map(v => `
+              <div class="p-3 rounded-xl bg-cockpit-card border border-cockpit-border space-y-1">
+                <div class="flex items-center justify-between">
+                  <span class="font-bold text-amber-300 font-mono">${v.word}</span>
+                  <span class="text-[10px] font-mono text-slate-400">${v.ipa}</span>
+                </div>
+                <p class="text-slate-300 text-[11px] leading-relaxed">${v.def}</p>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- Plug-and-Play Starters -->
+        <div class="space-y-3 pt-2 border-t border-cockpit-border">
+          <span class="text-xs uppercase font-mono tracking-wider text-amber-300 font-bold block">
+            Plug-and-Play Sentence Starters (Drill in Phase 3):
+          </span>
+          <div class="space-y-2 text-xs font-mono">
+            ${l.starters.map((s, idx) => `
+              <div class="p-2.5 rounded-xl bg-slate-900 border border-cockpit-border text-slate-300 flex items-start justify-between gap-2">
+                <span>${s}</span>
+                <button onclick="copyPrompt('${s.replace(/'/g, "\\'")}')" class="px-2 py-0.5 rounded bg-cockpit-card border border-cockpit-border text-amber-300 text-[10px] hover:border-amber-400 transition-colors shrink-0">
+                  Copy
+                </button>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- In-Class Script & Simulation Brief -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2 border-t border-cockpit-border text-xs">
+          <div class="p-4 rounded-xl bg-sky-950/20 border border-sky-500/20 space-y-2">
+            <span class="text-sky-300 font-bold font-mono uppercase block text-[11px]">Teacher Cue Script:</span>
+            <p class="text-slate-300"><strong>Warm-Up:</strong> ${l.teacherScript.warmup}</p>
+            <p class="text-slate-300"><strong>Concept:</strong> ${l.teacherScript.intro}</p>
+            <p class="text-slate-300"><strong>Drill:</strong> ${l.teacherScript.drill}</p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-amber-950/20 border border-amber-500/30 space-y-2">
+            <span class="text-amber-300 font-bold font-mono uppercase block text-[11px]">Phase 4 Roleplay Persona:</span>
+            <div class="text-amber-200 font-semibold font-mono text-[11px]">Your Role: ${l.roleplay.client}</div>
+            <p class="text-slate-300 italic">${l.roleplay.prompt}</p>
+            <div class="text-[10px] text-slate-400 font-mono pt-1">
+              • Rule: Let Alessia pitch for 90s uninterrupted. Recast in Phase 5!
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // Copy Prompt Helper
+    function copyPrompt(text) {
+      navigator.clipboard.writeText(text);
+      const scratchpad = document.getElementById('scratchpad-text');
+      scratchpad.value += (scratchpad.value ? "\n" : "") + text;
+      showCopyNotice();
+    }
+
+    // Scratchpad Clipboard
+    function copyScratchpad() {
+      const text = document.getElementById('scratchpad-text').value;
+      navigator.clipboard.writeText(text);
+      showCopyNotice();
+    }
+
+    function showCopyNotice() {
+      const status = document.getElementById('copy-status');
+      status.classList.remove('hidden');
+      setTimeout(() => status.classList.add('hidden'), 2500);
+    }
+
+    // Timer Logic
+    let timerRunning = false;
+    let timerSeconds = 0;
+    let timerInterval = null;
+
+    function toggleTimer() {
+      const btn = document.getElementById('btn-timer-start');
+      if (!timerRunning) {
+        timerRunning = true;
+        btn.innerText = "Pause";
+        btn.className = "px-3 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 text-xs font-mono border border-amber-500/30 transition-all";
+        timerInterval = setInterval(() => {
+          timerSeconds++;
+          const mins = String(Math.floor(timerSeconds / 60)).padStart(2, '0');
+          const secs = String(timerSeconds % 60).padStart(2, '0');
+          document.getElementById('timer-display').innerText = `${mins}:${secs}`;
+        }, 1000);
+      } else {
+        timerRunning = false;
+        clearInterval(timerInterval);
+        btn.innerText = "Resume";
+        btn.className = "px-3 py-1.5 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 text-xs font-mono border border-emerald-500/30 transition-all";
+      }
+    }
+
+    function resetTimer() {
+      timerRunning = false;
+      clearInterval(timerInterval);
+      timerSeconds = 0;
+      document.getElementById('timer-display').innerText = "00:00";
+      const btn = document.getElementById('btn-timer-start');
+      btn.innerText = "Start";
+      btn.className = "px-3 py-1.5 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 text-xs font-mono border border-emerald-500/30 transition-all";
+    }
+
+    // Initial Load
+    window.onload = () => {
+      loadLesson(1);
+    };
+  </script>
+</body>
+</html>

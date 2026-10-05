@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Speaking the Magic | Alessia</title>
+  <title>Magic Journey | Alessia • The Imagineering English Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -15,6 +15,7 @@
           fontFamily: {
             serif: ['"Cormorant Garamond"', 'serif'],
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
           },
           colors: {
             magic: {
@@ -23,7 +24,9 @@
               glow: '#ffeaa7',
               deep: '#0a0d14',
               surface: '#121824',
-              border: '#1f293d'
+              card: '#161f30',
+              border: '#1f293d',
+              accent: '#38bdf8'
             }
           }
         }
@@ -31,7 +34,7 @@
     }
   </script>
   <style>
-    /* Custom Particle Canvas Background */
+    /* Particle canvas background */
     #particles-canvas {
       position: fixed;
       top: 0;
@@ -42,18 +45,18 @@
       z-index: 0;
     }
     .glass-card {
-      background: rgba(18, 24, 36, 0.75);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(246, 211, 101, 0.15);
+      background: rgba(18, 24, 36, 0.86);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(246, 211, 101, 0.18);
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .glass-card:hover {
-      border-color: rgba(246, 211, 101, 0.35);
-      box-shadow: 0 10px 30px -10px rgba(246, 211, 101, 0.1);
+      border-color: rgba(246, 211, 101, 0.42);
+      box-shadow: 0 14px 36px -10px rgba(246, 211, 101, 0.15);
     }
     .text-glow {
-      text-shadow: 0 0 20px rgba(246, 211, 101, 0.3);
+      text-shadow: 0 0 24px rgba(246, 211, 101, 0.38);
     }
   </style>
 </head>
@@ -63,228 +66,356 @@
   <canvas id="particles-canvas"></canvas>
 
   <!-- Ambient Glow Blobs -->
-  <div class="fixed top-[-10%] left-[20%] w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
-  <div class="fixed bottom-[-10%] right-[15%] w-[450px] h-[450px] bg-purple-500/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
+  <div class="fixed top-[-10%] left-[20%] w-[540px] h-[540px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
+  <div class="fixed bottom-[-10%] right-[15%] w-[500px] h-[500px] bg-sky-500/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
 
   <!-- Main Container -->
-  <div class="relative z-10 max-w-3xl mx-auto px-5 py-12 md:py-20 space-y-16">
+  <div class="relative z-10 max-w-5xl mx-auto px-5 py-12 md:py-20 space-y-16">
 
-    <!-- Header / Welcome -->
+    <!-- Top Status Bar & Quick Switcher -->
+    <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800/80 pb-4 text-xs font-mono">
+      <div class="inline-flex items-center gap-2 text-amber-300">
+        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+        <span>Magic Journey Studio • Alessia, Architect &amp; Themed Entertainment Designer</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="homework.html" class="px-3 py-1.5 rounded-xl bg-amber-400/15 hover:bg-amber-400/25 border border-amber-400/30 text-amber-300 transition-all">
+          📝 Milestone 1 Portal →
+        </a>
+        <a href="teacher.html" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 transition-all">
+          🎛️ Teacher's Cockpit →
+        </a>
+      </div>
+    </div>
+
+    <!-- Header / Welcome Hero -->
     <header class="text-center space-y-4">
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium tracking-widest uppercase bg-amber-400/10 text-amber-300 border border-amber-400/20">
-        <span class="w-1.5 h-1.5 rounded-full bg-amber-300 animate-pulse"></span>
-        <span>Welcome Alessia • Presentation &amp; Voice</span>
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium tracking-widest uppercase bg-amber-400/10 text-amber-300 border border-amber-400/25">
+        <span>✨ The Walt Disney Imagineering English Method</span>
       </div>
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-slate-50 tracking-wide text-glow">
-        Speaking the <span class="italic text-amber-200">Magic</span>
+        Designing Worlds. <span class="italic text-amber-200">Pitching the Magic.</span>
       </h1>
-      <p class="text-slate-400 text-sm md:text-base max-w-lg mx-auto font-light leading-relaxed">
-        Moving past technical blueprints into the realm of emotion, wonder, and unforgettable vision.
+      <p class="text-slate-400 text-sm md:text-base max-w-2xl mx-auto font-light leading-relaxed">
+        Grounded directly in legendary Disney Imagineer <strong>Kevin P. Rafferty’s <em>Magic Journey: My Fantastical Walt Disney Imagineering Career</em></strong>. Moving past dry corporate jargon into vivid spatial storytelling, multi-sensory immersion, and authentic creative confidence.
       </p>
-      <div class="pt-2">
-        <a href="homework.html" class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-2xl bg-amber-400/10 hover:bg-amber-400/20 border border-amber-400/30 text-amber-300 text-xs font-semibold tracking-wide transition-all shadow-lg hover:border-amber-400/50">
-          <span>✨ Lesson 1 Homework: Feeling Vocabulary Portal</span>
+      <div class="pt-2 flex flex-wrap justify-center gap-3">
+        <a href="homework.html" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-amber-400/15 hover:bg-amber-400/25 border border-amber-400/40 text-amber-300 text-xs font-semibold tracking-wide transition-all shadow-xl hover:border-amber-400/60 hover:scale-[1.02]">
+          <span>🎢 Active Milestone: Cars Land &amp; Radiator Springs Racers Walkthrough</span>
           <span class="text-amber-200">→</span>
         </a>
       </div>
     </header>
 
-    <!-- The 8-Week Roadmap (Minimal & High-Level) -->
-    <section class="space-y-6">
-      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
-        <h2 class="text-xs uppercase tracking-widest text-slate-400 font-semibold">The 8-Week Journey</h2>
-        <span class="text-xs text-amber-300/80 font-mono">4 Vocal Milestones</span>
-      </div>
-
-      <div class="grid grid-cols-1 gap-3.5">
-        <!-- Milestone 1 -->
-        <div class="glass-card rounded-2xl p-5 flex items-start gap-4">
-          <div class="w-10 h-10 rounded-xl bg-amber-400/10 border border-amber-400/20 text-amber-300 flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5">
-            01
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
-              <h3 class="text-sm font-semibold text-slate-100">Feeling Vocabulary</h3>
-              <span class="text-[10px] text-amber-300/70 font-mono uppercase bg-amber-400/10 px-2 py-0.5 rounded-full">Weeks 1–2</span>
-            </div>
-            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
-              The words that sell our magic vision. Focusing on mood, sensation, and wonder—learning to describe what guests feel in their chest rather than what is built on paper.
-            </p>
-            <div class="mt-2.5">
-              <a href="homework.html" class="inline-flex items-center gap-1.5 text-xs text-amber-300 hover:text-amber-200 font-medium underline underline-offset-4">
-                Open Lesson 1 Homework Assignment →
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Milestone 2 -->
-        <div class="glass-card rounded-2xl p-5 flex items-start gap-4">
-          <div class="w-10 h-10 rounded-xl bg-amber-400/10 border border-amber-400/20 text-amber-300 flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5">
-            02
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
-              <h3 class="text-sm font-semibold text-slate-100">Cadence &amp; Flow</h3>
-              <span class="text-[10px] text-amber-300/70 font-mono uppercase bg-amber-400/10 px-2 py-0.5 rounded-full">Weeks 3–4</span>
-            </div>
-            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
-              How to say the words efficiently. Finding a calm, steady rhythm and using deliberate pauses so your audience has time to see the picture in their minds.
-            </p>
-          </div>
-        </div>
-
-        <!-- Milestone 3 -->
-        <div class="glass-card rounded-2xl p-5 flex items-start gap-4">
-          <div class="w-10 h-10 rounded-xl bg-amber-400/10 border border-amber-400/20 text-amber-300 flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5">
-            03
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
-              <h3 class="text-sm font-semibold text-slate-100">Stress &amp; Intonation</h3>
-              <span class="text-[10px] text-amber-300/70 font-mono uppercase bg-amber-400/10 px-2 py-0.5 rounded-full">Weeks 5–6</span>
-            </div>
-            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
-              Giving the right feel to those words. Exploring vocal warmth, pitch variations, and emotional weight so your voice carries the mystery, scale, and excitement.
-            </p>
-          </div>
-        </div>
-
-        <!-- Milestone 4 -->
-        <div class="glass-card rounded-2xl p-5 flex items-start gap-4 border-amber-400/40 bg-gradient-to-r from-magic-surface to-amber-950/20">
-          <div class="w-10 h-10 rounded-xl bg-amber-400 text-slate-950 flex items-center justify-center font-mono text-xs font-bold shrink-0 mt-0.5 shadow-lg shadow-amber-400/20">
-            04
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
-              <h3 class="text-sm font-semibold text-amber-200">The Vision Pitch</h3>
-              <span class="text-[10px] text-amber-300 font-mono uppercase bg-amber-400/20 px-2 py-0.5 rounded-full">Weeks 7–8</span>
-            </div>
-            <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
-              Putting it all together. Sharing your vision in a full walkthrough presentation with natural confidence, heart, and undeniable creative conviction.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Warm-Up Assignment -->
-    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6 relative overflow-hidden border-amber-400/30">
-      <div class="space-y-2">
-        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-amber-300">
-          <span>✨ Pre-Lesson Warm-Up</span>
-        </div>
-        <h2 class="text-2xl font-serif text-slate-100 font-light">
-          "What makes an experience feel truly magical?"
-        </h2>
-        <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
-          Before our first lesson, record a relaxed <strong>2-minute voice note</strong> answering this question. Forget blueprints, dimensions, or technical details—focus only on the <em>feeling</em> and the <em>emotions</em>.
-        </p>
-      </div>
-
-      <!-- Feeling Words Grid -->
-      <div class="space-y-3 pt-2">
-        <p class="text-xs uppercase tracking-wider font-semibold text-slate-400">
-          Try weaving 2 or 3 of these feeling words into your note:
-        </p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-          <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
-            <span class="font-semibold text-amber-300 text-sm">Awe</span>
-            <p class="text-slate-400 mt-1">That breathless, jaw-dropping feeling when you look up at something magnificent.</p>
-          </div>
-          <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
-            <span class="font-semibold text-amber-300 text-sm">Anticipation</span>
-            <p class="text-slate-400 mt-1">The excited butterflies in your stomach right before discovering what's around the corner.</p>
-          </div>
-          <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
-            <span class="font-semibold text-amber-300 text-sm">Intimacy</span>
-            <p class="text-slate-400 mt-1">A warm, quiet, tucked-away space that feels personal, cozy, and safe.</p>
-          </div>
-          <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
-            <span class="font-semibold text-amber-300 text-sm">Electric</span>
-            <p class="text-slate-400 mt-1">A buzzing, vibrant energy in the air that makes your skin tingle with excitement.</p>
-          </div>
-          <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800 sm:col-span-2">
-            <span class="font-semibold text-amber-300 text-sm">Mysterious</span>
-            <p class="text-slate-400 mt-1">A shadowy, curious atmosphere that invites you to step in and explore the unknown.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Built-In Web Audio Recorder (Convenience Tool) -->
-      <div class="p-4 rounded-2xl bg-slate-900/80 border border-amber-400/20 space-y-3">
-        <div class="flex items-center justify-between">
-          <span class="text-xs font-semibold text-slate-200">Optional: Record Directly in Your Browser</span>
-          <span id="recording-timer" class="text-xs font-mono text-amber-300 hidden">00:00</span>
-        </div>
-        <div class="flex flex-wrap items-center gap-3">
-          <button id="btn-record" onclick="toggleRecording()" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-semibold tracking-wide transition-all flex items-center gap-2 shadow-md">
-            <span id="record-dot" class="w-2.5 h-2.5 rounded-full bg-red-600"></span>
-            <span id="record-text">Start Recording</span>
-          </button>
-          <div id="audio-playback-container" class="hidden flex items-center gap-3 w-full sm:w-auto">
-            <audio id="audio-player" controls class="h-8 max-w-[200px]"></audio>
-            <a id="btn-download" download="magic-voice-warmup.webm" class="px-3.5 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-400/20 text-xs font-medium transition-all">
-              Download Audio
-            </a>
-          </div>
-        </div>
-        <p class="text-[11px] text-slate-400">
-          Or simply use the <strong>Voice Memos</strong> app on your iPhone or <strong>Voice Recorder</strong> on Android.
-        </p>
-      </div>
-    </section>
-
-    <!-- How to Send on Preply -->
+    <!-- Why We Redesigned: The Imagineering Breakthrough -->
     <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
-      <div class="border-b border-slate-800 pb-3">
-        <h2 class="text-xs uppercase tracking-widest text-slate-400 font-semibold">Preply Instructions</h2>
-        <p class="text-lg font-serif text-slate-100 font-light mt-1">How to Send Your Audio on Preply</p>
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs uppercase font-mono tracking-widest text-amber-300">Pedagogical Evolution</span>
+          <h2 class="text-2xl font-serif text-slate-100 font-light mt-0.5">Why We Switched to Kevin Rafferty’s Imagineering Method</h2>
+        </div>
+        <span class="text-xs font-mono text-emerald-400 bg-emerald-950/40 px-3 py-1.5 rounded-xl border border-emerald-500/30 self-start sm:self-auto">
+          ✓ Active Framework
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Old Flawed Way -->
+        <div class="p-5 rounded-2xl bg-red-950/20 border border-red-500/20 space-y-3">
+          <div class="flex items-center gap-2 text-red-300 font-mono text-xs font-semibold uppercase">
+            <span>❌ The Old Approach (Pitch Anything / Sales Frames)</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Forced aggressive Wall Street closing tactics, "croc brain" dominance, and corporate financial maneuvers. For an architect with emerging English, this caused performance anxiety, unnatural posturing, and cognitive freezing.
+          </p>
+          <div class="text-[11px] font-mono text-red-300/80 space-y-1">
+            <div>• Hostile frame battles</div>
+            <div>• Memorizing sales psychology</div>
+            <div>• Disconnected from physical design</div>
+          </div>
+        </div>
+
+        <!-- The Rafferty Imagineering Way -->
+        <div class="p-5 rounded-2xl bg-amber-950/20 border border-amber-500/30 space-y-3">
+          <div class="flex items-center gap-2 text-amber-300 font-mono text-xs font-semibold uppercase">
+            <span>✨ The Imagineering Way (Kevin P. Rafferty)</span>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Anchored in how Imagineers actually communicate: walking the listener through the space from the front entrance, pacing the story across Acts 1, 2, and 3, and building upon ideas with collaborative "plussing".
+          </p>
+          <div class="text-[11px] font-mono text-amber-300/90 space-y-1">
+            <div>• Spatial narrative walkthroughs ("Walk through the door...")</div>
+            <div>• The 3-Act attraction architecture (Setup ➔ Show ➔ Climax)</div>
+            <div>• Marty Sklar's Law: <em>"Tell me you can if..."</em></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kevin Rafferty Quote -->
+      <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs italic text-slate-300 flex items-start gap-3">
+        <span class="text-2xl not-italic">📖</span>
+        <div>
+          <span class="font-semibold text-amber-300 not-italic block mb-0.5">Kevin P. Rafferty (Executive Imagineer &amp; Show Writer):</span>
+          "Create, don’t replicate! If you’re working on something new and someone asks you to describe it and you start by saying, 'It’s like...', slam on the brakes and ask yourself: Why am I working on something that is like something else? Learn from the past, but find your own sound. Fan your spark into a flame!"
+        </div>
+      </div>
+    </section>
+
+    <!-- The 8-Module Imagineering Curriculum Roadmap -->
+    <section class="space-y-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <span class="text-xs uppercase font-mono tracking-widest text-amber-300">Course Syllabus</span>
+          <h2 class="text-2xl md:text-3xl font-serif text-slate-100 font-light">The 8-Module Imagineering Journey</h2>
+        </div>
+        <span class="text-xs font-mono text-slate-400">8 Weekly Sessions (50 Mins)</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+        <!-- Module 1 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 border-amber-400/40 relative overflow-hidden">
+          <div class="absolute top-0 right-0 px-3 py-1 bg-amber-400/20 text-amber-300 text-[10px] font-mono rounded-bl-xl border-l border-b border-amber-400/30">
+            CURRENT FOCUS
+          </div>
+          <div class="space-y-1">
+            <span class="text-xs font-mono text-amber-300">Module 01 • Ch. 3 &amp; 18</span>
+            <h3 class="text-lg font-serif text-white font-medium">Placemaking, The Berm &amp; The Weenie</h3>
+            <p class="text-xs text-slate-400">Featured: <em>Cars Land &amp; Radiator Springs</em></p>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed font-light">
+            How Imagineers transport guests out of reality. Master planning sightlines, enclosing fantasy behind perimeter berms, and anchoring guest circulation with iconic visual magnets.
+          </p>
+          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Placemaking</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">The Weenie</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Perimeter Berm</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Sightline Intrusion</span>
+          </div>
+          <a href="homework.html" class="inline-flex items-center gap-1.5 text-xs text-amber-300 hover:text-amber-200 font-medium">
+            <span>Open Milestone 1 Clinic</span> →
+          </a>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4">
+          <div class="space-y-1">
+            <span class="text-xs font-mono text-slate-400">Module 02 • Ch. 5 &amp; 19</span>
+            <h3 class="text-lg font-serif text-white font-medium">Words That Paint Pictures: Show Writing for Architects</h3>
+            <p class="text-xs text-slate-400">Featured: <em>Haunted Mansion &amp; Pirates of the Caribbean</em></p>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed font-light">
+            Learning the descriptive language of Disney Legend X Atencio. Upgrading generic words into evocative, sensory English that paints vivid pictures in the listener's imagination.
+          </p>
+          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Evocative Language</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Atmospheric Beat</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Weathering &amp; Patina</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Show Scene</span>
+          </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4">
+          <div class="space-y-1">
+            <span class="text-xs font-mono text-slate-400">Module 03 • Ch. 18</span>
+            <h3 class="text-lg font-serif text-white font-medium">The 3-Act Attraction Architecture</h3>
+            <p class="text-xs text-slate-400">Featured: <em>Radiator Springs Racers</em></p>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed font-light">
+            Kevin Rafferty's attraction pacing framework: Act 1 (Scenic Decompression), Act 2 (Show-Controlled Theatrical Darkness), and Act 3 (The Climactic Kinetic Payoff).
+          </p>
+          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Decompression</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Audio-Animatronics</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Kinetic Payoff</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Ride Cadence</span>
+          </div>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4">
+          <div class="space-y-1">
+            <span class="text-xs font-mono text-slate-400">Module 04 • Ch. 10</span>
+            <h3 class="text-lg font-serif text-white font-medium">Pitching the Impossible &amp; The Bold Reveal</h3>
+            <p class="text-xs text-slate-400">Featured: <em>The Twilight Zone Tower of Terror</em></p>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed font-light">
+            How Kevin pitched Michael Eisner and Frank Wells. Creating the irresistible one-line hook, pre-show suspense in the library, and the architectural twist: the elevator breaking free of the shaft!
+          </p>
+          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">The Hook</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Pre-Show Exposition</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Signature Reveal</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Suspension of Disbelief</span>
+          </div>
+        </div>
+
+        <!-- Module 5 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4">
+          <div class="space-y-1">
+            <span class="text-xs font-mono text-slate-400">Module 05 • Ch. 13 &amp; 15</span>
+            <h3 class="text-lg font-serif text-white font-medium">4D Multi-Sensory Spatial Immersion</h3>
+            <p class="text-xs text-slate-400">Featured: <em>It's Tough to Be a Bug! &amp; Mickey's PhilharMagic</em></p>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed font-light">
+            Organic architecture inside the roots of the Tree of Life. Integrating 4D physical effects: scent cannons (Smellitzers), in-seat tactile sensations, spatial audio, and thermal shifts.
+          </p>
+          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Multi-Sensory</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Smellitzer</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Tactile Cues</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Binaural Audio</span>
+          </div>
+        </div>
+
+        <!-- Module 6 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4">
+          <div class="space-y-1">
+            <span class="text-xs font-mono text-slate-400">Module 06 • Ch. 14</span>
+            <h3 class="text-lg font-serif text-white font-medium">Industrial Theming &amp; High-Velocity Pacing</h3>
+            <p class="text-xs text-slate-400">Featured: <em>Test Track (EPCOT)</em></p>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed font-light">
+            Turning functional engineering into high-stakes drama. Explaining environmental torture chambers, 65mph banked curves, dispatch intervals, and hourly guest throughput.
+          </p>
+          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Industrial Storytelling</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Superelevation</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Hourly Throughput</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Dispatch Intervals</span>
+          </div>
+        </div>
+
+        <!-- Module 7 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4">
+          <div class="space-y-1">
+            <span class="text-xs font-mono text-slate-400">Module 07 • Ch. 9 &amp; 17</span>
+            <h3 class="text-lg font-serif text-white font-medium">Dimensional Playfulness &amp; Kinetic Dining</h3>
+            <p class="text-xs text-slate-400">Featured: <em>Pan Galactic Pizza Port &amp; Toy Story Mania!</em></p>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed font-light">
+            Distorting spatial scale to make guests feel toy-sized; integrating whimsical kinetic animatronics (Tony Solaroni) into dining environments to eliminate queue line boredom.
+          </p>
+          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Scale Distortion</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Kinetic Installation</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Themed Dining</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Interactive Flow</span>
+          </div>
+        </div>
+
+        <!-- Module 8 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4">
+          <div class="space-y-1">
+            <span class="text-xs font-mono text-slate-400">Module 08 • Ch. 19 &amp; 20</span>
+            <h3 class="text-lg font-serif text-white font-medium">Next-Gen Imagineering &amp; The Grand Walkthrough</h3>
+            <p class="text-xs text-slate-400">Featured: <em>Mickey &amp; Minnie's Runaway Railway</em></p>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed font-light">
+            Trackless ride vehicles and 2.5D dimensional worlds. Rafferty's Golden Rule: "Create, don't replicate!" Alessia's Capstone 3-minute executive walkthrough pitch to the Imagineering Board.
+          </p>
+          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Trackless AGV</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">2.5D Dimensional</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Tell Me You Can If</span>
+            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Grand Walkthrough</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- The Imagineer's Word Upgrade Clinic -->
+    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
+      <div class="border-b border-slate-800 pb-4">
+        <span class="text-xs uppercase font-mono tracking-widest text-amber-300">Vocabulary Clinic</span>
+        <h2 class="text-2xl font-serif text-slate-100 font-light mt-0.5">The 3-Level Language Upgrade Ladder</h2>
+        <p class="text-xs text-slate-400 mt-1 font-light">
+          In Imagineering, we never settle for Level 1 basic words. We climb directly from architectural description into immersive storytelling.
+        </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-        <!-- Step 1 -->
-        <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 space-y-2">
-          <div class="w-7 h-7 rounded-lg bg-amber-400/10 text-amber-300 flex items-center justify-center font-mono font-bold">1</div>
-          <h4 class="font-semibold text-slate-200">Record Your Note</h4>
-          <p class="text-slate-400 leading-relaxed">
-            Record a 2-minute clip using your phone's voice recorder or the on-page recorder above. Keep it relaxed and spontaneous!
-          </p>
+        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-2">
+          <span class="font-mono text-slate-400 block font-semibold">Level 1: Basic English</span>
+          <p class="text-slate-400 italic">"We make a big rock so people don't see the road."</p>
+          <p class="text-slate-400 italic">"There is an old house with dark rooms."</p>
+          <p class="text-slate-400 italic">"The ride is very fast and scary."</p>
         </div>
 
-        <!-- Step 2 -->
-        <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 space-y-2">
-          <div class="w-7 h-7 rounded-lg bg-amber-400/10 text-amber-300 flex items-center justify-center font-mono font-bold">2</div>
-          <h4 class="font-semibold text-slate-200">Save the File</h4>
-          <p class="text-slate-400 leading-relaxed">
-            On iPhone, tap the three dots (<strong>...</strong>) on the voice memo and choose <em>"Save to Files"</em>. On Android, tap <em>Share</em> or <em>Save</em>.
-          </p>
+        <div class="p-4 rounded-xl bg-sky-950/20 border border-sky-500/20 space-y-2">
+          <span class="font-mono text-sky-300 block font-semibold">Level 2: Architectural English</span>
+          <p class="text-slate-300">"We install a landscaped barrier to block external sightlines."</p>
+          <p class="text-slate-300">"A historic structure with low ambient illumination."</p>
+          <p class="text-slate-300">"High-velocity vehicle propulsion with sudden drops."</p>
         </div>
 
-        <!-- Step 3 -->
-        <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 space-y-2">
-          <div class="w-7 h-7 rounded-lg bg-amber-400/10 text-amber-300 flex items-center justify-center font-mono font-bold">3</div>
-          <h4 class="font-semibold text-slate-200">Attach &amp; Send</h4>
-          <p class="text-slate-400 leading-relaxed">
-            Open our chat in Preply. Click the <strong>📎 Paperclip / Attachment</strong> icon at the bottom of the message box, select your audio, and hit send!
-          </p>
+        <div class="p-4 rounded-xl bg-amber-950/20 border border-amber-500/30 space-y-2">
+          <span class="font-mono text-amber-300 block font-semibold">Level 3: Imagineering Storytelling ✨</span>
+          <p class="text-amber-200/90 font-medium">"We raise a 12-meter sculpted rockwork berm to preserve 100% thematic immersion."</p>
+          <p class="text-amber-200/90 font-medium">"A timeworn manor steeped in distressed patina and shadow-drenched corridors."</p>
+          <p class="text-amber-200/90 font-medium">"A heart-stopping 65mph banked surge bursting through the exterior façade!"</p>
         </div>
-      </div>
-
-      <div class="p-3.5 rounded-xl bg-amber-400/10 border border-amber-400/20 text-xs text-amber-200/90 flex items-center gap-2.5">
-        <span class="text-sm">💡</span>
-        <span>Please send your voice note at least a few hours before our lesson so I can prepare our feedback!</span>
       </div>
     </section>
 
-    <!-- Minimal Footer -->
-    <footer class="text-center text-xs text-slate-400 pt-6 border-t border-slate-900 font-light">
-      Speaking the Magic • A Personalized Journey in Themed Entertainment Vision
+    <!-- Built-in Voice Recorder Studio -->
+    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs uppercase font-mono tracking-widest text-amber-300">Vocal Practice Studio</span>
+          <h2 class="text-2xl font-serif text-slate-100 font-light mt-0.5">The Imagineering Voice Recorder</h2>
+        </div>
+        <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-xl border border-slate-800 self-start sm:self-auto">
+          Built-in Mic Studio
+        </span>
+      </div>
+
+      <div class="space-y-4">
+        <p class="text-xs text-slate-300 leading-relaxed font-light">
+          Practice your <strong>3-Beat Spatial Walkthrough</strong>. Imagine you are pitching to Marty Sklar and Michael Eisner. Speak with authority, energy, and zero apologies for your English!
+        </p>
+
+        <!-- Prompt Card -->
+        <div class="p-4 rounded-xl bg-slate-900/90 border border-amber-400/20 space-y-2 text-xs">
+          <span class="font-mono text-amber-300 font-semibold uppercase text-[11px] block">Your 90-Second Practice Prompt:</span>
+          <div class="space-y-1 font-mono text-slate-300 text-[11px]">
+            <div><span class="text-amber-300 font-semibold">1. Beat 1 (Arrival):</span> "Picture this: The guest steps through the entrance portal and..."</div>
+            <div><span class="text-amber-300 font-semibold">2. Beat 2 (Act 1 &amp; Act 2):</span> "In Act 1, we decompress the guest with... then glide into Act 2 where..."</div>
+            <div><span class="text-amber-300 font-semibold">3. Beat 3 (The Signature Reveal):</span> "Suddenly, the unexpected occurs: [Describe the spatial/kinetic climax]!"</div>
+          </div>
+        </div>
+
+        <!-- Recorder Controls -->
+        <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <button id="btn-record" onclick="toggleRecording()" class="flex items-center gap-2.5 px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-semibold text-xs transition-all shadow-lg shadow-amber-400/10">
+              <span id="record-dot" class="w-2.5 h-2.5 rounded-full bg-red-600"></span>
+              <span id="record-text">Start Recording Pitch</span>
+            </button>
+            <span id="recording-timer" class="font-mono text-lg text-amber-300 hidden">00:00</span>
+          </div>
+
+          <div id="audio-playback-container" class="hidden flex flex-wrap items-center gap-3">
+            <audio id="audio-player" controls class="h-9 rounded-lg"></audio>
+            <a id="btn-download" download="alessia-imagineering-pitch.webm" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 text-xs font-mono border border-slate-700 transition-colors">
+              💾 Download Audio Note
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-xs text-slate-500 pt-8 border-t border-slate-900 font-light space-y-2">
+      <div>Magic Journey • The Imagineering English Studio for Alessia</div>
+      <div class="text-[11px] text-slate-600">Based on <em>Magic Journey: My Fantastical Walt Disney Imagineering Career</em> by Kevin P. Rafferty</div>
     </footer>
 
   </div>
 
-  <!-- Interactive Magical Particle System Script -->
+  <!-- Interactive Particles Script -->
   <script>
     const canvas = document.getElementById('particles-canvas');
     const ctx = canvas.getContext('2d');
@@ -319,12 +450,11 @@
         this.y = Math.random() * canvas.height;
         this.size = Math.random() * 2.2 + 0.6;
         this.speedX = (Math.random() - 0.5) * 0.4;
-        this.speedY = -Math.random() * 0.5 - 0.2; // Gentle upward drift
+        this.speedY = -Math.random() * 0.5 - 0.2;
         this.opacity = Math.random() * 0.6 + 0.2;
         this.pulse = Math.random() * 0.02 + 0.005;
         this.pulseDir = 1;
-        // Warm gold & starlight tones
-        const colors = ['#f6d365', '#ffeaa7', '#fda085', '#ffffff'];
+        const colors = ['#f6d365', '#ffeaa7', '#fda085', '#38bdf8'];
         this.color = colors[Math.floor(Math.random() * colors.length)];
       }
 
@@ -332,12 +462,10 @@
         this.x += this.speedX;
         this.y += this.speedY;
 
-        // Twinkle
         this.opacity += this.pulse * this.pulseDir;
         if (this.opacity > 0.85) this.pulseDir = -1;
         if (this.opacity < 0.15) this.pulseDir = 1;
 
-        // Interactive mouse soft repel / swirl
         if (mouse.x != null && mouse.y != null) {
           const dx = mouse.x - this.x;
           const dy = mouse.y - this.y;
@@ -349,7 +477,6 @@
           }
         }
 
-        // Loop boundaries
         if (this.y < 0) this.y = canvas.height;
         if (this.x < 0) this.x = canvas.width;
         if (this.x > canvas.width) this.x = 0;
@@ -434,7 +561,7 @@
           }, 1000);
 
         } catch (err) {
-          alert("Microphone access is required to record directly on the page, or you can simply record on your phone!");
+          alert("Microphone access is required to record directly on the page, or you can record on your phone and upload to Preply!");
         }
       } else {
         mediaRecorder.stop();
