@@ -6,27 +6,29 @@
   <title>Magic Journey | Alessia • The Imagineering English Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            serif: ['"Cormorant Garamond"', 'serif'],
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'sans-serif'],
             mono: ['"JetBrains Mono"', 'monospace'],
           },
           colors: {
-            magic: {
-              gold: '#f6d365',
-              amber: '#fda085',
-              glow: '#ffeaa7',
-              deep: '#0a0d14',
-              surface: '#121824',
-              card: '#161f30',
-              border: '#1f293d',
-              accent: '#38bdf8'
+            studio: {
+              canvas: '#16191f',
+              surface: '#20252e',
+              elevated: '#282e3a',
+              border: '#373f4e',
+              borderLight: '#475266',
+              terracotta: '#df6a44',
+              ochre: '#e5a54b',
+              sand: '#e8dcce',
+              sage: '#4e8265',
+              ink: '#0e1116'
             }
           }
         }
@@ -34,426 +36,350 @@
     }
   </script>
   <style>
-    /* Particle canvas background */
-    #particles-canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: 0;
+    body {
+      background-color: #16191f;
+      background-image: 
+        radial-gradient(rgba(229, 165, 75, 0.04) 1px, transparent 0),
+        linear-gradient(to bottom, #16191f, #121419);
+      background-size: 24px 24px, 100% 100%;
     }
-    .glass-card {
-      background: rgba(18, 24, 36, 0.86);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border: 1px solid rgba(246, 211, 101, 0.18);
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    .board-card {
+      background: #20252e;
+      border: 1px solid #373f4e;
+      box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.45);
+      transition: all 0.25s ease-in-out;
     }
-    .glass-card:hover {
-      border-color: rgba(246, 211, 101, 0.42);
-      box-shadow: 0 14px 36px -10px rgba(246, 211, 101, 0.15);
+    .board-card:hover {
+      border-color: #4f5a6e;
     }
-    .text-glow {
-      text-shadow: 0 0 24px rgba(246, 211, 101, 0.38);
+    .photo-frame {
+      background: #191d24;
+      border: 1px solid #3d4657;
+      padding: 6px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    }
+    .stamp-label {
+      font-family: '"JetBrains Mono"', monospace;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 600;
     }
   </style>
 </head>
-<body class="bg-magic-deep text-slate-200 font-sans antialiased min-h-screen relative selection:bg-amber-400 selection:text-slate-950">
-
-  <!-- Interactive Magic Dust Particle Canvas -->
-  <canvas id="particles-canvas"></canvas>
-
-  <!-- Ambient Glow Blobs -->
-  <div class="fixed top-[-10%] left-[20%] w-[540px] h-[540px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
-  <div class="fixed bottom-[-10%] right-[15%] w-[500px] h-[500px] bg-sky-500/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
+<body class="text-slate-200 font-sans antialiased min-h-screen py-8 md:py-14 px-4 sm:px-6">
 
   <!-- Main Container -->
-  <div class="relative z-10 max-w-5xl mx-auto px-5 py-12 md:py-20 space-y-16">
+  <div class="max-w-5xl mx-auto space-y-14">
 
-    <!-- Top Status Bar & Quick Switcher -->
-    <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800/80 pb-4 text-xs font-mono">
-      <div class="inline-flex items-center gap-2 text-amber-300">
-        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+    <!-- Top Navigation Bar -->
+    <header class="flex flex-wrap items-center justify-between gap-4 border-b border-studio-border/70 pb-4 text-xs font-mono">
+      <div class="inline-flex items-center gap-2 text-studio-ochre">
+        <span class="w-2 h-2 rounded-full bg-studio-ochre animate-pulse"></span>
         <span>Magic Journey Studio • Alessia, Architect &amp; Themed Entertainment Designer</span>
       </div>
       <div class="flex items-center gap-3">
-        <a href="homework.html" class="px-3 py-1.5 rounded-xl bg-amber-400/15 hover:bg-amber-400/25 border border-amber-400/30 text-amber-300 transition-all">
-          📝 Milestone 1 Portal →
+        <a href="homework.html" class="px-3 py-1.5 rounded bg-studio-terracotta/20 hover:bg-studio-terracotta/30 border border-studio-terracotta/40 text-studio-terracotta transition-all">
+          📸 Milestone 1 Photo Challenge →
         </a>
-        <a href="teacher.html" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 transition-all">
+        <a href="teacher.html" class="px-3 py-1.5 rounded bg-studio-elevated hover:bg-studio-surface border border-studio-border text-slate-300 transition-all">
           🎛️ Teacher's Cockpit →
-        </a>
-      </div>
-    </div>
-
-    <!-- Header / Welcome Hero -->
-    <header class="text-center space-y-4">
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium tracking-widest uppercase bg-amber-400/10 text-amber-300 border border-amber-400/25">
-        <span>✨ The Walt Disney Imagineering English Method</span>
-      </div>
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-slate-50 tracking-wide text-glow">
-        Designing Worlds. <span class="italic text-amber-200">Pitching the Magic.</span>
-      </h1>
-      <p class="text-slate-400 text-sm md:text-base max-w-2xl mx-auto font-light leading-relaxed">
-        Grounded directly in legendary Disney Imagineer <strong>Kevin P. Rafferty’s <em>Magic Journey: My Fantastical Walt Disney Imagineering Career</em></strong>. Moving past dry corporate jargon into vivid spatial storytelling, multi-sensory immersion, and authentic creative confidence.
-      </p>
-      <div class="pt-2 flex flex-wrap justify-center gap-3">
-        <a href="homework.html" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-amber-400/15 hover:bg-amber-400/25 border border-amber-400/40 text-amber-300 text-xs font-semibold tracking-wide transition-all shadow-xl hover:border-amber-400/60 hover:scale-[1.02]">
-          <span>🎢 Active Milestone: Cars Land &amp; Radiator Springs Racers Walkthrough</span>
-          <span class="text-amber-200">→</span>
         </a>
       </div>
     </header>
 
-    <!-- Why We Redesigned: The Imagineering Breakthrough -->
-    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-4">
-        <div>
-          <span class="text-xs uppercase font-mono tracking-widest text-amber-300">Pedagogical Evolution</span>
-          <h2 class="text-2xl font-serif text-slate-100 font-light mt-0.5">Why We Switched to Kevin Rafferty’s Imagineering Method</h2>
-        </div>
-        <span class="text-xs font-mono text-emerald-400 bg-emerald-950/40 px-3 py-1.5 rounded-xl border border-emerald-500/30 self-start sm:self-auto">
-          ✓ Active Framework
-        </span>
+    <!-- Welcome Hero -->
+    <div class="space-y-4">
+      <div class="inline-block px-3 py-1 rounded bg-studio-ochre/15 border border-studio-ochre/30 text-studio-ochre text-xs font-mono font-medium">
+        THE WALT DISNEY IMAGINEERING METHOD • KEVIN P. RAFFERTY
       </div>
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-serif text-slate-100 font-normal tracking-wide">
+        Designing Worlds. <span class="italic text-studio-ochre font-light">Pitching the Magic.</span>
+      </h1>
+      <p class="text-slate-300 text-sm md:text-base max-w-2xl font-light leading-relaxed">
+        Grounded directly in legendary Disney Imagineer <strong>Kevin P. Rafferty’s <em>Magic Journey: My Fantastical Walt Disney Imagineering Career</em></strong>. Moving past dry corporate jargon into vivid spatial storytelling, rich sensory adjectives, and authentic creative confidence.
+      </p>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Old Flawed Way -->
-        <div class="p-5 rounded-2xl bg-red-950/20 border border-red-500/20 space-y-3">
-          <div class="flex items-center gap-2 text-red-300 font-mono text-xs font-semibold uppercase">
-            <span>❌ The Old Approach (Pitch Anything / Sales Frames)</span>
-          </div>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            Forced aggressive Wall Street closing tactics, "croc brain" dominance, and corporate financial maneuvers. For an architect with emerging English, this caused performance anxiety, unnatural posturing, and cognitive freezing.
+      <!-- Bilingual Welcome Banner -->
+      <div class="p-4 rounded-xl bg-studio-elevated/70 border border-studio-border text-xs text-slate-300 flex items-start gap-3">
+        <span class="text-studio-ochre text-xl not-italic">🇪🇸</span>
+        <div class="space-y-1">
+          <span class="font-semibold text-slate-100 block">Estudio de inglés para Alessia (con traducción y apoyo en español):</span>
+          <p class="leading-relaxed font-light">
+            Este curso está diseñado para tu intuición espacial como arquitecta. Cada concepto incluye vocabulario en inglés con su traducción al español y fotografías reales de arquitectura temática para que aprendas a describir volúmenes, texturas, iluminación y la experiencia del visitante.
           </p>
-          <div class="text-[11px] font-mono text-red-300/80 space-y-1">
-            <div>• Hostile frame battles</div>
-            <div>• Memorizing sales psychology</div>
-            <div>• Disconnected from physical design</div>
-          </div>
-        </div>
-
-        <!-- The Rafferty Imagineering Way -->
-        <div class="p-5 rounded-2xl bg-amber-950/20 border border-amber-500/30 space-y-3">
-          <div class="flex items-center gap-2 text-amber-300 font-mono text-xs font-semibold uppercase">
-            <span>✨ The Imagineering Way (Kevin P. Rafferty)</span>
-          </div>
-          <p class="text-xs text-slate-300 leading-relaxed">
-            Anchored in how Imagineers actually communicate: walking the listener through the space from the front entrance, pacing the story across Acts 1, 2, and 3, and building upon ideas with collaborative "plussing".
-          </p>
-          <div class="text-[11px] font-mono text-amber-300/90 space-y-1">
-            <div>• Spatial narrative walkthroughs ("Walk through the door...")</div>
-            <div>• The 3-Act attraction architecture (Setup ➔ Show ➔ Climax)</div>
-            <div>• Marty Sklar's Law: <em>"Tell me you can if..."</em></div>
-          </div>
         </div>
       </div>
 
-      <!-- Kevin Rafferty Quote -->
-      <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs italic text-slate-300 flex items-start gap-3">
-        <span class="text-2xl not-italic">📖</span>
+      <!-- Quick Action CTAs -->
+      <div class="pt-2 flex flex-wrap gap-3">
+        <a href="homework.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-studio-terracotta hover:bg-[#eb744e] text-white font-medium text-xs font-mono transition-all shadow-md">
+          <span>📸 Open Milestone 1: Photo Challenge &amp; Walkthrough</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- VISUAL GALLERY PREVIEW: THE 3 CORE ELEMENTS -->
+    <section class="space-y-6">
+      <div class="border-b border-studio-border pb-2.5 flex items-center justify-between">
         <div>
-          <span class="font-semibold text-amber-300 not-italic block mb-0.5">Kevin P. Rafferty (Executive Imagineer &amp; Show Writer):</span>
-          "Create, don’t replicate! If you’re working on something new and someone asks you to describe it and you start by saying, 'It’s like...', slam on the brakes and ask yourself: Why am I working on something that is like something else? Learn from the past, but find your own sound. Fan your spark into a flame!"
+          <span class="stamp-label text-studio-ochre">Visual Anchors • Elementos Visuales</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Real Themed Entertainment Architecture</h2>
+        </div>
+        <span class="text-xs font-mono text-slate-400">Cars Land &amp; Radiator Springs</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <!-- Photo 1: The Weenie -->
+        <div class="board-card rounded-xl p-4 space-y-3">
+          <div class="photo-frame rounded-lg overflow-hidden">
+            <img src="assets/images/weenie_rockwork.jpg" alt="The Weenie in Radiator Springs" class="w-full h-40 object-cover rounded hover:scale-105 transition-transform duration-300">
+          </div>
+          <div>
+            <span class="stamp-label text-studio-ochre text-[10px]">The Weenie (El Imán Visual)</span>
+            <h3 class="text-base font-serif text-slate-100 font-semibold mt-0.5">Monumental Sightline Beacon</h3>
+            <p class="text-xs text-slate-300 font-light mt-1">
+              A commanding visual magnet (like Willys Butte) at the end of the corridor that pulls guest sightlines forward into the land.
+            </p>
+          </div>
+          <div class="text-[11px] font-mono text-studio-ochre pt-1 border-t border-studio-border/60">
+            ES: Estructura monumental que atrae y orienta.
+          </div>
+        </div>
+
+        <!-- Photo 2: The Perimeter Berm -->
+        <div class="board-card rounded-xl p-4 space-y-3">
+          <div class="photo-frame rounded-lg overflow-hidden">
+            <img src="assets/images/perimeter_berm.jpg" alt="Perimeter Berm" class="w-full h-40 object-cover rounded hover:scale-105 transition-transform duration-300">
+          </div>
+          <div>
+            <span class="stamp-label text-studio-sage text-[10px]">The Berm (El Terraplén)</span>
+            <h3 class="text-base font-serif text-slate-100 font-semibold mt-0.5">Immersion Boundary Shield</h3>
+            <p class="text-xs text-slate-300 font-light mt-1">
+              Elevated rockwork and landscaped mounds isolating the themed land from highway sightlines and outside city noise.
+            </p>
+          </div>
+          <div class="text-[11px] font-mono text-studio-sage pt-1 border-t border-studio-border/60">
+            ES: Barrera que elimina la intrusión del exterior.
+          </div>
+        </div>
+
+        <!-- Photo 3: The Portal -->
+        <div class="board-card rounded-xl p-4 space-y-3">
+          <div class="photo-frame rounded-lg overflow-hidden">
+            <img src="assets/images/canyon_portal.jpg" alt="Transition Portal" class="w-full h-40 object-cover rounded hover:scale-105 transition-transform duration-300">
+          </div>
+          <div>
+            <span class="stamp-label text-studio-terracotta text-[10px]">The Portal (El Portal)</span>
+            <h3 class="text-base font-serif text-slate-100 font-semibold mt-0.5">Rustic Threshold Gateway</h3>
+            <p class="text-xs text-slate-300 font-light mt-1">
+              An architectural archway using spatial compression to transition guests into an expansive sun-drenched canyon.
+            </p>
+          </div>
+          <div class="text-[11px] font-mono text-studio-terracotta pt-1 border-t border-studio-border/60">
+            ES: Umbral que enmarca la vista y cambia la atmósfera.
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- The 8-Module Imagineering Curriculum Roadmap -->
+    <!-- THE 8-MODULE IMAGINEERING CURRICULUM ROADMAP (BILINGUAL) -->
     <section class="space-y-6">
-      <div class="flex items-center justify-between">
+      <div class="border-b border-studio-border pb-2.5 flex items-center justify-between">
         <div>
-          <span class="text-xs uppercase font-mono tracking-widest text-amber-300">Course Syllabus</span>
-          <h2 class="text-2xl md:text-3xl font-serif text-slate-100 font-light">The 8-Module Imagineering Journey</h2>
+          <span class="stamp-label text-studio-ochre">Course Syllabus • Plan de Estudios</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">The 8-Module Imagineering Journey</h2>
         </div>
         <span class="text-xs font-mono text-slate-400">8 Weekly Sessions (50 Mins)</span>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
         <!-- Module 1 -->
-        <div class="glass-card rounded-2xl p-6 space-y-4 border-amber-400/40 relative overflow-hidden">
-          <div class="absolute top-0 right-0 px-3 py-1 bg-amber-400/20 text-amber-300 text-[10px] font-mono rounded-bl-xl border-l border-b border-amber-400/30">
-            CURRENT FOCUS
+        <div class="board-card rounded-xl p-5 space-y-3 border-studio-terracotta/50 relative overflow-hidden">
+          <div class="flex items-center justify-between">
+            <span class="stamp-label text-studio-terracotta">Module 01 • Ch. 3 &amp; 18</span>
+            <span class="px-2 py-0.5 rounded bg-studio-terracotta/20 text-studio-terracotta text-[10px] font-mono">ACTIVE MILESTONE</span>
           </div>
-          <div class="space-y-1">
-            <span class="text-xs font-mono text-amber-300">Module 01 • Ch. 3 &amp; 18</span>
-            <h3 class="text-lg font-serif text-white font-medium">Placemaking, The Berm &amp; The Weenie</h3>
-            <p class="text-xs text-slate-400">Featured: <em>Cars Land &amp; Radiator Springs</em></p>
+          <div>
+            <h3 class="text-lg font-serif text-slate-100 font-semibold">Placemaking, The Berm &amp; The Weenie</h3>
+            <p class="text-xs text-studio-ochre/90 font-serif italic">Creación de lugar, terraplén perimetral e imán visual</p>
           </div>
-          <p class="text-xs text-slate-300 leading-relaxed font-light">
-            How Imagineers transport guests out of reality. Master planning sightlines, enclosing fantasy behind perimeter berms, and anchoring guest circulation with iconic visual magnets.
+          <p class="text-xs text-slate-300 font-light leading-relaxed">
+            Featured: <em>Cars Land &amp; Radiator Springs</em>. Master planning sightlines, enclosing fantasy behind perimeter berms, and anchoring guest flow with Willys Butte.
           </p>
-          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Placemaking</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">The Weenie</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Perimeter Berm</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Sightline Intrusion</span>
+          <div class="pt-2 border-t border-studio-border/60 flex items-center justify-between text-xs">
+            <span class="text-[11px] font-mono text-slate-400">Vocabulary + Photo Challenge</span>
+            <a href="homework.html" class="text-studio-terracotta hover:underline font-mono font-medium">Open Assignment →</a>
           </div>
-          <a href="homework.html" class="inline-flex items-center gap-1.5 text-xs text-amber-300 hover:text-amber-200 font-medium">
-            <span>Open Milestone 1 Clinic</span> →
-          </a>
         </div>
 
         <!-- Module 2 -->
-        <div class="glass-card rounded-2xl p-6 space-y-4">
-          <div class="space-y-1">
-            <span class="text-xs font-mono text-slate-400">Module 02 • Ch. 5 &amp; 19</span>
-            <h3 class="text-lg font-serif text-white font-medium">Words That Paint Pictures: Show Writing for Architects</h3>
-            <p class="text-xs text-slate-400">Featured: <em>Haunted Mansion &amp; Pirates of the Caribbean</em></p>
+        <div class="board-card rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="stamp-label text-slate-400">Module 02 • Ch. 5 &amp; 19</span>
+            <span class="text-[10px] font-mono text-slate-500">Upcoming</span>
           </div>
-          <p class="text-xs text-slate-300 leading-relaxed font-light">
-            Learning the descriptive language of Disney Legend X Atencio. Upgrading generic words into evocative, sensory English that paints vivid pictures in the listener's imagination.
+          <div>
+            <h3 class="text-lg font-serif text-slate-100 font-semibold">Words That Paint Pictures: Show Writing</h3>
+            <p class="text-xs text-studio-ochre/90 font-serif italic">Palabras que pintan imágenes: redacción para arquitectos</p>
+          </div>
+          <p class="text-xs text-slate-300 font-light leading-relaxed">
+            Featured: <em>Haunted Mansion &amp; Pirates</em>. Learning the language of Disney Legend X Atencio; upgrading flat words into evocative sensory descriptions of materials and lighting.
           </p>
-          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Evocative Language</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Atmospheric Beat</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Weathering &amp; Patina</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Show Scene</span>
+          <div class="pt-2 border-t border-studio-border/60 text-[11px] font-mono text-slate-400">
+            ES: Describir pátina, texturas y atmósferas con precisión sensorial.
           </div>
         </div>
 
         <!-- Module 3 -->
-        <div class="glass-card rounded-2xl p-6 space-y-4">
-          <div class="space-y-1">
-            <span class="text-xs font-mono text-slate-400">Module 03 • Ch. 18</span>
-            <h3 class="text-lg font-serif text-white font-medium">The 3-Act Attraction Architecture</h3>
-            <p class="text-xs text-slate-400">Featured: <em>Radiator Springs Racers</em></p>
+        <div class="board-card rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="stamp-label text-slate-400">Module 03 • Ch. 18</span>
+            <span class="text-[10px] font-mono text-slate-500">Upcoming</span>
           </div>
-          <p class="text-xs text-slate-300 leading-relaxed font-light">
-            Kevin Rafferty's attraction pacing framework: Act 1 (Scenic Decompression), Act 2 (Show-Controlled Theatrical Darkness), and Act 3 (The Climactic Kinetic Payoff).
+          <div>
+            <h3 class="text-lg font-serif text-slate-100 font-semibold">The 3-Act Attraction Architecture</h3>
+            <p class="text-xs text-studio-ochre/90 font-serif italic">La arquitectura de 3 actos en atracciones</p>
+          </div>
+          <p class="text-xs text-slate-300 font-light leading-relaxed">
+            Featured: <em>Radiator Springs Racers</em>. Pacing guest emotional beats: Act 1 (Scenic Decompression) ➔ Act 2 (Theatrical Show Scenes) ➔ Act 3 (Climactic Kinetic Payoff).
           </p>
-          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Decompression</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Audio-Animatronics</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Kinetic Payoff</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Ride Cadence</span>
+          <div class="pt-2 border-t border-studio-border/60 text-[11px] font-mono text-slate-400">
+            ES: Secuenciación narrativa: descompresión, oscuridad teatral y carrera veloz.
           </div>
         </div>
 
         <!-- Module 4 -->
-        <div class="glass-card rounded-2xl p-6 space-y-4">
-          <div class="space-y-1">
-            <span class="text-xs font-mono text-slate-400">Module 04 • Ch. 10</span>
-            <h3 class="text-lg font-serif text-white font-medium">Pitching the Impossible &amp; The Bold Reveal</h3>
-            <p class="text-xs text-slate-400">Featured: <em>The Twilight Zone Tower of Terror</em></p>
+        <div class="board-card rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="stamp-label text-slate-400">Module 04 • Ch. 10</span>
+            <span class="text-[10px] font-mono text-slate-500">Upcoming</span>
           </div>
-          <p class="text-xs text-slate-300 leading-relaxed font-light">
-            How Kevin pitched Michael Eisner and Frank Wells. Creating the irresistible one-line hook, pre-show suspense in the library, and the architectural twist: the elevator breaking free of the shaft!
+          <div>
+            <h3 class="text-lg font-serif text-slate-100 font-semibold">Pitching the Impossible &amp; The Bold Reveal</h3>
+            <p class="text-xs text-studio-ochre/90 font-serif italic">Presentar lo imposible: el gancho y la gran revelación</p>
+          </div>
+          <p class="text-xs text-slate-300 font-light leading-relaxed">
+            Featured: <em>The Twilight Zone Tower of Terror</em>. How Kevin pitched Michael Eisner; pre-show suspense in the library and the breakthrough: the elevator leaving the vertical shaft!
           </p>
-          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">The Hook</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Pre-Show Exposition</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Signature Reveal</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Suspension of Disbelief</span>
+          <div class="pt-2 border-t border-studio-border/60 text-[11px] font-mono text-slate-400">
+            ES: Defender conceptos audaces ante comités ejecutivos.
           </div>
         </div>
 
         <!-- Module 5 -->
-        <div class="glass-card rounded-2xl p-6 space-y-4">
-          <div class="space-y-1">
-            <span class="text-xs font-mono text-slate-400">Module 05 • Ch. 13 &amp; 15</span>
-            <h3 class="text-lg font-serif text-white font-medium">4D Multi-Sensory Spatial Immersion</h3>
-            <p class="text-xs text-slate-400">Featured: <em>It's Tough to Be a Bug! &amp; Mickey's PhilharMagic</em></p>
+        <div class="board-card rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="stamp-label text-slate-400">Module 05 • Ch. 13 &amp; 15</span>
+            <span class="text-[10px] font-mono text-slate-500">Upcoming</span>
           </div>
-          <p class="text-xs text-slate-300 leading-relaxed font-light">
-            Organic architecture inside the roots of the Tree of Life. Integrating 4D physical effects: scent cannons (Smellitzers), in-seat tactile sensations, spatial audio, and thermal shifts.
+          <div>
+            <h3 class="text-lg font-serif text-slate-100 font-semibold">4D Multi-Sensory Spatial Immersion</h3>
+            <p class="text-xs text-studio-ochre/90 font-serif italic">Inmersión espacial multisensorial 4D</p>
+          </div>
+          <p class="text-xs text-slate-300 font-light leading-relaxed">
+            Featured: <em>It's Tough to Be a Bug! &amp; Mickey's PhilharMagic</em>. Organic architecture inside the Tree of Life; integrating Smellitzers (scents), tactile seat cues, and spatial audio.
           </p>
-          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Multi-Sensory</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Smellitzer</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Tactile Cues</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Binaural Audio</span>
+          <div class="pt-2 border-t border-studio-border/60 text-[11px] font-mono text-slate-400">
+            ES: Diseñar para todos los sentidos: aromas, tacto, sonido y temperatura.
           </div>
         </div>
 
         <!-- Module 6 -->
-        <div class="glass-card rounded-2xl p-6 space-y-4">
-          <div class="space-y-1">
-            <span class="text-xs font-mono text-slate-400">Module 06 • Ch. 14</span>
-            <h3 class="text-lg font-serif text-white font-medium">Industrial Theming &amp; High-Velocity Pacing</h3>
-            <p class="text-xs text-slate-400">Featured: <em>Test Track (EPCOT)</em></p>
+        <div class="board-card rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="stamp-label text-slate-400">Module 06 • Ch. 14</span>
+            <span class="text-[10px] font-mono text-slate-500">Upcoming</span>
           </div>
-          <p class="text-xs text-slate-300 leading-relaxed font-light">
-            Turning functional engineering into high-stakes drama. Explaining environmental torture chambers, 65mph banked curves, dispatch intervals, and hourly guest throughput.
+          <div>
+            <h3 class="text-lg font-serif text-slate-100 font-semibold">Industrial Theming &amp; High-Velocity Pacing</h3>
+            <p class="text-xs text-studio-ochre/90 font-serif italic">Tematización industrial y curvas de alta velocidad</p>
+          </div>
+          <p class="text-xs text-slate-300 font-light leading-relaxed">
+            Featured: <em>Test Track (EPCOT)</em>. Turning engineering test facilities into suspenseful drama; 65mph banked curves (superelevation), dispatch intervals, and hourly guest throughput.
           </p>
-          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Industrial Storytelling</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Superelevation</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Hourly Throughput</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Dispatch Intervals</span>
+          <div class="pt-2 border-t border-studio-border/60 text-[11px] font-mono text-slate-400">
+            ES: Comunicación técnica: peralte, velocidad y capacidad horaria.
           </div>
         </div>
 
         <!-- Module 7 -->
-        <div class="glass-card rounded-2xl p-6 space-y-4">
-          <div class="space-y-1">
-            <span class="text-xs font-mono text-slate-400">Module 07 • Ch. 9 &amp; 17</span>
-            <h3 class="text-lg font-serif text-white font-medium">Dimensional Playfulness &amp; Kinetic Dining</h3>
-            <p class="text-xs text-slate-400">Featured: <em>Pan Galactic Pizza Port &amp; Toy Story Mania!</em></p>
+        <div class="board-card rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="stamp-label text-slate-400">Module 07 • Ch. 9 &amp; 17</span>
+            <span class="text-[10px] font-mono text-slate-500">Upcoming</span>
           </div>
-          <p class="text-xs text-slate-300 leading-relaxed font-light">
-            Distorting spatial scale to make guests feel toy-sized; integrating whimsical kinetic animatronics (Tony Solaroni) into dining environments to eliminate queue line boredom.
+          <div>
+            <h3 class="text-lg font-serif text-slate-100 font-semibold">Scale Distortion &amp; Kinetic Dining</h3>
+            <p class="text-xs text-studio-ochre/90 font-serif italic">Distorsión de escala y restauración cinética</p>
+          </div>
+          <p class="text-xs text-slate-300 font-light leading-relaxed">
+            Featured: <em>Pan Galactic Pizza Port &amp; Toy Story Mania!</em>. Shrinking guests to toy-size; animatronics and kinetic overhead conveyors to make dining lines playful.
           </p>
-          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Scale Distortion</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Kinetic Installation</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Themed Dining</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Interactive Flow</span>
+          <div class="pt-2 border-t border-studio-border/60 text-[11px] font-mono text-slate-400">
+            ES: Distorsión de escala y animación de espacios de restauración.
           </div>
         </div>
 
         <!-- Module 8 -->
-        <div class="glass-card rounded-2xl p-6 space-y-4">
-          <div class="space-y-1">
-            <span class="text-xs font-mono text-slate-400">Module 08 • Ch. 19 &amp; 20</span>
-            <h3 class="text-lg font-serif text-white font-medium">Next-Gen Imagineering &amp; The Grand Walkthrough</h3>
-            <p class="text-xs text-slate-400">Featured: <em>Mickey &amp; Minnie's Runaway Railway</em></p>
+        <div class="board-card rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="stamp-label text-slate-400">Module 08 • Ch. 19 &amp; 20</span>
+            <span class="text-[10px] font-mono text-slate-500">Capstone</span>
           </div>
-          <p class="text-xs text-slate-300 leading-relaxed font-light">
-            Trackless ride vehicles and 2.5D dimensional worlds. Rafferty's Golden Rule: "Create, don't replicate!" Alessia's Capstone 3-minute executive walkthrough pitch to the Imagineering Board.
+          <div>
+            <h3 class="text-lg font-serif text-slate-100 font-semibold">Next-Gen Imagineering &amp; Capstone Pitch</h3>
+            <p class="text-xs text-studio-ochre/90 font-serif italic">Imagineering de nueva generación y presentación final</p>
+          </div>
+          <p class="text-xs text-slate-300 font-light leading-relaxed">
+            Featured: <em>Mickey &amp; Minnie's Runaway Railway</em>. Trackless AGVs, 2.5D dimensional environments, Rafferty's *"Create, Don't Replicate"*, and Alessia's 3-minute executive graduation pitch.
           </p>
-          <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-1.5">
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Trackless AGV</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">2.5D Dimensional</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Tell Me You Can If</span>
-            <span class="px-2 py-0.5 rounded-md bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-300">Grand Walkthrough</span>
+          <div class="pt-2 border-t border-studio-border/60 text-[11px] font-mono text-slate-400">
+            ES: Vehículos sin rieles y presentación completa de graduación.
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- The Imagineer's Word Upgrade Clinic -->
-    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
-      <div class="border-b border-slate-800 pb-4">
-        <span class="text-xs uppercase font-mono tracking-widest text-amber-300">Vocabulary Clinic</span>
-        <h2 class="text-2xl font-serif text-slate-100 font-light mt-0.5">The 3-Level Language Upgrade Ladder</h2>
-        <p class="text-xs text-slate-400 mt-1 font-light">
-          In Imagineering, we never settle for Level 1 basic words. We climb directly from architectural description into immersive storytelling.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-2">
-          <span class="font-mono text-slate-400 block font-semibold">Level 1: Basic English</span>
-          <p class="text-slate-400 italic">"We make a big rock so people don't see the road."</p>
-          <p class="text-slate-400 italic">"There is an old house with dark rooms."</p>
-          <p class="text-slate-400 italic">"The ride is very fast and scary."</p>
-        </div>
-
-        <div class="p-4 rounded-xl bg-sky-950/20 border border-sky-500/20 space-y-2">
-          <span class="font-mono text-sky-300 block font-semibold">Level 2: Architectural English</span>
-          <p class="text-slate-300">"We install a landscaped barrier to block external sightlines."</p>
-          <p class="text-slate-300">"A historic structure with low ambient illumination."</p>
-          <p class="text-slate-300">"High-velocity vehicle propulsion with sudden drops."</p>
-        </div>
-
-        <div class="p-4 rounded-xl bg-amber-950/20 border border-amber-500/30 space-y-2">
-          <span class="font-mono text-amber-300 block font-semibold">Level 3: Imagineering Storytelling ✨</span>
-          <p class="text-amber-200/90 font-medium">"We raise a 12-meter sculpted rockwork berm to preserve 100% thematic immersion."</p>
-          <p class="text-amber-200/90 font-medium">"A timeworn manor steeped in distressed patina and shadow-drenched corridors."</p>
-          <p class="text-amber-200/90 font-medium">"A heart-stopping 65mph banked surge bursting through the exterior façade!"</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- The Architectural Describing Words & Sentence Structure Studio Preview -->
-    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-4">
+    <!-- IN-BROWSER AUDIO RECORDING STUDIO -->
+    <section class="board-card rounded-2xl p-6 md:p-8 space-y-6 border-studio-ochre/40">
+      <div class="border-b border-studio-border pb-3 flex items-center justify-between">
         <div>
-          <span class="text-xs uppercase font-mono tracking-widest text-amber-300">Descriptive Toolkit</span>
-          <h2 class="text-2xl font-serif text-slate-100 font-light mt-0.5">Describing Words &amp; Sentence Formulas</h2>
+          <span class="stamp-label text-studio-ochre">Practice Studio • Estudio Vocal</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">The Imagineering Voice Practice Studio</h2>
         </div>
-        <a href="homework.html" class="px-3.5 py-1.5 rounded-xl bg-amber-400/15 hover:bg-amber-400/25 border border-amber-400/30 text-amber-300 text-xs font-mono transition-all self-start sm:self-auto">
-          Open Interactive Exercise 1 Studio →
-        </a>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 text-xs">
-        <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-1.5">
-          <span class="font-mono text-amber-300 font-semibold block text-[11px]">1. Scale &amp; Presence:</span>
-          <div class="text-[11px] text-slate-300 font-mono leading-relaxed">
-            monumental • towering • soaring • imposing • sprawling • cavernous
-          </div>
-        </div>
-        <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-1.5">
-          <span class="font-mono text-sky-300 font-semibold block text-[11px]">2. Texture &amp; Rockwork:</span>
-          <div class="text-[11px] text-slate-300 font-mono leading-relaxed">
-            striated • weathered • sun-bleached • sculpted • rusticated • craggy
-          </div>
-        </div>
-        <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-1.5">
-          <span class="font-mono text-amber-300 font-semibold block text-[11px]">3. Atmosphere &amp; Light:</span>
-          <div class="text-[11px] text-slate-300 font-mono leading-relaxed">
-            sun-drenched • amber-hued • shadow-drenched • luminous • neon-bathed
-          </div>
-        </div>
-        <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-1.5">
-          <span class="font-mono text-emerald-300 font-semibold block text-[11px]">4. Spatial Verbs:</span>
-          <div class="text-[11px] text-slate-300 font-mono leading-relaxed">
-            commands • anchors • draws • isolates • frames • unfolds • compresses
-          </div>
-        </div>
-      </div>
-
-      <!-- Formula Blueprint Summary Banner -->
-      <div class="p-4 rounded-2xl bg-slate-900/80 border border-amber-400/25 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
-        <div class="space-y-0.5">
-          <span class="font-mono text-amber-300 font-semibold text-[11px] block">The 4 Modular Sentence Formulas Ready in Exercise 1:</span>
-          <p class="text-slate-300 text-[11px] font-light">
-            Formula A (The Weenie Anchor) • Formula B (The Berm Shield) • Formula C (Portal Shift) • Formula D (3-Act Pacing)
-          </p>
-        </div>
-        <a href="homework.html" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-semibold font-mono text-xs transition-all shrink-0">
-          <span>Try Interactive Studio</span> →
-        </a>
-      </div>
-    </section>
-
-    <!-- Built-in Voice Recorder Studio -->
-    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-4">
-        <div>
-          <span class="text-xs uppercase font-mono tracking-widest text-amber-300">Vocal Practice Studio</span>
-          <h2 class="text-2xl font-serif text-slate-100 font-light mt-0.5">The Imagineering Voice Recorder</h2>
-        </div>
-        <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded-xl border border-slate-800 self-start sm:self-auto">
-          Built-in Mic Studio
-        </span>
+        <span class="text-xs font-mono text-slate-400">In-Browser Mic</span>
       </div>
 
       <div class="space-y-4">
-        <p class="text-xs text-slate-300 leading-relaxed font-light">
-          Practice your <strong>3-Beat Spatial Walkthrough</strong>. Imagine you are pitching to Marty Sklar and Michael Eisner. Speak with authority, energy, and zero apologies for your English!
+        <p class="text-xs md:text-sm text-slate-300 font-light leading-relaxed">
+          Practica tu presentación espacial de 90 segundos. Habla con convicción y entusiasmo, sin pedir disculpas por tu inglés. Guíate con este esquema:
         </p>
 
-        <!-- Prompt Card -->
-        <div class="p-4 rounded-xl bg-slate-900/90 border border-amber-400/20 space-y-2 text-xs">
-          <span class="font-mono text-amber-300 font-semibold uppercase text-[11px] block">Your 90-Second Practice Prompt:</span>
-          <div class="space-y-1 font-mono text-slate-300 text-[11px]">
-            <div><span class="text-amber-300 font-semibold">1. Beat 1 (Arrival):</span> "Picture this: The guest steps through the entrance portal and..."</div>
-            <div><span class="text-amber-300 font-semibold">2. Beat 2 (Act 1 &amp; Act 2):</span> "In Act 1, we decompress the guest with... then glide into Act 2 where..."</div>
-            <div><span class="text-amber-300 font-semibold">3. Beat 3 (The Signature Reveal):</span> "Suddenly, the unexpected occurs: [Describe the spatial/kinetic climax]!"</div>
-          </div>
+        <!-- Prompt Blueprint -->
+        <div class="p-4 rounded-xl bg-studio-canvas border border-studio-border space-y-2 text-xs font-mono">
+          <div class="text-slate-300"><strong class="text-studio-ochre">Beat 1 (Arrival):</strong> "Rising at the end of the central vista, Willys Butte commands the horizon as a monumental beacon..."</div>
+          <div class="text-slate-300"><strong class="text-studio-sage">Beat 2 (The Berm):</strong> "In order to eliminate sightline intrusion, we construct a 12-meter sculpted rockwork berm..."</div>
+          <div class="text-slate-300"><strong class="text-studio-terracotta">Beat 3 (3-Act Arc):</strong> "In Act 1, we decompress the guest with a scenic canyon drive, before Act 2's dark ride, culminating in Act 3 with a 45mph race!"</div>
         </div>
 
         <!-- Recorder Controls -->
-        <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="p-5 rounded-xl bg-studio-elevated border border-studio-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <div class="flex items-center gap-4">
-            <button id="btn-record" onclick="toggleRecording()" class="flex items-center gap-2.5 px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-semibold text-xs transition-all shadow-lg shadow-amber-400/10">
-              <span id="record-dot" class="w-2.5 h-2.5 rounded-full bg-red-600"></span>
+            <button id="btn-record" onclick="toggleRecording()" class="px-6 py-3 rounded-xl bg-studio-terracotta hover:bg-[#eb744e] text-white font-medium text-xs font-mono flex items-center gap-2.5 transition-all shadow-md">
+              <span id="record-dot" class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
               <span id="record-text">Start Recording Pitch</span>
             </button>
-            <span id="recording-timer" class="font-mono text-lg text-amber-300 hidden">00:00</span>
+            <span id="recording-timer" class="font-mono text-base text-studio-ochre hidden">00:00</span>
           </div>
 
           <div id="audio-playback-container" class="hidden flex flex-wrap items-center gap-3">
-            <audio id="audio-player" controls class="h-9 rounded-lg"></audio>
-            <a id="btn-download" download="alessia-imagineering-pitch.webm" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 text-xs font-mono border border-slate-700 transition-colors">
-              💾 Download Audio Note
+            <audio id="audio-player" controls class="h-9"></audio>
+            <a id="btn-download" download="alessia-practice-pitch.webm" class="px-3.5 py-2 rounded-lg bg-studio-surface hover:bg-studio-canvas border border-studio-border text-studio-ochre font-mono text-xs transition-colors">
+              💾 Download Audio
             </a>
           </div>
         </div>
@@ -461,109 +387,15 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-xs text-slate-500 pt-8 border-t border-slate-900 font-light space-y-2">
+    <footer class="text-center text-xs text-slate-500 pt-6 border-t border-studio-border/60 font-light space-y-1">
       <div>Magic Journey • The Imagineering English Studio for Alessia</div>
       <div class="text-[11px] text-slate-600">Based on <em>Magic Journey: My Fantastical Walt Disney Imagineering Career</em> by Kevin P. Rafferty</div>
     </footer>
 
   </div>
 
-  <!-- Interactive Particles Script -->
+  <!-- Audio Recorder Script -->
   <script>
-    const canvas = document.getElementById('particles-canvas');
-    const ctx = canvas.getContext('2d');
-
-    let particles = [];
-    let mouse = { x: null, y: null, radius: 100 };
-
-    function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
-    window.addEventListener('resize', resizeCanvas);
-    resizeCanvas();
-
-    window.addEventListener('mousemove', (e) => {
-      mouse.x = e.x;
-      mouse.y = e.y;
-    });
-
-    window.addEventListener('mouseleave', () => {
-      mouse.x = null;
-      mouse.y = null;
-    });
-
-    class Particle {
-      constructor() {
-        this.reset();
-      }
-
-      reset() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 2.2 + 0.6;
-        this.speedX = (Math.random() - 0.5) * 0.4;
-        this.speedY = -Math.random() * 0.5 - 0.2;
-        this.opacity = Math.random() * 0.6 + 0.2;
-        this.pulse = Math.random() * 0.02 + 0.005;
-        this.pulseDir = 1;
-        const colors = ['#f6d365', '#ffeaa7', '#fda085', '#38bdf8'];
-        this.color = colors[Math.floor(Math.random() * colors.length)];
-      }
-
-      update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
-
-        this.opacity += this.pulse * this.pulseDir;
-        if (this.opacity > 0.85) this.pulseDir = -1;
-        if (this.opacity < 0.15) this.pulseDir = 1;
-
-        if (mouse.x != null && mouse.y != null) {
-          const dx = mouse.x - this.x;
-          const dy = mouse.y - this.y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
-          if (distance < mouse.radius) {
-            const force = (mouse.radius - distance) / mouse.radius;
-            this.x -= (dx / distance) * force * 1.5;
-            this.y -= (dy / distance) * force * 1.5;
-          }
-        }
-
-        if (this.y < 0) this.y = canvas.height;
-        if (this.x < 0) this.x = canvas.width;
-        if (this.x > canvas.width) this.x = 0;
-      }
-
-      draw() {
-        ctx.save();
-        ctx.globalAlpha = this.opacity;
-        ctx.shadowBlur = this.size * 5;
-        ctx.shadowColor = this.color;
-        ctx.fillStyle = this.color;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.restore();
-      }
-    }
-
-    const particleCount = Math.min(window.innerWidth / 15, 65);
-    for (let i = 0; i < particleCount; i++) {
-      particles.push(new Particle());
-    }
-
-    function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      for (let i = 0; i < particles.length; i++) {
-        particles[i].update();
-        particles[i].draw();
-      }
-      requestAnimationFrame(animate);
-    }
-    animate();
-
-    // In-Browser Audio Recorder Functionality
     let mediaRecorder;
     let audioChunks = [];
     let isRecording = false;
@@ -614,7 +446,7 @@
           }, 1000);
 
         } catch (err) {
-          alert("Microphone access is required to record directly on the page, or you can record on your phone and upload to Preply!");
+          alert("Microphone access is required to record in the browser, or you can record on your phone and attach to Preply!");
         }
       } else {
         mediaRecorder.stop();

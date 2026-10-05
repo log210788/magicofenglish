@@ -3,29 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Milestone 1: Cars Land Placemaking &amp; The 3-Act Walkthrough | Alessia</title>
+  <title>Milestone 1: Placemaking &amp; Visual Storytelling | Alessia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            serif: ['"Cormorant Garamond"', 'serif'],
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'sans-serif'],
             mono: ['"JetBrains Mono"', 'monospace'],
           },
           colors: {
-            magic: {
-              gold: '#f6d365',
-              amber: '#fda085',
-              glow: '#ffeaa7',
-              deep: '#0a0d14',
-              surface: '#121824',
-              card: '#161f30',
-              border: '#1f293d'
+            studio: {
+              canvas: '#16191f',
+              surface: '#20252e',
+              elevated: '#282e3a',
+              border: '#373f4e',
+              borderLight: '#475266',
+              terracotta: '#df6a44',
+              ochre: '#e5a54b',
+              sand: '#e8dcce',
+              sage: '#4e8265',
+              pine: '#2f5240',
+              ink: '#0e1116'
             }
           }
         }
@@ -33,586 +37,827 @@
     }
   </script>
   <style>
-    #particles-canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: 0;
+    /* Architectural Design Board Styling */
+    body {
+      background-color: #16191f;
+      background-image: 
+        radial-gradient(rgba(229, 165, 75, 0.04) 1px, transparent 0),
+        linear-gradient(to bottom, #16191f, #121419);
+      background-size: 24px 24px, 100% 100%;
     }
-    .glass-card {
-      background: rgba(18, 24, 36, 0.88);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border: 1px solid rgba(246, 211, 101, 0.18);
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    .board-card {
+      background: #20252e;
+      border: 1px solid #373f4e;
+      box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.45);
     }
-    .glass-card:hover {
-      border-color: rgba(246, 211, 101, 0.42);
-      box-shadow: 0 14px 36px -10px rgba(246, 211, 101, 0.15);
+    .board-card:hover {
+      border-color: #4f5a6e;
     }
-    .text-glow {
-      text-shadow: 0 0 24px rgba(246, 211, 101, 0.38);
+    .photo-frame {
+      background: #191d24;
+      border: 1px solid #3d4657;
+      padding: 6px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
     }
-    .word-chip {
+    .stamp-label {
+      font-family: '"JetBrains Mono"', monospace;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 600;
+    }
+    .interactive-chip {
       cursor: pointer;
       user-select: none;
-      transition: all 0.15s ease-in-out;
+      transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .word-chip:hover {
-      transform: translateY(-1px);
+    .interactive-chip:hover {
+      transform: translateY(-2px);
     }
-    .word-chip:active {
-      transform: scale(0.96);
+    .interactive-chip.selected {
+      background-color: #df6a44 !important;
+      border-color: #f38b67 !important;
+      color: #ffffff !important;
+      box-shadow: 0 4px 12px rgba(223, 106, 68, 0.35);
+    }
+    .interactive-chip.selected .es-tag {
+      color: #ffd8cc !important;
     }
   </style>
 </head>
-<body class="bg-magic-deep text-slate-200 font-sans antialiased min-h-screen relative selection:bg-amber-400 selection:text-slate-950">
-
-  <!-- Interactive Magic Dust Particle Canvas -->
-  <canvas id="particles-canvas"></canvas>
-
-  <!-- Ambient Glow Blobs -->
-  <div class="fixed top-[-10%] left-[15%] w-[520px] h-[520px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
-  <div class="fixed bottom-[-10%] right-[10%] w-[500px] h-[500px] bg-sky-500/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
+<body class="text-slate-200 font-sans antialiased min-h-screen py-8 md:py-14 px-4 sm:px-6">
 
   <!-- Main Container -->
-  <div class="relative z-10 max-w-4xl mx-auto px-5 py-10 md:py-16 space-y-12">
+  <div class="max-w-4xl mx-auto space-y-12">
 
-    <!-- Top Navigation Bar -->
-    <nav class="flex items-center justify-between border-b border-slate-800/80 pb-4">
-      <a href="index.html" class="inline-flex items-center gap-2 text-xs font-mono text-amber-300 hover:text-amber-200 transition-colors">
-        <span class="text-sm">←</span> Back to Studio Overview
+    <!-- Top Navigation & Studio Badge -->
+    <header class="flex flex-wrap items-center justify-between gap-4 border-b border-studio-border/70 pb-4 text-xs">
+      <a href="index.html" class="inline-flex items-center gap-2 text-studio-ochre hover:text-amber-200 font-medium transition-colors">
+        <span class="text-sm">←</span>
+        <span>Studio Overview</span>
       </a>
-      <div class="flex items-center gap-2">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span class="text-xs font-mono text-slate-400 uppercase tracking-wider">Milestone 1 Active: Placemaking &amp; Storytelling</span>
-      </div>
-    </nav>
-
-    <!-- Header / Assignment Hero -->
-    <header class="text-center space-y-4">
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium tracking-widest uppercase bg-amber-400/10 text-amber-300 border border-amber-400/25">
-        <span>🎢 Milestone 1 • Based on Kevin P. Rafferty's "Magic Journey" (Ch. 18)</span>
-      </div>
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-slate-50 tracking-wide text-glow">
-        Cars Land Placemaking &amp; <span class="italic text-amber-200">The 3-Act Walkthrough</span>
-      </h1>
-      <p class="text-slate-400 text-sm md:text-base max-w-2xl mx-auto font-light leading-relaxed">
-        Equip yourself with the descriptive vocabulary and architectural sentence patterns of a Walt Disney Imagineer. Move past flat words into vivid spatial storytelling.
-      </p>
-      
-      <!-- Key Metric Banner -->
-      <div class="flex flex-wrap items-center justify-center gap-3 pt-2 text-xs font-mono">
-        <div class="px-3.5 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300">
-          Source: <strong class="text-amber-300">Magic Journey (Ch. 3 &amp; 18)</strong>
-        </div>
-        <div class="px-3.5 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300">
-          Skills: <strong class="text-amber-300">Describing Words &amp; Sentence Formulas</strong>
-        </div>
-        <div class="px-3.5 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300">
-          Deliverable: <strong class="text-emerald-400">90-Sec Audio Note to Preply</strong>
-        </div>
+      <div class="flex items-center gap-3">
+        <span class="px-2.5 py-1 rounded bg-studio-elevated border border-studio-border text-slate-300 font-mono text-[11px]">
+          FIELD ASSIGNMENT • MILESTONE 01
+        </span>
+        <span class="inline-flex items-center gap-1.5 text-studio-sage font-medium text-[11px]">
+          <span class="w-2 h-2 rounded-full bg-studio-sage animate-pulse"></span>
+          Preply Active
+        </span>
       </div>
     </header>
 
-    <!-- TOOLKIT SECTION 1: THE IMAGINEER'S DESCRIBING WORDS BANK (CLICKABLE CHIPS) -->
-    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-4">
-        <div>
-          <span class="text-xs uppercase tracking-widest text-amber-300 font-mono">Part 1 • The Descriptive Word Bank</span>
-          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Describing Words for Theme Park Architects</h2>
-        </div>
-        <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1 rounded-xl border border-slate-800 self-start sm:self-auto">
-          💡 Click any word to copy
-        </span>
+    <!-- Header Hero: Human & Architectural -->
+    <div class="space-y-4">
+      <div class="inline-block px-3 py-1 rounded bg-studio-terracotta/15 border border-studio-terracotta/30 text-studio-terracotta text-xs font-mono font-medium">
+        WALT DISNEY IMAGINEERING METHOD • KEVIN P. RAFFERTY (CH. 18)
       </div>
-
-      <p class="text-xs text-slate-300 leading-relaxed font-light">
-        In themed entertainment, generic words like <em>"big"</em>, <em>"nice"</em>, or <em>"old"</em> are forbidden. Use these categorized sensory and architectural describing words to express scale, texture, atmosphere, and spatial flow:
+      <h1 class="text-3xl md:text-5xl font-serif text-slate-100 font-normal tracking-wide">
+        Placemaking, The Berm &amp; <span class="italic text-studio-ochre font-light">The 3-Act Walkthrough</span>
+      </h1>
+      <p class="text-slate-300 text-sm md:text-base max-w-2xl font-light leading-relaxed">
+        An interactive architectural masterclass for Alessia. Learn the descriptive vocabulary and structural sentence patterns Imagineers use to pitch spaces, sightlines, and guest emotions.
       </p>
-
-      <!-- Word Categories Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-
-        <!-- Category A: Scale & Presence -->
-        <div class="p-4 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2.5">
-          <div class="flex items-center justify-between">
-            <span class="font-mono text-amber-300 font-semibold uppercase text-[11px]">1. Scale &amp; Presence (Instead of "Big")</span>
-            <span class="text-[10px] text-slate-500 font-mono">Dimensions</span>
-          </div>
-          <div class="flex flex-wrap gap-1.5" id="chips-scale">
-            <button onclick="copyChip('monumental')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">monumental</button>
-            <button onclick="copyChip('towering')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">towering</button>
-            <button onclick="copyChip('soaring')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">soaring</button>
-            <button onclick="copyChip('imposing')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">imposing</button>
-            <button onclick="copyChip('sprawling')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">sprawling</button>
-            <button onclick="copyChip('colossal')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">colossal</button>
-            <button onclick="copyChip('intimate')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">intimate</button>
-            <button onclick="copyChip('cavernous')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">cavernous</button>
-          </div>
-          <p class="text-[10px] text-slate-400 italic">Example: "Willys Butte stands as a <strong>towering</strong> landmark that commands the valley."</p>
+      <div class="p-3 rounded-lg bg-studio-elevated/70 border border-studio-border/80 text-xs text-slate-300 flex items-start gap-2.5">
+        <span class="text-studio-ochre text-base not-italic">🇪🇸</span>
+        <div>
+          <span class="font-semibold text-slate-200 block">Guía en español para Alessia:</span>
+          Cada palabra descriptiva incluye su traducción y contexto arquitectónico. Observa las fotografías reales generadas para este curso, selecciona las palabras exactas que describen la escena y construye tu presentación paso a paso.
         </div>
+      </div>
+    </div>
 
-        <!-- Category B: Texture, Rockwork & Material -->
-        <div class="p-4 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2.5">
-          <div class="flex items-center justify-between">
-            <span class="font-mono text-sky-300 font-semibold uppercase text-[11px]">2. Texture &amp; Rockwork (Instead of "Old/Rocky")</span>
-            <span class="text-[10px] text-slate-500 font-mono">Surfaces</span>
-          </div>
-          <div class="flex flex-wrap gap-1.5" id="chips-texture">
-            <button onclick="copyChip('striated')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">striated</button>
-            <button onclick="copyChip('weathered')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">weathered</button>
-            <button onclick="copyChip('sun-bleached')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">sun-bleached</button>
-            <button onclick="copyChip('sculpted')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">sculpted</button>
-            <button onclick="copyChip('rusticated')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">rusticated</button>
-            <button onclick="copyChip('jagged')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">jagged</button>
-            <button onclick="copyChip('craggy')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">craggy</button>
-            <button onclick="copyChip('eroded')" class="word-chip px-2.5 py-1 rounded-lg bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 border border-sky-400/20 text-[11px] font-mono">eroded</button>
-          </div>
-          <p class="text-[10px] text-slate-400 italic">Example: "Notice the <strong>striated, sun-bleached</strong> rock layers carved by desert winds."</p>
+    <!-- SECTION 1: THE THREE ARCHITECTURAL PILLARS (WITH REAL PHOTOS & SPANISH CONCEPTS) -->
+    <section class="space-y-6">
+      <div class="border-b border-studio-border pb-2.5 flex items-center justify-between">
+        <div>
+          <span class="stamp-label text-studio-ochre">Part 1 • The Visual Foundation</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">The 3 Physical Elements of Imagineering</h2>
         </div>
-
-        <!-- Category C: Atmosphere & Light -->
-        <div class="p-4 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2.5">
-          <div class="flex items-center justify-between">
-            <span class="font-mono text-amber-300 font-semibold uppercase text-[11px]">3. Atmosphere &amp; Light (Instead of "Bright/Dark")</span>
-            <span class="text-[10px] text-slate-500 font-mono">Illumination</span>
-          </div>
-          <div class="flex flex-wrap gap-1.5" id="chips-atmosphere">
-            <button onclick="copyChip('sun-drenched')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">sun-drenched</button>
-            <button onclick="copyChip('amber-hued')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">amber-hued</button>
-            <button onclick="copyChip('shadow-drenched')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">shadow-drenched</button>
-            <button onclick="copyChip('luminous')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">luminous</button>
-            <button onclick="copyChip('dusk-kissed')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">dusk-kissed</button>
-            <button onclick="copyChip('neon-bathed')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">neon-bathed</button>
-            <button onclick="copyChip('moody')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">moody</button>
-            <button onclick="copyChip('radiant')" class="word-chip px-2.5 py-1 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 border border-amber-400/20 text-[11px] font-mono">radiant</button>
-          </div>
-          <p class="text-[10px] text-slate-400 italic">Example: "As night falls, the boulevard becomes a <strong>neon-bathed, luminous</strong> spectacle."</p>
-        </div>
-
-        <!-- Category D: Spatial Movement & Action Verbs -->
-        <div class="p-4 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-2.5">
-          <div class="flex items-center justify-between">
-            <span class="font-mono text-emerald-300 font-semibold uppercase text-[11px]">4. Spatial Action Verbs (What Architecture Does)</span>
-            <span class="text-[10px] text-slate-500 font-mono">Kinetic Flow</span>
-          </div>
-          <div class="flex flex-wrap gap-1.5" id="chips-verbs">
-            <button onclick="copyChip('commands')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">commands</button>
-            <button onclick="copyChip('anchors')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">anchors</button>
-            <button onclick="copyChip('draws')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">draws</button>
-            <button onclick="copyChip('isolates')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">isolates</button>
-            <button onclick="copyChip('frames')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">frames</button>
-            <button onclick="copyChip('unfolds')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">unfolds</button>
-            <button onclick="copyChip('compresses')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">compresses</button>
-            <button onclick="copyChip('expands')" class="word-chip px-2.5 py-1 rounded-lg bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 border border-emerald-400/20 text-[11px] font-mono">expands</button>
-          </div>
-          <p class="text-[10px] text-slate-400 italic">Example: "The rockwork arch <strong>frames</strong> the vista and <strong>draws</strong> crowds onward."</p>
-        </div>
-
+        <span class="text-xs font-mono text-slate-400">Chapters 3 &amp; 18</span>
       </div>
 
-      <div id="chip-copied-notice" class="hidden text-center text-xs font-mono text-emerald-400 pt-1">
-        ✓ Word copied to clipboard! (You can also type it directly below)
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+        <!-- Card 1: The Weenie -->
+        <div class="board-card rounded-xl p-4 space-y-3 flex flex-col justify-between">
+          <div class="space-y-2.5">
+            <div class="photo-frame rounded-lg overflow-hidden">
+              <img src="assets/images/weenie_rockwork.jpg" alt="Willys Butte in Radiator Springs - The Weenie" class="w-full h-44 object-cover rounded hover:scale-105 transition-transform duration-300">
+            </div>
+            <div>
+              <span class="stamp-label text-studio-ochre text-[10px]">Element 01 • Wayfinding</span>
+              <h3 class="text-lg font-serif text-slate-100 font-semibold">The Weenie</h3>
+              <p class="text-xs text-studio-ochre/90 italic font-serif">El Imán Visual / Faro Arquitectónico</p>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed font-light">
+              Walt Disney’s term for an iconic, monumental visual anchor at the end of a sightline (like Willys Butte) that commands the horizon and guides guest flow forward.
+            </p>
+          </div>
+          <div class="pt-2 border-t border-studio-border/60 text-[11px] font-mono text-slate-400">
+            <strong class="text-slate-200">En español:</strong> Estructura monumental que atrae la vista para que el visitante nunca se sienta perdido.
+          </div>
+        </div>
+
+        <!-- Card 2: The Perimeter Berm -->
+        <div class="board-card rounded-xl p-4 space-y-3 flex flex-col justify-between">
+          <div class="space-y-2.5">
+            <div class="photo-frame rounded-lg overflow-hidden">
+              <img src="assets/images/perimeter_berm.jpg" alt="Perimeter Berm isolating theme park land" class="w-full h-44 object-cover rounded hover:scale-105 transition-transform duration-300">
+            </div>
+            <div>
+              <span class="stamp-label text-studio-sage text-[10px]">Element 02 • Sightline Defense</span>
+              <h3 class="text-lg font-serif text-slate-100 font-semibold">The Perimeter Berm</h3>
+              <p class="text-xs text-studio-sage/90 italic font-serif">El Terraplén Perimetral Protector</p>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed font-light">
+              An elevated rockwork ridge and landscaped earth mound wrapped around the boundary to block highways and outside city views, preserving complete thematic immersion.
+            </p>
+          </div>
+          <div class="pt-2 border-t border-studio-border/60 text-[11px] font-mono text-slate-400">
+            <strong class="text-slate-200">En español:</strong> Barrera de tierra y roca esculpida que aísla el parque del mundo real exterior.
+          </div>
+        </div>
+
+        <!-- Card 3: The Transition Portal -->
+        <div class="board-card rounded-xl p-4 space-y-3 flex flex-col justify-between">
+          <div class="space-y-2.5">
+            <div class="photo-frame rounded-lg overflow-hidden">
+              <img src="assets/images/canyon_portal.jpg" alt="Rustic canyon gateway transition portal" class="w-full h-44 object-cover rounded hover:scale-105 transition-transform duration-300">
+            </div>
+            <div>
+              <span class="stamp-label text-studio-terracotta text-[10px]">Element 03 • Sensory Threshold</span>
+              <h3 class="text-lg font-serif text-slate-100 font-semibold">Transition Portal</h3>
+              <p class="text-xs text-studio-terracotta/90 italic font-serif">El Portal de Transición Sensorial</p>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed font-light">
+              An architectural gateway (weathered timber archway) using spatial compression to transition guests from a busy arrival plaza into a sun-drenched canyon vista.
+            </p>
+          </div>
+          <div class="pt-2 border-t border-studio-border/60 text-[11px] font-mono text-slate-400">
+            <strong class="text-slate-200">En español:</strong> Umbral arquitectónico que comprime y expande el espacio para transportar al huésped.
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- TOOLKIT SECTION 2: THE 4 CORE ARCHITECTURAL SENTENCE STRUCTURES -->
-    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
-      <div class="border-b border-slate-800 pb-3">
-        <span class="text-xs uppercase tracking-widest text-amber-300 font-mono">Part 2 • The Sentence Structure Architect</span>
-        <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">4 Reusable Sentence Formulas for Alessia</h2>
-        <p class="text-xs text-slate-400 mt-1 font-light">
-          Never freeze wondering how to start a sentence. Memorize these four plug-and-play architectural sentence structures:
+    <!-- SECTION 2: INTERACTIVE VISUAL INSPECTION CHALLENGE (NEW PHOTO EXERCISE!) -->
+    <section class="board-card rounded-2xl p-6 md:p-8 space-y-6 border-studio-ochre/40">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-studio-border pb-4">
+        <div>
+          <span class="stamp-label text-studio-ochre">Part 2 • Interactive Visual Exercise</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">The Architect's Visual Inspection Challenge</h2>
+        </div>
+        <span class="text-xs font-mono text-studio-terracotta bg-studio-terracotta/10 px-3 py-1 rounded border border-studio-terracotta/30 self-start sm:self-auto">
+          Interactive Picture Task
+        </span>
+      </div>
+
+      <div class="space-y-4">
+        <p class="text-xs md:text-sm text-slate-300 leading-relaxed font-light">
+          <strong>Your Mission:</strong> Look closely at this architectural photograph below. Select the <strong>4 describing words</strong> from the bank that accurately describe the scale, materials, lighting, and spatial framing in this scene.
         </p>
+
+        <!-- Active Challenge Image Frame -->
+        <div class="photo-frame rounded-xl bg-studio-canvas p-2">
+          <div class="relative rounded-lg overflow-hidden max-h-[380px]">
+            <img id="challenge-photo" src="assets/images/canyon_portal.jpg" alt="Architectural Photo for Challenge" class="w-full h-full object-cover">
+            <div class="absolute bottom-3 left-3 bg-studio-ink/80 backdrop-blur-md px-3 py-1.5 rounded border border-slate-700/80 text-[11px] font-mono text-slate-200">
+              📸 Subject: Canyon Entrance Portal &amp; Distant Mountain Vista
+            </div>
+          </div>
+        </div>
+
+        <!-- Selectable Words Grid -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+            <span>Select 4 Correct Describing Words (Click to toggle):</span>
+            <span id="selected-counter" class="text-studio-ochre font-bold">0 / 4 Selected</span>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-xs">
+            <!-- Option 1 (Correct) -->
+            <button onclick="toggleChallengeWord(this, true, 'weathered timber')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
+              <span class="font-semibold text-slate-100 block">weathered timber</span>
+              <span class="es-tag text-[10px] text-slate-400 italic block">madera envejecida</span>
+            </button>
+
+            <!-- Option 2 (Correct) -->
+            <button onclick="toggleChallengeWord(this, true, 'striated rockwork')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
+              <span class="font-semibold text-slate-100 block">striated rockwork</span>
+              <span class="es-tag text-[10px] text-slate-400 italic block">roca estratificada</span>
+            </button>
+
+            <!-- Option 3 (Distractor) -->
+            <button onclick="toggleChallengeWord(this, false, 'modern steel curtain')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
+              <span class="font-semibold text-slate-100 block">modern steel curtain</span>
+              <span class="es-tag text-[10px] text-slate-400 italic block">muro de acero moderno</span>
+            </button>
+
+            <!-- Option 4 (Correct) -->
+            <button onclick="toggleChallengeWord(this, true, 'sun-drenched vista')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
+              <span class="font-semibold text-slate-100 block">sun-drenched vista</span>
+              <span class="es-tag text-[10px] text-slate-400 italic block">vista bañada por sol</span>
+            </button>
+
+            <!-- Option 5 (Distractor) -->
+            <button onclick="toggleChallengeWord(this, false, 'subterranean crypt')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
+              <span class="font-semibold text-slate-100 block">subterranean crypt</span>
+              <span class="es-tag text-[10px] text-slate-400 italic block">cripta subterránea</span>
+            </button>
+
+            <!-- Option 6 (Correct) -->
+            <button onclick="toggleChallengeWord(this, true, 'frames the peak')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
+              <span class="font-semibold text-slate-100 block">frames the peak</span>
+              <span class="es-tag text-[10px] text-slate-400 italic block">enmarca la montaña</span>
+            </button>
+
+            <!-- Option 7 (Distractor) -->
+            <button onclick="toggleChallengeWord(this, false, 'neon-bathed boulevard')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
+              <span class="font-semibold text-slate-100 block">neon-bathed boulevard</span>
+              <span class="es-tag text-[10px] text-slate-400 italic block">bulevar de neones</span>
+            </button>
+
+            <!-- Option 8 (Distractor) -->
+            <button onclick="toggleChallengeWord(this, false, 'flat mirror glass')" class="interactive-chip p-3 rounded-xl bg-studio-elevated border border-studio-border text-left">
+              <span class="font-semibold text-slate-100 block">flat mirror glass</span>
+              <span class="es-tag text-[10px] text-slate-400 italic block">vidrio plano espejo</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Action & Feedback -->
+        <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <button onclick="evaluateChallenge()" class="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-studio-terracotta hover:bg-[#eb744e] text-white font-medium font-mono text-xs transition-all shadow-md">
+            Verify My Architectural Analysis
+          </button>
+          <span id="challenge-status" class="text-xs font-mono text-slate-400">Select 4 describing words above.</span>
+        </div>
+
+        <!-- Result Card -->
+        <div id="challenge-result-box" class="hidden p-4 rounded-xl bg-studio-elevated border border-studio-border space-y-2 text-xs">
+          <div class="flex items-center gap-2 font-mono font-semibold" id="challenge-title"></div>
+          <p id="challenge-explanation" class="text-slate-300 leading-relaxed font-light"></p>
+          <div class="p-3 rounded-lg bg-studio-canvas border border-studio-border/70 text-slate-200 font-serif italic text-sm">
+            <span class="font-mono text-studio-ochre not-italic text-xs block mb-1">Architectural Model Pitch Line:</span>
+            <span id="challenge-model-sentence"></span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: THE BILINGUAL DESCRIBING WORDS BANK -->
+    <section class="space-y-6">
+      <div class="border-b border-studio-border pb-2.5 flex items-center justify-between">
+        <div>
+          <span class="stamp-label text-studio-ochre">Part 3 • Complete Descriptive Lexicon</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">The Describing Words Bank (Bilingual)</h2>
+        </div>
+        <span class="text-xs font-mono text-slate-400">English + Español</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+
+        <!-- Column 1: Scale & Presence -->
+        <div class="board-card rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="stamp-label text-studio-ochre">1. Scale &amp; Presence (Escala y Altura)</span>
+            <span class="text-[10px] text-slate-400 font-mono">Dimension</span>
+          </div>
+          <p class="text-[11px] text-slate-400">Replaces generic words like <em>"big"</em> or <em>"tall"</em>:</p>
+          
+          <div class="space-y-2 font-mono text-[11px]">
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">monumental</strong>
+                <span class="text-slate-400 block text-[10px]">/ˌmɑː.njəˈmen.t̬əl/</span>
+              </div>
+              <span class="text-studio-ochre text-[10px] text-right">monumental, colosal</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">towering</strong>
+                <span class="text-slate-400 block text-[10px]">/ˈtaʊ.ɚ.ɪŋ/</span>
+              </div>
+              <span class="text-studio-ochre text-[10px] text-right">altísimo, imponente</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">soaring</strong>
+                <span class="text-slate-400 block text-[10px]">/ˈsɔːr.ɪŋ/</span>
+              </div>
+              <span class="text-studio-ochre text-[10px] text-right">majestuoso, elevado</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">imposing</strong>
+                <span class="text-slate-400 block text-[10px]">/ɪmˈpoʊ.zɪŋ/</span>
+              </div>
+              <span class="text-studio-ochre text-[10px] text-right">de presencia imponente</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">cavernous</strong>
+                <span class="text-slate-400 block text-[10px]">/ˈkæv.ɚ.nəs/</span>
+              </div>
+              <span class="text-studio-ochre text-[10px] text-right">cavernoso, inmenso</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Texture & Rockwork -->
+        <div class="board-card rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="stamp-label text-studio-terracotta">2. Texture &amp; Rockwork (Textura y Roca)</span>
+            <span class="text-[10px] text-slate-400 font-mono">Materials</span>
+          </div>
+          <p class="text-[11px] text-slate-400">Replaces generic words like <em>"old"</em> or <em>"rocky"</em>:</p>
+
+          <div class="space-y-2 font-mono text-[11px]">
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">striated</strong>
+                <span class="text-slate-400 block text-[10px]">/ˈstraɪ.eɪ.t̬ɪd/</span>
+              </div>
+              <span class="text-studio-terracotta text-[10px] text-right">estriado, con capas</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">weathered</strong>
+                <span class="text-slate-400 block text-[10px]">/ˈweð.ɚd/</span>
+              </div>
+              <span class="text-studio-terracotta text-[10px] text-right">desgastado por clima</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">sun-bleached</strong>
+                <span class="text-slate-400 block text-[10px]">/ˈsʌn.bliːtʃt/</span>
+              </div>
+              <span class="text-studio-terracotta text-[10px] text-right">blanqueado por sol</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">sculpted</strong>
+                <span class="text-slate-400 block text-[10px]">/ˈskʌlp.tɪd/</span>
+              </div>
+              <span class="text-studio-terracotta text-[10px] text-right">esculpido a mano</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">rusticated</strong>
+                <span class="text-slate-400 block text-[10px]">/ˈrʌs.tɪ.keɪ.t̬ɪd/</span>
+              </div>
+              <span class="text-studio-terracotta text-[10px] text-right">mampostería tosca</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Atmosphere & Light -->
+        <div class="board-card rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="stamp-label text-studio-ochre">3. Atmosphere &amp; Light (Luz y Ambiente)</span>
+            <span class="text-[10px] text-slate-400 font-mono">Illumination</span>
+          </div>
+          <p class="text-[11px] text-slate-400">Replaces generic words like <em>"bright"</em> or <em>"dark"</em>:</p>
+
+          <div class="space-y-2 font-mono text-[11px]">
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">sun-drenched</strong>
+                <span class="text-slate-400 block text-[10px]">/ˈsʌn.drentʃt/</span>
+              </div>
+              <span class="text-studio-ochre text-[10px] text-right">bañado por el sol</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">amber-hued</strong>
+                <span class="text-slate-400 block text-[10px]">/ˈæm.bɚ.hjuːd/</span>
+              </div>
+              <span class="text-studio-ochre text-[10px] text-right">de tonos ámbar cálidos</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">shadow-drenched</strong>
+                <span class="text-slate-400 block text-[10px]">/ˈʃæd.oʊ.drentʃt/</span>
+              </div>
+              <span class="text-studio-ochre text-[10px] text-right">envuelto en sombras</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">luminous</strong>
+                <span class="text-slate-400 block text-[10px]">/ˈluː.mə.nəs/</span>
+              </div>
+              <span class="text-studio-ochre text-[10px] text-right">luminoso, radiante</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">neon-bathed</strong>
+                <span class="text-slate-400 block text-[10px]">/ˈniː.ɑːn beɪðd/</span>
+              </div>
+              <span class="text-studio-ochre text-[10px] text-right">bañado en luces de neón</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 4: Spatial Movement Verbs -->
+        <div class="board-card rounded-xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="stamp-label text-studio-sage">4. Spatial Action Verbs (Verbos Espaciales)</span>
+            <span class="text-[10px] text-slate-400 font-mono">Action</span>
+          </div>
+          <p class="text-[11px] text-slate-400">Verbs that describe what architecture actually does:</p>
+
+          <div class="space-y-2 font-mono text-[11px]">
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">commands</strong>
+                <span class="text-slate-400 block text-[10px]">(verb)</span>
+              </div>
+              <span class="text-studio-sage text-[10px] text-right">domina el horizonte</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">anchors</strong>
+                <span class="text-slate-400 block text-[10px]">(verb)</span>
+              </div>
+              <span class="text-studio-sage text-[10px] text-right">ancla la vista central</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">draws</strong>
+                <span class="text-slate-400 block text-[10px]">(verb)</span>
+              </div>
+              <span class="text-studio-sage text-[10px] text-right">atrae la mirada</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">isolates</strong>
+                <span class="text-slate-400 block text-[10px]">(verb)</span>
+              </div>
+              <span class="text-studio-sage text-[10px] text-right">aísla de distracciones</span>
+            </div>
+
+            <div class="p-2 rounded bg-studio-canvas border border-studio-border/60 flex items-center justify-between">
+              <div>
+                <strong class="text-slate-100">frames</strong>
+                <span class="text-slate-400 block text-[10px]">(verb)</span>
+              </div>
+              <span class="text-studio-sage text-[10px] text-right">enmarca un panorama</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: THE 4 STRUCTURAL SENTENCE FORMULAS (BILINGUAL) -->
+    <section class="space-y-6">
+      <div class="border-b border-studio-border pb-2.5 flex items-center justify-between">
+        <div>
+          <span class="stamp-label text-studio-ochre">Part 4 • Structural Sentence Blueprints</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">The 4 Architectural Sentence Formulas</h2>
+        </div>
+        <span class="text-xs font-mono text-slate-400">Estructuras para Alessia</span>
       </div>
 
       <div class="space-y-4 text-xs">
 
-        <!-- Formula 1: The Visual Magnet (Weenie) -->
-        <div class="p-4 rounded-2xl bg-slate-900/80 border border-amber-400/30 space-y-2">
+        <!-- Formula 1 -->
+        <div class="board-card rounded-xl p-5 space-y-2.5">
           <div class="flex items-center justify-between">
-            <span class="font-mono text-amber-300 font-bold uppercase text-[11px]">Formula A: The Sightline Magnet (The Weenie)</span>
-            <span class="px-2 py-0.5 rounded bg-amber-400/10 text-amber-300 font-mono text-[10px]">Wayfinding</span>
+            <span class="stamp-label text-studio-ochre">Formula A: The Sightline Magnet (El Weenie)</span>
+            <span class="text-[10px] text-slate-400 font-mono">Orientación</span>
           </div>
-          <div class="p-3 rounded-xl bg-slate-950 font-mono text-[11px] text-slate-300 border border-slate-800 leading-relaxed">
-            <span class="text-emerald-400">[Spatial Location]</span>, <span class="text-sky-300">[Architectural Anchor]</span> <span class="text-purple-300">[Action Verb]</span> as a <span class="text-amber-300">[Descriptive Adjective]</span> beacon, naturally <span class="text-emerald-400">[Circulation Verb]</span> guest sightlines forward.
+          <div class="p-3 rounded bg-studio-canvas font-mono text-[11px] text-slate-200 border border-studio-border leading-relaxed">
+            [Spatial Location], [Architectural Element] <span class="text-studio-sage font-bold">[Spatial Action Verb]</span> as a <span class="text-studio-ochre font-bold">[Scale + Texture Adjectives]</span> beacon, naturally <span class="text-studio-terracotta font-bold">[Circulation Verb]</span> guest sightlines forward.
           </div>
-          <p class="text-slate-300 italic pt-1">
-            <strong>Model:</strong> "Rising at the end of the central vista, Willys Butte stands as a monumental, sun-bleached beacon, naturally drawing guest sightlines forward into the land."
+          <div class="text-slate-300 font-serif italic text-sm pt-1">
+            "Rising at the end of the central vista, Willys Butte <strong>commands the horizon</strong> as a <strong>monumental, sun-bleached</strong> beacon, naturally <strong>drawing</strong> guest sightlines forward."
+          </div>
+          <p class="text-[11px] text-slate-400 pt-1 font-mono">
+            <strong>Traducción:</strong> "Elevándose al final de la vista central, Willys Butte domina el horizonte como un faro monumental y blanqueado por el sol, atrayendo de forma natural la mirada del público."
           </p>
         </div>
 
-        <!-- Formula 2: The Perimeter Berm (Sightline Defense) -->
-        <div class="p-4 rounded-2xl bg-slate-900/80 border border-emerald-500/30 space-y-2">
+        <!-- Formula 2 -->
+        <div class="board-card rounded-xl p-5 space-y-2.5">
           <div class="flex items-center justify-between">
-            <span class="font-mono text-emerald-300 font-bold uppercase text-[11px]">Formula B: The Immersion Barrier (The Berm)</span>
-            <span class="px-2 py-0.5 rounded bg-emerald-400/10 text-emerald-300 font-mono text-[10px]">Immersion Protection</span>
+            <span class="stamp-label text-studio-sage">Formula B: Immersion Defense (El Berm Perimetral)</span>
+            <span class="text-[10px] text-slate-400 font-mono">Protección Visual</span>
           </div>
-          <div class="p-3 rounded-xl bg-slate-950 font-mono text-[11px] text-slate-300 border border-slate-800 leading-relaxed">
-            In order to eliminate <span class="text-red-400">[Sightline Intrusion / Outside Threat]</span>, we construct a <span class="text-amber-300">[Height/Scale + Texture Adjectives]</span> berm, which completely isolates <span class="text-sky-300">[The Themed Land]</span> from <span class="text-red-400">[The Real World]</span>.
+          <div class="p-3 rounded bg-studio-canvas font-mono text-[11px] text-slate-200 border border-studio-border leading-relaxed">
+            In order to eliminate <span class="text-red-400 font-bold">[Sightline Intrusion]</span>, we construct a <span class="text-studio-ochre font-bold">[Dimension + Texture Adjectives]</span> berm, which completely isolates <span class="text-studio-sage font-bold">[The Themed Land]</span> from <span class="text-red-400 font-bold">[Outside World]</span>.
           </div>
-          <p class="text-slate-300 italic pt-1">
-            <strong>Model:</strong> "In order to eliminate sightline intrusion from the freeway, we construct a 12-meter sculpted, striated rockwork berm, which completely isolates Radiator Springs from the outside city."
+          <div class="text-slate-300 font-serif italic text-sm pt-1">
+            "In order to eliminate sightline intrusion from the highway, we construct a <strong>12-meter sculpted, striated rockwork</strong> berm, which completely isolates our desert land from the modern city."
+          </div>
+          <p class="text-[11px] text-slate-400 pt-1 font-mono">
+            <strong>Traducción:</strong> "Para eliminar la intrusión visual de la autopista, construimos un terraplén de roca esculpida y estriada de 12 metros, que aísla por completo nuestra tierra desértica de la ciudad exterior."
           </p>
         </div>
 
-        <!-- Formula 3: Threshold & Atmospheric Compression -->
-        <div class="p-4 rounded-2xl bg-slate-900/80 border border-sky-500/30 space-y-2">
+        <!-- Formula 3 -->
+        <div class="board-card rounded-xl p-5 space-y-2.5">
           <div class="flex items-center justify-between">
-            <span class="font-mono text-sky-300 font-bold uppercase text-[11px]">Formula C: Portal Transition (Compression &amp; Expansion)</span>
-            <span class="px-2 py-0.5 rounded bg-sky-400/10 text-sky-300 font-mono text-[10px]">Sensory Threshold</span>
+            <span class="stamp-label text-studio-terracotta">Formula C: Threshold Portal (Compresión y Expansión)</span>
+            <span class="text-[10px] text-slate-400 font-mono">Umbral Espacial</span>
           </div>
-          <div class="p-3 rounded-xl bg-slate-950 font-mono text-[11px] text-slate-300 border border-slate-800 leading-relaxed">
-            As guests pass beneath <span class="text-sky-300">[Architectural Gateway]</span>, the space <span class="text-purple-300">[dramatically expands / compresses]</span>, transitioning from <span class="text-slate-400">[Atmosphere A]</span> into <span class="text-amber-300">[Atmosphere B]</span>.
+          <div class="p-3 rounded bg-studio-canvas font-mono text-[11px] text-slate-200 border border-studio-border leading-relaxed">
+            As guests pass beneath <span class="text-studio-ochre font-bold">[Architectural Gateway]</span>, the space <span class="text-studio-sage font-bold">[dramatically expands / compresses]</span>, transitioning from <span class="text-slate-400 font-bold">[Atmosphere A]</span> into <span class="text-studio-terracotta font-bold">[Atmosphere B]</span>.
           </div>
-          <p class="text-slate-300 italic pt-1">
-            <strong>Model:</strong> "As guests pass beneath the rustic timber entry portal, the space dramatically expands, transitioning from the crowded entrance into an amber-hued, sun-drenched canyon."
-          </p>
-        </div>
-
-        <!-- Formula 4: The 3-Act Attraction Architecture -->
-        <div class="p-4 rounded-2xl bg-slate-900/80 border border-purple-500/30 space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="font-mono text-purple-300 font-bold uppercase text-[11px]">Formula D: The 3-Act Attraction Pacing</span>
-            <span class="px-2 py-0.5 rounded bg-purple-400/10 text-purple-300 font-mono text-[10px]">Ride Cadence</span>
+          <div class="text-slate-300 font-serif italic text-sm pt-1">
+            "As guests pass beneath the rustic timber entry portal, the space <strong>dramatically expands</strong>, transitioning from the crowded arrival plaza into an <strong>amber-hued, sun-drenched</strong> canyon."
           </div>
-          <div class="p-3 rounded-xl bg-slate-950 font-mono text-[11px] text-slate-300 border border-slate-800 leading-relaxed">
-            In Act 1, we <span class="text-emerald-400">decompress</span> guests with <span class="text-amber-300">[Scenic Outdoor Float]</span>, before gliding into Act 2's <span class="text-sky-300">[Theatrical Indoor Show Scenes]</span>, which culminates in Act 3 with <span class="text-purple-300">[Climactic Kinetic Payoff]</span>.
-          </div>
-          <p class="text-slate-300 italic pt-1">
-            <strong>Model:</strong> "In Act 1, we decompress guests with a serene canyon drive, before gliding into Act 2's show-controlled indoor dark ride, which culminates in Act 3 with a thrilling 45mph race through the hills."
+          <p class="text-[11px] text-slate-400 pt-1 font-mono">
+            <strong>Traducción:</strong> "A medida que los visitantes cruzan el portal rústico de madera, el espacio se expande dramáticamente, pasando de la concurrida plaza de entrada a un cañón bañado por el sol con tonos ámbar."
           </p>
         </div>
 
       </div>
     </section>
 
-    <!-- TOOLKIT SECTION 3: INTERACTIVE GUIDED SENTENCE STUDIO -->
-    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
+    <!-- SECTION 5: INTERACTIVE GUIDED SENTENCE STUDIO (CUSTOM PITCH BUILDER) -->
+    <section class="board-card rounded-2xl p-6 md:p-8 space-y-6">
+      <div class="border-b border-studio-border pb-3 flex items-center justify-between">
         <div>
-          <span class="text-xs uppercase tracking-widest text-amber-300 font-mono">Part 3 • Interactive Sentence Studio</span>
-          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Build Your Custom Sentences Step-by-Step</h2>
+          <span class="stamp-label text-studio-ochre">Part 5 • Interactive Pitch Builder</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Customize Your Walkthrough Pitch Script</h2>
         </div>
-        <span class="text-xs font-mono text-amber-300 bg-amber-400/10 px-3 py-1 rounded-xl border border-amber-400/20 self-start sm:self-auto">
-          Scaffolded Practice
-        </span>
+        <span class="text-xs font-mono text-studio-sage">Interactive Studio</span>
       </div>
 
-      <p class="text-xs text-slate-300 leading-relaxed font-light">
-        Choose your describing words below to assemble your custom Imagineering pitch lines. Notice how the sentence builds in real time:
-      </p>
-
-      <!-- Sentence 1 Customizer (The Weenie) -->
-      <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3 text-xs">
-        <span class="font-mono text-amber-300 font-bold uppercase text-[11px] block">Sentence 1: Crafting The Sightline Magnet</span>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 font-mono text-[11px]">
-          <div>
-            <label class="text-slate-400 block mb-1">Spatial Starter:</label>
-            <select id="s1-starter" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
-              <option value="Rising at the end of the central vista">Rising at the end of the vista</option>
-              <option value="Framed perfectly by the entrance portal">Framed by the entrance portal</option>
-              <option value="Anchoring the entire eastern sightline">Anchoring the eastern sightline</option>
-            </select>
-          </div>
-          <div>
-            <label class="text-slate-400 block mb-1">Describing Words (Scale + Texture):</label>
-            <select id="s1-adjectives" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
-              <option value="monumental, sun-bleached">monumental, sun-bleached</option>
-              <option value="towering, striated">towering, striated</option>
-              <option value="soaring, weathered">soaring, weathered</option>
-              <option value="imposing, rusticated">imposing, rusticated</option>
-            </select>
-          </div>
-          <div>
-            <label class="text-slate-400 block mb-1">Guest Effect:</label>
-            <select id="s1-effect" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
-              <option value="naturally drawing guest circulation forward.">naturally drawing guest circulation forward.</option>
-              <option value="commanding the horizon and eliminating bottlenecks.">commanding the horizon & eliminating bottlenecks.</option>
-              <option value="inspiring an immediate sense of wonder.">inspiring an immediate sense of wonder.</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="p-3 rounded-xl bg-slate-950 border border-amber-400/20 text-slate-200 font-serif text-sm italic">
-          <span class="text-amber-300 font-mono not-italic text-xs block mb-0.5">Live Output:</span>
-          <span id="s1-preview">"Rising at the end of the central vista, Willys Butte stands as a monumental, sun-bleached beacon, naturally drawing guest circulation forward."</span>
-        </div>
-      </div>
-
-      <!-- Sentence 2 Customizer (The Berm) -->
-      <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3 text-xs">
-        <span class="font-mono text-emerald-300 font-bold uppercase text-[11px] block">Sentence 2: Defending The Berm Against Intrusion</span>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 font-mono text-[11px]">
-          <div>
-            <label class="text-slate-400 block mb-1">The Threat / Purpose:</label>
-            <select id="s2-threat" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
-              <option value="In order to eliminate sightline intrusion from the highway">To eliminate sightline intrusion from the highway</option>
-              <option value="To protect 100% of the guest's suspension of disbelief">To protect suspension of disbelief</option>
-              <option value="To isolate our fantasy world from outside noise">To isolate fantasy from outside noise</option>
-            </select>
-          </div>
-          <div>
-            <label class="text-slate-400 block mb-1">Scale &amp; Texture Description:</label>
-            <select id="s2-adjectives" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
-              <option value="a 12-meter sculpted, striated rockwork berm">a 12-meter sculpted, striated berm</option>
-              <option value="a densely landscaped, undulating earthen berm">a landscaped, undulating earthen berm</option>
-              <option value="an imposing, weathered stone embankment">an imposing, weathered stone embankment</option>
-            </select>
-          </div>
-          <div>
-            <label class="text-slate-400 block mb-1">Spatial Result:</label>
-            <select id="s2-result" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
-              <option value="which completely isolates our desert land from the modern city.">which completely isolates the land from the city.</option>
-              <option value="preserving total thematic integrity throughout the park.">preserving total thematic integrity.</option>
-              <option value="creating an unbroken sanctuary of immersive storytelling.">creating an unbroken sanctuary of storytelling.</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="p-3 rounded-xl bg-slate-950 border border-emerald-500/20 text-slate-200 font-serif text-sm italic">
-          <span class="text-emerald-300 font-mono not-italic text-xs block mb-0.5">Live Output:</span>
-          <span id="s2-preview">"In order to eliminate sightline intrusion from the highway, we construct a 12-meter sculpted, striated rockwork berm, which completely isolates our desert land from the modern city."</span>
-        </div>
-      </div>
-
-      <!-- Sentence 3 Customizer (The 3-Act Pacing) -->
-      <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3 text-xs">
-        <span class="font-mono text-purple-300 font-bold uppercase text-[11px] block">Sentence 3: The 3-Act Attraction Architecture</span>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 font-mono text-[11px]">
-          <div>
-            <label class="text-slate-400 block mb-1">Act 1 (Decompression):</label>
-            <select id="s3-act1" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
-              <option value="In Act 1, we decompress the guest with a gentle canyon cruise">Act 1: Decompress with a canyon cruise</option>
-              <option value="In Act 1, guests unwind through a serene outdoor mountain drive">Act 1: Unwind through an outdoor drive</option>
-            </select>
-          </div>
-          <div>
-            <label class="text-slate-400 block mb-1">Act 2 (Show Scenes):</label>
-            <select id="s3-act2" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
-              <option value="before transitioning into Act 2's theatrical dark ride with Audio-Animatronics">before Act 2's dark ride with Animatronics</option>
-              <option value="before gliding into the neon-bathed, show-controlled garage">before the neon-bathed indoor garage</option>
-            </select>
-          </div>
-          <div>
-            <label class="text-slate-400 block mb-1">Act 3 (Kinetic Climax):</label>
-            <select id="s3-act3" onchange="updateLiveSentence()" class="w-full p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200">
-              <option value="which culminates in Act 3 with a thrilling 45mph desert race!">culminating in Act 3's 45mph desert race!</option>
-              <option value="culminating in our signature kinetic reveal: side-by-side outdoor racing!">culminating in our signature kinetic race!</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="p-3 rounded-xl bg-slate-950 border border-purple-500/20 text-slate-200 font-serif text-sm italic">
-          <span class="text-purple-300 font-mono not-italic text-xs block mb-0.5">Live Output:</span>
-          <span id="s3-preview">"In Act 1, we decompress the guest with a gentle canyon cruise, before transitioning into Act 2's theatrical dark ride with Audio-Animatronics, which culminates in Act 3 with a thrilling 45mph desert race!"</span>
-        </div>
-      </div>
-
-      <!-- Compile Assembled Script Button -->
-      <div class="pt-2 flex justify-end">
-        <button onclick="compileFullPitch()" class="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-semibold font-mono text-xs transition-all shadow-lg shadow-amber-400/10">
-          ✨ Combine All 3 Into Full Pitch Script
-        </button>
-      </div>
-
-      <!-- Assembled Pitch Box -->
-      <div id="full-script-card" class="p-5 rounded-2xl bg-amber-950/20 border border-amber-400/30 space-y-2">
-        <div class="flex items-center justify-between">
-          <span class="text-amber-300 font-mono font-semibold text-xs uppercase">Your Assembled Executive Pitch Script:</span>
-          <button onclick="copyFullScript()" class="px-2.5 py-1 rounded bg-slate-900 border border-amber-400/30 text-amber-300 font-mono text-[10px] hover:bg-amber-400/10">
-            Copy Script
-          </button>
-        </div>
-        <p id="full-script-text" class="text-slate-100 font-serif text-base leading-relaxed italic">
-          "Rising at the end of the central vista, Willys Butte stands as a monumental, sun-bleached beacon, naturally drawing guest circulation forward. In order to eliminate sightline intrusion from the highway, we construct a 12-meter sculpted, striated rockwork berm, which completely isolates our desert land from the modern city. In Act 1, we decompress the guest with a gentle canyon cruise, before transitioning into Act 2's theatrical dark ride with Audio-Animatronics, which culminates in Act 3 with a thrilling 45mph desert race!"
+      <div class="space-y-4 text-xs">
+        <p class="text-slate-300 font-light">
+          Personaliza tus frases eligiendo las palabras descriptivas. El guión final se compilará automáticamente en el teleprónter inferior para tu grabación de voz.
         </p>
-      </div>
 
+        <!-- Sentence 1 Customizer -->
+        <div class="p-4 rounded-xl bg-studio-canvas border border-studio-border space-y-2.5">
+          <div class="flex items-center justify-between font-mono text-[11px]">
+            <span class="text-studio-ochre font-semibold">Sentence 1: The Weenie (El Imán Visual)</span>
+            <span class="text-slate-500">Formula A</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] font-mono">
+            <div>
+              <label class="text-slate-400 block mb-1">Spatial Location:</label>
+              <select id="s1-starter" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
+                <option value="Rising at the end of the central vista">Rising at the end of the central vista (Al final de la vista)</option>
+                <option value="Framed by the rustic entrance portal">Framed by the rustic entrance portal (Enmarcado por el portal)</option>
+                <option value="Anchoring the entire eastern sightline">Anchoring the entire eastern sightline (Anclando la vista este)</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-slate-400 block mb-1">Describing Words:</label>
+              <select id="s1-adjectives" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
+                <option value="monumental, sun-bleached">monumental, sun-bleached (monumental y soleado)</option>
+                <option value="towering, striated">towering, striated (altísimo y estriado)</option>
+                <option value="imposing, rusticated">imposing, rusticated (imponente y rústico)</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-slate-400 block mb-1">Guest Effect:</label>
+              <select id="s1-effect" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
+                <option value="naturally drawing guest circulation forward.">naturally drawing guest circulation forward.</option>
+                <option value="commanding the horizon and eliminating bottlenecks.">commanding the horizon & eliminating bottlenecks.</option>
+              </select>
+            </div>
+          </div>
+          <p id="s1-live" class="text-slate-200 font-serif italic text-sm pt-1">
+            "Rising at the end of the central vista, Willys Butte stands as a monumental, sun-bleached beacon, naturally drawing guest circulation forward."
+          </p>
+        </div>
+
+        <!-- Sentence 2 Customizer -->
+        <div class="p-4 rounded-xl bg-studio-canvas border border-studio-border space-y-2.5">
+          <div class="flex items-center justify-between font-mono text-[11px]">
+            <span class="text-studio-sage font-semibold">Sentence 2: The Berm (Protección Visual)</span>
+            <span class="text-slate-500">Formula B</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] font-mono">
+            <div>
+              <label class="text-slate-400 block mb-1">Immersion Goal:</label>
+              <select id="s2-threat" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
+                <option value="In order to eliminate sightline intrusion from the highway">To eliminate sightline intrusion (Eliminar intrusión visual)</option>
+                <option value="To protect 100% of guest suspension of disbelief">To protect suspension of disbelief (Proteger la ilusión)</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-slate-400 block mb-1">Scale &amp; Texture Description:</label>
+              <select id="s2-adjectives" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
+                <option value="a 12-meter sculpted, striated rockwork berm">a 12-meter sculpted, striated berm (12m de roca estriada)</option>
+                <option value="a densely landscaped, undulating earthen berm">a landscaped, undulating earthen berm (terraplén ondulado)</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-slate-400 block mb-1">Result:</label>
+              <select id="s2-result" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
+                <option value="which completely isolates our desert land from the modern city.">which completely isolates the land from the city.</option>
+                <option value="creating an unbroken sanctuary of thematic storytelling.">creating an unbroken sanctuary of storytelling.</option>
+              </select>
+            </div>
+          </div>
+          <p id="s2-live" class="text-slate-200 font-serif italic text-sm pt-1">
+            "In order to eliminate sightline intrusion from the highway, we construct a 12-meter sculpted, striated rockwork berm, which completely isolates our desert land from the modern city."
+          </p>
+        </div>
+
+        <!-- Sentence 3 Customizer -->
+        <div class="p-4 rounded-xl bg-studio-canvas border border-studio-border space-y-2.5">
+          <div class="flex items-center justify-between font-mono text-[11px]">
+            <span class="text-studio-terracotta font-semibold">Sentence 3: 3-Act Attraction Architecture (Ritmo de la Atracción)</span>
+            <span class="text-slate-500">Formula D</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] font-mono">
+            <div>
+              <label class="text-slate-400 block mb-1">Act 1 (Decompression):</label>
+              <select id="s3-act1" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
+                <option value="In Act 1, we decompress the guest with a gentle canyon cruise">Act 1: Decompress with canyon cruise (Descompresión)</option>
+                <option value="In Act 1, guests unwind through a serene outdoor mountain drive">Act 1: Serene outdoor mountain drive (Paseo exterior)</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-slate-400 block mb-1">Act 2 (Show Scenes):</label>
+              <select id="s3-act2" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
+                <option value="before transitioning into Act 2's theatrical dark ride with Audio-Animatronics">before Act 2's dark ride (Paseo oscuro teatral)</option>
+                <option value="before gliding into the neon-bathed, show-controlled garage">before the neon-bathed garage (Taller con neones)</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-slate-400 block mb-1">Act 3 (Kinetic Climax):</label>
+              <select id="s3-act3" onchange="updatePitchStudio()" class="w-full p-2 rounded bg-studio-surface border border-studio-border text-slate-200">
+                <option value="which culminates in Act 3 with a thrilling 45mph desert race!">culminating in Act 3's 45mph desert race (Carrera veloz)</option>
+                <option value="culminating in our signature kinetic reveal: side-by-side outdoor racing!">culminating in side-by-side racing (Carrera en paralelo)</option>
+              </select>
+            </div>
+          </div>
+          <p id="s3-live" class="text-slate-200 font-serif italic text-sm pt-1">
+            "In Act 1, we decompress the guest with a gentle canyon cruise, before transitioning into Act 2's theatrical dark ride with Audio-Animatronics, which culminates in Act 3 with a thrilling 45mph desert race!"
+          </p>
+        </div>
+
+      </div>
     </section>
 
-    <!-- TOOLKIT SECTION 4: LIVE AUDIO RECORDER & VOCAL TELEPROMPTER -->
-    <section class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
-      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+    <!-- SECTION 6: VOCAL TELEPROMPTER & IN-BROWSER AUDIO RECORDER -->
+    <section class="board-card rounded-2xl p-6 md:p-8 space-y-6 border-studio-ochre/30">
+      <div class="border-b border-studio-border pb-3 flex items-center justify-between">
         <div>
-          <span class="text-xs uppercase tracking-widest text-amber-300 font-mono">Part 4 • Vocal Studio &amp; Teleprompter</span>
-          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Record Your 90-Second Walkthrough</h2>
+          <span class="stamp-label text-studio-ochre">Part 6 • Audio Deliverable</span>
+          <h2 class="text-xl md:text-2xl font-serif text-slate-100 font-light mt-0.5">Record Your 90-Second Walkthrough Pitch</h2>
         </div>
-        <span class="text-xs font-mono text-slate-400">Target: 90–120s</span>
+        <span class="text-xs font-mono text-slate-400">Preply Homework</span>
       </div>
 
       <div class="space-y-4">
-        <!-- Teleprompter Script Card -->
-        <div class="p-4 rounded-xl bg-slate-900/90 border border-amber-400/20 space-y-2 text-xs">
-          <span class="font-mono text-amber-300 font-semibold uppercase text-[11px] block">Your Teleprompter (Read with Authority &amp; Warmth):</span>
-          <p id="teleprompter-text" class="font-serif text-sm text-slate-200 italic leading-relaxed">
+        <!-- Teleprompter Card -->
+        <div class="p-5 rounded-xl bg-studio-canvas border border-studio-border space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="stamp-label text-studio-ochre text-[10px]">Your Live Teleprompter (Read Aloud with Conviction):</span>
+            <button onclick="copyTeleprompter()" class="px-2 py-0.5 rounded bg-studio-surface border border-studio-border text-[10px] font-mono text-slate-300 hover:text-studio-ochre">
+              Copy Text
+            </button>
+          </div>
+          <p id="teleprompter-script" class="font-serif text-base text-slate-100 italic leading-relaxed">
             "Rising at the end of the central vista, Willys Butte stands as a monumental, sun-bleached beacon, naturally drawing guest circulation forward. In order to eliminate sightline intrusion from the highway, we construct a 12-meter sculpted, striated rockwork berm, which completely isolates our desert land from the modern city. In Act 1, we decompress the guest with a gentle canyon cruise, before transitioning into Act 2's theatrical dark ride with Audio-Animatronics, which culminates in Act 3 with a thrilling 45mph desert race!"
           </p>
         </div>
 
-        <!-- Recorder Widget -->
-        <div class="p-6 rounded-2xl bg-slate-900/90 border border-amber-400/20 space-y-4">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-semibold text-slate-200 font-mono">In-Browser Audio Recording</span>
-            <span id="recording-timer" class="text-sm font-mono text-amber-300 hidden">00:00</span>
-          </div>
-
-          <div class="flex flex-wrap items-center gap-4">
-            <button id="btn-record" onclick="toggleRecording()" class="px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-semibold tracking-wide transition-all flex items-center gap-2 shadow-lg shadow-amber-400/10">
-              <span id="record-dot" class="w-2.5 h-2.5 rounded-full bg-red-600"></span>
+        <!-- Recording Interface -->
+        <div class="p-5 rounded-xl bg-studio-elevated border border-studio-border flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <button id="btn-record" onclick="toggleRecording()" class="px-6 py-3 rounded-xl bg-studio-terracotta hover:bg-[#eb744e] text-white font-medium text-xs font-mono flex items-center gap-2.5 transition-all shadow-md">
+              <span id="record-dot" class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
               <span id="record-text">Start Recording Pitch</span>
             </button>
-
-            <div id="audio-playback-container" class="hidden flex flex-wrap items-center gap-3">
-              <audio id="audio-player" controls class="h-9"></audio>
-              <a id="btn-download" download="alessia-milestone1-imagineering-pitch.webm" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-400/20 text-xs font-mono transition-all">
-                💾 Download Recording (.webm)
-              </a>
-            </div>
+            <span id="recording-timer" class="font-mono text-base text-studio-ochre hidden">00:00</span>
           </div>
-          <p class="text-[11px] text-slate-400 font-light">
-            Once saved to your computer or phone, attach this file in Preply chat before our next live session.
-          </p>
+
+          <div id="audio-playback-container" class="hidden flex flex-wrap items-center gap-3">
+            <audio id="audio-player" controls class="h-9"></audio>
+            <a id="btn-download" download="alessia-milestone1-imagineering-pitch.webm" class="px-3.5 py-2 rounded-lg bg-studio-surface hover:bg-studio-canvas border border-studio-border text-studio-ochre font-mono text-xs transition-colors">
+              💾 Save WebM Audio
+            </a>
+          </div>
+        </div>
+
+        <!-- Submission Steps -->
+        <div class="p-3.5 rounded-lg bg-studio-canvas border border-studio-border/70 text-xs text-slate-400 font-light flex items-center justify-between">
+          <span>Envía este archivo de audio por el chat de Preply antes de nuestra próxima sesión en vivo.</span>
+          <span class="text-studio-sage font-mono text-[11px]">✓ Formato Preply Listo</span>
         </div>
       </div>
     </section>
 
-    <!-- Preply Steps & Footer -->
-    <footer class="text-center text-xs text-slate-500 pt-6 border-t border-slate-900 font-light space-y-2">
+    <!-- Footer -->
+    <footer class="text-center text-xs text-slate-500 pt-6 border-t border-studio-border/60 font-light space-y-1">
       <div>Magic Journey • The Imagineering English Studio for Alessia</div>
       <div class="text-[11px] text-slate-600">Based on <em>Magic Journey: My Fantastical Walt Disney Imagineering Career</em> by Kevin P. Rafferty</div>
     </footer>
 
   </div>
 
-  <!-- Interactive Scripts -->
+  <!-- Interactive JavaScript -->
   <script>
-    // Copy Clickable Chip Word
-    function copyChip(word) {
-      navigator.clipboard.writeText(word);
-      const notice = document.getElementById('chip-copied-notice');
-      notice.innerText = `✓ "${word}" copied! Paste or use it in your sentence.`;
-      notice.classList.remove('hidden');
-      setTimeout(() => notice.classList.add('hidden'), 2200);
+    // Visual Inspection Challenge Logic
+    let selectedWords = [];
+    const correctWords = ['weathered timber', 'striated rockwork', 'sun-drenched vista', 'frames the peak'];
+
+    function toggleChallengeWord(btn, isCorrect, wordText) {
+      const idx = selectedWords.findIndex(w => w.text === wordText);
+      if (idx >= 0) {
+        selectedWords.splice(idx, 1);
+        btn.classList.remove('selected');
+      } else {
+        if (selectedWords.length >= 4) {
+          alert("You can select at most 4 describing words. Deselect one first!");
+          return;
+        }
+        selectedWords.push({ btn: btn, isCorrect: isCorrect, text: wordText });
+        btn.classList.add('selected');
+      }
+
+      document.getElementById('selected-counter').innerText = `${selectedWords.length} / 4 Selected`;
     }
 
-    // Live Sentence Studio Updater
-    function updateLiveSentence() {
-      // Sentence 1
+    function evaluateChallenge() {
+      if (selectedWords.length !== 4) {
+        alert("Please select exactly 4 describing words to complete your architectural inspection!");
+        return;
+      }
+
+      const resultBox = document.getElementById('challenge-result-box');
+      const title = document.getElementById('challenge-title');
+      const explanation = document.getElementById('challenge-explanation');
+      const modelSentence = document.getElementById('challenge-model-sentence');
+
+      const correctCount = selectedWords.filter(w => w.isCorrect).length;
+
+      resultBox.classList.remove('hidden');
+
+      if (correctCount === 4) {
+        title.innerHTML = '<span class="text-studio-sage text-base">✓</span> <span class="text-studio-sage">Flawless Architectural Inspection! (4/4 Correct)</span>';
+        explanation.innerText = "¡Excelente ojo arquitectónico, Alessia! Has identificado con precisión la madera rústica envejecida (weathered timber), los estratos de roca (striated rockwork), la iluminación dorada (sun-drenched vista) y el encuadre espacial hacia la cumbre (frames the peak).";
+        modelSentence.innerText = '"Notice how the rustic portal crafted from weathered timber frames a sun-drenched, striated mountain peak, naturally drawing guests through the canyon."';
+      } else {
+        title.innerHTML = `<span class="text-studio-terracotta text-base">⚠</span> <span class="text-studio-terracotta">${correctCount} of 4 Accurate Descriptors</span>`;
+        explanation.innerText = "Buen intento. Observa bien los materiales en la foto: no hay acero moderno ni cristales planos. Los elementos clave son la madera envejecida (weathered timber), la roca estriada (striated rockwork) y el arco que enmarca la cumbre (frames the peak). ¡Revisa tus selecciones y prueba de nuevo!";
+        modelSentence.innerText = '"Notice how the rustic portal crafted from weathered timber frames a sun-drenched, striated mountain peak, naturally drawing guests through the canyon."';
+      }
+    }
+
+    // Live Pitch Studio Updater
+    function updatePitchStudio() {
+      // S1
       const s1Starter = document.getElementById('s1-starter').value;
       const s1Adj = document.getElementById('s1-adjectives').value;
       const s1Effect = document.getElementById('s1-effect').value;
-      const s1Text = `${s1Starter}, Willys Butte stands as a ${s1Adj} beacon, ${s1Effect}`;
-      document.getElementById('s1-preview').innerText = `"${s1Text}"`;
+      const s1 = `${s1Starter}, Willys Butte stands as a ${s1Adj} beacon, ${s1Effect}`;
+      document.getElementById('s1-live').innerText = `"${s1}"`;
 
-      // Sentence 2
+      // S2
       const s2Threat = document.getElementById('s2-threat').value;
       const s2Adj = document.getElementById('s2-adjectives').value;
       const s2Result = document.getElementById('s2-result').value;
-      const s2Text = `${s2Threat}, we construct ${s2Adj}, ${s2Result}`;
-      document.getElementById('s2-preview').innerText = `"${s2Text}"`;
+      const s2 = `${s2Threat}, we construct ${s2Adj}, ${s2Result}`;
+      document.getElementById('s2-live').innerText = `"${s2}"`;
 
-      // Sentence 3
+      // S3
       const s3Act1 = document.getElementById('s3-act1').value;
       const s3Act2 = document.getElementById('s3-act2').value;
       const s3Act3 = document.getElementById('s3-act3').value;
-      const s3Text = `${s3Act1}, ${s3Act2}, ${s3Act3}`;
-      document.getElementById('s3-preview').innerText = `"${s3Text}"`;
+      const s3 = `${s3Act1}, ${s3Act2}, ${s3Act3}`;
+      document.getElementById('s3-live').innerText = `"${s3}"`;
 
-      // Teleprompter and Full Script
-      compileFullPitch();
+      // Teleprompter Full Script
+      const fullScript = `"${s1} ${s2} ${s3}"`;
+      document.getElementById('teleprompter-script').innerText = fullScript;
     }
 
-    function compileFullPitch() {
-      const s1 = document.getElementById('s1-preview').innerText.replace(/"/g, '');
-      const s2 = document.getElementById('s2-preview').innerText.replace(/"/g, '');
-      const s3 = document.getElementById('s3-preview').innerText.replace(/"/g, '');
-      const combined = `"${s1} ${s2} ${s3}"`;
-
-      document.getElementById('full-script-text').innerText = combined;
-      document.getElementById('teleprompter-text').innerText = combined;
-    }
-
-    function copyFullScript() {
-      const text = document.getElementById('full-script-text').innerText;
+    function copyTeleprompter() {
+      const text = document.getElementById('teleprompter-script').innerText;
       navigator.clipboard.writeText(text);
       alert("Script copied to clipboard!");
     }
 
-    // Particles Canvas
-    const canvas = document.getElementById('particles-canvas');
-    const ctx = canvas.getContext('2d');
-    let particles = [];
-
-    function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
-    window.addEventListener('resize', resizeCanvas);
-    resizeCanvas();
-
-    class Particle {
-      constructor() {
-        this.reset();
-      }
-      reset() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 2.2 + 0.6;
-        this.speedX = (Math.random() - 0.5) * 0.4;
-        this.speedY = -Math.random() * 0.5 - 0.2;
-        this.opacity = Math.random() * 0.6 + 0.2;
-        this.pulse = Math.random() * 0.02 + 0.005;
-        this.pulseDir = 1;
-        const colors = ['#f6d365', '#ffeaa7', '#fda085', '#38bdf8'];
-        this.color = colors[Math.floor(Math.random() * colors.length)];
-      }
-      update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
-        this.opacity += this.pulse * this.pulseDir;
-        if (this.opacity > 0.85) this.pulseDir = -1;
-        if (this.opacity < 0.15) this.pulseDir = 1;
-        if (this.y < 0) this.y = canvas.height;
-        if (this.x < 0) this.x = canvas.width;
-        if (this.x > canvas.width) this.x = 0;
-      }
-      draw() {
-        ctx.save();
-        ctx.globalAlpha = this.opacity;
-        ctx.shadowBlur = this.size * 5;
-        ctx.shadowColor = this.color;
-        ctx.fillStyle = this.color;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.restore();
-      }
-    }
-
-    const particleCount = Math.min(window.innerWidth / 15, 60);
-    for (let i = 0; i < particleCount; i++) {
-      particles.push(new Particle());
-    }
-
-    function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      for (let i = 0; i < particles.length; i++) {
-        particles[i].update();
-        particles[i].draw();
-      }
-      requestAnimationFrame(animate);
-    }
-    animate();
-
-    // In-Browser Audio Recorder
+    // Audio Recorder (MediaRecorder API)
     let mediaRecorder;
     let audioChunks = [];
     let isRecording = false;
@@ -663,7 +908,7 @@
           }, 1000);
 
         } catch (err) {
-          alert("Microphone access is required to record directly on the page, or record on your phone and upload to Preply!");
+          alert("Microphone access is required to record in the browser, or you can record on your phone and attach to Preply!");
         }
       } else {
         mediaRecorder.stop();
@@ -675,9 +920,9 @@
       }
     }
 
-    // Initialize live preview
+    // Initialize
     window.onload = () => {
-      updateLiveSentence();
+      updatePitchStudio();
     };
   </script>
 </body>
