@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>The Magic of English • Imagineering Studio for Alessia</title>
+  
+  <!-- Google Fonts: Fraunces & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Fraunces"', 'Georgia', 'serif'],
+            sans: ['"Outfit"', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            fairy: {
+              bg: '#faf6f0',
+              card: '#ffffff',
+              parchment: '#fefaf5',
+              border: '#eddcd2',
+              borderLight: '#f3e8e2',
+              coral: '#e06443',
+              coralHover: '#cd5637',
+              gold: '#d97706',
+              amber: '#f59e0b',
+              sage: '#43795b',
+              charcoal: '#292524',
+              muted: '#78716c',
+            }
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -6px rgba(180, 130, 90, 0.08), 0 2px 8px rgba(0, 0, 0, 0.02)',
+            'hover': '0 16px 36px -8px rgba(180, 130, 90, 0.16), 0 4px 12px rgba(0, 0, 0, 0.04)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #faf6f0;
+      background-image: 
+        radial-gradient(circle at 10% 15%, rgba(254, 243, 199, 0.45) 0%, transparent 45%),
+        radial-gradient(circle at 90% 75%, rgba(255, 237, 213, 0.45) 0%, transparent 45%),
+        radial-gradient(circle at 50% 50%, rgba(250, 246, 240, 1) 0%, transparent 100%);
+      background-attachment: fixed;
+    }
+    .magical-card {
+      background: #ffffff;
+      border: 1px solid #eddcd2;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 30px -6px rgba(180, 130, 90, 0.08), 0 2px 8px rgba(0, 0, 0, 0.02);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .magical-card:hover {
+      box-shadow: 0 16px 36px -8px rgba(180, 130, 90, 0.14), 0 4px 12px rgba(0, 0, 0, 0.03);
+    }
+    .photo-glow {
+      border-radius: 1.25rem;
+      box-shadow: 0 8px 24px -4px rgba(120, 80, 50, 0.12);
+      border: 3px solid #ffffff;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .photo-glow:hover {
+      transform: scale(1.02);
+    }
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+    .sparkle-btn {
+      background: linear-gradient(135deg, #e06443 0%, #ea580c 100%);
+      color: white;
+      transition: all 0.2s ease;
+    }
+    .sparkle-btn:hover {
+      background: linear-gradient(135deg, #ea580c 0%, #d94e2b 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(224, 100, 67, 0.3);
+    }
+  </style>
+</head>
+<body class="text-fairy-charcoal font-sans antialiased min-h-screen py-8 md:py-14 px-4 sm:px-6">
+
+  <!-- Main Container -->
+  <div class="max-w-5xl mx-auto space-y-12">
+
+    <!-- Top Navigation Bar -->
+    <header class="flex flex-wrap items-center justify-between gap-4 border-b border-fairy-border/80 pb-4 text-xs">
+      <div class="inline-flex items-center gap-2 text-fairy-gold font-medium">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <span>The Magic of English • Studio per Alessia</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="homework.html" class="sparkle-btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-xs shadow-soft">
+          <i class="fa-solid fa-gamepad"></i>
+          <span>Vai al Compito (Missione 1) →</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Welcome Hero -->
+    <div class="space-y-4">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100/70 text-fairy-coral text-xs font-medium border border-orange-200/80">
+        <i class="fa-solid fa-sparkles text-[11px]"></i>
+        <span>THEMED ENTERTAINMENT ARCHITECTURE &amp; DESIGN STUDIO</span>
+      </div>
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif text-fairy-charcoal font-semibold tracking-tight leading-tight">
+        Designing Worlds. <span class="italic text-fairy-coral font-normal">Telling the Magic.</span> ✨
+        <span class="block text-xl sm:text-2xl lg:text-3xl font-serif text-fairy-muted font-normal mt-1.5">Progettare Mondi. Raccontare la Magia.</span>
+      </h1>
+      <p class="text-fairy-muted text-sm sm:text-base max-w-2xl font-normal leading-relaxed">
+        Grounded in authentic <strong>Themed Entertainment Spatial Storytelling</strong>. Moving past dry corporate phrasing into vivid spatial narratives, rich sensory adjectives, and complete creative confidence in English.
+        <span class="block text-xs sm:text-sm text-stone-500 italic mt-1.5">Fondato sullo storytelling spaziale dell'architettura per l'intrattenimento tematico. Diamo spazio alla narrazione viva dello spazio, agli aggettivi sensoriali e alla piena sicurezza espressiva in inglese.</span>
+      </p>
+
+      <!-- Bilingual Welcome Banner -->
+      <div class="p-5 rounded-2xl bg-white border border-fairy-border text-xs text-fairy-muted flex items-start gap-3.5 shadow-soft">
+        <span class="text-2xl not-italic">🇮🇹</span>
+        <div class="space-y-1">
+          <span class="font-semibold text-fairy-charcoal text-sm block">Studio d'Inglese per Alessia (Bilingual English-Italian Studio):</span>
+          <p class="leading-relaxed">
+            Questo percorso è costruito su misura per la tua intuizione spaziale di architetto. Ogni concetto combina la terminologia tecnica e sensoriale in inglese con la traduzione a fronte in italiano, con foto reali di Cars Land per farti padroneggiare subito volumi, texture, luce ed esperienza del visitatore.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- HIGH-PRIORITY HOMEWORK DIRECTIONS FOR ALESSIA                  -->
+    <!-- ============================================================== -->
+    <section class="magical-card p-6 md:p-8 space-y-6 border-2 border-orange-300/80 bg-gradient-to-br from-white via-orange-50/20 to-amber-50/30 relative overflow-hidden shadow-hover">
+      
+      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-orange-200/70 pb-4">
+        <div class="space-y-1">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-orange-100 text-fairy-coral border border-orange-200">
+            <i class="fa-solid fa-bullseye"></i>
+            <span>Compito Attivo per la Prossima Lezione • Homework Mission 01</span>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-serif text-fairy-charcoal font-semibold">
+            Istruzioni per Svolgere il Compito <span class="text-lg md:text-xl text-fairy-muted font-normal block sm:inline font-sans">(Step-by-Step Directions)</span>
+          </h2>
+        </div>
+        <span class="pill-badge bg-emerald-100 text-fairy-sage text-xs font-semibold">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>Pronto per Preply</span>
+        </span>
+      </div>
+
+      <p class="text-xs sm:text-sm text-fairy-muted leading-relaxed">
+        Ciao Alessia! Ecco il percorso semplice e guidato in 4 passi per preparare la tua presentazione prima della prossima lezione. Clicca sul pulsante arancione per aprire il compito:
+      </p>
+
+      <!-- 4 Step Directions Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+        
+        <!-- Step 1 -->
+        <div class="p-4 rounded-2xl bg-white border border-fairy-border space-y-2 shadow-sm">
+          <div class="flex items-center justify-between">
+            <span class="w-7 h-7 rounded-full bg-orange-100 text-fairy-coral flex items-center justify-center font-bold text-xs">1</span>
+            <i class="fa-solid fa-door-open text-fairy-coral text-sm"></i>
+          </div>
+          <h4 class="font-semibold text-fairy-charcoal text-sm">Apri la Missione</h4>
+          <p class="text-stone-600 leading-relaxed">
+            Clicca sul pulsante in basso per entrare nella pagina del compito interattivo (<code class="text-[11px] bg-stone-100 px-1 py-0.5 rounded">homework.html</code>).
+          </p>
+          <span class="text-[11px] text-stone-400 block italic">Open the homework page</span>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-4 rounded-2xl bg-white border border-fairy-border space-y-2 shadow-sm">
+          <div class="flex items-center justify-between">
+            <span class="w-7 h-7 rounded-full bg-amber-100 text-fairy-gold flex items-center justify-center font-bold text-xs">2</span>
+            <i class="fa-solid fa-puzzle-piece text-fairy-gold text-sm"></i>
+          </div>
+          <h4 class="font-semibold text-fairy-charcoal text-sm">Guarda &amp; Gioca</h4>
+          <p class="text-stone-600 leading-relaxed">
+            Osserva le 3 foto reali di Cars Land e divertiti con il <strong>gioco di associazione</strong> per memorizzare i vocaboli chiave.
+          </p>
+          <span class="text-[11px] text-stone-400 block italic">Study photos &amp; play matching game</span>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-4 rounded-2xl bg-white border border-fairy-border space-y-2 shadow-sm">
+          <div class="flex items-center justify-between">
+            <span class="w-7 h-7 rounded-full bg-emerald-100 text-fairy-sage flex items-center justify-center font-bold text-xs">3</span>
+            <i class="fa-solid fa-square-check text-fairy-sage text-sm"></i>
+          </div>
+          <h4 class="font-semibold text-fairy-charcoal text-sm">Costruisci le Frasi</h4>
+          <p class="text-stone-600 leading-relaxed">
+            Seleziona le parole giuste dai <strong>menu a tendina</strong> per completare la tua descrizione architettonica in inglese.
+          </p>
+          <span class="text-[11px] text-stone-400 block italic">Complete the dropdown sentences</span>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="p-4 rounded-2xl bg-white border border-fairy-border space-y-2 shadow-sm">
+          <div class="flex items-center justify-between">
+            <span class="w-7 h-7 rounded-full bg-red-100 text-red-600 flex items-center justify-center font-bold text-xs">4</span>
+            <i class="fa-solid fa-microphone text-red-600 text-sm"></i>
+          </div>
+          <h4 class="font-semibold text-fairy-charcoal text-sm">Registra &amp; Invia</h4>
+          <p class="text-stone-600 leading-relaxed">
+            Leggi il copione ad alta voce nel registratore integrato, scarica l'audio e <strong>invialo nella chat di Preply</strong>!
+          </p>
+          <span class="text-[11px] text-stone-400 block italic">Record 60s &amp; send on Preply</span>
+        </div>
+
+      </div>
+
+      <!-- Main Direct CTA Button -->
+      <div class="pt-2 flex flex-col sm:flex-row items-center gap-4">
+        <a href="homework.html" class="sparkle-btn w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full font-semibold text-sm shadow-hover">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>Inizia il Compito Adesso • Apri la Missione 1 (Start Homework)</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <span class="text-xs text-fairy-muted italic">
+          Tempo stimato: ~10-15 minuti • Con audio e verifiche istantanee
+        </span>
+      </div>
+
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- VISUAL GALLERY PREVIEW: THE 3 CORE REALITIES                   -->
+    <!-- ============================================================== -->
+    <section class="space-y-6">
+      <div class="flex flex-wrap items-end justify-between gap-2 border-b border-fairy-border/80 pb-3">
+        <div>
+          <span class="text-xs uppercase tracking-wider text-fairy-gold font-semibold block">Visual Realities • Real Architecture (Elementi Visivi • Foto Reali)</span>
+          <h2 class="text-2xl md:text-3xl font-serif text-fairy-charcoal font-medium mt-0.5">The Real Architecture of Cars Land <span class="text-lg text-fairy-muted font-normal block sm:inline sm:text-2xl">(L'Architettura Reale)</span></h2>
+        </div>
+        <span class="text-xs text-fairy-muted italic">Cars Land &amp; Radiator Springs Architecture</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Photo 1: The Weenie -->
+        <div class="magical-card p-5 space-y-3.5">
+          <div class="photo-glow">
+            <img src="assets/images/weenie_rockwork.jpg" alt="The Weenie in Radiator Springs" class="w-full h-44 object-cover">
+          </div>
+          <div>
+            <span class="pill-badge bg-amber-50 text-fairy-gold text-[10px] mb-1">
+              <i class="fa-solid fa-mountain"></i> The Weenie (Visual Magnet / Il Faro Visivo)
+            </span>
+            <h3 class="text-lg font-serif text-fairy-charcoal font-semibold mt-1">Willys Butte Peak</h3>
+            <div class="text-xs space-y-1 mt-1 leading-relaxed">
+              <p class="text-stone-700 font-medium">A monumental visual anchor at the end of the main street that draws the guest's eye and guides them through space.</p>
+              <p class="text-[11px] text-stone-500 italic">🇮🇹 Un faro visivo monumentale in fondo al viale principale che attrae lo sguardo del visitatore e lo orienta nello spazio.</p>
+            </div>
+          </div>
+          <div class="text-[11px] text-amber-900 font-medium pt-2 border-t border-fairy-borderLight">
+            Words: <em>monumental, sun-bleached, draws guests</em> • Emotion: <span class="font-semibold text-fairy-gold">awe (stupore)</span>
+          </div>
+        </div>
+
+        <!-- Photo 2: The Perimeter Berm -->
+        <div class="magical-card p-5 space-y-3.5">
+          <div class="photo-glow">
+            <img src="assets/images/perimeter_berm.jpg" alt="Perimeter Berm" class="w-full h-44 object-cover">
+          </div>
+          <div>
+            <span class="pill-badge bg-emerald-50 text-fairy-sage text-[10px] mb-1">
+              <i class="fa-solid fa-shield-halved"></i> The Berm (Protective Barrier / Il Terrapieno)
+            </span>
+            <h3 class="text-lg font-serif text-fairy-charcoal font-semibold mt-1">Perimeter Rockwork Berm</h3>
+            <div class="text-xs space-y-1 mt-1 leading-relaxed">
+              <p class="text-stone-700 font-medium">A landscaped perimeter barrier of rockwork and pines that isolates the themed world from exterior highway noise.</p>
+              <p class="text-[11px] text-stone-500 italic">🇮🇹 Terrapieno perimetrale di roccia e pini che isola il mondo tematico dall'autostrada esterna e dal rumore della città.</p>
+            </div>
+          </div>
+          <div class="text-[11px] text-emerald-900 font-medium pt-2 border-t border-fairy-borderLight">
+            Words: <em>perimeter berm, sculpted rockwork, hides the highway</em> • Emotion: <span class="font-semibold text-fairy-sage">peaceful (in pace / sereno)</span>
+          </div>
+        </div>
+
+        <!-- Photo 3: The Portal -->
+        <div class="magical-card p-5 space-y-3.5">
+          <div class="photo-glow">
+            <img src="assets/images/canyon_portal.jpg" alt="Transition Portal" class="w-full h-44 object-cover">
+          </div>
+          <div>
+            <span class="pill-badge bg-orange-50 text-fairy-coral text-[10px] mb-1">
+              <i class="fa-solid fa-archway"></i> The Portal (Rustic Gateway / Il Portale)
+            </span>
+            <h3 class="text-lg font-serif text-fairy-charcoal font-semibold mt-1">Rustic Canyon Gateway</h3>
+            <div class="text-xs space-y-1 mt-1 leading-relaxed">
+              <p class="text-stone-700 font-medium">A rustic timber archway that compresses space before expanding it with wonder into the wide, sun-drenched canyon.</p>
+              <p class="text-[11px] text-stone-500 italic">🇮🇹 Arco in legno rustico che comprime lo spazio prima di espanderlo con meraviglia verso l'ampio canyon baciato dal sole.</p>
+            </div>
+          </div>
+          <div class="text-[11px] text-orange-900 font-medium pt-2 border-t border-fairy-borderLight">
+            Words: <em>weathered timber, canyon portal, opens up</em> • Emotion: <span class="font-semibold text-fairy-coral">curious (curioso / curiosità)</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- ACTIVE MODULE SUMMARY CARD                                     -->
+    <!-- ============================================================== -->
+    <section class="space-y-4">
+      <div class="border-b border-fairy-border/80 pb-3">
+        <span class="text-xs uppercase tracking-wider text-fairy-gold font-semibold block">Modulo in Corso • Active Milestone</span>
+        <h2 class="text-2xl font-serif text-fairy-charcoal font-semibold mt-0.5">Modulo 01: Placemaking, The Berm &amp; The Weenie</h2>
+      </div>
+
+      <div class="magical-card p-6 md:p-8 space-y-4 border-orange-200 bg-white">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2">
+            <span class="pill-badge bg-orange-100 text-fairy-coral text-xs font-semibold">Missione 01 Attiva</span>
+            <span class="text-xs text-stone-400 font-mono">Cars Land Master Planning</span>
+          </div>
+          <a href="homework.html" class="text-fairy-coral hover:text-fairy-coralHover font-medium text-xs underline flex items-center gap-1">
+            <span>Vai al compito completo</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <p class="text-xs sm:text-sm text-fairy-muted leading-relaxed">
+          In questa prima missione esploriamo l'ingresso e la pianificazione generale di <em>Cars Land (Radiator Springs)</em>. Imparerai come guidare lo sguardo del visitatore verso <strong>Willys Butte</strong> (il Weenie), come proteggere l'illusione tematica con il <strong>terrapieno di roccia perimetrale</strong> (The Berm), e come creare un momento di passaggio indimenticabile attraverso il <strong>portale in legno invecchiato</strong> (The Portal).
+        </p>
+
+        <div class="pt-3 border-t border-fairy-borderLight flex flex-wrap items-center justify-between gap-3 text-xs">
+          <div class="flex flex-wrap items-center gap-2 text-stone-600">
+            <span class="inline-flex items-center gap-1 bg-stone-100 px-2.5 py-1 rounded-full"><i class="fa-solid fa-check text-emerald-600 text-[10px]"></i> Foto Reali con Audio</span>
+            <span class="inline-flex items-center gap-1 bg-stone-100 px-2.5 py-1 rounded-full"><i class="fa-solid fa-check text-emerald-600 text-[10px]"></i> Gioco di Associazione</span>
+            <span class="inline-flex items-center gap-1 bg-stone-100 px-2.5 py-1 rounded-full"><i class="fa-solid fa-check text-emerald-600 text-[10px]"></i> Menu a Tendina Bilingue</span>
+            <span class="inline-flex items-center gap-1 bg-stone-100 px-2.5 py-1 rounded-full"><i class="fa-solid fa-check text-emerald-600 text-[10px]"></i> Registratore di Copione</span>
+          </div>
+          <a href="homework.html" class="sparkle-btn inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-xs font-medium">
+            <span>Apri Missione 1</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- FUTURE ROADMAP TEASER (CLEAN & SUBTLE)                         -->
+    <!-- ============================================================== -->
+    <section class="p-5 rounded-2xl bg-white/70 border border-fairy-border/70 text-xs text-fairy-muted space-y-2">
+      <div class="flex items-center justify-between">
+        <span class="font-semibold text-stone-700 text-xs flex items-center gap-2">
+          <i class="fa-solid fa-compass text-fairy-gold"></i>
+          <span>I Prossimi Moduli del Tuo Percorso (Coming Soon):</span>
+        </span>
+        <span class="text-[11px] text-stone-400 font-mono">Percorso Studio 8 Moduli</span>
+      </div>
+      <p class="text-stone-500 leading-relaxed text-[11px]">
+        Nelle lezioni successive affronteremo: <em>02. Atmospheric Show Writing</em> (Haunted Mansion) • <em>03. 3-Act Attraction Architecture</em> (Radiator Springs Racers) • <em>04. The Signature Reveal</em> (Tower of Terror) • <em>05. 4D Multi-Sensory Immersion</em> (Tree of Life) • <em>06. Industrial Velocity</em> (Test Track) • <em>07. Scale Distortion</em> (Toy Story) • <em>08. Capstone Walkthrough Pitch</em>.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-xs text-fairy-muted pt-6 border-t border-fairy-border/70 font-light space-y-1">
+      <div>The Magic of English • The Imagineering Studio for Alessia</div>
+      <div class="text-[11px] text-stone-400">Themed Entertainment Architecture &amp; Spatial Storytelling Studio</div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
